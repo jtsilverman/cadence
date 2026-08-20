@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Cadence design tokens
+   Generated verbatim from drafts/design.md Section 1 (Design tokens), v1.
+
+   AUTHORITY: drafts/design.md is the law. This file is a derived artifact.
+   If this file and Section 1 diverge, Section 1 is correct and this is stale.
+   Do not edit values here - edit design.md, then regenerate.
+
+   MEASURED = pixel-sampled from a corpus frame at 2x DPR (CSS px = raw / 2).
+   DERIVED  = computed or chosen by design.md (grid snap, WCAG pick, scale fill).
+   Never "clean up" a MEASURED value.
+   ========================================================================== */
+
+:root {
+
+  /* ------------------------------------------------------------------------
+     1.2 - Color: core neutrals
+     Every value grounded in a corpus measurement. Deliberately NOT adopted:
+     Eight Sleep navy #262e40 (second dark hue), #f0f0f0 (second off-white),
+     Equinox tag-pill grey #4c4c4c (superseded by grey-700).
+     ---------------------------------------------------------------------- */
+  --color-black:     #000000;  /* MEASURED: equinox-001 nav @1142,101; eightsleep-272 footer @840,1008 */
+  --color-ink:       #1a1a1a;  /* DERIVED from arcteryx-055 #1b1b1b / arcteryx-065 #181818 / eightsleep-064 #111111 */
+  --color-grey-700:  #545454;  /* MEASURED: arcteryx-055 price text @700,880 (range #454545-#575757) */
+  --color-grey-500:  #9c9c9c;  /* MEASURED: equinox-128 card description grey @180,555 */
+  --color-grey-400:  #8f8f8f;  /* DERIVED: darkest grey clearing WCAG 3:1 non-text on off-white (3.02:1) */
+  --color-grey-300:  #d5d5d5;  /* MEASURED: equinox-048 input hairline @1850,700 (arcteryx-065 measures #d0d0d0) */
+  --color-off-white: #f8f7f3;  /* MEASURED: eightsleep-136 @101,1427 + eightsleep-001 @786,756, identical on 3 files */
+  --color-white:     #ffffff;  /* MEASURED: universal, all three sources */
+
+  /* 1.3 - Accent. NO CORPUS PRECEDENT (zero green pixels in 20+ crops).
+     Cadence departure. JAKE'S PICK - see design.md 8.3 #1.
+     Alternatives: #33503A (darker/matte, 8.34:1 on off-white)
+                   #3F6248 (lighter/warmer, 6.42:1 on off-white)
+     HARD RULE: no accent-green text under 24px on a black surface.
+     All three candidates fail AA-normal there (2.35-3.05:1). */
+  --color-accent:    #3A5A40;  /* 7.21:1 on off-white, 7.73:1 on white, 2.72:1 on black */
+
+  /* ------------------------------------------------------------------------
+     1.4 - Semantic roles
+     ---------------------------------------------------------------------- */
+  --surface-bg:           var(--color-off-white);  /* default page canvas */
+  --surface-raised:       var(--color-white);      /* cards, panels, reveal-panel active state */
+  --surface-inverse:      var(--color-black);      /* nav, footer newsletter band, marketing heroes */
+  --surface-inverse-alt:  var(--color-ink);        /* a second dark band when two dark sections abut */
+
+  --text-primary:           var(--color-ink);
+  --text-secondary:         var(--color-grey-700);
+  --text-primary-inverse:   var(--color-white);
+  --text-secondary-inverse: var(--color-grey-500);
+  --text-accent:            var(--color-accent);   /* light surfaces only */
+
+  /* Two border tokens on purpose: --border measures 1.37:1 on off-white and
+     fails WCAG's 3:1 non-text minimum. Equinox ships that gap (equinox-048);
+     Cadence does not inherit it. Decorative rules use --border; anything a
+     user must perceive as an interactive boundary uses --border-strong. */
+  --border:          var(--color-grey-300);
+  --border-strong:   var(--color-grey-400);
+  --border-inverse:  #232323;  /* MEASURED: equinox-128 card hairline on black @878,700 */
+  --border-selected: var(--color-accent);
+
+  --accent:         var(--color-accent);
+  --accent-text-on: var(--color-white);
+
+  /* ------------------------------------------------------------------------
+     1.6 - Spacing. Base unit 8px, bracketed by two independent measurements:
+     Equinox grid gutter 17px CSS (equinox-128 @y=700) and Eight Sleep card
+     gutter 32.5px CSS (eightsleep-001 @y=900) - almost exactly double.
+     16 and 32 are the two load-bearing steps.
+     ---------------------------------------------------------------------- */
+  --space-4:   4px;    /* DERIVED: half-step, sub-label gaps only */
+  --space-8:   8px;    /* MEASURED: nav CTA pair gap (equinox-001); FAB stack gap */
+  --space-16:  16px;   /* MEASURED 17px -> snapped: equinox-128 gutter; equinox-048 field gap 16-24px */
+  --space-24:  24px;   /* MEASURED: FAB viewport margin; tab-block padding (equinox-094) */
+  --space-32:  32px;   /* MEASURED 32.5px -> snapped: eightsleep-001 gutter + card padding */
+  --space-40:  40px;   /* MEASURED: equinox-128 plan-column padding; equinox-108 accordion panel */
+  --space-48:  48px;   /* DERIVED: scale fill */
+  --space-56:  56px;   /* MEASURED: equinox-048 section top 54-56px; equinox-018 card inline padding 57px */
+  --space-64:  64px;   /* MEASURED: equinox-001 container gutter 64/64.5px; equinox-018 card block-end 64px */
+  --space-80:  80px;   /* MEASURED: equinox-001 nav bar height (y=4.5->84.5) */
+  --space-96:  96px;   /* DERIVED: container gutter + editorial inset */
+  --space-120: 120px;  /* DERIVED: NOT corpus-supported. One marketing breathing moment only. */
+
+  /* ------------------------------------------------------------------------
+     1.7 - Radius. The only radius token. There is no radius scale.
+     Equinox 0 (equinox-128 corner scan), Arc'teryx 0 (arcteryx-055 seam).
+     Eight Sleep measures 8-10px CSS (eightsleep-001) and is STRIPPED to 0.
+     ---------------------------------------------------------------------- */
+  --radius: 0;
+
+  /* ------------------------------------------------------------------------
+     1.8 - Shadow. The only shadow token. There is no elevation scale.
+     Zero drop shadows in 57 sampled frames across all three brands.
+     ---------------------------------------------------------------------- */
+  --shadow: none;
+
+  /* ------------------------------------------------------------------------
+     1.9 - Borders. Only two widths exist in the corpus.
+     ---------------------------------------------------------------------- */
+  --border-width:          1px;  /* MEASURED: equinox-128 card hairline; arcteryx-065 footer rule */
+  --border-width-selected: 2px;  /* MEASURED: eightsleep-264 selected size box */
+
+  /* ------------------------------------------------------------------------
+     1.10 - Scrims and opacity. Measured by comparing unscrimmed vs scrimmed
+     regions in equinox-038-amenities-lounge.jpg, the one composition running
+     three legibility mechanisms side by side.
+     ---------------------------------------------------------------------- */
+  --scrim-grey:   rgba(128, 128, 128, 0.58);  /* MEASURED: RGB(35,25,31) -> (90,82,89), equinox-038 left card */
+  --scrim-white:  rgba(255, 255, 255, 0.81);  /* MEASURED: RGB(22,11,20) -> (210,207,210), equinox-038 right card */
+  --scrim-modal:  rgba(0, 0, 0, 0.60);        /* MEASURED ~60%: eightsleep-015 backdrop; arcteryx-093 menu scrim */
+  --dim-inactive: 0.70;                        /* MEASURED: equinox-240 "Find a Spa" hover dim */
+
+  /* ------------------------------------------------------------------------
+     1.11 - Z-layers. Each level traces to an observed stacking behavior.
+     Two scrim levels are NOT redundant: arcteryx-093's menu scrim leaves the
+     nav lit; eightsleep-015's hotspot scrim dims the nav too.
+     ---------------------------------------------------------------------- */
+  --z-base:        0;    /* page content */
+  --z-sticky:      20;   /* sticky product/context bar under the nav - eightsleep-120..272 */
+  --z-nav-scrim:   90;   /* full-page dim that leaves the nav LIT - arcteryx-093 */
+  --z-nav-panel:   95;   /* menu panel: above the scrim, below/flush with the nav */
+  --z-nav:         100;  /* fixed nav bar - equinox-001, all 83 frames */
+  --z-fab:         150;  /* persistent coach-chat launcher, bottom-right */
+  --z-modal-scrim: 200;  /* dim that covers the nav TOO - eightsleep-015 */
+  --z-modal:       210;  /* hotspot detail panel, dialogs */
+  --z-banner:      300;  /* cookie/consent, toasts - equinox-001 */
+
+  /* ------------------------------------------------------------------------
+     2 - PRODUCT LAYER (ux.md "UI direction", 2026-08-05). Not from
+     design.md §1: the marketing site stays cream Eight Sleep; product
+     surfaces are dark-first — lightish grey / black / off-white / matte
+     forest green, sharp corners, bold type. Prefixed --p- so the two
+     systems never blur.
+     ---------------------------------------------------------------------- */
+  --p-bg:             #111111;              /* app canvas (eightsleep-064 ink) */
+  --p-surface:        #1a1a1a;              /* cards, list rows */
+  --p-raised:         #232323;              /* pressed / hovered / inputs */
+  --p-border:         #2e2e2e;              /* hairlines on dark */
+  --p-text:           var(--color-off-white);
+  --p-text-secondary: var(--color-grey-500);
+  --p-accent:         var(--color-accent);  /* fills + >=24px text only (§1.3) */
+  /* Small accent text on dark: --color-accent fails AA under 24px on black
+     (2.72:1); this lighter step of the same green reads at ~4.6:1. */
+  --p-accent-text:    #7fa287;
+
+}

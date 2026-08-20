@@ -1,0 +1,26 @@
+[
+  {
+    "id": "stability-ball-pike",
+    "name": "Stability Ball Pike",
+    "aliases": ["stability ball jackknife", "swiss ball pike", "physioball pike"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["abs"],
+    "secondaryMuscles": ["hip-flexors", "front-delts", "obliques"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "stability-ball-rollout",
+    "name": "Stability Ball Rollout",
+    "aliases": ["swiss ball rollout", "physioball rollout"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["abs"],
+    "secondaryMuscles": ["lats", "obliques", "front-delts"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "incline-barbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Set bench to 30-45 degrees", "Grip slightly wider than shoulders", "Lower bar to upper chest", "Drive feet into floor", "Keep shoulder blades pinned"],
+    "setup": "Lie back on an incline bench set to roughly 30-45 degrees with a barbell racked above the chest.",
+    "commonMistakes": ["Setting incline too steep, shifting load to shoulders", "Bouncing bar off chest", "Flaring elbows to 90 degrees"]
+  },
+  {
+    "id": "incline-bench-reverse-fly",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Chest supported on incline bench", "Slight bend in elbows", "Raise arms out to sides", "Squeeze shoulder blades together"],
+    "setup": "Lie face down on an incline bench holding a dumbbell in each hand, arms hanging below shoulders.",
+    "commonMistakes": ["Using momentum to swing weights up", "Shrugging shoulders instead of squeezing shoulder blades", "Bending elbows too much, turning it into a row"]
+  },
+  {
+    "id": "incline-cable-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set cables at low position", "Sit on incline bench facing away", "Press handles forward and up", "Keep core braced"],
+    "setup": "Sit on an incline bench positioned between two low cable pulleys, handles gripped at chest height.",
+    "commonMistakes": ["Leaning too far forward off the bench", "Not pressing through full range", "Letting elbows flare excessively"]
+  },
+  {
+    "id": "incline-diamond-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Hands form diamond shape on bench edge", "Keep body in straight line", "Lower chest to hands", "Keep elbows tucked"],
+    "setup": "Place hands in a diamond shape on an elevated bench with feet on the floor in a plank position.",
+    "commonMistakes": ["Letting hips sag", "Flaring elbows out wide", "Not achieving full range of motion"]
+  },
+  {
+    "id": "incline-dumbbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set bench to 30-45 degrees", "Press dumbbells up over chest", "Lower with control to chest level", "Keep wrists stacked over elbows"],
+    "setup": "Lie back on an incline bench with a dumbbell in each hand at shoulder level.",
+    "commonMistakes": ["Letting dumbbells drift too far forward or back", "Using too steep an incline", "Not controlling the eccentric"]
+  },
+  {
+    "id": "incline-dumbbell-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Sit back on incline bench", "Let arms hang straight down", "Curl without swinging shoulders", "Squeeze biceps at top"],
+    "setup": "Sit back against an incline bench with a dumbbell in each hand, arms fully extended below the shoulders.",
+    "commonMistakes": ["Letting elbows drift forward", "Using momentum to swing the weight", "Not fully extending arms at the bottom"]
+  },
+  {
+    "id": "incline-dumbbell-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Set bench to 30-45 degrees", "Slight bend in elbows throughout", "Lower arms wide until stretch felt", "Bring dumbbells together over chest"],
+    "setup": "Lie on an incline bench with dumbbells pressed above the chest, palms facing each other.",
+    "commonMistakes": ["Bending elbows too much, turning it into a press", "Lowering too deep and straining shoulders", "Using excessive weight"]
+  },
+  {
+    "id": "incline-dumbbell-hammer-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Sit back on incline bench", "Keep palms facing each other", "Curl without moving upper arm", "Control the descent"],
+    "setup": "Sit back against an incline bench with dumbbells held at the sides in a neutral grip.",
+    "commonMistakes": ["Swinging the weight with momentum", "Letting elbows travel forward", "Rushing the eccentric phase"]
+  },
+  {
+    "id": "incline-dumbbell-shrug",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Lie face down on incline bench", "Let arms hang straight down", "Elevate shoulders straight up", "Avoid rolling shoulders"],
+    "setup": "Lie face down on a steep incline bench with a dumbbell in each hand hanging below the shoulders.",
+    "commonMistakes": ["Rolling shoulders instead of shrugging vertically", "Using momentum instead of controlled contraction", "Not achieving full range at the top"]
+  },
+  {
+    "id": "incline-ez-bar-skull-crusher",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Lie on incline bench holding EZ-bar overhead", "Keep upper arms stationary", "Lower bar toward forehead", "Extend through elbows only"],
+    "setup": "Lie back on an incline bench holding an EZ-bar with arms extended above the chest.",
+    "commonMistakes": ["Letting elbows flare outward", "Moving upper arms during the rep", "Lowering the bar too far toward the neck"]
+  },
+  {
+    "id": "incline-machine-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Adjust seat so handles align with upper chest", "Press handles forward and up", "Keep back flat against pad", "Control the return"],
+    "setup": "Sit in the incline chest press machine with back against the pad and hands gripping the handles at chest level.",
+    "commonMistakes": ["Seat height set too low or high", "Using partial range of motion", "Lifting hips off the seat"]
+  },
+  {
+    "id": "incline-prone-y-raise",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Lie face down on incline bench", "Raise arms in a Y shape overhead", "Lead with thumbs up", "Squeeze lower traps at top"],
+    "setup": "Lie face down on an incline bench with light dumbbells hanging below in a Y position.",
+    "commonMistakes": ["Using too much weight and losing form", "Shrugging shoulders up toward ears", "Not raising arms high enough"]
+  },
+  {
+    "id": "incline-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Hands on elevated surface", "Keep body in straight line", "Lower chest toward hands", "Push through palms to extend arms"],
+    "setup": "Place hands on an elevated surface like a bench with feet on the ground in a plank position.",
+    "commonMistakes": ["Letting hips sag or pike up", "Flaring elbows out too wide", "Not lowering far enough"]
+  },
+  {
+    "id": "incline-sit-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Secure feet at top of incline bench", "Cross arms over chest", "Curl torso up toward knees", "Lower with control"],
+    "setup": "Lie back on an incline sit-up bench with feet hooked under the pads at the top.",
+    "commonMistakes": ["Yanking the neck to generate momentum", "Using too steep an incline before ready", "Not controlling the descent"]
+  },
+  {
+    "id": "inverted-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Set bar at appropriate height", "Keep body straight from head to heels", "Pull chest to bar", "Squeeze shoulder blades together"],
+    "setup": "Lie under a fixed bar or in a suspension trainer, gripping the bar with body straight and heels on the ground.",
+    "commonMistakes": ["Letting hips sag", "Not pulling chest fully to the bar", "Using momentum instead of controlled pulling"]
+  },
+  {
+    "id": "iron-cross-hold",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Arms extended straight out to sides on rings", "Keep body upright and still", "Engage shoulders and core", "Breathe steadily through hold"],
+    "setup": "Support the body on gymnastic rings or straps with arms extended straight out to the sides at shoulder height.",
+    "commonMistakes": ["Attempting without sufficient shoulder strength", "Letting arms bend under fatigue", "Arching or sagging the torso"]
+  },
+  {
+    "id": "jacobs-ladder",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Grip handrails lightly for balance", "Climb with alternating hands and feet", "Keep pace self-controlled", "Maintain upright posture"],
+    "setup": "Step onto the angled ladder-climbing machine and begin climbing at a self-paced rate.",
+    "commonMistakes": ["Gripping handrails too tightly and taking weight off legs", "Climbing at an unsustainable pace early", "Slouching forward instead of staying upright"]
+  },
+  {
+    "id": "jefferson-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Stand on elevated platform", "Roll spine down vertebra by vertebra", "Let weight hang toward floor", "Roll back up sequentially"],
+    "setup": "Stand on a raised platform holding a light barbell or dumbbell in front of the thighs.",
+    "commonMistakes": ["Using too much load for a spinal flexion movement", "Rushing the segmental roll", "Bending knees to compensate"]
+  },
+  {
+    "id": "jefferson-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Straddle the barbell", "One hand pronated, one supinated grip", "Drive through both legs evenly", "Stand tall to lock out"],
+    "setup": "Straddle a loaded barbell on the floor with one foot forward and one hand gripping in front, one behind.",
+    "commonMistakes": ["Uneven weight distribution between sides", "Twisting the spine during the pull", "Not alternating stance and grip between sets"]
+  },
+  {
+    "id": "jumping-bar-muscle-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Jump to assist initial pull", "Pull bar toward lower chest", "Transition elbows over the bar", "Press out to lockout"],
+    "setup": "Stand under a pull-up bar within jumping reach, gripping the bar with hands slightly wider than shoulders.",
+    "commonMistakes": ["Muscling through with arms alone instead of using the jump", "Failing to transition elbows over the bar smoothly", "Kipping excessively and losing control"]
+  },
+  {
+    "id": "keg-carry-bear-hug",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Hug keg tightly to chest", "Brace core hard", "Walk with short controlled steps", "Keep chest up throughout"],
+    "setup": "Lift a loaded keg and hold it hugged tightly against the chest with both arms wrapped around it.",
+    "commonMistakes": ["Letting the keg slip away from the chest", "Rounding the back during the lift", "Walking too fast and losing control"]
+  },
+  {
+    "id": "keg-carry-shoulder",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Rest keg on one shoulder", "Brace core and stand tall", "Walk with even stride", "Switch shoulders as needed"],
+    "setup": "Load a keg onto one shoulder with the supporting arm wrapped over the top, standing upright.",
+    "commonMistakes": ["Leaning excessively to one side", "Not bracing the core before walking", "Rushing the initial lift onto the shoulder"]
+  },
+  {
+    "id": "keg-toss-over-bar",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hinge at hips to grip keg", "Explosively extend hips", "Drive keg upward and release", "Follow through with full body"],
+    "setup": "Stand facing a raised bar with a keg on the ground between the feet, gripping it low with both hands.",
+    "commonMistakes": ["Lifting with the back instead of hips and legs", "Poor timing on the release", "Standing too close or far from the bar"]
+  },
+  {
+    "id": "kettlebell-around-the-world",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Pass kettlebell around waist", "Keep core braced", "Switch hands smoothly behind back", "Maintain steady stance"],
+    "setup": "Stand holding a kettlebell in one hand at waist height, ready to pass it around the body.",
+    "commonMistakes": ["Losing grip during hand-offs", "Leaning excessively to compensate", "Rushing the pace and losing control"]
+  },
+  {
+    "id": "kettlebell-bottoms-up-carry",
+    "mechanics": "isolation",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": ["Hold kettlebell upside down by handle", "Keep wrist stacked and rigid", "Walk with controlled steps", "Keep shoulder packed down"],
+    "setup": "Grip a kettlebell by the handle with the bell pointing up and walk forward while stabilizing the wrist.",
+    "commonMistakes": ["Letting the kettlebell tip over from grip fatigue", "Gripping too loosely", "Shrugging the shoulder to compensate for instability"]
+  },
+  {
+    "id": "kettlebell-bottoms-up-clean",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Hinge to grip kettlebell", "Pull explosively to rack", "Catch with bell pointing up", "Stabilize wrist at top"],
+    "setup": "Stand over a kettlebell with a hip hinge, gripping the handle ready to pull it to a bottoms-up rack position.",
+    "commonMistakes": ["Letting the kettlebell flop over instead of stabilizing it", "Using too much weight for wrist strength", "Pulling with the arm instead of the hips"]
+  },
+  {
+    "id": "kettlebell-bottoms-up-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Start with bell inverted at shoulder", "Keep wrist stacked and rigid", "Press straight overhead", "Brace core throughout"],
+    "setup": "Hold a kettlebell upside down at shoulder height with the bell pointing toward the ceiling.",
+    "commonMistakes": ["Allowing the bell to tip during the press", "Leaning back to generate momentum", "Gripping too loosely and losing stability"]
+  },
+  {
+    "id": "kettlebell-clean",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge and pull kettlebell close to body", "Punch elbow through to rack", "Catch softly at shoulder", "Keep bell close throughout"],
+    "setup": "Stand with a kettlebell on the ground between the feet, gripping it with a hip hinge.",
+    "commonMistakes": ["Letting the bell swing away from the body, causing wrist impact", "Pulling with the arm instead of hip extension", "Catching the rack position too stiffly"]
+  },
+  {
+    "id": "kettlebell-clean-and-jerk",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Clean kettlebell to rack", "Dip slightly at knees", "Drive bell overhead explosively", "Lock out arm at top"],
+    "setup": "Clean a kettlebell to the rack position at the shoulder before initiating the jerk drive overhead.",
+    "commonMistakes": ["Pressing instead of using leg drive for the jerk", "Poor rack position before the dip", "Not locking out fully overhead"]
+  },
+  {
+    "id": "kettlebell-clean-and-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Clean kettlebell to rack", "Brace core before pressing", "Press straight overhead", "Avoid leaning back"],
+    "setup": "Clean a kettlebell to the shoulder rack position, then press it overhead in a controlled motion.",
+    "commonMistakes": ["Using momentum from the clean to cheat the press", "Leaning back excessively during the press", "Losing rack position before pressing"]
+  },
+  {
+    "id": "kettlebell-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Stand with kettlebell between feet", "Hinge at hips, flat back", "Drive through heels to stand", "Squeeze glutes at top"],
+    "setup": "Stand with feet shoulder-width apart, kettlebell on the floor between the feet.",
+    "commonMistakes": ["Rounding the lower back", "Squatting the movement instead of hinging", "Not fully extending hips at the top"]
+  },
+  {
+    "id": "kettlebell-farmer-walk-on-toes",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Hold kettlebells at sides", "Rise onto toes", "Take controlled short steps", "Keep core and shoulders braced"],
+    "setup": "Hold a kettlebell in each hand at the sides while rising up onto the toes before walking.",
+    "commonMistakes": ["Dropping heels down during the walk", "Letting shoulders round forward", "Taking overly long strides and losing balance"]
+  },
+  {
+    "id": "kettlebell-farmers-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "beginner",
+    "formCues": ["Hold kettlebells at sides", "Stand tall with shoulders back", "Walk with controlled steps", "Brace core throughout"],
+    "setup": "Grip a kettlebell in each hand at the sides, standing tall before walking forward.",
+    "commonMistakes": ["Letting shoulders slump forward", "Walking too fast and losing posture", "Leaning to one side with uneven loads"]
+  },
+  {
+    "id": "kettlebell-figure-8",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Hinge slightly at hips", "Pass kettlebell between legs in figure-8 pattern", "Keep core engaged", "Maintain steady rhythm"],
+    "setup": "Stand in a quarter squat with a kettlebell in one hand, ready to pass it between the legs in a figure-8.",
+    "commonMistakes": ["Standing too upright, limiting range of motion", "Losing grip during hand-offs between legs", "Rounding the back during the pass"]
+  },
+  {
+    "id": "kettlebell-figure-8-to-hold",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Perform figure-8 pattern between legs", "Catch kettlebell at hip hinge", "Finish in a stable hold", "Keep core braced throughout"],
+    "setup": "Stand in a quarter squat, passing the kettlebell in a figure-8 between the legs before catching it in a hold.",
+    "commonMistakes": ["Fumbling the catch at the end of the pattern", "Losing hip hinge position during the pass", "Rushing the transition to the hold"]
+  },
+  {
+    "id": "kettlebell-floor-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Lie on back with knees bent", "Press kettlebell straight up", "Keep elbow close to body at bottom", "Brace core throughout"],
+    "setup": "Lie on the floor with knees bent, holding a kettlebell at shoulder height in one hand.",
+    "commonMistakes": ["Flaring the elbow out at the bottom of the press", "Arching the back off the floor excessively", "Losing control of the kettlebell path"]
+  },
+  {
+    "id": "kettlebell-get-up-sit-up",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Press kettlebell overhead while lying down", "Sit up while keeping arm locked", "Keep eyes on the kettlebell", "Move through the pattern with control"],
+    "setup": "Lie on the back holding a kettlebell pressed overhead in one arm with the same-side knee bent.",
+    "commonMistakes": ["Bending the pressing arm during the sit-up", "Rushing the transition instead of moving deliberately", "Losing visual focus on the kettlebell"]
+  },
+  {
+    "id": "kettlebell-goblet-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": ["Hold kettlebell at chest", "Feet shoulder-width apart", "Squat down keeping chest up", "Drive through heels to stand"],
+    "setup": "Hold a kettlebell vertically against the chest with both hands cupping the horns.",
+    "commonMistakes": ["Letting knees cave inward", "Rounding the upper back", "Not reaching adequate squat depth"]
+  },
+  {
+    "id": "kettlebell-gorilla-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge over two kettlebells on floor", "Row one bell to hip", "Keep back flat", "Alternate sides with control"],
+    "setup": "Stand hinged over two kettlebells on the floor, gripping one handle in each hand.",
+    "commonMistakes": ["Rounding the back during the hinge", "Rotating the torso excessively while rowing", "Using momentum instead of a controlled pull"]
+  },
+  {
+    "id": "kettlebell-halo",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Hold kettlebell upside down at chest", "Circle it around the head", "Keep core braced", "Move slowly with control"],
+    "setup": "Hold a kettlebell by the horns upside down at chest level, ready to circle it around the head.",
+    "commonMistakes": ["Arching the back to let the bell pass behind the head", "Moving too fast and losing control", "Letting elbows flare excessively"]
+  }
+]

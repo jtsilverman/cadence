@@ -1,0 +1,26 @@
+[
+  {
+    "id": "viking-press",
+    "name": "Viking Press",
+    "aliases": ["Viking Press Machine", "Yoke Press"],
+    "modality": "strength",
+    "equipment": ["none"],
+    "primaryMuscles": ["front-delts", "triceps", "side-delts"],
+    "secondaryMuscles": ["traps", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "circus-dumbbell-press",
+    "name": "Circus Dumbbell Press (Thomas Inch Dumbbell Press)",
+    "aliases": ["Thomas Inch Dumbbell Press", "Inch Dumbbell Press", "One-Arm Circus Dumbbell Press"],
+    "modality": "strength",
+    "equipment": ["dumbbell"],
+    "primaryMuscles": ["front-delts", "triceps", "side-delts"],
+    "secondaryMuscles": ["traps", "abs", "obliques"],
+    "laterality": "unilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

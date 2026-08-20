@@ -1,0 +1,74 @@
+[
+  {
+    "id": "headstand",
+    "name": "Headstand",
+    "aliases": ["Sirsasana", "Tripod Headstand"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["neck", "traps"],
+    "secondaryMuscles": ["front-delts", "side-delts", "abs", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "forearm-stand",
+    "name": "Forearm Stand (Pincha Mayurasana / Elbow Stand)",
+    "aliases": ["Pincha Mayurasana", "Elbow Stand", "Feathered Peacock Pose"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["front-delts", "side-delts"],
+    "secondaryMuscles": ["triceps", "abs", "traps", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "chest-to-bar-pull-up",
+    "name": "Chest-to-Bar Pull-Up",
+    "aliases": ["C2B Pull-Up", "High Pull-Up"],
+    "modality": "strength",
+    "equipment": ["pull-up-bar", "bodyweight"],
+    "primaryMuscles": ["lats"],
+    "secondaryMuscles": ["biceps", "rhomboids", "rear-delts", "forearms", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "false-grip-hang",
+    "name": "False Grip Hang / False Grip Pull-Up",
+    "aliases": ["False Grip Hang", "False Grip Pull-Up", "Muscle-Up Grip Hang"],
+    "modality": "strength",
+    "equipment": ["suspension", "pull-up-bar", "bodyweight"],
+    "primaryMuscles": ["forearms", "lats"],
+    "secondaryMuscles": ["biceps", "traps", "front-delts"],
+    "laterality": "bilateral",
+    "metrics": ["time", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "typewriter-pull-up",
+    "name": "Typewriter Pull-Up",
+    "aliases": ["Side-to-Side Pull-Up"],
+    "modality": "strength",
+    "equipment": ["pull-up-bar", "bodyweight"],
+    "primaryMuscles": ["lats", "biceps"],
+    "secondaryMuscles": ["forearms", "rhomboids", "obliques"],
+    "laterality": "unilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "german-hang",
+    "name": "German Hang",
+    "aliases": ["German Hang Stretch"],
+    "modality": "mobility",
+    "equipment": ["suspension", "bodyweight"],
+    "primaryMuscles": ["front-delts", "lats"],
+    "secondaryMuscles": ["pectorals", "triceps", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  }
+]

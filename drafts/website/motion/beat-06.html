@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cadence — beat 06 preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#EFEDE6; --card:#FBFAF5; --ink:#101010; --grn:#1B7F4B; --rust:#AF4A28;
+  --dim:#8A8A83; --rule:#B5B1A3; --edge:#D6D2C5;
+  --ease:cubic-bezier(.2,0,0,1);
+}
+body{background:#26262A;font-family:Archivo,sans-serif;color:#C9C7C0}
+
+/* ---------- preview chrome ---------- */
+.note{max-width:76ch;margin:0 auto;padding:44px 24px 0}
+.note h1{font-size:24px;font-weight:600;letter-spacing:-.02em;color:#fff;margin-bottom:10px}
+.note p{font-size:14px;line-height:1.6;margin-bottom:8px}
+.note .k{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8f8d86;letter-spacing:.08em}
+.runway{height:65vh;display:flex;align-items:center;justify-content:center}
+.runway span,.tail span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6d6b66;text-transform:uppercase}
+.tail{height:45vh;display:flex;align-items:center;justify-content:center}
+#replay{position:fixed;right:20px;bottom:20px;z-index:9;background:#1a1a1d;border:1px solid #4a4a4e;
+  color:#C9C7C0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;
+  padding:9px 16px;cursor:pointer;text-transform:uppercase}
+#replay:hover{border-color:#8f8d86;color:#fff}
+
+/* ---------- the beat ---------- */
+.scroller{overflow-x:auto}
+.beat{min-width:1380px;background:var(--cream);color:var(--ink);
+  min-height:100vh;display:flex;align-items:center;padding:48px 44px}
+.inner{display:flex;align-items:center;gap:44px;width:100%;max-width:1560px;margin:0 auto}
+
+.copy{width:380px;flex:none;opacity:0;transform:translateY(12px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.copy.in{opacity:1;transform:none}
+.copy .bn{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--dim);letter-spacing:.14em;margin-bottom:16px}
+.copy h2{font-size:40px;font-weight:600;letter-spacing:-.03em;line-height:1.05;margin-bottom:18px}
+.copy p{font-size:17px;line-height:1.55;color:#3c3c38;max-width:34ch}
+
+.stagearea{flex:1;min-width:0}
+.boardwrap{width:100%;position:relative}
+.mast{display:flex;justify-content:space-between;align-items:center}
+.mast h3{font-size:12px;font-weight:700;letter-spacing:.34em;text-transform:uppercase}
+.mast span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--dim)}
+.mast span b{color:var(--ink);font-weight:700}
+.rule2{border-bottom:2px solid var(--ink);margin:14px 0 0}
+.grid{display:grid;grid-template-columns:84px repeat(7,1fr)}
+.dh{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:10px 6px 11px;
+  border-right:1px dotted var(--rule);transition:background .6s var(--ease)}
+.dh b{display:block;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:10px;color:var(--dim);letter-spacing:0;margin-top:2px}
+.lbl{border-right:1px dotted var(--rule);padding:0 10px 0 0;display:flex;align-items:flex-start;justify-content:flex-end;
+  font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);line-height:54px}
+.cell{position:relative;border-right:1px dotted var(--rule);padding:0 5px;display:flex;flex-direction:column;gap:6px;
+  transition:background .6s var(--ease)}
+.grid>*:nth-child(8n){border-right:none}
+.gap{min-height:14px}
+.sp{height:9px;border-right:1px dotted var(--rule)}
+.sp:nth-child(8n){border-right:none}
+.warm{background:rgba(175,74,40,.055)}
+
+.ev{position:relative;height:54px;flex:none;background:var(--card);border:1px solid var(--edge);
+    padding:4px 16px 4px 10px;display:flex;flex-direction:column;overflow:hidden;
+    transition:opacity .45s var(--ease)}
+.ev::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px}
+.ev.meal::before{background:var(--ink)}
+.ev.snack::before{background:var(--rust)}
+.ev.out::before{background:var(--grn)}
+.ev .n{font-size:8.5px;font-weight:700;line-height:1.2;letter-spacing:0;text-transform:uppercase;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  overflow-wrap:break-word;height:20px}
+.ev.snack .n{color:var(--rust)}
+.ev.out .n{color:var(--grn)}
+.ev .kc{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;letter-spacing:-.03em;margin-top:3px;line-height:1;
+  font-variant-numeric:tabular-nums}
+.ev .mc{font-family:'IBM Plex Mono',monospace;font-size:8px;color:var(--dim);margin-top:2px;line-height:1;white-space:nowrap}
+.ev.ghost{visibility:hidden}
+.ev.ghost.on{visibility:visible}
+.ev.gone{opacity:0}
+
+/* checkboxes: appear only when checked */
+.cbx{position:absolute;right:5px;top:50%;transform:translateY(-50%);width:8px;height:8px;
+  border:1px solid var(--grn);background:var(--grn);opacity:0;transition:opacity .3s var(--ease)}
+.cbx.ck{opacity:1}
+
+/* expanded brunch card */
+.exp{position:absolute;z-index:5;background:var(--card);border:1px solid var(--edge);
+  overflow:hidden;padding:6px 9px 6px 13px;transition:height .55s var(--ease),width .55s var(--ease)}
+.exp::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--grn)}
+.exp .xh,.exp .xr{display:grid;grid-template-columns:1fr 44px 34px;column-gap:8px;align-items:baseline}
+.exp .xh{padding-bottom:6px}
+.exp .xn{font-size:8.5px;font-weight:700;text-transform:uppercase;color:var(--grn)}
+.exp .xh b{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;letter-spacing:-.03em;
+  text-align:right;font-variant-numeric:tabular-nums}
+.exp .xr{padding:5px 0;border-top:1px dotted var(--rule);
+  font-size:8px;font-weight:700;text-transform:uppercase;line-height:1.25;
+  opacity:0;transform:translateY(4px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.exp .xr.in{opacity:1;transform:none}
+.exp .xr b{font-family:'IBM Plex Mono',monospace;font-size:8px;font-weight:500;color:var(--dim);
+  white-space:nowrap;text-align:right;font-variant-numeric:tabular-nums}
+
+/* footer table */
+.foot{margin-top:18px;border-top:5px solid var(--ink)}
+.tbl{display:grid;grid-template-columns:118px repeat(4,1fr);width:100%}
+.tbl>div{padding:7px 14px;border-right:1px dotted var(--rule);border-bottom:1px dotted var(--rule);
+  font-family:'IBM Plex Mono',monospace;font-size:14px;font-variant-numeric:tabular-nums;
+  text-align:right;letter-spacing:-.01em;line-height:1.2}
+.tbl>div:nth-child(5n){border-right:none}
+.tbl>div:nth-last-child(-n+5){border-bottom:none}
+.tbl>div.hd{font-family:Archivo,sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dim);padding-top:11px;padding-bottom:8px}
+.tbl>div.rl{font-family:Archivo,sans-serif;font-size:9px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;text-align:left;padding-left:0;color:var(--ink)}
+.tbl>div.rl.q{color:var(--dim)}
+.tbl .r-avg{font-weight:700;color:var(--ink)}
+.tbl .r-tgt{color:var(--dim)}
+.tbl .r-dif{font-weight:600;transition:color .3s var(--ease)}
+.tbl .r-dif.ok{color:var(--grn)}
+.tbl .r-dif.off{color:var(--rust)}
+
+/* chat */
+.chat{margin-top:20px;opacity:0;transition:opacity .45s var(--ease)}
+.chat.in{opacity:1}
+.transcript{min-height:66px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.msg{display:grid;grid-template-columns:96px 1fr;padding:7px 0;border-bottom:1px dotted var(--rule);
+  opacity:0;transform:translateY(14px);transition:opacity .28s var(--ease),transform .28s var(--ease)}
+.msg.in{opacity:1;transform:none}
+.msg:last-child{border-bottom:none}
+.msg .wl{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.18em;
+  color:var(--dim);text-transform:uppercase;padding-top:3px}
+.msg.cad .wl{color:var(--grn)}
+.msg .tx{font-size:13px;line-height:1.4}
+.msg.cad .tx{color:#3c3c38}
+.dots span{display:inline-block;width:4px;height:4px;background:var(--dim);margin-right:4px;
+  animation:dot 1s infinite var(--ease)}
+.dots span:nth-child(2){animation-delay:.15s}
+.dots span:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,100%{opacity:.25}40%{opacity:1}}
+.inputrow{display:grid;grid-template-columns:96px 1fr;padding:7px 0 2px;border-top:2px solid var(--ink)}
+.inputrow .wl{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.18em;
+  color:var(--dim);text-transform:uppercase;padding-top:3px}
+.inputrow .tx{position:relative;font-size:13px;line-height:1.4;min-height:19px}
+.inputrow .ph{position:absolute;left:0;top:0;color:var(--rule)}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition-duration:0s !important;transition-delay:0s !important;animation:none !important}
+}
+</style></head><body>
+
+<div class="note">
+  <h1>Beat 06 — And when Saturday wasn't planned?</h1>
+  <p><span class="k">SEQUENCE&nbsp;</span> the week gets lived: Monday through Friday check off in a sweep, Dinner with Sam included → the brunch message arrives whole → one Brunch card lands on Saturday, already checked, and expands into its four parsed items → the damage: the averages blow past target, Saturday takes a warm tint, held uncorrected → the repair: the rest of the weekend moves. Lighter dinners, a smaller salmon, one snack steps aside. The week settles back inside its band.</p>
+  <p><span class="k">MONDAY&nbsp;</span> sits at the far left the entire time, untouched. Loops with a long pause.</p>
+  <p><span class="k">TRIGGER&nbsp;</span> fires once at 40% viewport, plays through, re-arms if you scroll fully out. Replay bottom right.</p>
+</div>
+<div class="runway"><span>scroll — beat arms on intersection</span></div>
+
+<div class="scroller">
+<section class="beat" id="beat">
+  <div class="inner">
+    <div class="copy" id="copy">
+      <div class="bn">06</div>
+      <h2>And when Saturday wasn't planned?</h2>
+      <p>The rest of the weekend moves. No guilt math, no starting over Monday.</p>
+    </div>
+    <div class="stagearea">
+      <div class="boardwrap" id="boardwrap">
+        <div class="mast"><h3>Cadence</h3><span>04–10 JUL 2026 · <b>FAT LOSS</b> · <b>HIGH PROTEIN</b></span></div>
+        <div class="rule2"></div>
+        <div class="grid" id="grid"></div>
+        <div class="foot"><div class="tbl" id="tbl"></div></div>
+        <div class="chat" id="chat">
+          <div class="transcript" id="transcript"></div>
+          <div class="inputrow">
+            <div class="wl">You</div>
+            <div class="tx"><span class="ph" id="ph">Message Cadence</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="tail"><span>the close continues here — same rhythm next week</span></div>
+<button id="replay">Replay</button>
+
+<script>
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const EASE = p => 1 - Math.pow(1 - p, 3);
+
+/* ---------- fixtures ---------- */
+const DAYS=[['MON',4],['TUE',5],['WED',6],['THU',7],['FRI',8],['SAT',9],['SUN',10]];
+const ROWKEYS=['Breakfast','Morning','Lunch','Afternoon','Dinner','Evening'];
+const ROWS=[
+  {label:'Breakfast',meal:true},{label:'',meal:false},
+  {label:'Lunch',meal:true},{label:'',meal:false},
+  {label:'Dinner',meal:true},{label:'',meal:false}
+];
+const TGT={k:1900,p:150,c:185,f:62};
+const P=[
+ {Breakfast:[['Greek yogurt bowl',420,35,44,12,'meal']],
+  Morning:[['Cold brew',120,2,18,4,'out']],
+  Lunch:[['Chicken shawarma bowl',620,48,58,20,'meal']],
+  Afternoon:[['Protein shake',180,30,12,3,'snack']],
+  Dinner:[['Salmon and rice',640,48,62,22,'meal']], Evening:[]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']],
+  Afternoon:[['Protein bar and apple',240,20,30,6,'snack']],
+  Dinner:[['Steak and sweet potato',690,55,55,26,'meal']], Evening:[]},
+ {Breakfast:[['Eggs and sourdough',450,28,40,18,'meal']],
+  Morning:[['Cold brew',120,2,18,4,'out']],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']], Afternoon:[],
+  Dinner:[['Chicken shawarma bowl',620,48,58,20,'meal']], Evening:[]},
+ {Breakfast:[['Greek yogurt bowl',420,35,44,12,'meal']], Morning:[],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']], Afternoon:[],
+  Dinner:[['Salmon and rice',740,52,70,26,'meal']], Evening:[]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Chicken salad',480,44,24,24,'meal']], Afternoon:[],
+  Dinner:[['Dinner with Sam',1100,35,90,48,'out']], Evening:[]},
+ {Breakfast:[['Eggs and avocado toast',480,26,38,24,'meal']], Morning:[],
+  Lunch:[['Leftover chili',520,42,44,18,'meal']], Afternoon:[],
+  Dinner:[['Steak and sweet potato',700,55,56,26,'meal']],
+  Evening:[['Glass of wine',125,0,4,0,'out']]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Chicken shawarma bowl',620,48,58,20,'meal']],
+  Afternoon:[['Greek yogurt',230,26,18,4,'snack']],
+  Dinner:[['Salmon and rice',640,48,62,22,'meal']],
+  Evening:[['Kombucha',60,0,14,0,'out']]}
+];
+const SAT=5, SUN=6;
+const BRUNCH=['Brunch',1190,36,120,44,'out'];
+const BRUNCH_DETAILS=[['Ham and cheese omelette',420,24],['Breakfast potatoes',210,4],
+  ['Pancakes with syrup ×2',440,8],['Mimosa',120,0]];
+const MSG='just had a ham and cheese omelette, some breakfast potatoes, 2 pancakes with syrup, and a mimosa at brunch';
+const REPLY='Logged. Rebalancing the weekend.';
+const CAD_SPEED=22;
+/* the repair: [cardId, replacement item] — plus the salmon portions down, the yogurt steps aside */
+const CHILI_SAT=['Leftover chili',520,42,44,18,'meal'];
+const STEAK_SAT=['Steak and sweet potato',700,55,56,26,'meal'];
+const SHAW_SUN=['Chicken shawarma bowl',620,48,58,20,'meal'];
+const SALMON_SUN=['Salmon and rice',640,48,62,22,'meal'];
+const R_SALAD=['Big chicken salad',290,30,20,4,'meal'];
+const R_CHICK=['Grilled chicken and greens',390,45,12,12,'meal'];
+const R_SHAW=['Shawarma salad',450,42,28,6,'meal'];
+const R_SALMON=['Salmon and rice',520,40,50,12,'meal'];
+
+/* ---------- board ---------- */
+function evHTML(m){return `<div class="n">${m[0]}</div><div class="kc">${m[1].toLocaleString()}</div><div class="mc">${m[2]}P&nbsp;&nbsp;${m[3]}C&nbsp;&nbsp;${m[4]}F</div><span class="cbx"></span>`;}
+const grid=document.getElementById('grid');
+let g=`<div class="dh"></div>`+DAYS.map((d,di)=>`<div class="dh" data-di="${di}">${d[0]}<b>${String(d[1]).padStart(2,'0')} JUL</b></div>`).join('');
+ROWS.forEach((r,ri)=>{
+  g+=`<div class="lbl${r.meal?'':' gap'}">${r.label}</div>`;
+  P.forEach((day,di)=>{
+    const items=day[ROWKEYS[ri]]||[];
+    g+=`<div class="cell${r.meal?'':' gap'}" data-di="${di}" id="c-${di}-${ri}">`;
+    items.forEach((m,ii)=>{g+=`<div class="ev ${m[5]}" id="v-${di}-${ri}-${ii}">${evHTML(m)}</div>`});
+    g+=`</div>`;
+  });
+  if(ri<ROWS.length-1) g+=`<div class="sp"></div>`.repeat(8);
+});
+grid.innerHTML=g;
+/* ghost brunch card, Saturday late morning */
+{
+  const c=document.createElement('div');
+  c.className='ev out ghost';c.id='x-brunch';
+  c.innerHTML=evHTML(BRUNCH);
+  c.querySelector('.cbx').classList.add('ck');
+  document.getElementById('c-5-1').appendChild(c);
+}
+
+/* ---------- averages ---------- */
+const COLS=[['Calories','k',''],['Protein','p',' g'],['Carbs','c',' g'],['Fat','f',' g']];
+const S={k:0,p:0,c:0,f:0};
+P.forEach(day=>ROWKEYS.forEach(rk=>(day[rk]||[]).forEach(m=>{S.k+=m[1];S.p+=m[2];S.c+=m[3];S.f+=m[4]})));
+function avgOf(s){return {k:Math.round(s.k/7),p:Math.round(s.p/7),c:Math.round(s.c/7),f:Math.round(s.f/7)}}
+function plus(a,m,sign){return {k:a.k+sign*m[1],p:a.p+sign*m[2],c:a.c+sign*m[3],f:a.f+sign*m[4]}}
+let sDmg=plus(S,BRUNCH,1);
+let sFix={...sDmg};
+[[CHILI_SAT,R_SALAD],[STEAK_SAT,R_CHICK],[SHAW_SUN,R_SHAW],[SALMON_SUN,R_SALMON]].forEach(([o,n])=>{
+  sFix=plus(plus(sFix,o,-1),n,1);
+});
+sFix=plus(sFix,['Greek yogurt',230,26,18,4],-1);
+const AVG0=avgOf(S), AVG_DMG=avgOf(sDmg), AVG_FIX=avgOf(sFix);
+
+const tbl=document.getElementById('tbl');
+let cur={...AVG0}, raf=[];
+tbl.innerHTML =
+  `<div class="hd"></div>`+COLS.map(c=>`<div class="hd">${c[0]}</div>`).join('')+
+  `<div class="rl">Daily average</div>`+COLS.map(c=>`<div class="r-avg" id="a-${c[1]}" data-suf="${c[2]}">${AVG0[c[1]].toLocaleString()}${c[2]}</div>`).join('')+
+  `<div class="rl q">Target</div>`+COLS.map(c=>`<div class="r-tgt">${TGT[c[1]].toLocaleString()}${c[2]}</div>`).join('')+
+  `<div class="rl q">Difference</div>`+COLS.map(c=>`<div class="r-dif" id="d-${c[1]}" data-suf="${c[2]}"></div>`).join('');
+function paintDiff(key,dv){
+  const d=document.getElementById('d-'+key);
+  d.textContent=(dv>0?'+':(dv<0?'−':''))+Math.abs(dv)+(d.dataset.suf||'');
+  d.classList.toggle('ok',dv<=0);
+  d.classList.toggle('off',dv>0);
+}
+function tweenEl(el,from,to,dur,fmt){
+  if(REDUCED||dur===0){fmt(to);return;}
+  const t0=performance.now();
+  function step(t){
+    const p=Math.min(1,(t-t0)/dur);
+    fmt(Math.round(from+(to-from)*EASE(p)));
+    if(p<1) raf.push(requestAnimationFrame(step));
+  }
+  raf.push(requestAnimationFrame(step));
+}
+function setAvgTo(target,dur){
+  ['k','p','c','f'].forEach((key,i)=>setTimeout(()=>{
+    const el=document.getElementById('a-'+key), suf=el.dataset.suf;
+    tweenEl(el,cur[key],target[key],dur,v=>{el.textContent=v.toLocaleString()+suf;paintDiff(key,v-TGT[key])});
+    setTimeout(()=>{cur[key]=target[key]},dur);
+  },i*60));
+}
+['k','p','c','f'].forEach(key=>paintDiff(key,AVG0[key]-TGT[key]));
+
+/* ---------- chat ---------- */
+const transcript=document.getElementById('transcript');
+function addMsg(who,html){
+  const d=document.createElement('div');
+  d.className='msg'+(who==='cad'?' cad':'');
+  d.innerHTML=`<div class="wl">${who==='cad'?'Cadence':'You'}</div><div class="tx">${html}</div>`;
+  transcript.appendChild(d);
+  if(REDUCED){d.classList.add('in');return d;}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>d.classList.add('in')));
+  return d;
+}
+function dotsHTML(){return `<span class="dots"><span></span><span></span><span></span></span>`;}
+
+/* ---------- pieces ---------- */
+const beat=document.getElementById('beat');
+let played=false, timers=[], expEl=null;
+function at(ms,fn){timers.push(setTimeout(fn,ms))}
+function checkDay(di,on){
+  document.querySelectorAll(`.cell[data-di="${di}"] .ev:not(.ghost)`).forEach((el,i)=>{
+    setTimeout(()=>el.querySelector('.cbx').classList.toggle('ck',on),on?i*80:0);
+  });
+}
+function setCardEl(el,it){
+  const wasCk=el.querySelector('.cbx').classList.contains('ck');
+  el.className=`ev ${it[5]}`;el.innerHTML=evHTML(it);
+  if(wasCk)el.querySelector('.cbx').classList.add('ck');
+}
+function swapCard(id,it){
+  const card=document.getElementById(id);
+  card.style.transition='opacity .25s var(--ease),transform .25s var(--ease)';
+  card.style.opacity=0;card.style.transform='translateY(6px)';
+  setTimeout(()=>{
+    setCardEl(card,it);
+    card.style.opacity=0;card.style.transform='translateY(-8px)';
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      card.style.transition='opacity .35s var(--ease),transform .35s var(--ease)';
+      card.style.opacity=1;card.style.transform='none';
+    }));
+  },280);
+}
+function portionDown(id,fromK,it){
+  const card=document.getElementById(id);
+  const kc=card.querySelector('.kc');
+  tweenEl(kc,fromK,it[1],700,v=>{kc.textContent=v.toLocaleString()});
+  setTimeout(()=>{
+    card.querySelector('.mc').innerHTML=`${it[2]}P&nbsp;&nbsp;${it[3]}C&nbsp;&nbsp;${it[4]}F`;
+  },700);
+}
+function expandBrunch(){
+  const wrap=document.getElementById('boardwrap');
+  const card=document.getElementById('x-brunch');
+  const wr=wrap.getBoundingClientRect(), r=card.getBoundingClientRect();
+  expEl=document.createElement('div');
+  expEl.className='exp';
+  expEl.innerHTML=`<div class="xh"><span class="xn">Brunch</span><b>1,190</b><b>36P</b></div>`+
+    BRUNCH_DETAILS.map(d=>`<div class="xr"><span>${d[0]}</span><b>${d[1]}</b><b>${d[2]}P</b></div>`).join('');
+  const fw=Math.round(r.width*1.8);
+  expEl.style.left=(r.left-wr.left)+'px';
+  expEl.style.top=(r.top-wr.top)+'px';
+  wrap.appendChild(expEl);
+  expEl.style.width=fw+'px';expEl.style.height='auto';
+  const full=expEl.offsetHeight;
+  expEl.style.width=r.width+'px';expEl.style.height=r.height+'px';
+  void expEl.offsetWidth;
+  card.style.visibility='hidden';
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    expEl.style.height=full+'px';expEl.style.width=fw+'px';
+  }));
+  expEl.querySelectorAll('.xr').forEach((row,i)=>setTimeout(()=>row.classList.add('in'),420+i*180));
+}
+function collapseBrunch(){
+  if(!expEl) return;
+  expEl.querySelectorAll('.xr').forEach(row=>row.classList.remove('in'));
+  expEl.style.height='54px';
+  const card=document.getElementById('x-brunch');
+  const e=expEl;expEl=null;
+  setTimeout(()=>{e.remove();card.style.visibility='';},580);
+}
+function warmSat(on){
+  document.querySelectorAll(`.cell[data-di="${SAT}"],.dh[data-di="${SAT}"]`).forEach(el=>el.classList.toggle('warm',on));
+}
+
+/* ---------- sequence ---------- */
+function cycle(){
+  let t=0;
+  /* the week gets lived: monday through friday check off */
+  [0,1,2,3,4].forEach(di=>at(t+di*300,()=>checkDay(di,true)));
+  t+=5*300+700;
+  /* the message arrives whole */
+  at(t,()=>addMsg('you',MSG));
+  t+=800;
+  let rm;
+  at(t,()=>{rm=addMsg('cad',dotsHTML())});
+  t+=900;
+  /* the card lands, already checked; cadence replies */
+  at(t,()=>{
+    rm.querySelector('.tx').textContent='';
+    REPLY.split('').forEach((ch,i)=>setTimeout(()=>{rm.querySelector('.tx').textContent=REPLY.slice(0,i+1)},i*CAD_SPEED));
+    const card=document.getElementById('x-brunch');
+    card.classList.add('on');
+    card.style.opacity=0;card.style.transform='translateY(8px)';
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      card.style.transition='opacity .35s var(--ease),transform .35s var(--ease)';
+      card.style.opacity=1;card.style.transform='none';
+    }));
+  });
+  /* it opens into what was actually eaten */
+  t+=700;
+  at(t,expandBrunch);
+  /* the damage, held uncorrected */
+  t+=900;
+  at(t,()=>{setAvgTo(AVG_DMG,800);warmSat(true);});
+  t+=2600;
+  /* the repair: the rest of the weekend moves */
+  at(t,collapseBrunch);
+  t+=700;
+  at(t,()=>swapCard('v-5-2-0',R_SALAD));
+  at(t+350,()=>swapCard('v-5-4-0',R_CHICK));
+  at(t+700,()=>swapCard('v-6-2-0',R_SHAW));
+  at(t+1050,()=>portionDown('v-6-4-0',640,R_SALMON));
+  at(t+1400,()=>{const y=document.getElementById('v-6-3-0');y.classList.add('gone')});
+  at(t+500,()=>setAvgTo(AVG_FIX,1400));
+  at(t+2100,()=>warmSat(false));
+  /* settle, hold, then reset with a long pause */
+  t+=2100+4500;
+  at(t,()=>{
+    transcript.style.transition='opacity .4s var(--ease)';transcript.style.opacity=0;
+    for(let di=0;di<5;di++) checkDay(di,false);
+    const b=document.getElementById('x-brunch');
+    b.style.opacity=0;
+    setTimeout(()=>{b.classList.remove('on');b.style.cssText='';},400);
+    swapCard('v-5-2-0',CHILI_SAT);swapCard('v-5-4-0',STEAK_SAT);
+    swapCard('v-6-2-0',SHAW_SUN);
+    setCardEl(document.getElementById('v-6-4-0'),SALMON_SUN);
+    const y=document.getElementById('v-6-3-0');y.classList.remove('gone');
+    setAvgTo(AVG0,600);
+    setTimeout(()=>{transcript.innerHTML='';transcript.style.opacity=1;},450);
+  });
+  t+=5500; /* the long pause */
+  at(t,cycle);
+}
+function play(){
+  if(played) return; played=true;
+  if(REDUCED){
+    document.getElementById('copy').classList.add('in');
+    document.getElementById('chat').classList.add('in');
+    for(let di=0;di<5;di++) checkDay(di,true);
+    document.getElementById('x-brunch').classList.add('on');
+    addMsg('you',MSG);addMsg('cad',REPLY);
+    swapCard('v-5-2-0',R_SALAD);swapCard('v-5-4-0',R_CHICK);
+    swapCard('v-6-2-0',R_SHAW);
+    setCardEl(document.getElementById('v-6-4-0'),R_SALMON);
+    document.getElementById('v-6-3-0').classList.add('gone');
+    cur={...AVG_FIX};
+    ['k','p','c','f'].forEach(key=>{
+      document.getElementById('a-'+key).textContent=AVG_FIX[key].toLocaleString()+(key==='k'?'':' g');
+      paintDiff(key,AVG_FIX[key]-TGT[key]);
+    });
+    return;
+  }
+  at(0,()=>document.getElementById('copy').classList.add('in'));
+  at(300,()=>document.getElementById('chat').classList.add('in'));
+  at(1000,cycle);
+}
+function reset(){
+  timers.forEach(clearTimeout);timers=[];
+  raf.forEach(cancelAnimationFrame);raf=[];
+  played=false;
+  document.querySelectorAll('.cbx.ck').forEach(el=>{if(el.closest('#x-brunch'))return;el.classList.remove('ck')});
+  const b=document.getElementById('x-brunch');
+  b.classList.remove('on');b.style.cssText='';
+  if(expEl){expEl.remove();expEl=null}
+  setCardEl(document.getElementById('v-5-2-0'),CHILI_SAT);
+  setCardEl(document.getElementById('v-5-4-0'),STEAK_SAT);
+  setCardEl(document.getElementById('v-6-2-0'),SHAW_SUN);
+  setCardEl(document.getElementById('v-6-4-0'),SALMON_SUN);
+  document.querySelectorAll('#v-5-2-0 .cbx,#v-5-4-0 .cbx,#v-6-2-0 .cbx,#v-6-4-0 .cbx').forEach(el=>el.classList.remove('ck'));
+  document.getElementById('v-6-3-0').classList.remove('gone');
+  warmSat(false);
+  cur={...AVG0};
+  ['k','p','c','f'].forEach(key=>{
+    document.getElementById('a-'+key).textContent=AVG0[key].toLocaleString()+(key==='k'?'':' g');
+    paintDiff(key,AVG0[key]-TGT[key]);
+  });
+  transcript.innerHTML='';transcript.style.opacity=1;
+  document.getElementById('copy').classList.remove('in');
+  document.getElementById('chat').classList.remove('in');
+}
+new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.intersectionRatio>=.4 && !played) play();
+  else if(e.intersectionRatio===0 && played) reset();
+}),{threshold:[0,.4]}).observe(beat);
+document.getElementById('replay').addEventListener('click',()=>{
+  reset();
+  beat.scrollIntoView({behavior:'instant',block:'center'});
+  setTimeout(play,180);
+});
+</script>
+</body></html>

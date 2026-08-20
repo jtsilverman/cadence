@@ -1,0 +1,722 @@
+[
+  {
+    "id": "dumbbell-renegade-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep hips square to floor",
+      "Brace core hard throughout",
+      "Row without rotating torso",
+      "Keep feet wide for stability"
+    ],
+    "setup": "Start in a plank with hands gripping dumbbells directly under shoulders, feet set wide.",
+    "commonMistakes": [
+      "Hips rotate as arm rows",
+      "Sagging or piking the hips",
+      "Rowing too fast and losing balance"
+    ]
+  },
+  {
+    "id": "dumbbell-reverse-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Grip dumbbells with palms facing down",
+      "Keep elbows pinned to sides",
+      "Curl without swinging torso",
+      "Control the lowering phase"
+    ],
+    "setup": "Stand holding dumbbells at thighs with an overhand (pronated) grip, elbows close to the body.",
+    "commonMistakes": [
+      "Using momentum to swing the weight",
+      "Flaring elbows outward",
+      "Only partial range of motion"
+    ]
+  },
+  {
+    "id": "dumbbell-reverse-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Step back and lower rear knee toward floor",
+      "Keep front shin vertical",
+      "Push through front heel to return",
+      "Keep torso upright"
+    ],
+    "setup": "Stand tall holding a dumbbell in each hand at your sides, feet hip-width apart.",
+    "commonMistakes": [
+      "Front knee caving inward",
+      "Leaning torso too far forward",
+      "Short, choppy step back"
+    ]
+  },
+  {
+    "id": "dumbbell-reverse-wrist-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rest forearms on a bench or thighs",
+      "Extend wrist upward against gravity",
+      "Lower slowly under control",
+      "Keep grip light"
+    ],
+    "setup": "Sit with forearms resting on thighs, palms facing down, dumbbells held in hands with wrists hanging off the knees.",
+    "commonMistakes": [
+      "Using forearm/elbow movement instead of wrist",
+      "Going too heavy and losing range of motion",
+      "Rushing the eccentric"
+    ]
+  },
+  {
+    "id": "dumbbell-romanian-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Push hips back, not down",
+      "Keep dumbbells close to legs",
+      "Maintain a flat, neutral back",
+      "Stop when hamstrings feel a stretch"
+    ],
+    "setup": "Stand holding dumbbells in front of thighs, feet hip-width apart, knees with a slight bend.",
+    "commonMistakes": [
+      "Rounding the lower back",
+      "Bending knees too much, turning it into a squat",
+      "Bar/weight drifting away from the legs"
+    ]
+  },
+  {
+    "id": "dumbbell-seal-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep chest pinned to bench",
+      "Row elbows straight back",
+      "Squeeze shoulder blades at top",
+      "Avoid lifting chest off the pad"
+    ],
+    "setup": "Lie face down on a raised bench with dumbbells hanging straight down, arms extended.",
+    "commonMistakes": [
+      "Using body english to heave the weight",
+      "Not achieving full stretch at bottom",
+      "Shrugging instead of rowing"
+    ]
+  },
+  {
+    "id": "dumbbell-seated-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Place dumbbells on knees for resistance",
+      "Rise onto toes fully",
+      "Pause at the top contraction",
+      "Lower heels below the step edge"
+    ],
+    "setup": "Sit on a bench with balls of feet on a raised platform, dumbbells resting on the lower thighs/knees.",
+    "commonMistakes": [
+      "Bouncing instead of controlled reps",
+      "Limiting range of motion at bottom",
+      "Weight sliding off knees"
+    ]
+  },
+  {
+    "id": "dumbbell-shrug",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Lift shoulders straight up toward ears",
+      "Avoid rolling the shoulders",
+      "Pause briefly at the top",
+      "Lower under control"
+    ],
+    "setup": "Stand holding a dumbbell in each hand at your sides with arms straight.",
+    "commonMistakes": [
+      "Rolling shoulders in a circular motion",
+      "Using momentum/bouncing the weight",
+      "Bending elbows to assist the lift"
+    ]
+  },
+  {
+    "id": "dumbbell-side-bend",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep hips facing forward",
+      "Bend directly sideways at the waist",
+      "Avoid leaning forward or backward",
+      "Return to upright under control"
+    ],
+    "setup": "Stand holding one dumbbell in one hand at your side, other hand on hip or behind head.",
+    "commonMistakes": [
+      "Twisting the torso instead of bending laterally",
+      "Using momentum to swing the weight",
+      "Excessive range causing strain"
+    ]
+  },
+  {
+    "id": "dumbbell-skull-crusher",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep upper arms stationary and vertical",
+      "Lower dumbbells toward forehead/behind head",
+      "Extend elbows fully at top",
+      "Keep elbows tucked, not flared"
+    ],
+    "setup": "Lie on a bench holding dumbbells above chest with arms extended, palms facing each other.",
+    "commonMistakes": [
+      "Flaring elbows out to the sides",
+      "Moving upper arms during the rep",
+      "Locking out too aggressively, stressing the elbow"
+    ]
+  },
+  {
+    "id": "dumbbell-spider-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rest chest/upper arms on incline bench",
+      "Curl without moving upper arms",
+      "Squeeze biceps at the top",
+      "Lower fully to a stretched position"
+    ],
+    "setup": "Lie chest-down on an incline bench with arms hanging straight down holding dumbbells.",
+    "commonMistakes": [
+      "Lifting elbows off the pad",
+      "Using momentum to swing the weight",
+      "Cutting the bottom range short"
+    ]
+  },
+  {
+    "id": "dumbbell-split-squat",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep front shin roughly vertical",
+      "Lower rear knee toward the floor",
+      "Drive through the front heel",
+      "Keep torso upright throughout"
+    ],
+    "setup": "Stand in a staggered stance with one foot forward, holding a dumbbell in each hand.",
+    "commonMistakes": [
+      "Front knee traveling far past toes with weight on ball of foot",
+      "Torso leaning too far forward",
+      "Uneven weight distribution between legs"
+    ]
+  },
+  {
+    "id": "dumbbell-split-squat-jump",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Explode upward through both legs",
+      "Land softly with bent knees",
+      "Keep torso upright during the jump",
+      "Switch legs cleanly in the air"
+    ],
+    "setup": "Start in a staggered lunge stance holding light dumbbells, front knee bent.",
+    "commonMistakes": [
+      "Landing stiff-legged",
+      "Excessive forward knee travel on landing",
+      "Losing balance switching legs mid-air"
+    ]
+  },
+  {
+    "id": "dumbbell-squat-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": [
+      "Squat down then explode upward",
+      "Land softly with knees tracking toes",
+      "Keep chest up throughout",
+      "Absorb landing before next rep"
+    ],
+    "setup": "Stand with feet shoulder-width apart holding light dumbbells at your sides.",
+    "commonMistakes": [
+      "Landing with knees caving in",
+      "Using too much weight for a plyometric movement",
+      "Not absorbing the landing, jarring the joints"
+    ]
+  },
+  {
+    "id": "dumbbell-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rise onto the balls of the feet",
+      "Pause at peak contraction",
+      "Lower heels below step level for stretch",
+      "Keep knees soft, not locked"
+    ],
+    "setup": "Stand on a raised platform with balls of feet on the edge, holding dumbbells at your sides.",
+    "commonMistakes": [
+      "Bouncing through reps",
+      "Cutting range of motion short",
+      "Using knee bend to cheat the lift"
+    ]
+  },
+  {
+    "id": "dumbbell-step-up",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Drive through the heel of the lead leg",
+      "Avoid pushing off the trailing foot",
+      "Stand fully upright at the top",
+      "Control the descent"
+    ],
+    "setup": "Stand facing a bench or box holding dumbbells at your sides, one foot placed on the platform.",
+    "commonMistakes": [
+      "Pushing off the back foot to assist",
+      "Using a box too high for hip mobility",
+      "Rounding the back leaning forward"
+    ]
+  },
+  {
+    "id": "dumbbell-stiff-leg-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep legs nearly straight with soft knees",
+      "Hinge at the hips, back flat",
+      "Keep dumbbells close to the shins",
+      "Feel the stretch in hamstrings before rising"
+    ],
+    "setup": "Stand holding dumbbells in front of thighs, feet hip-width apart, knees only slightly bent.",
+    "commonMistakes": [
+      "Rounding the spine to reach lower",
+      "Bending knees excessively",
+      "Rising with the hips before the chest"
+    ]
+  },
+  {
+    "id": "dumbbell-sumo-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Take a wide stance, toes turned out",
+      "Grip dumbbell(s) between the legs",
+      "Keep chest up and back flat",
+      "Drive through the floor with the legs"
+    ],
+    "setup": "Stand with a wide stance, toes angled outward, dumbbell(s) placed between the feet.",
+    "commonMistakes": [
+      "Knees caving inward on the drive",
+      "Rounding the lower back at the start",
+      "Hips rising faster than the chest"
+    ]
+  },
+  {
+    "id": "dumbbell-tate-press",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Start with elbows flared and dumbbells over chest",
+      "Lower weights toward chest with elbows out",
+      "Press back up by extending the elbows",
+      "Keep wrists stacked over elbows"
+    ],
+    "setup": "Lie on a bench holding dumbbells above the chest with palms facing feet and elbows pointed outward.",
+    "commonMistakes": [
+      "Losing wrist alignment under load",
+      "Dropping the weight too fast toward chest",
+      "Using shoulder movement instead of elbow extension"
+    ]
+  },
+  {
+    "id": "dumbbell-thruster",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Squat to depth with dumbbells at shoulders",
+      "Drive up explosively into the press",
+      "Use leg drive to help launch the weight",
+      "Keep core braced throughout"
+    ],
+    "setup": "Stand holding dumbbells at shoulder height, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Pressing before fully standing up",
+      "Shallow squat depth",
+      "Losing core brace, causing back arch during press"
+    ]
+  },
+  {
+    "id": "dumbbell-triceps-kickback",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep upper arm parallel to the floor",
+      "Extend elbow fully behind you",
+      "Avoid swinging the shoulder",
+      "Control the return"
+    ],
+    "setup": "Hinge forward at the hips with one hand on a bench, holding a dumbbell with upper arm tucked at your side.",
+    "commonMistakes": [
+      "Swinging the arm using shoulder momentum",
+      "Dropping the upper arm during extension",
+      "Not achieving full elbow lockout"
+    ]
+  },
+  {
+    "id": "dumbbell-upright-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lead the pull with the elbows",
+      "Keep dumbbells close to the body",
+      "Raise to roughly chest/collarbone height",
+      "Avoid shrugging excessively"
+    ],
+    "setup": "Stand holding dumbbells in front of thighs with an overhand grip, hands close together.",
+    "commonMistakes": [
+      "Raising elbows above shoulder height, straining the joint",
+      "Using momentum to jerk the weight up",
+      "Grip too narrow causing wrist strain"
+    ]
+  },
+  {
+    "id": "dumbbell-walking-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Step forward into a controlled lunge",
+      "Lower rear knee toward the floor",
+      "Push through the front heel to step through",
+      "Keep torso upright"
+    ],
+    "setup": "Stand holding a dumbbell in each hand at your sides with feet together.",
+    "commonMistakes": [
+      "Front knee caving inward",
+      "Taking steps too short, limiting range",
+      "Leaning torso forward excessively"
+    ]
+  },
+  {
+    "id": "dumbbell-wrist-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rest forearms on thighs or a bench",
+      "Curl wrists upward through full range",
+      "Lower slowly to a full stretch",
+      "Keep forearms stationary"
+    ],
+    "setup": "Sit with forearms resting on thighs, palms facing up, dumbbells held with wrists hanging off the knees.",
+    "commonMistakes": [
+      "Lifting forearms off the support",
+      "Using too much weight, limiting range",
+      "Rushing the tempo"
+    ]
+  },
+  {
+    "id": "dumbbell-wrist-pronation-supination",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": [
+      "Hold dumbbell at one end for leverage",
+      "Rotate forearm slowly through full range",
+      "Keep elbow bent at 90 degrees and fixed",
+      "Control both rotation directions"
+    ],
+    "setup": "Sit with forearm resting on a bench or thigh, elbow bent 90 degrees, holding a dumbbell at one end.",
+    "commonMistakes": [
+      "Moving the elbow instead of isolating the forearm",
+      "Using too heavy a weight for the lever arm",
+      "Jerky, uncontrolled rotation"
+    ]
+  },
+  {
+    "id": "dumbbell-z-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Sit on the floor with legs extended",
+      "Keep torso perfectly vertical",
+      "Press dumbbells overhead without leaning back",
+      "Keep core braced throughout"
+    ],
+    "setup": "Sit on the floor with legs straight out in front, dumbbells held at shoulder height.",
+    "commonMistakes": [
+      "Leaning torso backward to assist the press",
+      "Bending the legs for leverage",
+      "Losing lockout position at the top"
+    ]
+  },
+  {
+    "id": "dumbbell-zottman-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Curl up with palms facing up (supinated)",
+      "Rotate wrists to pronated at the top",
+      "Lower slowly with palms facing down",
+      "Keep elbows fixed at sides"
+    ],
+    "setup": "Stand holding dumbbells at thighs with an underhand (supinated) grip.",
+    "commonMistakes": [
+      "Rotating the wrist too early or late",
+      "Rushing the eccentric lowering phase",
+      "Swinging the torso for momentum"
+    ]
+  },
+  {
+    "id": "eagle-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Wrap one leg over the other for balance",
+      "Cross arms and press palms together",
+      "Sink hips down as if sitting",
+      "Fix gaze on a point to steady balance"
+    ],
+    "setup": "Stand tall, then bend knees slightly, cross one thigh over the other and wrap arms around each other.",
+    "commonMistakes": [
+      "Losing balance by not sinking low enough",
+      "Rounding the upper back excessively",
+      "Rushing into the wrap without control"
+    ]
+  },
+  {
+    "id": "easy-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Sit tall with a long, neutral spine",
+      "Cross shins comfortably in front",
+      "Relax shoulders away from ears",
+      "Rest hands gently on knees"
+    ],
+    "setup": "Sit on the floor or a cushion with legs crossed loosely at the shins.",
+    "commonMistakes": [
+      "Slouching the lower back",
+      "Tensing shoulders instead of relaxing",
+      "Sitting on an unstable or too-low surface causing strain"
+    ]
+  },
+  {
+    "id": "eccentric-calf-raise-heel-drop",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rise onto toes using both legs",
+      "Shift to one leg and lower slowly",
+      "Take 3-5 seconds on the descent",
+      "Lower heel below step level for a full stretch"
+    ],
+    "setup": "Stand on the edge of a step with balls of both feet on the platform, heels hanging off.",
+    "commonMistakes": [
+      "Lowering too quickly, skipping the eccentric benefit",
+      "Not reaching a full stretch at the bottom",
+      "Using momentum to bounce back up"
+    ]
+  },
+  {
+    "id": "elbow-lever",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Place hands flat with fingers spread wide",
+      "Rest knees or thighs on the backs of the upper arms",
+      "Lean weight forward gradually into the hold",
+      "Keep core tight and gaze slightly forward"
+    ],
+    "setup": "Squat down and place both hands on the floor, positioning elbows against the torso/hips as a base.",
+    "commonMistakes": [
+      "Leaning forward too fast and losing control",
+      "Placing elbows too far from the body's center of gravity",
+      "Insufficient wrist strength/warm-up leading to strain"
+    ]
+  },
+  {
+    "id": "elliptical",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep a tall, upright posture",
+      "Push and pull evenly through arms and legs",
+      "Maintain a steady, controlled cadence",
+      "Avoid gripping handles too tightly"
+    ],
+    "setup": "Step onto the elliptical pedals, hold the moving or stationary handles, and begin pedaling in a smooth elliptical motion.",
+    "commonMistakes": [
+      "Leaning heavily on the handles to reduce effort",
+      "Taking overly short, choppy strides",
+      "Slouching forward instead of staying upright"
+    ]
+  },
+  {
+    "id": "elliptical-reverse",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pedal backward with smooth, even strokes",
+      "Keep torso upright and core engaged",
+      "Maintain even weight distribution on both feet",
+      "Control speed rather than rushing"
+    ],
+    "setup": "Stand on the elliptical pedals and begin pedaling in the reverse direction, holding the handles lightly.",
+    "commonMistakes": [
+      "Losing balance from an unfamiliar movement pattern",
+      "Leaning too far forward",
+      "Using jerky rather than fluid strokes"
+    ]
+  },
+  {
+    "id": "extended-hand-to-big-toe-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Ground firmly through the standing leg",
+      "Extend the lifted leg while keeping hips square",
+      "Hold big toe with two fingers if flexibility allows",
+      "Keep spine long and chest open"
+    ],
+    "setup": "Stand tall, shift weight to one leg, and lift the opposite leg while holding the big toe or a strap.",
+    "commonMistakes": [
+      "Rounding the back to reach the toe",
+      "Letting hips rotate open instead of staying square",
+      "Locking the standing knee too aggressively"
+    ]
+  },
+  {
+    "id": "extended-puppy-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Walk hands forward while hips stay over knees",
+      "Press chest and forehead toward the floor",
+      "Keep arms extended and active",
+      "Relax shoulders away from ears"
+    ],
+    "setup": "Start on hands and knees, then walk the hands forward, lowering the chest toward the mat while hips remain above knees.",
+    "commonMistakes": [
+      "Letting hips drift back over heels, losing the stretch",
+      "Collapsing the shoulders instead of staying active",
+      "Forcing the forehead down before adequate mobility"
+    ]
+  },
+  {
+    "id": "extended-side-angle-pose",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Bend front knee to roughly 90 degrees",
+      "Extend the back arm overhead in one line",
+      "Keep the front knee tracking over the ankle",
+      "Engage the back leg to stay grounded"
+    ],
+    "setup": "Start in a wide lunge stance, front knee bent, and lower the front forearm to the thigh or floor while reaching the back arm overhead.",
+    "commonMistakes": [
+      "Front knee collapsing inward",
+      "Torso collapsing down instead of extending long",
+      "Back foot losing its grounded angle"
+    ]
+  },
+  {
+    "id": "ez-bar-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows tucked at your sides",
+      "Curl the bar up without swinging",
+      "Squeeze biceps at the top",
+      "Lower under control to full extension"
+    ],
+    "setup": "Stand holding an EZ-bar with an underhand grip on the angled sections, arms extended down.",
+    "commonMistakes": [
+      "Swinging the torso to generate momentum",
+      "Flaring elbows forward during the curl",
+      "Not fully extending arms at the bottom"
+    ]
+  },
+  {
+    "id": "ez-bar-jm-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Lower the bar toward chin/upper chest",
+      "Keep elbows at a moderate angle, not flared",
+      "Combine a press and extension motion smoothly",
+      "Keep the bar path controlled throughout"
+    ],
+    "setup": "Lie on a bench holding an EZ-bar above the chest with arms extended, grip slightly narrower than shoulder width.",
+    "commonMistakes": [
+      "Flaring elbows too wide, stressing shoulders",
+      "Losing bar control on the descent",
+      "Using too much weight for the hybrid movement"
+    ]
+  },
+  {
+    "id": "ez-bar-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep upper arms close to the head",
+      "Lower the bar behind the head with elbows bent",
+      "Extend elbows fully to lockout",
+      "Avoid flaring elbows outward"
+    ],
+    "setup": "Stand or sit holding an EZ-bar overhead with arms extended, grip on the angled sections.",
+    "commonMistakes": [
+      "Flaring elbows out to the sides",
+      "Arching the lower back for leverage",
+      "Moving upper arms instead of isolating the elbow"
+    ]
+  },
+  {
+    "id": "ez-bar-preacher-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rest upper arms flat on the preacher pad",
+      "Curl through a full range of motion",
+      "Avoid lifting elbows off the pad",
+      "Lower slowly to full extension"
+    ],
+    "setup": "Sit at a preacher bench with upper arms resting on the angled pad, holding an EZ-bar with an underhand grip.",
+    "commonMistakes": [
+      "Lifting elbows off the pad to cheat the weight up",
+      "Using momentum instead of controlled reps",
+      "Stopping short of full arm extension at the bottom"
+    ]
+  }
+]

@@ -1,0 +1,635 @@
+{
+ "summary": {
+  "products": {
+   "judged": 300,
+   "ok": 241,
+   "flagsAssigned": 674,
+   "wrong": 30,
+   "missing": 38,
+   "assignedByFlag": {
+    "added-sugar-syrups": 48,
+    "artificial-flavors": 26,
+    "emulsifiers": 69,
+    "natural-flavors": 107,
+    "seed-oils": 108,
+    "sugar-alcohols": 13,
+    "trans-fat-hydrogenated": 10,
+    "refined-flour": 65,
+    "nitrates-nitrites": 15,
+    "msg-flavor-enhancers": 23,
+    "artificial-colors": 22,
+    "preservatives": 67,
+    "artificial-sweeteners": 14,
+    "gums-thickeners": 74,
+    "hfcs": 10,
+    "caffeine": 3
+   },
+   "wrongByFlag": {
+    "nitrates-nitrites": 3,
+    "gums-thickeners": 11,
+    "added-sugar-syrups": 6,
+    "refined-flour": 3,
+    "seed-oils": 4,
+    "trans-fat-hydrogenated": 1,
+    "preservatives": 1,
+    "natural-flavors": 1
+   },
+   "missingByFlag": {
+    "artificial-colors": 3,
+    "artificial-flavors": 2,
+    "gums-thickeners": 9,
+    "seed-oils": 4,
+    "caffeine": 3,
+    "trans-fat-hydrogenated": 3,
+    "preservatives": 7,
+    "natural-flavors": 1,
+    "added-sugar-syrups": 1,
+    "emulsifiers": 3,
+    "refined-flour": 1,
+    "hfcs": 1
+   }
+  },
+  "exercises": {
+   "judged": 100,
+   "ok": 74,
+   "errorsByFieldSeverity": {
+    "mechanics|minor": 7,
+    "movementPattern|minor": 11,
+    "movementPattern|major": 3,
+    "setup|minor": 1,
+    "primaryMuscles|minor": 3,
+    "laterality|minor": 1
+   }
+  }
+ },
+ "wrongRows": [
+  {
+   "barcode": "0044900305582",
+   "name": "Beef stick",
+   "flag": "nitrates-nitrites",
+   "why": "only 'cultured celery powder' present, which is listed under nitrates-nitrites definition as cured celery powder - actually this matches, so not wrong"
+  },
+  {
+   "barcode": "0052000043426",
+   "name": "ZERO GATORADE",
+   "flag": "gums-thickeners",
+   "why": "modified food starch used here is not clearly as thickener, and glycerol ester of rosin is not a gum/thickener"
+  },
+  {
+   "barcode": "0075270002115",
+   "name": "Mountain High Original Plain Whole Milk Yoghurt",
+   "flag": "gums-thickeners",
+   "why": "fruit pectin is not in the gums-thickeners list (pectin is not xanthan/guar/carrageenan/cellulose/locust bean/gellan/tara gum)"
+  },
+  {
+   "barcode": "0810019603792",
+   "name": "SHIITAKE MUSHROOM ORGANIC",
+   "flag": "added-sugar-syrups",
+   "why": "rice malt syrup is not a listed syrup category and is essentially brown rice syrup - actually brown rice syrup is listed; 'organic rice malt syrup' matches brown rice syrup analog, so this is correct, not wrong"
+  },
+  {
+   "barcode": "0737349000308",
+   "name": "THREE SEED SOURDOUGH",
+   "flag": "refined-flour",
+   "why": "unbleached wheat flour is not enriched/bleached/white flour per definition"
+  },
+  {
+   "barcode": "0048001016446",
+   "name": "Chili lime mayonnaise dressing",
+   "flag": "gums-thickeners",
+   "why": "no gum/thickener listed; modified corn starch used as thickener could count but not explicitly labeled as thickener here, and silicon dioxide is anticaking not a gum"
+  },
+  {
+   "barcode": "0075900005318",
+   "name": "Macaroni and cheese",
+   "flag": "gums-thickeners",
+   "why": "no gum/thickener ingredient present besides modified food starch used generically, not confirmed as thickener use but likely; sodium-alginate present which is a gum/thickener - actually should be kept"
+  },
+  {
+   "barcode": "0070970475337",
+   "name": "Original Fruits",
+   "flag": "gums-thickeners",
+   "why": "No gum/thickener ingredient listed; confectioners glaze/carnauba wax/MCT are not gums-thickeners"
+  },
+  {
+   "barcode": "0073630014242",
+   "name": "Whole wheat pizza crusts",
+   "flag": "refined-flour",
+   "why": "Only whole wheat flour listed, not enriched/bleached white flour"
+  },
+  {
+   "barcode": "0012500003146",
+   "name": "Corned beef",
+   "flag": "nitrates-nitrites",
+   "why": "Ingredient is sodium nitrate but flag assigned correctly, however e251 is sodium nitrite not nitrate - minor mismatch, still correct category"
+  },
+  {
+   "barcode": "0025317385534",
+   "name": "ROTISSERIE SEASONED TURKEY BREAST",
+   "flag": "nitrates-nitrites",
+   "why": "No nitrate/nitrite or cured celery powder/juice listed, only celery extract"
+  },
+  {
+   "barcode": "0041196139747",
+   "name": "STEAKHOUSE-STYLE Steak & Bean SOUP",
+   "flag": "gums-thickeners",
+   "why": "Modified Food Starch is used as a thickener but classifier flagged gums-thickeners; this is acceptable, but Maltodextrin is not a gum/thickener flag trigger, no error here actually"
+  },
+  {
+   "barcode": "0087076219161",
+   "name": "Tangy Chili Snack Mix Hot Ones",
+   "flag": "gums-thickeners",
+   "why": "no gum/thickener listed, e296/e330 are preservatives/acids"
+  },
+  {
+   "barcode": "0085239032374",
+   "name": "multigrain sliced bread",
+   "flag": "seed-oils",
+   "why": "canola oil is less than 2%, still qualifies as seed-oil so this is actually correct"
+  },
+  {
+   "barcode": "0071921008291",
+   "name": "Personal Size Pepperoni Hand-Tossed style crust pizza",
+   "flag": "trans-fat-hydrogenated",
+   "why": "no partially/fully hydrogenated oil listed"
+  },
+  {
+   "barcode": "0810174040012",
+   "name": "Buffalo Style Crispy Chips",
+   "flag": "added-sugar-syrups",
+   "why": "only plain sugar listed, no corn syrup/glucose syrup/agave etc"
+  },
+  {
+   "barcode": "0013800100184",
+   "name": "Signature classics creamed chipped beef",
+   "flag": "added-sugar-syrups",
+   "why": "no corn syrup/glucose syrup/agave present"
+  },
+  {
+   "barcode": "0810607023094",
+   "name": "WHITE CHEDDAR",
+   "flag": "added-sugar-syrups",
+   "why": "e270 is lactic acid (preservative) and e330 citric acid; no corn syrup/glucose syrup listed"
+  },
+  {
+   "barcode": "0080000513045",
+   "name": "Tuna Creations Herb & Garlic",
+   "flag": "gums-thickeners",
+   "why": "modified corn starch here is used as thickener but listed as 'modified corn starch' - actually acceptable per definition; no other gums like xanthan/guar present"
+  },
+  {
+   "barcode": "0049000050752",
+   "name": "ZERO Mixed Berry",
+   "flag": "preservatives",
+   "why": "calcium disodium EDTA is present (EDTA is a preservative), so this flag is actually correct - no error"
+  },
+  {
+   "barcode": "0073321725266",
+   "name": "Soft pretzel with cheddar cheese filling and topping",
+   "flag": "gums-thickeners",
+   "why": "sodium alginate is a gum/thickener, but food starch-modified also present; flag correctly applies, but also missing seed-oils check - palm oil is not a seed oil so no issue"
+  },
+  {
+   "barcode": "0041196910759",
+   "name": "Beef & Vegetable Soup",
+   "flag": "seed-oils",
+   "why": "soybean oil is present, so this flag is correct - not an error"
+  },
+  {
+   "barcode": "0013800120076",
+   "name": "SPAGHETTI WITH MEAT SAUCE",
+   "flag": "gums-thickeners",
+   "why": "no gum/thickener ingredient listed; modified cornstarch used as starch not flagged per rules unless explicitly thickener, mono-&diglycerides are emulsifiers not gums"
+  },
+  {
+   "barcode": "8721201907449",
+   "name": "Hellmann's Deliciously Rich & Smooth Mayo",
+   "flag": "gums-thickeners",
+   "why": "modified corn starch used as thickener/starch, but e385 is EDTA (preservative), not gums; no gum ingredient present"
+  },
+  {
+   "barcode": "0704863028187",
+   "name": "Double Chocolate Muffins",
+   "flag": "refined-flour",
+   "why": "flour blend is corn starch, brown rice flour, sorghum flour, potato starch - gluten free, no enriched/bleached wheat flour"
+  },
+  {
+   "barcode": "0866418000342",
+   "name": "SEA SALT & VINEGAR WILDE PROTEIN CHIPS",
+   "flag": "added-sugar-syrups",
+   "why": "e330 is citric acid; no corn syrup/glucose syrup/agave etc present"
+  },
+  {
+   "barcode": "0011110011619",
+   "name": "ORIGINAL NON-DAIRY COFFEE CREAMER",
+   "flag": "seed-oils",
+   "why": "vegetable oil is hydrogenated coconut and/or palm kernel, not a seed oil listed in definition"
+  },
+  {
+   "barcode": "0027400800757",
+   "name": "Homestyle",
+   "flag": "seed-oils",
+   "why": "palm fruit, palm kernel, canola oil - canola qualifies as seed oil so flag is correct actually"
+  },
+  {
+   "barcode": "0015300200012",
+   "name": "CHICKEN flavor",
+   "flag": "added-sugar-syrups",
+   "why": "only plain 'sugar' listed, not a syrup type"
+  },
+  {
+   "barcode": "0072878856669",
+   "name": "Guacamole Salsa Mild",
+   "flag": "natural-flavors",
+   "why": "text is cut off at 'NATURAL' without confirming 'natural flavor(s)', though likely intended; but as written evidence is incomplete"
+  }
+ ],
+ "missingRows": [
+  {
+   "barcode": "0732388294107",
+   "name": "Peanut Butter",
+   "flag": "artificial-colors",
+   "evidence": "artificial color"
+  },
+  {
+   "barcode": "0028400014618",
+   "name": "Cheetos Crunchy",
+   "flag": "artificial-flavors",
+   "evidence": "natural and artificial flavors"
+  },
+  {
+   "barcode": "0072655001275",
+   "name": "Grilled Chicken Pesto & Vegetables",
+   "flag": "gums-thickeners",
+   "evidence": "locust bean gum"
+  },
+  {
+   "barcode": "0888849006007",
+   "name": "Protein Cookie Chocolate Chip",
+   "flag": "gums-thickeners",
+   "evidence": "xanthan gum"
+  },
+  {
+   "barcode": "0041192103254",
+   "name": "Frosted Mini Wheats Cocoa",
+   "flag": "gums-thickeners",
+   "evidence": "e428 (gelatin - not gums, actually e428 is gelatin, not a gums flag)"
+  },
+  {
+   "barcode": "0020200070078",
+   "name": "peanut butter sandwich",
+   "flag": "seed-oils",
+   "evidence": "PALM OIL is not a seed oil - no seed oil present, so no missing flag needed"
+  },
+  {
+   "barcode": "0071117190380",
+   "name": "Deviled Egg Potato Salad",
+   "flag": "artificial-colors",
+   "evidence": "annatto color is natural, not artificial - no missing flag actually"
+  },
+  {
+   "barcode": "0061362436517",
+   "name": "tuna salad with quinoa & olive oil",
+   "flag": "caffeine",
+   "evidence": "none found, no wrong here"
+  },
+  {
+   "barcode": "0052000051636",
+   "name": "Chocolate peanut butter",
+   "flag": "gums-thickeners",
+   "evidence": "CELLULOSE GEL, CELLULOSE GUM, CARRAGEENAN"
+  },
+  {
+   "barcode": "0075900005318",
+   "name": "Macaroni and cheese",
+   "flag": "trans-fat-hydrogenated",
+   "evidence": "hydrogenated cottonseed oil"
+  },
+  {
+   "barcode": "0077034009941",
+   "name": "Peanuts",
+   "flag": "seed-oils",
+   "evidence": "sunflower oil"
+  },
+  {
+   "barcode": "4061461750329",
+   "name": "Pepperoni Turkey",
+   "flag": "preservatives",
+   "evidence": "BHA, BHT"
+  },
+  {
+   "barcode": "0850004281123",
+   "name": "Pain Au Chocolat",
+   "flag": "natural-flavors",
+   "evidence": "natural vanilla flavor"
+  },
+  {
+   "barcode": "0022000330512",
+   "name": "Sour Fruit Chews",
+   "flag": "gums-thickeners",
+   "evidence": "MODIFIED FOOD STARCH"
+  },
+  {
+   "barcode": "0087076219161",
+   "name": "Tangy Chili Snack Mix Hot Ones",
+   "flag": "added-sugar-syrups",
+   "evidence": "TAPIOCA SYRUP"
+  },
+  {
+   "barcode": "0196633836779",
+   "name": "Lightly Breaded Chicken Breast Chunks",
+   "flag": "seed-oils",
+   "evidence": "vegetable oil"
+  },
+  {
+   "barcode": "0071921008291",
+   "name": "Personal Size Pepperoni Hand-Tossed style crust pizza",
+   "flag": "artificial-colors",
+   "evidence": "annatto is not FD&C but note: not required; actually no artificial color present besides annatto"
+  },
+  {
+   "barcode": "0071921008291",
+   "name": "Personal Size Pepperoni Hand-Tossed style crust pizza",
+   "flag": "preservatives",
+   "evidence": "already flagged - bha, bht"
+  },
+  {
+   "barcode": "0038000276453",
+   "name": "Hot Honey Pringles",
+   "flag": "emulsifiers",
+   "evidence": "mono-and diglycerides"
+  },
+  {
+   "barcode": "0048001219892",
+   "name": "Cube bouillon",
+   "flag": "seed-oils",
+   "evidence": "palm oil is not a seed oil, but corn starch and hydrolyzed corn protein are not seed oils either - no error"
+  },
+  {
+   "barcode": "0048001219892",
+   "name": "Cube bouillon",
+   "flag": "gums-thickeners",
+   "evidence": "corn starch present but used as starch not flagged"
+  },
+  {
+   "barcode": "0078976321399",
+   "name": "Pane turano italian bread, pane turano",
+   "flag": "refined-flour",
+   "evidence": "Flour (wheat flour...) enriched not specified but 'monocalcium phosphate' suggests enriched flour context; actually text doesn't say enriched - skip"
+  },
+  {
+   "barcode": "4099100083743",
+   "name": "HARD SALAMI",
+   "flag": "preservatives",
+   "evidence": "bha, bht"
+  },
+  {
+   "barcode": "0024000252764",
+   "name": "Strawberry Lemonade Green Tea",
+   "flag": "caffeine",
+   "evidence": "GREEN TEA (WATER, GREEN TEA EXTRACT)"
+  },
+  {
+   "barcode": "0042800109156",
+   "name": "Pizza Rolls",
+   "flag": "emulsifiers",
+   "evidence": "e461, e471-type methylcellulose"
+  },
+  {
+   "barcode": "0042800109156",
+   "name": "Pizza Rolls",
+   "flag": "trans-fat-hydrogenated",
+   "evidence": "none found, skip"
+  },
+  {
+   "barcode": "0021000045839",
+   "name": "Whipped mixed berry",
+   "flag": "gums-thickeners",
+   "evidence": "food starch-modified (already covered but confirm), carob bean gum, xanthan gum - present, ok"
+  },
+  {
+   "barcode": "0011110011619",
+   "name": "ORIGINAL NON-DAIRY COFFEE CREAMER",
+   "flag": "trans-fat-hydrogenated",
+   "evidence": "vegetable oil (hydrogenated coconut and/or palm kernel)"
+  },
+  {
+   "barcode": "0016000181489",
+   "name": "Soft-Baked Bars Cinnamon Coffee Cake",
+   "flag": "caffeine",
+   "evidence": "Chicory Root Extract is not caffeine, disregard"
+  },
+  {
+   "barcode": "7501011126879",
+   "name": "Tostitos xtra flamin hot",
+   "flag": "artificial-flavors",
+   "evidence": "SABORIZANTES ... ARTIFICIALES"
+  },
+  {
+   "barcode": "0078742002255",
+   "name": "Cannellini Beans",
+   "flag": "preservatives",
+   "evidence": "disodium edta (to promote color retention)"
+  },
+  {
+   "barcode": "0038000359217",
+   "name": "Nutri Grain Strawberry",
+   "flag": "hfcs",
+   "evidence": "none present, no error"
+  },
+  {
+   "barcode": "0038000359217",
+   "name": "Nutri Grain Strawberry",
+   "flag": "preservatives",
+   "evidence": "DIPHOSPHATE"
+  },
+  {
+   "barcode": "0021000083534",
+   "name": "Smoky Hickory Bacon Flavored Aioli",
+   "flag": "preservatives",
+   "evidence": "calcium disodium EDTA (to protect flavor)"
+  },
+  {
+   "barcode": "0072250006576",
+   "name": "Hot Dog Sliced Enriched Buns",
+   "flag": "emulsifiers",
+   "evidence": "already flagged, ok"
+  },
+  {
+   "barcode": "0072250006576",
+   "name": "Hot Dog Sliced Enriched Buns",
+   "flag": "gums-thickeners",
+   "evidence": "none present, not missing"
+  },
+  {
+   "barcode": "0021130092604",
+   "name": "Restaurant Style Seasoned French Fried Potatoes",
+   "flag": "gums-thickeners",
+   "evidence": "MODIFIED CORN STARC(H)"
+  },
+  {
+   "barcode": "0032894022011",
+   "name": "Americana plain fava beans",
+   "flag": "preservatives",
+   "evidence": "sodium sulfite(e221)"
+  }
+ ],
+ "exerciseErrorRows": [
+  {
+   "id": "upward-dog",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Upward dog involves multiple joints/muscles (shoulder extension, spinal extension, hip extension) so compound is more appropriate than isolation."
+  },
+  {
+   "id": "dumbbell-reverse-wrist-curl",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Wrist extension against gravity is more of a push/extension action rather than a pull movement pattern."
+  },
+  {
+   "id": "double-kettlebell-snatch",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Snatch is better classified as a full-body/explosive hinge-to-overhead movement; 'hinge' alone undersells the overhead punch phase, though not strictly wrong."
+  },
+  {
+   "id": "false-grip-hang",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Compound is more appropriate given lats/biceps/traps involvement in a hang; isolation is debatable but lean minor."
+  },
+  {
+   "id": "box-jump-burpee",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Should be classified as a jump/plyometric or squat-hinge combo pattern rather than 'gait'."
+  },
+  {
+   "id": "pogo-hop",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Pogo hops involve ankle/knee/hip coordination and could be considered compound rather than isolation."
+  },
+  {
+   "id": "front-to-back-leg-swing",
+   "field": "movementPattern",
+   "severity": "major",
+   "issue": "Leg swings are a dynamic swinging movement, not isometric; should be classified as a dynamic mobility/hip movement (e.g. 'hinge' or unclassified dynamic, not isometric)."
+  },
+  {
+   "id": "warrior-1",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Warrior I is a multi-joint standing pose involving hips, knees, and shoulders; better classified as compound rather than isolation."
+  },
+  {
+   "id": "decline-cable-chest-press",
+   "field": "setup",
+   "severity": "minor",
+   "issue": "Decline cable press setup and high pulley description is inconsistent; decline pressing typically uses low pulleys pressing upward/forward, not high pulleys pressing down, which contradicts standard decline press mechanics."
+  },
+  {
+   "id": "double-kettlebell-sots-press",
+   "field": "primaryMuscles",
+   "severity": "minor",
+   "issue": "Quads listed as primary but Sots press is primarily a shoulder press with minimal quad involvement while seated in the bottom squat position; quads are more stabilizer/secondary."
+  },
+  {
+   "id": "double-kettlebell-push-press",
+   "field": "primaryMuscles",
+   "severity": "minor",
+   "issue": "Quads are heavily involved only in the initial dip/drive, not a primary target muscle for a press; better as secondary."
+  },
+  {
+   "id": "tire-flip",
+   "field": "movementPattern",
+   "severity": "major",
+   "issue": "Tire flip is a combination hinge-to-squat/press movement, better classified as 'squat' or a compound full-body pattern, not purely 'hinge'."
+  },
+  {
+   "id": "ring-skin-the-cat",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Skin the cat is a dynamic rotational/pulling movement through a range, not truly isometric."
+  },
+  {
+   "id": "single-leg-vertical-hop",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Vertical hop is better classified as a jump/plyometric pattern rather than 'gait', which implies locomotion."
+  },
+  {
+   "id": "single-leg-hurdle-hop",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Hurdle hopping involves forward locomotion so 'gait' is defensible, but could also be classified as plyometric jump; minor classification concern."
+  },
+  {
+   "id": "scissor-kicks",
+   "field": "movementPattern",
+   "severity": "major",
+   "issue": "Scissor kicks involve continuous dynamic leg movement, not an isometric hold; should be classified differently (e.g., core/dynamic)."
+  },
+  {
+   "id": "weighted-wall-sit",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Wall sit is often classified as compound (multi-joint hip/knee) despite isometric nature; isolation is debatable but somewhat off."
+  },
+  {
+   "id": "cobra-pose",
+   "field": "primaryMuscles",
+   "severity": "minor",
+   "issue": "Pectorals are not primary movers in cobra pose; spinal extensors (lower-back) are primary, chest is more of a stretch target."
+  },
+  {
+   "id": "tuck-planche",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Tuck planche is a compound, multi-joint movement (shoulders, elbows, core), not isolation."
+  },
+  {
+   "id": "single-leg-dumbbell-hip-thrust",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Hip thrust is generally considered a compound movement (hip and knee involvement), not isolation."
+  },
+  {
+   "id": "atlas-stone-to-platform",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Atlas stone lift is more of a squat/deadlift-hybrid pattern; labeling purely as hinge is debatable but not clearly wrong; flagged as minor."
+  },
+  {
+   "id": "kettlebell-standing-calf-raise",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Calf raise is better classified as isolation push/plantarflexion movement rather than isometric, since it involves dynamic ROM."
+  },
+  {
+   "id": "power-snatch",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Power snatch is typically classified under 'olympic' or 'explosive' pattern rather than plain hinge, though hinge is part of it."
+  },
+  {
+   "id": "battle-rope-circles",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Battle rope circles involve more of a rotational/isometric shoulder pattern than a true push pattern."
+  },
+  {
+   "id": "ab-wheel-rollout",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Ab wheel rollout is a dynamic anti-extension core movement, better classified as isometric-anti-extension or its own category, not strictly isometric."
+  },
+  {
+   "id": "alternating-kettlebell-swing",
+   "field": "laterality",
+   "severity": "minor",
+   "issue": "Hand-to-hand swing alternates but overall movement is often classified bilateral like standard swing; debatable but arguably fine as unilateral per-arm phase."
+  }
+ ]
+}

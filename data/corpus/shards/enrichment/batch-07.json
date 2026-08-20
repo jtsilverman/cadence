@@ -1,0 +1,362 @@
+[
+  {
+    "id": "decline-dumbbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Lock feet under the pad", "Lower dumbbells to lower chest", "Keep shoulder blades pinned", "Press up and slightly inward"],
+    "setup": "Lie back on a decline bench with feet secured and a dumbbell in each hand at chest level.",
+    "commonMistakes": ["Bouncing weights off the chest", "Flaring elbows too wide", "Losing control on the descent"]
+  },
+  {
+    "id": "decline-dumbbell-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep a slight bend in the elbows", "Lower until a stretch is felt", "Squeeze chest at the top", "Move in a wide arc"],
+    "setup": "Lie on a decline bench holding dumbbells above the chest with palms facing each other.",
+    "commonMistakes": ["Bending elbows too much and turning it into a press", "Dropping weight too low and straining shoulders", "Using momentum instead of a controlled arc"]
+  },
+  {
+    "id": "decline-machine-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Adjust seat so handles align with lower chest", "Press handles forward and down", "Keep back flat against pad", "Control the return"],
+    "setup": "Sit in the machine with the seat adjusted so the handles line up with the lower chest.",
+    "commonMistakes": ["Setting seat height too high or low", "Locking elbows out hard at the top", "Shrugging shoulders during the press"]
+  },
+  {
+    "id": "decline-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Place feet on an elevated surface", "Keep body in a straight line", "Lower chest toward the floor", "Brace core throughout"],
+    "setup": "Place both hands on the floor and feet up on a bench or box in a push-up position.",
+    "commonMistakes": ["Letting hips sag or pike up", "Flaring elbows to 90 degrees", "Not going through full range of motion"]
+  },
+  {
+    "id": "decline-sit-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Anchor feet at top of bench", "Curl spine up one segment at a time", "Exhale on the way up", "Control the descent"],
+    "setup": "Lie back on a decline bench with feet hooked under the padded rollers.",
+    "commonMistakes": ["Yanking on the neck with hands", "Using momentum instead of ab strength", "Not curling the spine, just hinging at hips"]
+  },
+  {
+    "id": "deep-squat-hold",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Sink hips below knee level", "Keep heels flat on the floor", "Use elbows to press knees out", "Keep chest tall"],
+    "setup": "Stand with feet shoulder width apart and squat down into the bottom position, holding it.",
+    "commonMistakes": ["Letting heels lift off the ground", "Rounding the lower back", "Letting knees cave inward"]
+  },
+  {
+    "id": "deficit-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Stand on a raised platform", "Keep bar close to shins", "Brace core before pulling", "Drive through the floor"],
+    "setup": "Stand on a plate or platform (1-3 inches high) with the barbell on the floor in front.",
+    "commonMistakes": ["Rounding the back to reach the extra depth", "Letting the bar drift away from the body", "Rushing the setup and losing tension"]
+  },
+  {
+    "id": "deficit-handstand-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Set hands on elevated blocks", "Lower head below hand level", "Keep core and glutes tight", "Press back to full lockout"],
+    "setup": "Kick up into a handstand against a wall with hands on parallettes or blocks for extra range.",
+    "commonMistakes": ["Flaring elbows out wide", "Losing body alignment and arching excessively", "Not reaching full depth below the hands"]
+  },
+  {
+    "id": "deficit-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Place hands on elevated blocks", "Lower chest below hand level", "Keep elbows at roughly 45 degrees", "Press back up fully"],
+    "setup": "Set hands on two raised platforms shoulder width apart in a push-up position.",
+    "commonMistakes": ["Sagging hips during descent", "Not achieving extra depth", "Flaring elbows straight out"]
+  },
+  {
+    "id": "depth-drop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Step off the box, don't jump", "Land softly on both feet", "Bend knees to absorb impact", "Stick the landing"],
+    "setup": "Stand on top of a box and step off, dropping to the ground.",
+    "commonMistakes": ["Jumping off instead of stepping", "Landing with stiff knees", "Using a box that's too high for control"]
+  },
+  {
+    "id": "depth-jump",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Step off box and land softly", "Minimize ground contact time", "Explode upward immediately on landing", "Land in an athletic stance"],
+    "setup": "Stand on a box, step off, and upon landing immediately jump vertically as high as possible.",
+    "commonMistakes": ["Pausing too long on the ground before jumping", "Landing with knees caving in", "Using excessive box height"]
+  },
+  {
+    "id": "depth-jump-to-box",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Step off starting box", "Land softly then explode forward", "Jump onto the second box", "Land with knees bent"],
+    "setup": "Stand on a box facing a second box a short distance away, ready to step off and jump.",
+    "commonMistakes": ["Misjudging distance to the target box", "Landing on the box with a stiff landing", "Insufficient ground reaction speed"]
+  },
+  {
+    "id": "depth-jump-to-broad-jump",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Step off box and land softly", "Immediately drive arms and hips forward", "Extend fully into the broad jump", "Land balanced with soft knees"],
+    "setup": "Stand on a box, step off, and upon landing perform a maximal horizontal broad jump.",
+    "commonMistakes": ["Too long a pause between landing and jumping", "Not extending hips fully", "Landing off balance"]
+  },
+  {
+    "id": "devil-press",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Perform a burpee gripping dumbbells", "Swing dumbbells up into a snatch", "Lock out overhead", "Keep core tight throughout"],
+    "setup": "Start standing holding two dumbbells on the floor, ready to drop into a burpee.",
+    "commonMistakes": ["Rounding the back during the burpee portion", "Using arms instead of hip drive for the swing", "Rushing and losing form under fatigue"]
+  },
+  {
+    "id": "diamond-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Form a diamond shape with thumbs and index fingers", "Keep elbows tucked close to body", "Lower chest to hands", "Keep body in a straight line"],
+    "setup": "Get into a push-up position with hands together under the chest forming a diamond shape.",
+    "commonMistakes": ["Flaring elbows out wide", "Letting hips sag", "Not lowering fully to the hands"]
+  },
+  {
+    "id": "dolphin-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Rest forearms on the floor", "Lift hips up and back", "Keep heels reaching toward floor", "Relax neck and head"],
+    "setup": "Start on forearms and knees, then lift hips up into an inverted V shape.",
+    "commonMistakes": ["Rounding the upper back excessively", "Shrugging shoulders toward ears", "Locking knees too aggressively"]
+  },
+  {
+    "id": "doorway-chest-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Place forearm on door frame", "Step forward to feel a stretch", "Keep chest open and tall", "Hold without bouncing"],
+    "setup": "Stand in a doorway with forearm resting against the frame at shoulder height.",
+    "commonMistakes": ["Overextending and straining the shoulder", "Rounding the upper back", "Bouncing instead of holding steady"]
+  },
+  {
+    "id": "double-crunch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Bring knees and shoulders together", "Exhale as you crunch", "Keep lower back pressed down", "Control the return"],
+    "setup": "Lie on your back with knees bent and hands lightly behind the head.",
+    "commonMistakes": ["Pulling on the neck", "Using momentum instead of ab contraction", "Not curling the spine fully"]
+  },
+  {
+    "id": "double-dumbbell-clean-and-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Hinge and grip dumbbells at shins", "Explode up pulling dumbbells to shoulders", "Press overhead to lockout", "Keep core braced throughout"],
+    "setup": "Stand with a dumbbell in each hand on the floor, feet shoulder width apart.",
+    "commonMistakes": ["Using arms instead of hip drive to clean", "Pressing before dumbbells are stable at shoulders", "Rounding the back during the pull"]
+  },
+  {
+    "id": "double-kettlebell-clean",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hike kettlebells back between legs", "Drive hips forward explosively", "Guide bells into rack position", "Keep elbows close to ribs"],
+    "setup": "Stand with two kettlebells on the floor between the feet, gripping both handles.",
+    "commonMistakes": ["Muscling the bells up with the arms", "Banging the bells into the wrists", "Rounding the back on the hike"]
+  },
+  {
+    "id": "double-kettlebell-clean-and-jerk",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Clean bells into rack position", "Dip slightly at the knees", "Drive bells overhead explosively", "Lock out with active shoulders"],
+    "setup": "Start with two kettlebells racked at the shoulders after a clean, feet shoulder width apart.",
+    "commonMistakes": ["Pressing instead of using leg drive to jerk", "Losing balance during the dip", "Not fully locking out overhead"]
+  },
+  {
+    "id": "double-kettlebell-clean-and-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Clean bells to rack position", "Brace core before pressing", "Press bells overhead evenly", "Avoid leaning back"],
+    "setup": "Stand with two kettlebells on the floor, ready to clean them to the shoulders and press.",
+    "commonMistakes": ["Leaning back excessively during the press", "Pressing bells unevenly", "Using momentum instead of a strict press"]
+  },
+  {
+    "id": "double-kettlebell-floor-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Lie on back with knees bent", "Keep upper arms touching the floor at bottom", "Press bells straight up", "Keep wrists stacked over elbows"],
+    "setup": "Lie on the floor holding two kettlebells at chest level with knees bent and feet flat.",
+    "commonMistakes": ["Flaring elbows out too wide", "Not pausing at the bottom before pressing", "Uneven pressing between arms"]
+  },
+  {
+    "id": "double-kettlebell-get-up",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "advanced",
+    "formCues": ["Keep both bells locked out overhead", "Move through each step deliberately", "Keep eyes on the bells", "Stack joints at each phase"],
+    "setup": "Lie on the back holding two kettlebells locked out above the shoulders.",
+    "commonMistakes": ["Rushing through the transitional steps", "Losing lockout of an arm mid-movement", "Twisting the torso instead of stacking joints"]
+  },
+  {
+    "id": "double-kettlebell-high-pull",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hike bells back between legs", "Drive hips forward explosively", "Pull elbows high and back", "Keep bells close to the body"],
+    "setup": "Stand holding two kettlebells with an athletic hinge stance, bells hanging between the legs.",
+    "commonMistakes": ["Pulling with the arms before hip extension", "Letting bells swing away from the body", "Shrugging instead of driving elbows up"]
+  },
+  {
+    "id": "double-kettlebell-overhead-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": ["Lock bells out fully overhead", "Brace core and glutes", "Keep ribcage down, avoid arching", "Walk with controlled steps"],
+    "setup": "Press or clean two kettlebells overhead to a locked-out position, then begin walking.",
+    "commonMistakes": ["Letting the lower back arch excessively", "Losing lockout of the shoulders", "Walking too fast and losing control"]
+  },
+  {
+    "id": "double-kettlebell-overhead-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Start bells at shoulder height", "Brace core before pressing", "Press bells straight overhead", "Avoid leaning back"],
+    "setup": "Stand with two kettlebells racked at the shoulders, feet shoulder width apart.",
+    "commonMistakes": ["Arching the lower back", "Pressing bells forward instead of straight up", "Uneven timing between arms"]
+  },
+  {
+    "id": "double-kettlebell-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Rack bells at the shoulders", "Brace core and glutes", "Press bells up and slightly back", "Lock out overhead"],
+    "setup": "Stand with two kettlebells in the rack position, feet shoulder width apart.",
+    "commonMistakes": ["Leaning back to generate momentum", "Flaring elbows out during the press", "Not achieving full lockout"]
+  },
+  {
+    "id": "double-kettlebell-push-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Rack bells at the shoulders", "Dip slightly at the knees", "Drive up explosively with legs", "Press bells to lockout"],
+    "setup": "Stand with two kettlebells racked at the shoulders, feet shoulder width apart.",
+    "commonMistakes": ["Dipping too deep and losing bell position", "Pressing with arms only, skipping leg drive", "Landing off balance after the drive"]
+  },
+  {
+    "id": "double-kettlebell-rack-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Hold bells tight against the shoulders", "Keep elbows down and in", "Brace core", "Walk with controlled steps"],
+    "setup": "Clean two kettlebells to the rack position at the shoulders and begin walking.",
+    "commonMistakes": ["Letting elbows drift away from the body", "Leaning back to counterbalance", "Taking uneven or rushed steps"]
+  },
+  {
+    "id": "double-kettlebell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge forward with flat back", "Pull both bells to the ribs", "Squeeze shoulder blades together", "Lower with control"],
+    "setup": "Hinge at the hips holding two kettlebells hanging beneath the shoulders.",
+    "commonMistakes": ["Rounding the back during the hinge", "Using momentum to yank the bells up", "Shrugging instead of pulling with the back"]
+  },
+  {
+    "id": "double-kettlebell-snatch",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hike bells back between legs", "Drive hips forward explosively", "Punch bells overhead in one motion", "Lock out with bells stacked over shoulders"],
+    "setup": "Stand with two kettlebells on the floor, gripping both handles in an athletic hinge stance.",
+    "commonMistakes": ["Muscling the bells up with the arms", "Banging the bells on the forearms", "Not achieving full overhead lockout"]
+  },
+  {
+    "id": "double-kettlebell-sots-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Squat down to bottom position first", "Rack bells at shoulders in the squat", "Press bells overhead while staying seated", "Keep torso upright"],
+    "setup": "Descend into the bottom of a squat with two kettlebells racked at the shoulders.",
+    "commonMistakes": ["Standing up during the press instead of staying seated", "Leaning forward and losing balance", "Losing rack position in the squat"]
+  },
+  {
+    "id": "double-kettlebell-swing",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips, not the knees", "Hike bells back between legs", "Snap hips forward to swing bells up", "Keep back flat throughout"],
+    "setup": "Stand with feet shoulder width apart, two kettlebells on the floor in front.",
+    "commonMistakes": ["Squatting instead of hinging", "Using the arms to lift the bells", "Overextending the lower back at the top"]
+  },
+  {
+    "id": "double-kettlebell-thruster",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Rack bells at the shoulders", "Squat down keeping chest tall", "Drive up explosively out of the squat", "Press bells overhead as legs extend"],
+    "setup": "Stand with two kettlebells racked at the shoulders, feet shoulder width apart.",
+    "commonMistakes": ["Pausing between the squat and press instead of linking them", "Letting knees cave inward", "Not reaching full hip extension before pressing"]
+  },
+  {
+    "id": "double-under-jump-rope",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Jump slightly higher than a single under", "Whip the rope faster with wrists", "Keep elbows close to the body", "Land softly on the balls of the feet"],
+    "setup": "Stand holding a jump rope, ready to perform a single jump with two rope passes underneath.",
+    "commonMistakes": ["Jumping too high, throwing off rhythm", "Using the shoulders to spin the rope instead of the wrists", "Landing flat-footed"]
+  },
+  {
+    "id": "downward-dog",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Press hands firmly into the floor", "Lift hips up and back", "Keep spine long", "Press heels toward the floor"],
+    "setup": "Start on hands and knees, then lift hips up and back into an inverted V shape.",
+    "commonMistakes": ["Rounding the spine", "Bending elbows instead of keeping arms straight", "Forcing heels flat and straining the calves"]
+  },
+  {
+    "id": "downward-dog-calf-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Set up in downward dog position", "Pedal one heel toward the floor at a time", "Keep hips lifted", "Hold each side without bouncing"],
+    "setup": "From a downward dog position, alternate pressing one heel toward the ground at a time.",
+    "commonMistakes": ["Letting hips drop too low", "Bouncing aggressively into the stretch", "Rounding the back to force the heel down"]
+  },
+  {
+    "id": "dragon-flag",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Grip bench behind the head", "Keep body rigid as a plank", "Lower body slowly under control", "Pivot only at the shoulder blades"],
+    "setup": "Lie on a bench, grip it behind the head, and raise the body into a straight line supported at the shoulders.",
+    "commonMistakes": ["Bending at the hips instead of staying rigid", "Dropping too fast without control", "Not engaging the core fully, leading to sagging"]
+  },
+  {
+    "id": "dual-action-recumbent-bike",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Sit back against the seat support", "Push and pull the handles with arms", "Pedal in a smooth circular motion", "Keep core lightly engaged"],
+    "setup": "Sit in the reclined seat of the bike, feet on pedals and hands gripping the moving arm handles.",
+    "commonMistakes": ["Slouching instead of using the seat back for support", "Using only legs and ignoring the arm handles", "Setting resistance too high and losing smooth cadence"]
+  }
+]

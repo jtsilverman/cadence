@@ -1,0 +1,38 @@
+[
+  {
+    "id": "lotus-pose",
+    "name": "Lotus Pose (Padmasana)",
+    "aliases": ["Padmasana"],
+    "modality": "yoga",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["hip-flexors", "adductors"],
+    "secondaryMuscles": ["abs", "abductors"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "frog-pose",
+    "name": "Frog Pose (Bhekasana/Mandukasana)",
+    "aliases": ["Bhekasana", "Mandukasana"],
+    "modality": "yoga",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["adductors", "hip-flexors"],
+    "secondaryMuscles": ["glutes", "lower-back"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "wide-legged-standing-forward-fold",
+    "name": "Wide-Legged Standing Forward Fold (Prasarita Padottanasana)",
+    "aliases": ["Prasarita Padottanasana"],
+    "modality": "yoga",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["hamstrings", "adductors"],
+    "secondaryMuscles": ["lower-back", "calves"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  }
+]

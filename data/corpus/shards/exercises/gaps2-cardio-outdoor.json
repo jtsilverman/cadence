@@ -1,0 +1,38 @@
+[
+  {
+    "id": "rock-climbing-bouldering",
+    "name": "Rock Climbing / Bouldering",
+    "aliases": ["Bouldering", "Sport Climbing", "Indoor Climbing", "Trad Climbing"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["lats", "forearms", "biceps", "abs", "cardiovascular"],
+    "secondaryMuscles": ["traps", "rhomboids", "rear-delts", "triceps", "quads", "glutes", "obliques", "hip-flexors"],
+    "laterality": "unilateral",
+    "metrics": ["time", "height", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "downhill-alpine-skiing",
+    "name": "Downhill/Alpine Skiing",
+    "aliases": ["Alpine Skiing", "Downhill Skiing", "Piste Skiing"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["quads", "glutes", "hamstrings", "cardiovascular"],
+    "secondaryMuscles": ["calves", "adductors", "abductors", "abs", "obliques", "tibialis"],
+    "laterality": "bilateral",
+    "metrics": ["time", "distance", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "snowboarding",
+    "name": "Snowboarding",
+    "aliases": ["Freeriding", "Freestyle Snowboarding", "Boarding"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["quads", "glutes", "hamstrings", "cardiovascular"],
+    "secondaryMuscles": ["calves", "abs", "obliques", "tibialis", "adductors"],
+    "laterality": "bilateral",
+    "metrics": ["time", "distance", "calories"],
+    "variationOf": null
+  }
+]

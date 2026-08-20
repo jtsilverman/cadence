@@ -1,0 +1,26 @@
+[
+  {
+    "id": "wrist-radial-deviation",
+    "name": "Wrist Radial Deviation",
+    "aliases": ["radial deviation curl", "dumbbell radial deviation", "thumb-side wrist curl"],
+    "modality": "strength",
+    "equipment": ["dumbbell"],
+    "primaryMuscles": ["forearms"],
+    "secondaryMuscles": [],
+    "laterality": "unilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "wrist-ulnar-deviation",
+    "name": "Wrist Ulnar Deviation",
+    "aliases": ["ulnar deviation curl", "dumbbell ulnar deviation", "pinky-side wrist curl"],
+    "modality": "strength",
+    "equipment": ["dumbbell"],
+    "primaryMuscles": ["forearms"],
+    "secondaryMuscles": [],
+    "laterality": "unilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

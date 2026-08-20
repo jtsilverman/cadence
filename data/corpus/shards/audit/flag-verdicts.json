@@ -1,0 +1,2095 @@
+[
+ {
+  "barcode": "0732388294107",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "artificial-colors",
+    "evidence": "artificial color"
+   }
+  ]
+ },
+ {
+  "barcode": "0076057001789",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0038101088207",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028400014618",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "artificial-flavors",
+    "evidence": "natural and artificial flavors"
+   }
+  ]
+ },
+ {
+  "barcode": "0044900305582",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "nitrates-nitrites",
+    "why": "only 'cultured celery powder' present, which is listed under nitrates-nitrites definition as cured celery powder - actually this matches, so not wrong"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0193968475109",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0034800002001",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0070970005053",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072655001275",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "gums-thickeners",
+    "evidence": "locust bean gum"
+   }
+  ]
+ },
+ {
+  "barcode": "0070470223261",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0888849006007",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "gums-thickeners",
+    "evidence": "xanthan gum"
+   }
+  ]
+ },
+ {
+  "barcode": "0072220000153",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0052000043426",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "modified food starch used here is not clearly as thickener, and glycerol ester of rosin is not a gum/thickener"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0193968321154",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0033383239996",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0035826086402",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0085239287675",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0025000061530",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850004554180",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00746717",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041192103254",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "gums-thickeners",
+    "evidence": "e428 (gelatin - not gums, actually e428 is gelatin, not a gums flag)"
+   }
+  ]
+ },
+ {
+  "barcode": "0030000659809",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0031506731112",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0074562005094",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0076397001456",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0035457770084",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0020200070078",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "seed-oils",
+    "evidence": "PALM OIL is not a seed oil - no seed oil present, so no missing flag needed"
+   }
+  ]
+ },
+ {
+  "barcode": "0052500056872",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0810125973307",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073711250156",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0075270002115",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "fruit pectin is not in the gums-thickeners list (pectin is not xanthan/guar/carrageenan/cellulose/locust bean/gellan/tara gum)"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021500202008",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "1230000131056",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110507198",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073321000189",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0085239099780",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00515245",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011594022149",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0016000508736",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041220300778",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0643843718581",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00741811",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0810019603792",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "added-sugar-syrups",
+    "why": "rice malt syrup is not a listed syrup category and is essentially brown rice syrup - actually brown rice syrup is listed; 'organic rice malt syrup' matches brown rice syrup analog, so this is correct, not wrong"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742232553",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0071117190380",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "artificial-colors",
+    "evidence": "annatto color is natural, not artificial - no missing flag actually"
+   }
+  ]
+ },
+ {
+  "barcode": "0027000500101",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072945766143",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0089094026103",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742267043",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0737349000308",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "refined-flour",
+    "why": "unbleached wheat flour is not enriched/bleached/white flour per definition"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028400705707",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041000214899",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011863109755",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0048001016446",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "no gum/thickener listed; modified corn starch used as thickener could count but not explicitly labeled as thickener here, and silicon dioxide is anticaking not a gum"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0030100127031",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0061362436517",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "caffeine",
+    "evidence": "none found, no wrong here"
+   }
+  ]
+ },
+ {
+  "barcode": "0193908007384",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742232898",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041268198252",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073040004048",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0860012335602",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0052000051636",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "gums-thickeners",
+    "evidence": "CELLULOSE GEL, CELLULOSE GUM, CARRAGEENAN"
+   }
+  ]
+ },
+ {
+  "barcode": "0085239110492",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00741583",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072220110708",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0075900005318",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "no gum/thickener ingredient present besides modified food starch used generically, not confirmed as thickener use but likely; sodium-alginate present which is a gum/thickener - actually should be kept"
+   }
+  ],
+  "missingFlags": [
+   {
+    "flag": "trans-fat-hydrogenated",
+    "evidence": "hydrogenated cottonseed oil"
+   }
+  ]
+ },
+ {
+  "barcode": "0099482498924",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0034500151191",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110145505",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0858595000772",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742367040",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "4099100032222",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0079893122007",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110874054",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0077034009941",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "seed-oils",
+    "evidence": "sunflower oil"
+   }
+  ]
+ },
+ {
+  "barcode": "0073040063052",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "4061461750329",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "preservatives",
+    "evidence": "BHA, BHT"
+   }
+  ]
+ },
+ {
+  "barcode": "0024126017469",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0080444513069",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0071012013302",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0819898010189",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041303020296",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850001974059",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00796811",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "7802225689014",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0070970475337",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "No gum/thickener ingredient listed; confectioners glaze/carnauba wax/MCT are not gums-thickeners"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073630014242",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "refined-flour",
+    "why": "Only whole wheat flour listed, not enriched/bleached white flour"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0030000563984",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00693417",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0070470137728",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041716873168",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073410955772",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0780353784030",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0051500006900",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0012500003146",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "nitrates-nitrites",
+    "why": "Ingredient is sodium nitrate but flag assigned correctly, however e251 is sodium nitrite not nitrate - minor mismatch, still correct category"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0627907090783",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0044500201376",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0025317385534",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "nitrates-nitrites",
+    "why": "No nitrate/nitrite or cured celery powder/juice listed, only celery extract"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041220588411",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0009800000715",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00517539",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0631656712766",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0076410900445",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021248102028",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850004281123",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "natural-flavors",
+    "evidence": "natural vanilla flavor"
+   }
+  ]
+ },
+ {
+  "barcode": "0021000602704",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0070821000046",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0074027031712",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742025513",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072250011365",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0009800000555",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041196139747",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "Modified Food Starch is used as a thickener but classifier flagged gums-thickeners; this is acceptable, but Maltodextrin is not a gum/thickener flag trigger, no error here actually"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0099482414221",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041321241505",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0034800006412",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00368254",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0071279103020",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021131000981",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110501950",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00910378",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073497005766",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00744720",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0044000045586",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0022000330512",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "gums-thickeners",
+    "evidence": "MODIFIED FOOD STARCH"
+   }
+  ]
+ },
+ {
+  "barcode": "0012000286216",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0087076219161",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "no gum/thickener listed, e296/e330 are preservatives/acids"
+   }
+  ],
+  "missingFlags": [
+   {
+    "flag": "added-sugar-syrups",
+    "evidence": "TAPIOCA SYRUP"
+   }
+  ]
+ },
+ {
+  "barcode": "0044082530314",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072730232167",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "4099100043310",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0042608470014",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041820000054",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0036632023117",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0096619194070",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073934160140",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0085239032374",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "seed-oils",
+    "why": "canola oil is less than 2%, still qualifies as seed-oil so this is actually correct"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021130127559",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0017082876362",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0196633836779",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "seed-oils",
+    "evidence": "vegetable oil"
+   }
+  ]
+ },
+ {
+  "barcode": "0073731071564",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0044700000045",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041449403366",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0887725000252",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021500222013",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0071921008291",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "trans-fat-hydrogenated",
+    "why": "no partially/fully hydrogenated oil listed"
+   }
+  ],
+  "missingFlags": [
+   {
+    "flag": "artificial-colors",
+    "evidence": "annatto is not FD&C but note: not required; actually no artificial color present besides annatto"
+   },
+   {
+    "flag": "preservatives",
+    "evidence": "already flagged - bha, bht"
+   }
+  ]
+ },
+ {
+  "barcode": "0078742253893",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0810174040012",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "added-sugar-syrups",
+    "why": "only plain sugar listed, no corn syrup/glucose syrup/agave etc"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0818290011503",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0046100356852",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00817653",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "02102809",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0027000419229",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00643139",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0036632013156",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0013800100184",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "added-sugar-syrups",
+    "why": "no corn syrup/glucose syrup/agave present"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072830008013",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041186172150",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0857290006270",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0030000311844",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110083005",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0196633934956",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041565141647",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850004281475",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0810607023094",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "added-sugar-syrups",
+    "why": "e270 is lactic acid (preservative) and e330 citric acid; no corn syrup/glucose syrup listed"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0071301047179",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028435600459",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0030771026305",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0087872630931",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0079900001233",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0077890298800",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041415049659",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028400029926",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0038000276453",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "emulsifiers",
+    "evidence": "mono-and diglycerides"
+   }
+  ]
+ },
+ {
+  "barcode": "4099100013542",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0080000513045",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "modified corn starch here is used as thickener but listed as 'modified corn starch' - actually acceptable per definition; no other gums like xanthan/guar present"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850042519226",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110024527",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028400032810",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0085239294130",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073490131981",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0044000046545",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0070200534254",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0048001219892",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "seed-oils",
+    "evidence": "palm oil is not a seed oil, but corn starch and hydrolyzed corn protein are not seed oils either - no error"
+   },
+   {
+    "flag": "gums-thickeners",
+    "evidence": "corn starch present but used as starch not flagged"
+   }
+  ]
+ },
+ {
+  "barcode": "0078976321399",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "refined-flour",
+    "evidence": "Flour (wheat flour...) enriched not specified but 'monocalcium phosphate' suggests enriched flour context; actually text doesn't say enriched - skip"
+   }
+  ]
+ },
+ {
+  "barcode": "4099100083743",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "preservatives",
+    "evidence": "bha, bht"
+   }
+  ]
+ },
+ {
+  "barcode": "0073420116149",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028400090841",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0070969004371",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0074714088333",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0810088860607",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0024000252764",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "caffeine",
+    "evidence": "GREEN TEA (WATER, GREEN TEA EXTRACT)"
+   }
+  ]
+ },
+ {
+  "barcode": "0017077001328",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0854442007420",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073731002858",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110787934",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072101015252",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0027331032326",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110132253",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0042800109156",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "emulsifiers",
+    "evidence": "e461, e471-type methylcellulose"
+   },
+   {
+    "flag": "trans-fat-hydrogenated",
+    "evidence": "none found, skip"
+   }
+  ]
+ },
+ {
+  "barcode": "0017642648057",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "02502409",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0070800223435",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0049000050752",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "preservatives",
+    "why": "calcium disodium EDTA is present (EDTA is a preservative), so this flag is actually correct - no error"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0038000269837",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0747599612749",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073321725266",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "sodium alginate is a gum/thickener, but food starch-modified also present; flag correctly applies, but also missing seed-oils check - palm oil is not a seed oil so no issue"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00821223",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "4099100267280",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0073410956168",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0042400910787",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0077890354711",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742074955",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0048500201848",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110090058",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0077034009880",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00062046",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0053600000734",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "4061462564727",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041196910759",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "seed-oils",
+    "why": "soybean oil is present, so this flag is correct - not an error"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110149497",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021130328284",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0031200022882",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "00614108",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021000045839",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "gums-thickeners",
+    "evidence": "food starch-modified (already covered but confirm), carob bean gum, xanthan gum - present, ok"
+   }
+  ]
+ },
+ {
+  "barcode": "00480857",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0019320016820",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0637480074100",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0074265020370",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0042272001682",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0755763001756",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0040000580270",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0086467007622",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742059426",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0013800120076",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "no gum/thickener ingredient listed; modified cornstarch used as starch not flagged per rules unless explicitly thickener, mono-&diglycerides are emulsifiers not gums"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028400766449",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0082666000075",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0763946225028",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041415066304",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0851770007566",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021130309436",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0011110123220",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0009800122011",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "8721201907449",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "gums-thickeners",
+    "why": "modified corn starch used as thickener/starch, but e385 is EDTA (preservative), not gums; no gum ingredient present"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0704863028187",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "refined-flour",
+    "why": "flour blend is corn starch, brown rice flour, sorghum flour, potato starch - gluten free, no enriched/bleached wheat flour"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0710779770461",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "4099100066456",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0034000012039",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0866418000342",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "added-sugar-syrups",
+    "why": "e330 is citric acid; no corn syrup/glucose syrup/agave etc present"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0022000004833",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0024000027713",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "4099100222296",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0077890514276",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "00645980",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0009300006514",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0011110011619",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "seed-oils",
+    "why": "vegetable oil is hydrogenated coconut and/or palm kernel, not a seed oil listed in definition"
+   }
+  ],
+  "missingFlags": [
+   {
+    "flag": "trans-fat-hydrogenated",
+    "evidence": "vegetable oil (hydrogenated coconut and/or palm kernel)"
+   }
+  ]
+ },
+ {
+  "barcode": "0078742178271",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0016000181489",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "caffeine",
+    "evidence": "Chicory Root Extract is not caffeine, disregard"
+   }
+  ]
+ },
+ {
+  "barcode": "0036800471122",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0027400800757",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "seed-oils",
+    "why": "palm fruit, palm kernel, canola oil - canola qualifies as seed oil so flag is correct actually"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850027959917",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0021130044665",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0046015174374",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "7501011126879",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "artificial-flavors",
+    "evidence": "SABORIZANTES ... ARTIFICIALES"
+   }
+  ]
+ },
+ {
+  "barcode": "0011110915689",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0034000938391",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0077013615644",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0015300200012",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "added-sugar-syrups",
+    "why": "only plain 'sugar' listed, not a syrup type"
+   }
+  ],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0857183005151",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072036980786",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041415033658",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742113166",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0028400009973",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0072878856669",
+  "verdict": "errors",
+  "wrongFlags": [
+   {
+    "flag": "natural-flavors",
+    "why": "text is cut off at 'NATURAL' without confirming 'natural flavor(s)', though likely intended; but as written evidence is incomplete"
+   }
+  ]
+ },
+ {
+  "barcode": "0070470407418",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0078742002255",
+  "verdict": "errors",
+  "missingFlags": [
+   {
+    "flag": "preservatives",
+    "evidence": "disodium edta (to promote color retention)"
+   }
+  ]
+ },
+ {
+  "barcode": "0011110043757",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0041190465804",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0038000359217",
+  "verdict": "errors",
+  "missingFlags": [
+   {
+    "flag": "hfcs",
+    "evidence": "none present, no error"
+   },
+   {
+    "flag": "preservatives",
+    "evidence": "DIPHOSPHATE"
+   }
+  ]
+ },
+ {
+  "barcode": "0021000083534",
+  "verdict": "errors",
+  "missingFlags": [
+   {
+    "flag": "preservatives",
+    "evidence": "calcium disodium EDTA (to protect flavor)"
+   }
+  ]
+ },
+ {
+  "barcode": "0044700360026",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "0074570950034",
+  "verdict": "ok"
+ },
+ {
+  "barcode": "4099100053180",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072250006576",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "emulsifiers",
+    "evidence": "already flagged, ok"
+   },
+   {
+    "flag": "gums-thickeners",
+    "evidence": "none present, not missing"
+   }
+  ]
+ },
+ {
+  "barcode": "00729376",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0041331050159",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0074570033102",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0031000670443",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0021130092604",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "gums-thickeners",
+    "evidence": "MODIFIED CORN STARC(H)"
+   }
+  ]
+ },
+ {
+  "barcode": "0077013615606",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0874659000595",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0078742035505",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0856069005483",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850004554869",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0858176002508",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0850941006247",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0072745063282",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0788434108812",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "4099100296150",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0096619301461",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "4099100126716",
+  "verdict": "ok",
+  "wrongFlags": [],
+  "missingFlags": []
+ },
+ {
+  "barcode": "0032894022011",
+  "verdict": "errors",
+  "wrongFlags": [],
+  "missingFlags": [
+   {
+    "flag": "preservatives",
+    "evidence": "sodium sulfite(e221)"
+   }
+  ]
+ }
+]

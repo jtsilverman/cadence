@@ -1,0 +1,362 @@
+[
+  {
+    "id": "locust-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Lie face down", "Squeeze glutes as you lift chest and legs", "Reach through the fingertips", "Keep neck long, gaze down"],
+    "setup": "Lie prone on the floor with arms alongside the body, palms down.",
+    "commonMistakes": ["Craning the neck up", "Shrugging shoulders toward ears", "Yanking up with momentum instead of squeezing"]
+  },
+  {
+    "id": "log-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Brace core hard before stepping off", "Keep chest tall", "Take short controlled steps", "Grip the object firmly throughout"],
+    "setup": "Pick up the load with a braced spine and stand fully upright before walking.",
+    "commonMistakes": ["Leaning to one side", "Letting the load swing", "Holding breath the whole carry instead of breathing steadily"]
+  },
+  {
+    "id": "machine-lateral-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set pads at shoulder height", "Raise arms to shoulder level", "Lead with elbows not hands", "Control the descent"],
+    "setup": "Sit in the machine with upper arms against the pads and torso upright.",
+    "commonMistakes": ["Using momentum to swing up", "Shrugging traps to assist", "Raising above shoulder height"]
+  },
+  {
+    "id": "machine-low-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Chest against the pad", "Pull handles to torso", "Squeeze shoulder blades together", "Control the return"],
+    "setup": "Sit with chest supported against the pad and grip the handles with arms extended.",
+    "commonMistakes": ["Rounding the back off the pad", "Using arms only without retracting shoulder blades", "Jerking the weight"]
+  },
+  {
+    "id": "machine-preacher-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Rest upper arms fully on the pad", "Curl through full range", "Avoid locking elbows out hard at bottom", "Squeeze at the top"],
+    "setup": "Sit with upper arms against the preacher pad and grip the handles.",
+    "commonMistakes": ["Lifting elbows off the pad", "Using body momentum", "Cutting the range of motion short"]
+  },
+  {
+    "id": "machine-pullover",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Set seat so shoulders align with the pivot", "Pull elbows down and back", "Keep slight bend in elbows throughout", "Control the stretch at the top"],
+    "setup": "Sit with back against the pad and forearms on the arm pads, elbows bent.",
+    "commonMistakes": ["Straightening the elbows during the pull", "Rushing the eccentric", "Arching the lower back off the seat"]
+  },
+  {
+    "id": "machine-reverse-fly",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Chest against the pad", "Sweep arms out and back", "Squeeze shoulder blades at the peak", "Control the return"],
+    "setup": "Sit facing the pad with arms gripping the handles in front of the chest.",
+    "commonMistakes": ["Using momentum to fling arms back", "Bending elbows excessively", "Not retracting the shoulder blades"]
+  },
+  {
+    "id": "machine-seated-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Position knee pad snug against thighs", "Rise onto toes at the top", "Pause and squeeze", "Lower for a full stretch"],
+    "setup": "Sit with balls of feet on the platform and knee pad resting on the thighs.",
+    "commonMistakes": ["Bouncing at the bottom", "Using a partial range of motion", "Rushing the reps"]
+  },
+  {
+    "id": "machine-shoulder-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set seat so handles align with shoulders", "Press straight overhead", "Keep back flat against pad", "Lower with control"],
+    "setup": "Sit with back against the pad and grip handles at shoulder height.",
+    "commonMistakes": ["Arching the lower back", "Locking elbows aggressively", "Pressing unevenly side to side"]
+  },
+  {
+    "id": "machine-shrug",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Grip handles with arms straight", "Elevate shoulders straight up", "Avoid rolling shoulders", "Pause at the top"],
+    "setup": "Stand or sit gripping the handles with arms fully extended at the sides.",
+    "commonMistakes": ["Rolling shoulders forward or back", "Using momentum instead of a controlled shrug", "Bending elbows to assist"]
+  },
+  {
+    "id": "machine-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Shoulders under pads, balls of feet on platform", "Rise fully onto toes", "Pause at the top", "Lower into a deep stretch"],
+    "setup": "Stand with shoulders under the pads and balls of the feet on the platform edge.",
+    "commonMistakes": ["Bouncing through the bottom", "Bending the knees to cheat the range", "Rushing the tempo"]
+  },
+  {
+    "id": "machine-tibialis-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Secure feet under the pad", "Flex toes up toward shins", "Pause at the top", "Lower with control"],
+    "setup": "Position the feet with toes hooked under the resistance pad, heels planted.",
+    "commonMistakes": ["Using a jerky motion", "Only partially flexing the foot", "Letting the resistance snap back down"]
+  },
+  {
+    "id": "machine-triceps-dip",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Grip handles with elbows bent", "Press down until arms extend", "Keep elbows tracking back, not flared", "Control the return"],
+    "setup": "Sit or stand gripping the handles with elbows bent at the top position.",
+    "commonMistakes": ["Flaring elbows out wide", "Using partial range of motion", "Shrugging shoulders during the press"]
+  },
+  {
+    "id": "machine-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Keep upper arms pinned to sides or pad", "Extend forearms fully", "Squeeze triceps at lockout", "Control the return"],
+    "setup": "Sit with upper arms braced against the pad, elbows bent to start.",
+    "commonMistakes": ["Letting elbows drift forward", "Using shoulder movement to assist", "Cutting the range short"]
+  },
+  {
+    "id": "maltese-hold",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Arms extended wide at shoulder height", "Depress and protract shoulder blades", "Brace core hard", "Keep body rigid and level"],
+    "setup": "Support the body on rings or bars with arms extended straight out to the sides.",
+    "commonMistakes": ["Letting hips sag", "Bending elbows to cheat leverage", "Losing shoulder depression under fatigue"]
+  },
+  {
+    "id": "man-maker",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Row each dumbbell in plank", "Explode into a push-up", "Squat the weights up cleanly", "Press overhead at the top"],
+    "setup": "Start in a plank holding dumbbells with feet hip-width apart.",
+    "commonMistakes": ["Rounding the back during the row", "Rushing the transition and losing form", "Using a partial squat before pressing"]
+  },
+  {
+    "id": "marching-glute-bridge",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Drive hips up and hold", "Lift one knee toward chest without dropping hips", "Alternate legs under control", "Keep core braced"],
+    "setup": "Lie on the back with knees bent, feet flat, and hips lifted into a bridge.",
+    "commonMistakes": ["Letting hips drop during the march", "Overarching the lower back", "Rushing the leg lift"]
+  },
+  {
+    "id": "meadows-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips with flat back", "Row the bar toward the hip", "Squeeze the lat at the top", "Control the lowering"],
+    "setup": "Stand alongside a landmine barbell in a staggered stance, hinged forward, gripping the near end.",
+    "commonMistakes": ["Rotating the torso to cheat the weight up", "Rounding the lower back", "Using momentum instead of a controlled pull"]
+  },
+  {
+    "id": "medicine-ball-chest-pass",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Hold ball at chest", "Explode through arms and legs together", "Follow through with extended arms", "Reset before next rep"],
+    "setup": "Stand facing a wall or partner, holding the medicine ball at chest height with both hands.",
+    "commonMistakes": ["Pushing with arms only, no leg drive", "Rounding the shoulders forward", "Losing balance on the release"]
+  },
+  {
+    "id": "medicine-ball-overhead-throw",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Load the ball behind the head", "Drive through hips and legs", "Extend arms fully on release", "Follow through toward the target"],
+    "setup": "Stand with feet shoulder-width apart, ball raised overhead with arms extended.",
+    "commonMistakes": ["Throwing with arms only", "Arching the lower back excessively", "Releasing too early without hip drive"]
+  },
+  {
+    "id": "medicine-ball-rotational-throw",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Load by rotating hips away from target", "Drive through the hips first", "Release the ball at torso rotation", "Keep feet grounded"],
+    "setup": "Stand sideways to a wall, holding the ball at hip height with arms extended.",
+    "commonMistakes": ["Rotating with arms before hips", "Letting feet spin excessively", "Hyperextending the lower back on release"]
+  },
+  {
+    "id": "medicine-ball-russian-twist",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Lean back to engage core", "Rotate the ball side to side", "Keep chest up, not rounded", "Move with control, not speed"],
+    "setup": "Sit with knees bent, torso leaned back slightly, holding the ball at the chest.",
+    "commonMistakes": ["Rounding the spine", "Using arm swing instead of torso rotation", "Feet flailing for momentum"]
+  },
+  {
+    "id": "medicine-ball-scoop-toss",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge down to scoop the ball low", "Drive hips forward explosively", "Release the ball upward and forward", "Keep back flat throughout"],
+    "setup": "Start in a hinged position holding the ball low between the legs.",
+    "commonMistakes": ["Rounding the back on the scoop", "Using arms instead of hip drive", "Standing too upright before the scoop"]
+  },
+  {
+    "id": "medicine-ball-sit-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Hold ball at chest", "Curl the spine up to sitting", "Exhale on the way up", "Lower with control"],
+    "setup": "Lie on the back with knees bent, feet anchored, ball held against the chest.",
+    "commonMistakes": ["Yanking with the neck", "Using momentum instead of ab contraction", "Feet not stabilized causing form breakdown"]
+  },
+  {
+    "id": "medicine-ball-slam",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Raise ball overhead", "Slam down forcefully using core and lats", "Hinge to catch the bounce", "Reset stance each rep"],
+    "setup": "Stand with feet shoulder-width apart, ball held overhead with arms extended.",
+    "commonMistakes": ["Slamming with arms only", "Rounding the back on the catch", "Losing footing on the follow-through"]
+  },
+  {
+    "id": "mini-stepper",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Stand tall, avoid locking knees", "Step through a full range of motion", "Keep light hand contact on rails only", "Maintain steady rhythm"],
+    "setup": "Stand on the pedals with light grip on the handrails and start stepping.",
+    "commonMistakes": ["Leaning heavily on the handrails", "Taking short bouncy half-steps", "Slouching forward"]
+  },
+  {
+    "id": "monster-walk",
+    "mechanics": "isolation",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Band around ankles or knees", "Stay in a slight squat", "Step wide and deliberate", "Keep tension on the band throughout"],
+    "setup": "Place a resistance band around the ankles or knees and drop into a quarter-squat stance.",
+    "commonMistakes": ["Standing too upright, losing tension", "Letting knees cave inward", "Taking steps too small to load the glutes"]
+  },
+  {
+    "id": "mountain-biking",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Keep a soft bend in elbows and knees", "Shift weight back on descents", "Maintain steady cadence on climbs", "Look ahead down the trail"],
+    "setup": "Mount the bike and adopt an athletic stance with pedals level and grip firm.",
+    "commonMistakes": ["Locking out arms over rough terrain", "Braking hard on descents instead of modulating", "Staying seated over technical obstacles"]
+  },
+  {
+    "id": "mountain-climber",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Start in a plank", "Drive knees toward chest alternately", "Keep hips level, not piking up", "Keep hands planted under shoulders"],
+    "setup": "Start in a high plank with hands under shoulders and body in a straight line.",
+    "commonMistakes": ["Letting hips rise into a pike", "Sagging the lower back", "Losing pace and control as fatigue sets in"]
+  },
+  {
+    "id": "mountain-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Stand feet hip-width apart", "Distribute weight evenly through both feet", "Engage thighs and lift through crown of head", "Relax shoulders down"],
+    "setup": "Stand tall with feet grounded, arms relaxed at the sides.",
+    "commonMistakes": ["Locking the knees", "Letting shoulders round forward", "Shifting weight onto one foot"]
+  },
+  {
+    "id": "muscle-clean",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Pull the bar close to the body", "Extend hips, knees, and ankles fully", "Pull under with elbows high and outside", "Catch in the front rack without dropping under"],
+    "setup": "Stand over the bar with a shoulder-width grip, hips loaded and back flat.",
+    "commonMistakes": ["Bending the arms too early in the pull", "Not fully extending the hips", "Catching with elbows dropped"]
+  },
+  {
+    "id": "muscle-snatch",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Wide grip on the bar", "Pull the bar close through extension", "Punch straight up under the bar", "Lock out overhead without a dip"],
+    "setup": "Stand over the bar with a wide snatch grip, hips loaded and back flat.",
+    "commonMistakes": ["Bending the arms too early", "Failing to fully extend the hips", "Pressing out instead of punching to lockout"]
+  },
+  {
+    "id": "muscle-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Initiate with an explosive pull", "Transition chest over the bar", "Drive into a dip lockout at the top", "Keep the pull close to the body"],
+    "setup": "Hang from the bar or rings with a false grip and full arm extension.",
+    "commonMistakes": ["Kipping excessively instead of controlled pull", "Failing to transition and hitting the bar", "Incomplete lockout at the top"]
+  },
+  {
+    "id": "narrow-stance-leg-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": ["Feet close together on the platform", "Lower until knees approach 90 degrees", "Press through the full foot", "Avoid locking knees at the top"],
+    "setup": "Sit in the leg press with feet placed narrow and centered on the platform.",
+    "commonMistakes": ["Letting knees cave inward", "Lifting hips off the pad at the bottom", "Locking out knees forcefully"]
+  },
+  {
+    "id": "neck-extension-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Sit or stand tall", "Tilt head back gently", "Hold without forcing the stretch", "Return to neutral slowly"],
+    "setup": "Sit or stand with a tall, neutral spine facing forward.",
+    "commonMistakes": ["Tilting too far and straining", "Shrugging shoulders during the stretch", "Rushing the return to neutral"]
+  },
+  {
+    "id": "neck-flexion-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Sit or stand tall", "Lower chin gently toward chest", "Hold without bouncing", "Return to neutral slowly"],
+    "setup": "Sit or stand with a tall, neutral spine facing forward.",
+    "commonMistakes": ["Bouncing into the stretch", "Rounding the upper back to compensate", "Pulling the head down with hands too forcefully"]
+  },
+  {
+    "id": "neck-rotation-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Sit or stand tall", "Rotate head slowly to one side", "Hold at end range", "Return to center before switching sides"],
+    "setup": "Sit or stand with a tall, neutral spine facing forward.",
+    "commonMistakes": ["Rotating too fast", "Shrugging shoulders to add range", "Forcing past a comfortable end range"]
+  },
+  {
+    "id": "neutral-grip-dumbbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Palms facing each other", "Lower dumbbells to chest level", "Press up without locking elbows hard", "Keep shoulder blades retracted"],
+    "setup": "Lie on a bench holding dumbbells with palms facing each other above the chest.",
+    "commonMistakes": ["Flaring elbows too wide", "Bouncing dumbbells off the chest", "Losing shoulder blade retraction mid-set"]
+  },
+  {
+    "id": "neutral-grip-incline-dumbbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set bench to a moderate incline", "Palms facing each other", "Lower dumbbells to upper chest", "Press up under control"],
+    "setup": "Sit on an incline bench holding dumbbells with palms facing each other above the upper chest.",
+    "commonMistakes": ["Setting the incline too steep, shifting to shoulders", "Flaring elbows excessively", "Arching the lower back off the bench"]
+  },
+  {
+    "id": "neutral-grip-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Grip handles with palms facing each other", "Pull chin over the bar", "Keep shoulder blades engaged, not shrugged", "Lower with full control"],
+    "setup": "Hang from parallel handles with arms fully extended and core braced.",
+    "commonMistakes": ["Kipping excessively to gain momentum", "Not reaching full arm extension at bottom", "Shrugging shoulders instead of engaging lats"]
+  }
+]

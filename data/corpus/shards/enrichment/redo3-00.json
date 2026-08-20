@@ -1,0 +1,248 @@
+[
+  {
+    "id": "barbell-squat-jerk",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": [
+      "Drive the bar up explosively off the shoulders",
+      "Punch under the bar into a split or squat receive",
+      "Keep the bar path close and vertical",
+      "Lock out arms overhead before standing tall",
+      "Brace hard through the torso on the dip"
+    ],
+    "setup": "Start with the barbell racked across the front shoulders in a shoulder-width stance, elbows high and core braced.",
+    "commonMistakes": [
+      "Pressing the bar with the arms instead of driving with the legs",
+      "Receiving the bar with an unstable front foot",
+      "Leaning back excessively on the drive",
+      "Failing to fully lock out overhead before recovery"
+    ]
+  },
+  {
+    "id": "chin-tuck",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Glide the head straight back, not down",
+      "Keep eyes level and jaw relaxed",
+      "Hold the retracted position briefly",
+      "Avoid shrugging the shoulders"
+    ],
+    "setup": "Sit or stand tall with a neutral spine and shoulders relaxed down and back.",
+    "commonMistakes": [
+      "Tilting the chin down instead of retracting straight back",
+      "Tensing the shoulders during the movement",
+      "Moving too fast to feel the deep neck flexor engagement"
+    ]
+  },
+  {
+    "id": "double-kettlebell-front-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rack both kettlebells against the shoulders",
+      "Keep elbows up and torso upright",
+      "Sit hips back and down between the knees",
+      "Drive through the mid-foot to stand",
+      "Keep knees tracking over the toes"
+    ],
+    "setup": "Clean two kettlebells to a front rack position at the shoulders with feet shoulder-width apart.",
+    "commonMistakes": [
+      "Letting elbows drop, causing the torso to fold forward",
+      "Rounding the lower back at the bottom",
+      "Rising onto the toes on the way up",
+      "Allowing knees to cave inward"
+    ]
+  },
+  {
+    "id": "firemans-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": [
+      "Distribute the load evenly across the shoulders and back",
+      "Brace the core before walking",
+      "Take controlled, stable steps",
+      "Keep the chest up and gaze forward"
+    ],
+    "setup": "Position the load (person, sandbag, or log) balanced across the upper back and shoulders with a secure grip on both sides.",
+    "commonMistakes": [
+      "Rounding the spine under the load",
+      "Rushing the lift into the carry position",
+      "Walking with an unstable, uneven gait",
+      "Failing to brace the core before moving"
+    ]
+  },
+  {
+    "id": "jumping-jack",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Land softly on the balls of the feet",
+      "Sweep arms fully overhead in sync with the leg jump",
+      "Keep a slight bend in the knees on landing",
+      "Maintain a quick, rhythmic pace"
+    ],
+    "setup": "Stand tall with feet together and arms relaxed at the sides.",
+    "commonMistakes": [
+      "Landing flat-footed or stiff-legged",
+      "Letting arms and legs fall out of sync",
+      "Slouching the torso forward during the movement"
+    ]
+  },
+  {
+    "id": "kettlebell-romanian-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Push the hips straight back to initiate",
+      "Keep the kettlebell close to the legs",
+      "Maintain a flat back throughout",
+      "Feel a stretch in the hamstrings before reversing",
+      "Drive hips forward to stand tall"
+    ],
+    "setup": "Hold a kettlebell with both hands in front of the thighs, feet hip-width apart and knees softly bent.",
+    "commonMistakes": [
+      "Bending the knees too much and turning it into a squat",
+      "Rounding the lower back at the bottom",
+      "Letting the kettlebell drift away from the body",
+      "Hyperextending the back at the top"
+    ]
+  },
+  {
+    "id": "landmine-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": [
+      "Hold the sleeve close to the chest with both hands",
+      "Sit the hips back and down",
+      "Keep the chest tall and elbows in",
+      "Drive through the whole foot to stand"
+    ],
+    "setup": "Stand facing a landmine attachment, gripping the end of the barbell sleeve at chest height with both hands.",
+    "commonMistakes": [
+      "Letting the bar drift away from the chest",
+      "Rounding the upper back",
+      "Shifting weight onto the toes",
+      "Not reaching adequate squat depth"
+    ]
+  },
+  {
+    "id": "levator-scapulae-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Turn the head roughly 45 degrees to one side",
+      "Gently tilt the chin toward the armpit",
+      "Use light hand pressure only, no yanking",
+      "Keep the opposite shoulder pressed down and relaxed"
+    ],
+    "setup": "Sit or stand tall, then rotate the head 45 degrees away from the side being stretched before tilting downward.",
+    "commonMistakes": [
+      "Pulling too aggressively with the hand",
+      "Shrugging the shoulder on the stretched side",
+      "Rotating the head the wrong direction, missing the muscle"
+    ]
+  },
+  {
+    "id": "nordic-walking",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Plant the pole at an angle behind the body",
+      "Push off through the pole with each stride",
+      "Swing arms in opposition to the legs",
+      "Keep an upright, relaxed posture"
+    ],
+    "setup": "Stand holding a Nordic walking pole in each hand with a relaxed grip, ready to begin a walking stride.",
+    "commonMistakes": [
+      "Planting the poles too far forward instead of behind",
+      "Gripping the poles too tightly",
+      "Not engaging the arms and core for propulsion",
+      "Taking overly short, shuffling steps"
+    ]
+  },
+  {
+    "id": "skater-squat",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Balance on one leg with the other held behind",
+      "Sit the hips back and down under control",
+      "Keep the working knee tracking over the toes",
+      "Tap the rear knee lightly to the floor",
+      "Drive through the standing heel to rise"
+    ],
+    "setup": "Stand on one leg with the other leg lifted behind the body, arms extended forward for balance.",
+    "commonMistakes": [
+      "Letting the standing knee collapse inward",
+      "Slamming the rear knee into the floor",
+      "Losing balance and touching down with the back foot",
+      "Leaning too far forward through the torso"
+    ]
+  },
+  {
+    "id": "surfing",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep a low, athletic stance on the board",
+      "Engage the core to stabilize against the wave",
+      "Distribute weight evenly between both feet",
+      "Keep eyes up and focused ahead"
+    ],
+    "setup": "Position the body prone or standing on the surfboard with feet or hands placed for balance as a wave approaches.",
+    "commonMistakes": [
+      "Standing up with too high a center of gravity",
+      "Looking down at the feet instead of ahead",
+      "Tensing up instead of flexing with the wave's motion",
+      "Poor foot placement leading to loss of balance"
+    ]
+  },
+  {
+    "id": "wrist-radial-deviation",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the forearm supported and still",
+      "Move only at the wrist, lifting the thumb side up",
+      "Control the return to the starting position",
+      "Use a light load or no load initially"
+    ],
+    "setup": "Rest the forearm on a table or thigh with the hand hanging off the edge in a neutral thumb-up position.",
+    "commonMistakes": [
+      "Moving the forearm or elbow to assist the lift",
+      "Using excessive weight that limits range of motion",
+      "Jerking the movement instead of controlling it"
+    ]
+  },
+  {
+    "id": "wrist-ulnar-deviation",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the forearm supported and still",
+      "Move only at the wrist, lifting the pinky side up",
+      "Control the return to the starting position",
+      "Use a light load or no load initially"
+    ],
+    "setup": "Rest the forearm on a table or thigh with the hand hanging off the edge in a neutral thumb-up position.",
+    "commonMistakes": [
+      "Moving the forearm or elbow to assist the lift",
+      "Using excessive weight that limits range of motion",
+      "Jerking the movement instead of controlling it"
+    ]
+  }
+]

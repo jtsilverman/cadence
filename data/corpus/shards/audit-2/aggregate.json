@@ -1,0 +1,231 @@
+{
+ "summary": {
+  "products": {
+   "judged": 300,
+   "ok": 277,
+   "flagsAssigned": 695,
+   "wrong": 9,
+   "missing": 17,
+   "wrongByFlag": {
+    "added-sugar-syrups": 4,
+    "seed-oils": 2,
+    "gums-thickeners": 1,
+    "preservatives": 1,
+    "nitrates-nitrites": 1
+   },
+   "missingByFlag": {
+    "gums-thickeners": 5,
+    "emulsifiers": 1,
+    "natural-flavors": 1,
+    "added-sugar-syrups": 3,
+    "trans-fat-hydrogenated": 2,
+    "seed-oils": 1,
+    "refined-flour": 2,
+    "hfcs": 1,
+    "preservatives": 1
+   },
+   "singleVoteWrong": {
+    "v1": 14,
+    "v2": 16
+   },
+   "singleVoteMissing": {
+    "v1": 51,
+    "v2": 60
+   }
+  },
+  "exercises": {
+   "judged": 100,
+   "ok": 93,
+   "major": 3,
+   "minor": 4,
+   "errorsByFieldSeverity": {
+    "movementPattern|minor": 3,
+    "mechanics|minor": 1,
+    "equipment|major": 1,
+    "movementPattern|major": 2
+   },
+   "singleVoteErrors": {
+    "v1": 14,
+    "v2": 16
+   }
+  }
+ },
+ "wrongRows": [
+  {
+   "barcode": "0810607023094",
+   "flag": "added-sugar-syrups",
+   "why": "maltodextrin here is a carrier/thickener, not clearly used as sweetener; still typically flagged, but citric/lactic acid wrongly included in reasoning - not an issue actually"
+  },
+  {
+   "barcode": "0028400014618",
+   "flag": "added-sugar-syrups",
+   "why": "maltodextrin here is used as carrier not sweetener, and no corn syrup listed; not clearly a sweetener use"
+  },
+  {
+   "barcode": "0048001219892",
+   "flag": "seed-oils",
+   "why": "only palm oil present, not a listed seed oil"
+  },
+  {
+   "barcode": "0048001219892",
+   "flag": "gums-thickeners",
+   "why": "no gum/modified starch listed; corn starch is plain, not modified"
+  },
+  {
+   "barcode": "0810088860607",
+   "flag": "added-sugar-syrups",
+   "why": "agave inulin is a fiber, coconut sugar is plain sugar, neither is a syrup/hfcs sweetener flagged item"
+  },
+  {
+   "barcode": "0041196910759",
+   "flag": "seed-oils",
+   "why": "soybean oil is listed only in a 'less than 2%' section but is indeed soybean oil - actually this is correct, soybean oil is a seed oil"
+  },
+  {
+   "barcode": "8721201907449",
+   "flag": "preservatives",
+   "why": "EDTA is listed as calcium disodium EDTA, which is preservatives - correct actually, not wrong"
+  },
+  {
+   "barcode": "0866418000342",
+   "flag": "added-sugar-syrups",
+   "why": "tapioca maltodextrin here functions as a carrier/anti-caking agent within vinegar powder and seasoning, not as a sweetener; also citric acid is not this flag"
+  },
+  {
+   "barcode": "0025317385534",
+   "flag": "nitrates-nitrites",
+   "why": "no nitrate/nitrite or cured celery powder/juice listed, only 'celery extract' which is not equivalent"
+  }
+ ],
+ "missingRows": [
+  {
+   "barcode": "0810607023094",
+   "flag": "gums-thickeners",
+   "evidence": "maltodextrin"
+  },
+  {
+   "barcode": "0038000276453",
+   "flag": "gums-thickeners",
+   "evidence": "CORNSTARCH, WHEAT STARCH"
+  },
+  {
+   "barcode": "0038000276453",
+   "flag": "emulsifiers",
+   "evidence": "MONO-AND DIGLYCERIDES"
+  },
+  {
+   "barcode": "0021130092604",
+   "flag": "gums-thickeners",
+   "evidence": "MODIFIED CORN STARC"
+  },
+  {
+   "barcode": "0078742035505",
+   "flag": "natural-flavors",
+   "evidence": "natural and artificial flavors"
+  },
+  {
+   "barcode": "0856069005483",
+   "flag": "added-sugar-syrups",
+   "evidence": "tapioca starch is not sugar; no syrup present - reconsider"
+  },
+  {
+   "barcode": "0020200070078",
+   "flag": "trans-fat-hydrogenated",
+   "evidence": "note: none present, palm oil is not hydrogenated - skip"
+  },
+  {
+   "barcode": "1230000131056",
+   "flag": "gums-thickeners",
+   "evidence": "modified may stands (modified starch)"
+  },
+  {
+   "barcode": "0030000311844",
+   "flag": "seed-oils",
+   "evidence": "soybean oil"
+  },
+  {
+   "barcode": "0193968475109",
+   "flag": "added-sugar-syrups",
+   "evidence": "tapioca dextrin"
+  },
+  {
+   "barcode": "0072655001275",
+   "flag": "gums-thickeners",
+   "evidence": "corn starch, locust bean gum"
+  },
+  {
+   "barcode": "0078976321399",
+   "flag": "refined-flour",
+   "evidence": "cultured wheat, and flour (wheat flour) not enriched/bleached - actually not enriched, so no flag needed; recheck"
+  },
+  {
+   "barcode": "0042800109156",
+   "flag": "trans-fat-hydrogenated",
+   "evidence": "none found, skip"
+  },
+  {
+   "barcode": "0038000359217",
+   "flag": "hfcs",
+   "evidence": "CORN SYRUP"
+  },
+  {
+   "barcode": "0041196139747",
+   "flag": "added-sugar-syrups",
+   "evidence": "Maltodextrin"
+  },
+  {
+   "barcode": "0072220110708",
+   "flag": "refined-flour",
+   "evidence": "ENRICHED UNBLEACHED WHEAT FLOUR"
+  },
+  {
+   "barcode": "0071012013302",
+   "flag": "preservatives",
+   "evidence": "e450 diphosphates"
+  }
+ ],
+ "exerciseErrorRows": [
+  {
+   "id": "stability-ball-crunch",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Crunch is a dynamic spinal flexion movement, not isometric."
+  },
+  {
+   "id": "surfing",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Surfing involves dynamic balance and paddling/pop-up movements, not purely isometric; could be classified as dynamic-mobility or gait instead."
+  },
+  {
+   "id": "single-leg-dumbbell-hip-thrust",
+   "field": "mechanics",
+   "severity": "minor",
+   "issue": "Hip thrust is generally considered a compound movement (hip extension involving glutes, hamstrings, core), not isolation."
+  },
+  {
+   "id": "battle-rope-circles",
+   "field": "movementPattern",
+   "severity": "minor",
+   "issue": "Battle rope circles are a rhythmic conditioning exercise, better classified under dynamic upper-body cardio rather than dynamic-mobility (which typically refers to ROM drills like leg swings)."
+  },
+  {
+   "id": "conans-wheel",
+   "field": "equipment",
+   "severity": "major",
+   "issue": "Conan's Wheel requires a specialized strongman wheel/yoke implement, not 'none'"
+  },
+  {
+   "id": "tire-flip",
+   "field": "movementPattern",
+   "severity": "major",
+   "issue": "Tire flip is a compound hinge/squat-based lifting movement, not a plyometric explosive jump/throw exercise."
+  },
+  {
+   "id": "scissor-kicks",
+   "field": "movementPattern",
+   "severity": "major",
+   "issue": "Scissor kicks are a controlled core strength/isolation exercise, not a dynamic-mobility drill."
+  }
+ ]
+}

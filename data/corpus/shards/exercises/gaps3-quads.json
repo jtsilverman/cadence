@@ -1,0 +1,26 @@
+[
+  {
+    "id": "skater-squat",
+    "name": "Skater Squat",
+    "aliases": ["rear foot elevated pistol squat", "single-leg bench squat"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads"],
+    "secondaryMuscles": ["glutes", "hamstrings", "abductors", "abs", "calves"],
+    "laterality": "unilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "landmine-squat",
+    "name": "Landmine Squat",
+    "aliases": ["landmine goblet squat", "barbell landmine squat"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["quads"],
+    "secondaryMuscles": ["glutes", "adductors", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

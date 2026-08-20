@@ -1,0 +1,14 @@
+[
+  {
+    "id": "jumping-jack",
+    "name": "Jumping Jack",
+    "aliases": ["star jump", "side-straddle hop"],
+    "modality": "plyometric",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["calves", "abductors", "cardiovascular"],
+    "secondaryMuscles": ["quads", "glutes", "front-delts", "side-delts"],
+    "laterality": "bilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  }
+]

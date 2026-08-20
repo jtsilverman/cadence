@@ -1,0 +1,362 @@
+[
+  {
+    "id": "bodyweight-single-leg-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips", "Keep standing leg soft", "Extend rear leg back for balance", "Keep spine neutral", "Square hips to floor"],
+    "setup": "Stand on one leg with a slight bend in the knee, torso tall and core braced.",
+    "commonMistakes": ["Rotating hips open", "Rounding the lower back", "Rushing the descent losing balance"]
+  },
+  {
+    "id": "bodyweight-sissy-squat",
+    "mechanics": "isolation",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Rise onto toes", "Lean back as knees drive forward", "Keep hips extended", "Control the descent"],
+    "setup": "Stand holding a support, rise onto the balls of the feet with knees together.",
+    "commonMistakes": ["Bending at the hips instead of knees", "Losing balance backward", "Skipping the toe raise"]
+  },
+  {
+    "id": "bodyweight-split-squat",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": ["Keep torso upright", "Lower straight down", "Front knee tracks over foot", "Push through front heel"],
+    "setup": "Step one foot forward into a staggered stance with the rear heel lifted.",
+    "commonMistakes": ["Front knee caving inward", "Taking too short a stance", "Bouncing at the bottom"]
+  },
+  {
+    "id": "bodyweight-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Rise onto toes fully", "Pause at the top", "Lower under control", "Keep knees straight"],
+    "setup": "Stand with feet hip-width apart, holding a wall or support for balance.",
+    "commonMistakes": ["Bouncing at the bottom", "Not reaching full range", "Bending the knees"]
+  },
+  {
+    "id": "bodyweight-step-up",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": ["Drive through the lead heel", "Stand tall on top of the box", "Control the step down", "Avoid pushing off the trailing leg"],
+    "setup": "Stand facing a sturdy box or step with one foot placed on top.",
+    "commonMistakes": ["Pushing off the back leg", "Stepping onto a too-high box", "Leaning too far forward"]
+  },
+  {
+    "id": "bodyweight-tibialis-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Lean back against a wall", "Lift toes toward shins", "Pause at the top", "Lower slowly"],
+    "setup": "Stand leaning back slightly against a wall with heels a foot in front of the body.",
+    "commonMistakes": ["Using momentum to swing toes up", "Not leaning back enough", "Rushing the tempo"]
+  },
+  {
+    "id": "bodyweight-walking-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": ["Step forward into a long stride", "Lower back knee toward floor", "Keep torso upright", "Drive through front heel to next step"],
+    "setup": "Stand tall with feet together, hands on hips or at sides.",
+    "commonMistakes": ["Taking too short a stride", "Letting front knee pass far over toes", "Leaning forward excessively"]
+  },
+  {
+    "id": "bounding",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Drive knee high on each stride", "Pump arms for power", "Land softly and absorb", "Push explosively off the ground"],
+    "setup": "Start from a light jog, preparing to exaggerate stride length and height.",
+    "commonMistakes": ["Landing flat-footed hard", "Overstriding and losing control", "Insufficient arm drive"]
+  },
+  {
+    "id": "bow-pose",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Grab ankles from behind", "Lift chest and thighs together", "Kick feet into hands", "Breathe steadily in the hold"],
+    "setup": "Lie face down, bend knees, and reach back to grasp the ankles.",
+    "commonMistakes": ["Yanking legs instead of lifting smoothly", "Holding breath", "Straining the neck upward"]
+  },
+  {
+    "id": "box-assisted-pistol-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Extend one leg forward", "Sit back toward the box", "Keep chest up", "Drive through the heel to stand"],
+    "setup": "Stand on one leg in front of a low box with the other leg extended forward.",
+    "commonMistakes": ["Collapsing knee inward", "Leaning too far forward", "Using the box as a hard landing instead of a light touch"]
+  },
+  {
+    "id": "box-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Load hips and knees", "Swing arms upward for power", "Land softly with knees bent", "Stand tall fully on the box"],
+    "setup": "Stand facing a sturdy plyo box in an athletic stance.",
+    "commonMistakes": ["Landing with locked knees", "Choosing too high a box", "Stepping down carelessly"]
+  },
+  {
+    "id": "box-jump-burpee",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Drop into a burpee smoothly", "Explode up into the box jump", "Land softly on the box", "Reset before repeating"],
+    "setup": "Stand in front of a plyo box with space to drop into a burpee.",
+    "commonMistakes": ["Rushing the burpee push-up", "Jumping onto the box fatigued and off-balance", "Poor landing mechanics"]
+  },
+  {
+    "id": "box-jump-over",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Jump up and over the box", "Tuck knees as needed", "Land softly on the far side", "Reset stance before next rep"],
+    "setup": "Stand facing the side of a plyo box, ready to jump laterally or forward over it.",
+    "commonMistakes": ["Clipping the box on the way over", "Landing stiff-legged", "Misjudging box height"]
+  },
+  {
+    "id": "box-plyo-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Lower chest to the box", "Explode hands off the box", "Land softly with elbows bent", "Keep core braced throughout"],
+    "setup": "Place hands on a low box in a push-up position, body in a straight line.",
+    "commonMistakes": ["Sagging hips", "Landing with locked elbows", "Insufficient explosive drive"]
+  },
+  {
+    "id": "breaststroke-swimming",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Sweep arms outward then in", "Glide after each kick", "Time breath with arm pull", "Keep kick symmetrical"],
+    "setup": "Begin floating face down in the water in a streamlined position.",
+    "commonMistakes": ["Lifting head too high to breathe", "Asymmetrical frog kick", "Rushing the glide phase"]
+  },
+  {
+    "id": "bridge-pose",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Press through feet to lift hips", "Squeeze glutes at the top", "Keep knees tracking forward", "Interlace hands under back if able"],
+    "setup": "Lie on your back with knees bent, feet flat near the hips.",
+    "commonMistakes": ["Letting knees splay outward", "Overarching the lower back", "Feet placed too far from hips"]
+  },
+  {
+    "id": "broad-jump",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Swing arms back then forward", "Explode forward and up", "Land softly with knees bent", "Stick the landing balanced"],
+    "setup": "Stand with feet shoulder-width apart at a marked starting line.",
+    "commonMistakes": ["Landing off-balance falling forward", "Insufficient arm swing", "Jumping upward instead of forward"]
+  },
+  {
+    "id": "broad-jump-to-vertical-jump",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Explode forward into the broad jump", "Stick the landing quickly", "Immediately explode vertically", "Reach upward at peak"],
+    "setup": "Stand ready at a start line with room ahead for the forward jump.",
+    "commonMistakes": ["Pausing too long between jumps", "Unstable landing before the vertical jump", "Not fully extending on the vertical phase"]
+  },
+  {
+    "id": "burpee",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Drop into a squat then plank", "Keep core tight in the plank", "Jump feet back to hands", "Explode up into a jump"],
+    "setup": "Stand with feet shoulder-width apart, ready to drop into a squat.",
+    "commonMistakes": ["Sagging hips in the plank", "Skipping the full jump extension", "Landing hard on the feet"]
+  },
+  {
+    "id": "burpee-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Perform a full burpee under the bar", "Jump up and grip the bar", "Pull chin over the bar", "Release with control before resetting"],
+    "setup": "Stand under a pull-up bar with room to drop into a burpee.",
+    "commonMistakes": ["Using momentum to swing into the pull-up", "Skipping the chest-to-plank in the burpee", "Fatigued sloppy grip"]
+  },
+  {
+    "id": "burpee-push-up",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Drop into plank position", "Perform a full push-up", "Jump feet back to hands", "Explode up into a jump"],
+    "setup": "Stand with feet shoulder-width apart, ready to drop into a squat and plank.",
+    "commonMistakes": ["Half-repping the push-up", "Sagging hips during the plank", "Rushing form for speed"]
+  },
+  {
+    "id": "butterfly-sit-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Bring soles of feet together", "Curl chest toward feet", "Exhale on the way up", "Lower with control"],
+    "setup": "Lie on your back with knees bent out to the sides, soles of feet touching.",
+    "commonMistakes": ["Pulling on the neck", "Using momentum to jerk up", "Feet not staying grounded"]
+  },
+  {
+    "id": "butterfly-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Bring soles of feet together", "Sit tall with a straight spine", "Gently press knees toward floor", "Hold and breathe"],
+    "setup": "Sit on the floor with knees bent and the soles of the feet touching.",
+    "commonMistakes": ["Rounding the back forward", "Forcing knees down aggressively", "Holding breath during the stretch"]
+  },
+  {
+    "id": "butterfly-swimming",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Undulate the body like a wave", "Pull both arms simultaneously", "Kick with both legs together", "Time breath with arm recovery"],
+    "setup": "Begin floating face down in the water in a streamlined position.",
+    "commonMistakes": ["Lifting head too early", "Weak dolphin kick timing", "Arms recovering too low over the water"]
+  },
+  {
+    "id": "cable-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Press handles forward and together", "Keep slight bend in elbows", "Control the return", "Keep shoulders back"],
+    "setup": "Stand in a split stance facing away from the cable stack, handles at chest height.",
+    "commonMistakes": ["Leaning too far forward", "Locking out elbows hard", "Letting shoulders round forward"]
+  },
+  {
+    "id": "cable-concentration-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Brace elbow against inner thigh", "Curl handle toward shoulder", "Squeeze biceps at the top", "Lower slowly"],
+    "setup": "Sit beside a low cable pulley, leaning forward with elbow braced on the inner thigh.",
+    "commonMistakes": ["Swinging the torso for momentum", "Elbow drifting away from the leg", "Rushing the eccentric"]
+  },
+  {
+    "id": "cable-crunch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Kneel facing the cable stack", "Crunch spine flexing down", "Keep hips stationary", "Exhale as you crunch"],
+    "setup": "Kneel below a high pulley holding the rope at either side of the head.",
+    "commonMistakes": ["Pulling with arms instead of abs", "Moving hips back and forth", "Not flexing through the spine"]
+  },
+  {
+    "id": "cable-cuban-rotation",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Raise elbows to shoulder height", "Rotate forearms upward", "Keep elbows stationary", "Control the return"],
+    "setup": "Stand side-on to a low cable, elbow bent at ninety degrees at shoulder height.",
+    "commonMistakes": ["Letting elbow drop during rotation", "Using shoulder momentum", "Rotating too fast"]
+  },
+  {
+    "id": "cable-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep elbows pinned to sides", "Curl bar toward shoulders", "Squeeze at the top", "Lower under control"],
+    "setup": "Stand facing a low pulley holding a bar attachment with an underhand grip.",
+    "commonMistakes": ["Swinging the torso", "Elbows drifting forward", "Using too much weight and losing form"]
+  },
+  {
+    "id": "cable-external-rotation",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Keep elbow tucked at the side", "Rotate forearm outward", "Keep wrist neutral", "Return slowly"],
+    "setup": "Stand side-on to a low pulley, elbow bent at ninety degrees against the torso.",
+    "commonMistakes": ["Elbow drifting away from the body", "Using shoulder instead of rotator cuff", "Excessive weight causing swing"]
+  },
+  {
+    "id": "cable-face-pull",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Pull rope toward the face", "Flare elbows high and wide", "Squeeze shoulder blades together", "Control the return"],
+    "setup": "Stand facing a high pulley with a rope attachment set roughly at head height.",
+    "commonMistakes": ["Pulling with arms not upper back", "Letting elbows drop low", "Using excessive weight and jerking"]
+  },
+  {
+    "id": "cable-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Keep slight bend in elbows", "Sweep handles together in an arc", "Squeeze chest at the center", "Control the return"],
+    "setup": "Stand centered between two high pulleys, handles held out to the sides.",
+    "commonMistakes": ["Bending elbows too much turning it into a press", "Leaning too far forward", "Letting arms drop too far back"]
+  },
+  {
+    "id": "cable-front-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Keep slight bend in elbow", "Raise handle to shoulder height", "Avoid swinging the torso", "Lower with control"],
+    "setup": "Stand facing away from a low pulley, holding the handle in front of the thighs.",
+    "commonMistakes": ["Using momentum to swing the weight", "Raising above shoulder height", "Shrugging the shoulder up"]
+  },
+  {
+    "id": "cable-glute-kickback",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Hinge slightly forward at the hips", "Kick leg straight back", "Squeeze glute at the top", "Return with control"],
+    "setup": "Attach an ankle cuff to a low pulley and stand facing the machine, holding it for support.",
+    "commonMistakes": ["Overarching the lower back", "Using momentum instead of glute squeeze", "Kicking too high and losing hip position"]
+  },
+  {
+    "id": "cable-internal-rotation",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Keep elbow tucked at the side", "Rotate forearm inward across the body", "Keep wrist neutral", "Return slowly"],
+    "setup": "Stand side-on to a low pulley, elbow bent at ninety degrees away from the torso.",
+    "commonMistakes": ["Elbow drifting away from the body", "Using torso rotation for assistance", "Moving too fast through the range"]
+  },
+  {
+    "id": "cable-lateral-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Keep slight bend in elbow", "Raise arm out to shoulder height", "Lead with the elbow", "Lower with control"],
+    "setup": "Stand side-on to a low pulley, holding the handle across the body at the hip.",
+    "commonMistakes": ["Shrugging the shoulder up", "Using body momentum to swing", "Raising above shoulder height"]
+  },
+  {
+    "id": "cable-lying-leg-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Keep hips pressed into the pad", "Curl heels toward glutes", "Squeeze hamstrings at the top", "Lower with control"],
+    "setup": "Lie face down on a bench with an ankle cuff attached to a low cable.",
+    "commonMistakes": ["Lifting hips off the pad", "Using momentum to jerk the weight", "Not completing full range of motion"]
+  },
+  {
+    "id": "cable-overhead-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Brace core before pressing", "Press handles straight overhead", "Avoid arching the lower back", "Lower with control"],
+    "setup": "Stand facing away from a low pulley, holding handles at shoulder height.",
+    "commonMistakes": ["Excessive lower back arch", "Pressing at an angle instead of straight up", "Using leg drive to cheat the weight up"]
+  },
+  {
+    "id": "cable-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Keep elbows close to the head", "Extend forearms overhead", "Squeeze triceps at full extension", "Lower with control"],
+    "setup": "Stand facing away from a low pulley, holding a rope overhead with elbows bent.",
+    "commonMistakes": ["Elbows flaring outward", "Using shoulder movement instead of elbow extension", "Arching the back excessively"]
+  },
+  {
+    "id": "cable-pallof-press",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Stand side-on to the cable", "Press handle straight out from chest", "Resist rotation with the core", "Return with control"],
+    "setup": "Stand side-on to a cable pulley set at chest height, holding the handle at the sternum.",
+    "commonMistakes": ["Letting torso rotate toward the cable", "Leaning back to counterbalance", "Pressing at an angle instead of straight out"]
+  }
+]

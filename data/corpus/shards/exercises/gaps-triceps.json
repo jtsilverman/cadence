@@ -1,0 +1,14 @@
+[
+  {
+    "id": "california-press",
+    "name": "California Press",
+    "aliases": ["California Dumbbell Press", "California Barbell Press"],
+    "modality": "strength",
+    "equipment": ["dumbbell", "bench"],
+    "primaryMuscles": ["triceps"],
+    "secondaryMuscles": ["pectorals", "front-delts"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

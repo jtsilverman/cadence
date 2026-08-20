@@ -1,0 +1,262 @@
+/* The funnel pages: FAQ, waitlist, thank-you.
+ *
+ * This file mirrors the design language of the built main page,
+ * drafts/website/page/index.html. The palette below is the same palette that
+ * page declares, and tests/funnel-styling.test.ts parses that file and fails
+ * when the two drift apart. Change a colour there, not here.
+ *
+ * app/landing.css still styles the v4 landing at `/`. The two never meet: the
+ * funnel pages import this file only. Both this file and app/funnel-chrome.tsx
+ * retire when the main page is wired into app/.
+ */
+
+.funnel {
+  --cream: #EFEDE6;
+  --ink: #101010;
+  --dim: #5E5E56;
+  --rule: #C4C0B2;
+  --grn: #1B7F4B;
+  --tom: #D14B24;
+
+  --disp: var(--font-inter-tight), -apple-system, sans-serif;
+  --body: var(--font-inter), -apple-system, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* the fixed nav band's height. Everything that clears the band reads this. */
+  --navh: 67px;
+
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--body);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  padding-top: var(--navh);
+  /* a short page still puts its footer on the floor, not mid-screen */
+  display: flex; flex-direction: column;
+}
+.funnel > main { flex: 1 0 auto; }
+
+.funnel *,
+.funnel *::before,
+.funnel *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+.funnel :focus-visible { outline: 2px solid var(--grn); outline-offset: 4px; }
+.funnel a { color: inherit; }
+
+/* every section sets padding-block only: a `padding` shorthand here outranks
+   this rule and zeroes the gutter at narrow widths */
+.funnel .wrap { width: 100%; max-width: 1200px; margin: 0 auto; padding-inline: 40px; }
+
+/* the top and bottom bars run the width of the window: the mark sits at the
+   left edge and the call to action at the right, rather than lining up with
+   the reading column between them */
+.funnel .bar { width: 100%; padding-inline: 40px; }
+
+/* ---------- the bare underlined CTA: no pills, no solid blocks ---------- */
+.funnel .cta {
+  display: inline-flex; align-items: baseline; gap: .5em; text-decoration: none;
+  font-family: var(--disp); font-weight: 600; letter-spacing: -.015em;
+  color: var(--grn); border-bottom: 2px solid var(--grn); padding-bottom: 4px;
+}
+.funnel .cta .arw { display: inline-block; transition: transform .3s cubic-bezier(.22,.72,.24,1); }
+.funnel .cta:hover .arw { transform: translateX(7px); }
+.funnel .cta.big { font-size: clamp(24px, 2.6vw, 36px); }
+.funnel .cta.small {
+  font-size: 17px; border-bottom-width: 1.5px;
+  font-family: var(--body); font-weight: 500;
+}
+
+.funnel .mono {
+  font-family: var(--mono); font-size: 11.5px; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--dim);
+}
+
+/* ---------- nav: the band spans the window, its contents stay in the column ---------- */
+.funnel-navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 40;
+  background: var(--cream); border-bottom: 1px solid var(--rule);
+}
+.funnel .nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-block: 22px 18px;
+}
+/* the mark is five bars at closing intervals: the beat speeding up, which is
+   the name. It inherits ink through currentColor. */
+.funnel .brand {
+  display: flex; align-items: center; gap: 11px;
+  text-decoration: none; color: var(--ink);
+}
+.funnel .brand svg { display: block; }
+.funnel .mark {
+  font-family: var(--disp); font-weight: 800; font-size: 21px;
+  letter-spacing: -.03em; text-decoration: none;
+}
+
+/* ---------- page head: the same typographic register as the hero ---------- */
+.funnel .phead { padding-block: 74px 10px; }
+.funnel .phead h1 {
+  font-family: var(--disp); font-weight: 800; letter-spacing: -.03em; line-height: .99;
+  font-size: clamp(38px, 5.4vw, 74px); max-width: 17ch; text-wrap: balance;
+}
+.funnel .phead h1 em { font-style: normal; color: var(--grn); }
+.funnel .phead .sub {
+  margin-top: 22px; font-size: clamp(17px, 1.4vw, 21px); line-height: 1.45;
+  color: #33332C; max-width: 46ch;
+}
+
+/* ---------- footer ---------- */
+.funnel .foot {
+  border-top: 1px solid var(--rule); padding-block: 28px 40px; margin-top: 90px;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 20px; flex-wrap: wrap;
+}
+.funnel .foot a {
+  text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 2px;
+}
+
+@media (max-width: 1120px) {
+  .funnel .wrap { padding-inline: 24px; }
+  .funnel .bar { padding-inline: 24px; }
+  .funnel .phead { padding-block: 52px 8px; }
+}
+
+/* ---------- the questions list ---------- */
+/* Rows separated by a hairline, never boxed: no box earns a border unless it
+   has to. One row open at a time; the panel's height animates, nothing else. */
+.funnel .faq-list { margin-top: 54px; border-top: 1px solid var(--rule); }
+.funnel .faq-item { border-bottom: 1px solid var(--rule); }
+
+.funnel .faq-row {
+  width: 100%; display: grid; grid-template-columns: 46px 1fr 28px;
+  align-items: start; gap: 16px; text-align: left;
+  padding-block: 26px; background: none; border: 0; cursor: pointer;
+  font: inherit; color: inherit;
+}
+.funnel .faq-row .ix { padding-top: .45em; }
+
+/* The question asks and the answer replies, so they are set as two voices: the
+   question italic, the answer upright. Same idiom as the pain belt, at a size
+   a person reads instead of one that sweeps past. */
+.funnel .faq-q {
+  font-family: var(--disp); font-weight: 800; font-style: italic;
+  letter-spacing: -.022em; line-height: 1.12;
+  font-size: clamp(21px, 2vw, 29px); text-wrap: balance;
+}
+/* the sting of the question takes the warm accent and stays italic with the
+   rest of the question. The pain belt on the main page sets its accent upright,
+   because there the phrase is cutting across a moving line; a question a person
+   reads holds together better in one voice. */
+.funnel .faq-q em { color: var(--tom); }
+
+.funnel .faq-toggle {
+  font-family: var(--disp); font-weight: 600; font-size: 26px;
+  line-height: 1; color: var(--dim); justify-self: end; padding-top: .18em;
+}
+
+.funnel .faq-panel {
+  display: grid; grid-template-rows: 0fr; overflow: clip;
+  transition: grid-template-rows .4s cubic-bezier(.22,.72,.24,1);
+}
+.funnel .faq-panel--open { grid-template-rows: 1fr; }
+/* Two rules, both load-bearing. A grid item's automatic minimum size is its
+   content, so `0fr` alone leaves the answer at full height and every row reads
+   as open: min-height: 0 is what lets the track collapse. And the clip belongs
+   on the panel, not only on the answer, because overflow clips at the padding
+   edge and the answer's bottom padding leaks one line of text through a
+   zero-height child. The padding sits on .faq-a inside .faq-panel-inner for the
+   same reason: padding on the collapsing item floors the closed row at 30px.
+   Clip, never hidden: `overflow: hidden` on an ancestor also freezes a
+   scroll-driven reveal inside it. */
+.funnel .faq-panel-inner { min-height: 0; }
+
+.funnel .faq-a {
+  padding: 0 74px 30px 62px;
+  font-size: clamp(16.5px, 1.25vw, 19px); line-height: 1.55;
+  color: #33332C; max-width: 62ch;
+}
+/* only the phrase that answers the question turns green */
+.funnel .faq-a em { font-style: normal; color: var(--grn); font-weight: 600; }
+
+/* ---------- ask a question ---------- */
+.funnel .ask-block { margin-top: 64px; display: flex; flex-direction: column; gap: 16px; }
+.funnel .ask-form { display: flex; flex-direction: column; gap: 18px; max-width: 62ch; }
+.funnel .ask-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.funnel .ask-sent { font-size: 17px; color: var(--grn); }
+
+@media (max-width: 700px) {
+  .funnel .faq-row { grid-template-columns: 34px 1fr 24px; gap: 12px; }
+  .funnel .faq-a { padding: 0 0 26px 46px; }
+}
+
+/* ---------- the signup form ---------- */
+/* No boxed inputs: a field is a label, a line, and the text on it. */
+.funnel .signup { margin-top: 54px; max-width: 62ch; }
+.funnel .field {
+  border: 0; margin: 0 0 46px;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.funnel .email-input {
+  width: 100%; padding: 10px 0;
+  font-family: var(--disp); font-weight: 600; letter-spacing: -.02em;
+  font-size: clamp(22px, 2.2vw, 30px); color: var(--ink);
+  background: none; border: 0; border-bottom: 2px solid var(--rule);
+}
+.funnel .email-input::placeholder { color: var(--rule); }
+
+.funnel .survey-lede {
+  margin: 0 0 46px; font-size: 17px; line-height: 1.5; color: var(--dim);
+}
+
+.funnel .survey-q {
+  font-family: var(--disp); font-weight: 800; font-style: italic;
+  letter-spacing: -.02em; line-height: 1.15;
+  font-size: clamp(19px, 1.7vw, 24px);
+}
+.funnel .survey-options { display: flex; flex-direction: column; gap: 2px; }
+
+/* the native control, resized and recoloured, rather than a div pretending to
+   be one: it keeps the keyboard and the screen reader for free */
+.funnel .opt {
+  display: flex; align-items: baseline; gap: 13px; cursor: pointer;
+  padding-block: 9px; font-size: 17px; line-height: 1.4;
+  border-bottom: 1px solid transparent;
+}
+.funnel .opt:hover { border-bottom-color: var(--rule); }
+.funnel .opt input { width: 16px; height: 16px; accent-color: var(--grn); cursor: pointer; }
+.funnel .opt:has(input:checked) { color: var(--grn); }
+
+/* The funnel's two textareas, the ask box and the survey's free-text answer.
+   One line tall to start, so the words sit on the rule instead of floating four
+   lines above it; the field grows downward as it fills. */
+.funnel textarea {
+  width: 100%; padding: 6px 0; resize: none; overflow: hidden;
+  font-family: var(--body); font-size: 17px; line-height: 1.5; color: var(--ink);
+  background: none; border: 0; border-bottom: 1px solid var(--rule);
+}
+.funnel textarea::placeholder { color: var(--dim); }
+
+/* :focus-visible, not :focus: an outline: none on :focus would out-specify the
+   ring at the top of this file and leave the keyboard with only a recoloured
+   underline to go on */
+.funnel textarea:focus-visible,
+.funnel .email-input:focus-visible {
+  outline: none; border-bottom-color: var(--grn);
+}
+
+.funnel .signup-actions {
+  margin-top: 56px; display: flex; align-items: center; gap: 22px; flex-wrap: wrap;
+}
+/* the CTA keeps its underline: `border: 0` here would outrank .cta */
+/* a <button> carrying .cta stops looking like a button. Scoped to the shared
+   class, not to each container that happens to hold one. Only the side borders
+   and the top go: the bottom one is the CTA's underline. */
+.funnel button.cta { background: none; border-inline: 0; border-top: 0; cursor: pointer; }
+.funnel button.cta:disabled { opacity: .5; cursor: default; }
+
+/* ---------- thank-you: one line of state, one thing to do next ---------- */
+/* align-items, or the inline CTA stretches and its underline runs the
+   whole column */
+.funnel .thanks-next {
+  margin-top: 64px; display: flex; flex-direction: column;
+  align-items: flex-start; gap: 20px;
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "cross-country-skiing",
+    "name": "Cross-Country Skiing (Nordic Skiing)",
+    "aliases": ["Nordic Skiing", "XC Skiing", "Skate Skiing", "Classic Skiing"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["quads", "hamstrings", "glutes", "calves", "cardiovascular"],
+    "secondaryMuscles": ["triceps", "front-delts", "abs", "obliques"],
+    "laterality": "bilateral",
+    "metrics": ["time", "distance", "pace", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "outdoor-rowing",
+    "name": "Outdoor Rowing (Sculling/Crew)",
+    "aliases": ["Sculling", "Crew Rowing", "Boat Rowing"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["lats", "quads", "hamstrings", "cardiovascular"],
+    "secondaryMuscles": ["traps", "rhomboids", "biceps", "forearms", "abs", "glutes"],
+    "laterality": "bilateral",
+    "metrics": ["time", "distance", "pace", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "ice-skating",
+    "name": "Ice Skating",
+    "aliases": ["Recreational Skating", "Speed Skating", "Figure Skating"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["quads", "glutes", "hamstrings", "calves", "cardiovascular"],
+    "secondaryMuscles": ["adductors", "abductors", "abs", "obliques"],
+    "laterality": "bilateral",
+    "metrics": ["time", "distance", "pace", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "snowshoeing",
+    "name": "Snowshoeing",
+    "aliases": ["Snowshoe Trekking", "Snowshoe Hiking"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["quads", "hamstrings", "glutes", "calves", "cardiovascular"],
+    "secondaryMuscles": ["hip-flexors", "abs", "tibialis"],
+    "laterality": "bilateral",
+    "metrics": ["time", "distance", "pace", "incline", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "kayaking-canoeing-paddleboarding",
+    "name": "Kayaking / Canoeing / Paddleboarding",
+    "aliases": ["Kayaking", "Canoeing", "Stand-Up Paddleboarding", "SUP"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["lats", "obliques", "abs", "cardiovascular"],
+    "secondaryMuscles": ["traps", "rear-delts", "biceps", "forearms", "quads", "glutes"],
+    "laterality": "unilateral",
+    "metrics": ["time", "distance", "pace", "calories"],
+    "variationOf": null
+  }
+]

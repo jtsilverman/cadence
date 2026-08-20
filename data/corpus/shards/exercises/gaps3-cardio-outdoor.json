@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nordic-walking",
+    "name": "Nordic Walking",
+    "aliases": ["Pole Walking", "Nordic Pole Walking"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["quads", "hamstrings", "glutes", "calves", "cardiovascular"],
+    "secondaryMuscles": ["front-delts", "triceps", "abs", "obliques"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "pace", "calories", "incline"],
+    "variationOf": null
+  },
+  {
+    "id": "surfing",
+    "name": "Surfing",
+    "aliases": ["Surf Session", "Wave Surfing"],
+    "modality": "cardio",
+    "equipment": ["none"],
+    "primaryMuscles": ["full-body", "abs", "cardiovascular"],
+    "secondaryMuscles": ["lats", "front-delts", "side-delts", "obliques", "quads"],
+    "laterality": "bilateral",
+    "metrics": ["time", "distance", "calories"],
+    "variationOf": null
+  }
+]

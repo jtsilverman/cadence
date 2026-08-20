@@ -1,0 +1,26 @@
+[
+  {
+    "id": "one-arm-handstand-freestanding",
+    "name": "One-Arm Handstand (Freestanding)",
+    "aliases": ["One Arm Handstand", "Single-Arm Handstand"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["front-delts", "side-delts"],
+    "secondaryMuscles": ["triceps", "traps", "abs", "forearms", "obliques"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": "freestanding-handstand"
+  },
+  {
+    "id": "clapping-pull-up",
+    "name": "Clapping Pull-Up (Explosive Pull-Up)",
+    "aliases": ["Explosive Pull-Up", "Clap Pull-Up"],
+    "modality": "plyometric",
+    "equipment": ["pull-up-bar", "bodyweight"],
+    "primaryMuscles": ["lats"],
+    "secondaryMuscles": ["biceps", "rhomboids", "traps", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "typewriter-push-up",
+    "name": "Typewriter Push-Up",
+    "aliases": ["Side-to-Side Push-Up"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["pectorals", "triceps"],
+    "secondaryMuscles": ["front-delts", "abs", "obliques"],
+    "laterality": "unilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "t-push-up",
+    "name": "T Push-Up (Rotational Push-Up / Push-Up to Side Plank)",
+    "aliases": ["Rotational Push-Up", "Push-Up to Side Plank"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["pectorals", "triceps", "obliques"],
+    "secondaryMuscles": ["front-delts", "side-delts", "abs"],
+    "laterality": "unilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  }
+]

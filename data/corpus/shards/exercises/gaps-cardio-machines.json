@@ -1,0 +1,50 @@
+[
+  {
+    "id": "arc-trainer",
+    "name": "Arc Trainer (Cybex Arc Trainer)",
+    "aliases": ["Cybex arc trainer", "arc trainer machine"],
+    "modality": "cardio",
+    "equipment": ["elliptical"],
+    "primaryMuscles": ["quads", "glutes", "hamstrings", "cardiovascular"],
+    "secondaryMuscles": ["calves"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "pace", "resistance-level", "incline", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "recumbent-stepper",
+    "name": "Recumbent Stepper / NuStep",
+    "aliases": ["NuStep", "recumbent cross trainer", "seated stepper"],
+    "modality": "cardio",
+    "equipment": ["machine"],
+    "primaryMuscles": ["quads", "glutes", "hamstrings", "cardiovascular"],
+    "secondaryMuscles": ["calves", "front-delts", "triceps", "biceps"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "resistance-level", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "bike-erg",
+    "name": "BikeErg (Concept2)",
+    "aliases": ["Concept2 BikeErg", "erg bike"],
+    "modality": "cardio",
+    "equipment": ["bike"],
+    "primaryMuscles": ["quads", "glutes", "cardiovascular"],
+    "secondaryMuscles": ["hamstrings", "calves"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "pace", "resistance-level", "calories"],
+    "variationOf": null
+  },
+  {
+    "id": "treadmill-backward-run",
+    "name": "Backward Treadmill Run / Retro Running",
+    "aliases": ["retro running", "reverse treadmill run", "backward running treadmill"],
+    "modality": "cardio",
+    "equipment": ["treadmill"],
+    "primaryMuscles": ["quads", "calves", "cardiovascular"],
+    "secondaryMuscles": ["hamstrings", "glutes", "tibialis"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "pace", "incline", "calories"],
+    "variationOf": null
+  }
+]

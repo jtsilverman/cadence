@@ -1,0 +1,722 @@
+[
+  {
+    "id": "cable-preacher-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep upper arms pinned to the pad",
+      "Curl without swinging the torso",
+      "Squeeze at the top",
+      "Lower under control"
+    ],
+    "setup": "Sit or stand at a preacher bench with a cable attachment set low, arms resting on the pad.",
+    "commonMistakes": [
+      "Lifting elbows off the pad",
+      "Using momentum to swing the weight",
+      "Not fully extending at the bottom"
+    ]
+  },
+  {
+    "id": "cable-pronation",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbow tucked at 90 degrees",
+      "Rotate forearm only, not the shoulder",
+      "Move slowly and controlled",
+      "Full range each rep"
+    ],
+    "setup": "Hold a cable handle with elbow bent 90 degrees and forearm parallel to the floor.",
+    "commonMistakes": [
+      "Using the shoulder to generate rotation",
+      "Moving too fast",
+      "Partial range of motion"
+    ]
+  },
+  {
+    "id": "cable-pull-through",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Hinge at the hips, not the knees",
+      "Keep back flat throughout",
+      "Drive hips forward to finish",
+      "Let the rope pass between the legs"
+    ],
+    "setup": "Face away from a low cable pulley with a rope attachment between the legs, feet shoulder width apart.",
+    "commonMistakes": [
+      "Squatting instead of hinging",
+      "Rounding the lower back",
+      "Standing too far from the machine"
+    ]
+  },
+  {
+    "id": "cable-pullover",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep arms slightly bent throughout",
+      "Lead with the elbows",
+      "Feel the stretch in the lats overhead",
+      "Control the return"
+    ],
+    "setup": "Stand or kneel facing away from a high pulley, arms extended overhead holding a bar or rope.",
+    "commonMistakes": [
+      "Bending the elbows too much and turning it into a triceps move",
+      "Using the lower back to generate force",
+      "Rushing the eccentric"
+    ]
+  },
+  {
+    "id": "cable-pushdown",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows pinned to your sides",
+      "Extend fully without locking out hard",
+      "Avoid leaning over the bar",
+      "Control the return"
+    ],
+    "setup": "Stand facing a high pulley with a straight or angled bar attachment, elbows bent at your sides.",
+    "commonMistakes": [
+      "Letting elbows drift forward",
+      "Using body weight to push the bar down",
+      "Not controlling the eccentric"
+    ]
+  },
+  {
+    "id": "cable-rear-delt-fly",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep a slight bend in the elbows",
+      "Lead with the elbows, not the hands",
+      "Squeeze shoulder blades together",
+      "Avoid using momentum"
+    ],
+    "setup": "Stand between two cable stacks set low, crossing hands to grab opposite handles.",
+    "commonMistakes": [
+      "Using too much weight and swinging",
+      "Shrugging the shoulders up",
+      "Bending the elbows too much like a row"
+    ]
+  },
+  {
+    "id": "cable-reverse-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep palms facing down throughout",
+      "Keep elbows tucked at your sides",
+      "Avoid swinging the torso",
+      "Squeeze forearms at the top"
+    ],
+    "setup": "Stand facing a low pulley holding a straight or EZ bar with an overhand grip.",
+    "commonMistakes": [
+      "Letting elbows drift forward",
+      "Using momentum instead of control",
+      "Not fully extending at the bottom"
+    ]
+  },
+  {
+    "id": "cable-reverse-fly",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep a slight bend in the elbows",
+      "Squeeze shoulder blades together at the end",
+      "Avoid shrugging the shoulders",
+      "Control the return"
+    ],
+    "setup": "Stand facing the cable machine with handles set at chest height, crossing arms to grab opposite handles.",
+    "commonMistakes": [
+      "Using momentum to swing the arms back",
+      "Bending elbows too much",
+      "Rounding the upper back"
+    ]
+  },
+  {
+    "id": "cable-rope-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows pinned to your sides",
+      "Separate the rope ends at the top",
+      "Squeeze biceps at peak contraction",
+      "Lower under control"
+    ],
+    "setup": "Stand facing a low pulley holding a rope attachment with a neutral grip.",
+    "commonMistakes": [
+      "Swinging the torso for momentum",
+      "Letting elbows drift forward",
+      "Rushing the eccentric"
+    ]
+  },
+  {
+    "id": "cable-rope-hammer-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep a neutral grip throughout",
+      "Keep elbows tucked at your sides",
+      "Avoid swinging the body",
+      "Squeeze at the top"
+    ],
+    "setup": "Stand facing a low pulley holding a rope attachment with palms facing each other.",
+    "commonMistakes": [
+      "Using momentum instead of controlled reps",
+      "Letting elbows flare out",
+      "Not achieving full range of motion"
+    ]
+  },
+  {
+    "id": "cable-rope-pushdown",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows pinned to your sides",
+      "Separate the rope ends and rotate wrists at the bottom",
+      "Extend fully",
+      "Control the return"
+    ],
+    "setup": "Stand facing a high pulley with a rope attachment, elbows bent at your sides.",
+    "commonMistakes": [
+      "Letting elbows drift forward",
+      "Leaning over the cable to add momentum",
+      "Not controlling the eccentric"
+    ]
+  },
+  {
+    "id": "cable-shrug",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep arms straight throughout",
+      "Elevate shoulders straight up, not rolling",
+      "Pause briefly at the top",
+      "Lower under control"
+    ],
+    "setup": "Stand holding a cable attachment at hip height with an overhand grip, arms fully extended.",
+    "commonMistakes": [
+      "Rolling the shoulders instead of a straight vertical shrug",
+      "Using the biceps to help lift",
+      "Using too much weight and cutting range short"
+    ]
+  },
+  {
+    "id": "cable-side-bend",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the movement in the torso only",
+      "Avoid twisting the hips",
+      "Bend directly to the side",
+      "Control the return to center"
+    ],
+    "setup": "Stand sideways to a low pulley holding a handle at hip height with one hand.",
+    "commonMistakes": [
+      "Twisting the torso instead of bending laterally",
+      "Using momentum to swing",
+      "Leaning forward instead of sideways"
+    ]
+  },
+  {
+    "id": "cable-skull-crusher",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep upper arms stationary",
+      "Flex only at the elbow",
+      "Avoid flaring elbows out",
+      "Control the weight through the full range"
+    ],
+    "setup": "Kneel or stand facing away from a low pulley, rope or bar behind the head, arms extended overhead.",
+    "commonMistakes": [
+      "Moving the shoulders instead of isolating the elbows",
+      "Flaring elbows outward",
+      "Using momentum from the torso"
+    ]
+  },
+  {
+    "id": "cable-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rise onto the balls of the feet",
+      "Pause briefly at the top",
+      "Lower with control past parallel",
+      "Keep knees soft, not locked"
+    ],
+    "setup": "Stand facing the machine with the balls of the feet on a platform and a strap over the shoulders or hips connected to a low cable.",
+    "commonMistakes": [
+      "Bouncing at the bottom instead of pausing",
+      "Using a partial range of motion",
+      "Bending the knees to cheat the rep"
+    ]
+  },
+  {
+    "id": "cable-standing-hip-abduction",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the torso upright",
+      "Move the leg away from the body in a controlled arc",
+      "Avoid leaning to generate momentum",
+      "Squeeze the outer hip at the top"
+    ],
+    "setup": "Stand sideways to a low pulley with an ankle cuff attached to the outside leg.",
+    "commonMistakes": [
+      "Leaning the torso to swing the leg",
+      "Using momentum instead of a controlled arc",
+      "Rotating the hip instead of keeping it square"
+    ]
+  },
+  {
+    "id": "cable-standing-hip-adduction",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the torso upright",
+      "Pull the leg across the body in a controlled arc",
+      "Avoid leaning to generate momentum",
+      "Squeeze the inner thigh at the end"
+    ],
+    "setup": "Stand sideways to a low pulley with an ankle cuff attached to the inside leg, cable anchored to the opposite side.",
+    "commonMistakes": [
+      "Leaning the torso for momentum",
+      "Rotating the hip instead of moving straight across",
+      "Rushing the movement"
+    ]
+  },
+  {
+    "id": "cable-supination",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbow tucked at 90 degrees",
+      "Rotate forearm only, not the shoulder",
+      "Move slowly and controlled",
+      "Full range each rep"
+    ],
+    "setup": "Hold a cable handle with elbow bent 90 degrees and forearm parallel to the floor, palm starting down.",
+    "commonMistakes": [
+      "Using the shoulder to generate rotation",
+      "Moving too fast",
+      "Partial range of motion"
+    ]
+  },
+  {
+    "id": "cable-triceps-kickback",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep upper arm parallel to the floor and stationary",
+      "Extend only at the elbow",
+      "Squeeze triceps at full extension",
+      "Avoid swinging the torso"
+    ],
+    "setup": "Hinge forward at the hips holding a low cable handle, upper arm parallel to the torso.",
+    "commonMistakes": [
+      "Swinging the upper arm instead of isolating the elbow",
+      "Standing too upright and losing the hinge",
+      "Using momentum to whip the weight up"
+    ]
+  },
+  {
+    "id": "cable-upright-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lead with the elbows, keeping them above the wrists",
+      "Keep the bar close to the body",
+      "Stop around chest height",
+      "Avoid shrugging excessively"
+    ],
+    "setup": "Stand facing a low pulley holding a straight bar or rope with an overhand grip at hip level.",
+    "commonMistakes": [
+      "Raising the bar too high, straining the shoulder",
+      "Using momentum to jerk the weight up",
+      "Letting elbows drop below wrists"
+    ]
+  },
+  {
+    "id": "cable-woodchopper-high-to-low",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rotate through the torso and hips together",
+      "Keep arms relatively straight",
+      "Pivot the back foot as you rotate",
+      "Control the return to start"
+    ],
+    "setup": "Stand sideways to a high pulley, holding the handle with both hands above the opposite shoulder.",
+    "commonMistakes": [
+      "Using only the arms instead of rotating the torso",
+      "Rounding the back during rotation",
+      "Moving too fast and losing control"
+    ]
+  },
+  {
+    "id": "cable-woodchopper-horizontal",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rotate through the torso, not just the arms",
+      "Keep the cable path level with the chest",
+      "Pivot the back foot as you rotate",
+      "Control the return to start"
+    ],
+    "setup": "Stand sideways to a pulley set at chest height, holding the handle with both hands extended toward the machine.",
+    "commonMistakes": [
+      "Using only the arms to move the handle",
+      "Twisting the knees instead of the hips",
+      "Rushing the movement without control"
+    ]
+  },
+  {
+    "id": "cable-woodchopper-low-to-high",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rotate through the torso and hips together",
+      "Keep arms relatively straight",
+      "Drive up through the legs and hips",
+      "Control the return to start"
+    ],
+    "setup": "Stand sideways to a low pulley, holding the handle with both hands near the outside hip.",
+    "commonMistakes": [
+      "Using only the arms instead of rotating the torso",
+      "Standing too upright without hip drive",
+      "Moving too fast and losing control"
+    ]
+  },
+  {
+    "id": "cable-wrist-curl",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rest forearms on a bench or thighs for support",
+      "Curl only at the wrist",
+      "Full range of motion each rep",
+      "Control the descent"
+    ],
+    "setup": "Kneel or sit with forearms resting on a bench, holding a low cable bar with palms facing up.",
+    "commonMistakes": [
+      "Using the forearms to swing instead of isolating the wrist",
+      "Partial range of motion",
+      "Gripping too tightly and involving the fingers excessively"
+    ]
+  },
+  {
+    "id": "cable-wrist-extension",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rest forearms on a bench or thighs for support",
+      "Extend only at the wrist",
+      "Full range of motion each rep",
+      "Control the descent"
+    ],
+    "setup": "Kneel or sit with forearms resting on a bench, holding a low cable bar with palms facing down.",
+    "commonMistakes": [
+      "Using the forearms to swing instead of isolating the wrist",
+      "Partial range of motion",
+      "Using too much weight and losing form"
+    ]
+  },
+  {
+    "id": "camel-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Push the hips forward as you lean back",
+      "Keep the neck long, not collapsed",
+      "Engage the thighs for support",
+      "Breathe steadily through the stretch"
+    ],
+    "setup": "Kneel upright with hips over knees, hands on the lower back to begin.",
+    "commonMistakes": [
+      "Collapsing the neck backward first",
+      "Letting the hips shift back instead of forward",
+      "Forcing the stretch without support"
+    ]
+  },
+  {
+    "id": "captain-chair-knee-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the torso stable against the pads",
+      "Raise the knees without swinging",
+      "Avoid using momentum",
+      "Lower with control"
+    ],
+    "setup": "Support the body on forearm pads and back rest of a captain's chair, legs hanging.",
+    "commonMistakes": [
+      "Swinging the legs to generate momentum",
+      "Arching the lower back",
+      "Not achieving full range of motion"
+    ]
+  },
+  {
+    "id": "captain-chair-leg-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep the torso stable against the pads",
+      "Raise straight legs without swinging",
+      "Avoid using momentum",
+      "Lower with control"
+    ],
+    "setup": "Support the body on forearm pads and back rest of a captain's chair, legs extended straight down.",
+    "commonMistakes": [
+      "Swinging the legs to generate momentum",
+      "Bending the knees to make it easier",
+      "Arching the lower back"
+    ]
+  },
+  {
+    "id": "cat-cow-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Move slowly between arching and rounding the spine",
+      "Coordinate breath with movement",
+      "Keep wrists under shoulders and knees under hips",
+      "Move through the full spine, not just the lower back"
+    ],
+    "setup": "Start on hands and knees in a tabletop position with a neutral spine.",
+    "commonMistakes": [
+      "Moving too fast without control",
+      "Only moving the lower back",
+      "Holding the breath instead of syncing it"
+    ]
+  },
+  {
+    "id": "chair-pose",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": [
+      "Sit the hips back like sitting in a chair",
+      "Keep weight in the heels",
+      "Keep the chest lifted",
+      "Engage the core throughout"
+    ],
+    "setup": "Stand with feet together or hip-width apart, arms raised overhead.",
+    "commonMistakes": [
+      "Letting knees cave inward",
+      "Leaning too far forward",
+      "Shifting weight onto the toes"
+    ]
+  },
+  {
+    "id": "cheat-barbell-curl",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Use a small hip drive to initiate momentum, not excessive swinging",
+      "Keep the bar close to the body",
+      "Control the descent fully",
+      "Avoid leaning back excessively"
+    ],
+    "setup": "Stand holding a barbell with an underhand shoulder-width grip, arms extended.",
+    "commonMistakes": [
+      "Turning it into a full body heave",
+      "Not controlling the eccentric",
+      "Using excessive lower back extension"
+    ]
+  },
+  {
+    "id": "chest-dip",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lean the torso forward to target the chest",
+      "Lower until a stretch is felt in the shoulders",
+      "Keep elbows flared slightly out",
+      "Press back up without locking out hard"
+    ],
+    "setup": "Support the body on parallel bars with arms extended, torso leaning slightly forward.",
+    "commonMistakes": [
+      "Descending too far and straining the shoulders",
+      "Staying too upright, shifting emphasis to triceps",
+      "Using momentum or kipping"
+    ]
+  },
+  {
+    "id": "chest-supported-barbell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep chest pressed against the pad",
+      "Pull elbows back, squeezing shoulder blades",
+      "Avoid using momentum",
+      "Control the weight down"
+    ],
+    "setup": "Lie prone on an inclined bench with a barbell hanging below, gripping it with arms extended.",
+    "commonMistakes": [
+      "Using momentum instead of a controlled pull",
+      "Not achieving full range of motion",
+      "Shrugging instead of rowing"
+    ]
+  },
+  {
+    "id": "chest-supported-dumbbell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep chest pressed against the pad",
+      "Pull elbows back, squeezing shoulder blades",
+      "Avoid using momentum",
+      "Control the weight down"
+    ],
+    "setup": "Lie prone on an inclined bench holding dumbbells with arms extended toward the floor.",
+    "commonMistakes": [
+      "Using momentum instead of a controlled pull",
+      "Letting the shoulders round forward",
+      "Shrugging instead of rowing"
+    ]
+  },
+  {
+    "id": "chest-supported-machine-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep chest pressed against the pad",
+      "Pull elbows back, squeezing shoulder blades",
+      "Avoid using momentum",
+      "Control the weight through the full range"
+    ],
+    "setup": "Sit or stand chest-first against the machine pad, gripping the handles with arms extended.",
+    "commonMistakes": [
+      "Using momentum instead of a controlled pull",
+      "Not achieving full range of motion",
+      "Shrugging instead of rowing"
+    ]
+  },
+  {
+    "id": "chest-supported-t-bar-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep chest pressed against the pad",
+      "Pull elbows back, squeezing shoulder blades",
+      "Avoid using momentum",
+      "Control the weight down"
+    ],
+    "setup": "Lie prone on an inclined chest-support bench, gripping the T-bar handles with arms extended.",
+    "commonMistakes": [
+      "Using momentum instead of a controlled pull",
+      "Letting the shoulders round forward",
+      "Shrugging instead of rowing"
+    ]
+  },
+  {
+    "id": "childs-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Sit hips back toward the heels",
+      "Reach arms forward and relax the shoulders",
+      "Breathe deeply and let the spine lengthen",
+      "Keep the neck relaxed"
+    ],
+    "setup": "Kneel on the floor with big toes touching, knees apart, then fold forward.",
+    "commonMistakes": [
+      "Forcing the hips down instead of easing into it",
+      "Tensing the shoulders instead of relaxing them",
+      "Holding the breath"
+    ]
+  },
+  {
+    "id": "chin-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Grip the bar with palms facing you, shoulder width",
+      "Pull the chest toward the bar",
+      "Avoid excessive swinging",
+      "Lower with control to full extension"
+    ],
+    "setup": "Hang from a pull-up bar with an underhand grip, arms fully extended.",
+    "commonMistakes": [
+      "Using momentum or kipping",
+      "Not achieving full range of motion",
+      "Craning the neck to get the chin over instead of pulling with the back"
+    ]
+  },
+  {
+    "id": "clamshell",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep hips stacked and stationary",
+      "Rotate the top knee open using the glute",
+      "Avoid rolling the pelvis backward",
+      "Control the return"
+    ],
+    "setup": "Lie on one side with knees bent and stacked, hips and shoulders aligned.",
+    "commonMistakes": [
+      "Rolling the hips back to gain range",
+      "Using momentum to swing the knee open",
+      "Not keeping the feet together"
+    ]
+  },
+  {
+    "id": "clap-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Explode up forcefully from the bottom",
+      "Keep the core tight throughout",
+      "Land softly with elbows slightly bent",
+      "Reset body position between reps"
+    ],
+    "setup": "Start in a standard push-up plank position with hands under shoulders.",
+    "commonMistakes": [
+      "Landing with locked elbows",
+      "Sagging hips during the plank position",
+      "Insufficient explosive drive, failing to clear a clap"
+    ]
+  }
+]

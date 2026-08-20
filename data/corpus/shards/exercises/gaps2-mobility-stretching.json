@@ -1,0 +1,26 @@
+[
+  {
+    "id": "frog-stretch",
+    "name": "Frog Stretch",
+    "aliases": ["frog pose stretch", "groin frog stretch"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["adductors"],
+    "secondaryMuscles": ["hip-flexors", "glutes"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "wall-slide",
+    "name": "Wall Slide (Shoulder Wall Slide / Arm Slides)",
+    "aliases": ["shoulder wall slide", "arm slides", "wall angels"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["rear-delts"],
+    "secondaryMuscles": ["traps", "rhomboids", "side-delts"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  }
+]

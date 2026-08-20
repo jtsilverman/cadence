@@ -1,0 +1,1081 @@
+[
+{
+"barcode": "0016000214972",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"msg-flavor-enhancers",
+"natural-flavors",
+"preservatives",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0016000222434",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"natural-flavors",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0016000224728",
+"flags": [
+"seed-oils"
+]
+},
+{
+"barcode": "0016000226357",
+"flags": [
+"added-sugar-syrups",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0016000487642",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0016571953867",
+"flags": [
+"artificial-sweeteners",
+"caffeine",
+"natural-flavors",
+"preservatives"
+]
+},
+{
+"barcode": "0017082010476",
+"flags": []
+},
+{
+"barcode": "0021000026876",
+"flags": [
+"natural-flavors",
+"preservatives"
+]
+},
+{
+"barcode": "0021000030453",
+"flags": [
+"gums-thickeners",
+"natural-flavors"
+]
+},
+{
+"barcode": "0021136181388",
+"flags": [
+"natural-flavors",
+"preservatives"
+]
+},
+{
+"barcode": "0021500004503",
+"flags": [
+"gums-thickeners"
+]
+},
+{
+"barcode": "0021511497271",
+"flags": []
+},
+{
+"barcode": "0022655306306",
+"flags": []
+},
+{
+"barcode": "0022655306313",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0023249011835",
+"flags": []
+},
+{
+"barcode": "0023700014153",
+"flags": [
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0023700025104",
+"flags": [
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0023700877451",
+"flags": [
+"gums-thickeners"
+]
+},
+{
+"barcode": "0023923900028",
+"flags": []
+},
+{
+"barcode": "0024000001973",
+"flags": []
+},
+{
+"barcode": "0024100705665",
+"flags": [
+"emulsifiers",
+"preservatives",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0024100788873",
+"flags": [
+"added-sugar-syrups",
+"artificial-colors",
+"artificial-flavors",
+"emulsifiers",
+"msg-flavor-enhancers",
+"preservatives",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0024463061040",
+"flags": [
+"gums-thickeners",
+"preservatives"
+]
+},
+{
+"barcode": "0024600010856",
+"flags": []
+},
+{
+"barcode": "0025000061530",
+"flags": []
+},
+{
+"barcode": "0025317120005",
+"flags": [
+"nitrates-nitrites"
+]
+},
+{
+"barcode": "0025317225908",
+"flags": [
+"seed-oils"
+]
+},
+{
+"barcode": "0025317775229",
+"flags": [
+"nitrates-nitrites"
+]
+},
+{
+"barcode": "0025500304199",
+"flags": [
+"caffeine"
+]
+},
+{
+"barcode": "0027000490181",
+"flags": [
+"artificial-sweeteners"
+]
+},
+{
+"barcode": "0027271121364",
+"flags": [
+"gums-thickeners",
+"natural-flavors",
+"preservatives",
+"seed-oils"
+]
+},
+{
+"barcode": "0027331000356",
+"flags": [
+"emulsifiers",
+"preservatives",
+"refined-flour",
+"seed-oils",
+"trans-fat-hydrogenated"
+]
+},
+{
+"barcode": "0027331321277",
+"flags": [
+"emulsifiers",
+"gums-thickeners",
+"preservatives"
+]
+},
+{
+"barcode": "0027400000232",
+"flags": [
+"emulsifiers",
+"natural-flavors"
+]
+},
+{
+"barcode": "0028000192174",
+"flags": [
+"caffeine"
+]
+},
+{
+"barcode": "0028000514037",
+"flags": [
+"emulsifiers",
+"gums-thickeners",
+"natural-flavors"
+]
+},
+{
+"barcode": "0028000517205",
+"flags": [
+"gums-thickeners"
+]
+},
+{
+"barcode": "0028000593933",
+"flags": [
+"caffeine"
+]
+},
+{
+"barcode": "0028400020008",
+"flags": [
+"added-sugar-syrups",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400032810",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0028400047012",
+"flags": [
+"emulsifiers",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400047685",
+"flags": [
+"added-sugar-syrups",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400070546",
+"flags": [
+"added-sugar-syrups",
+"artificial-colors",
+"artificial-flavors",
+"msg-flavor-enhancers",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400079167",
+"flags": [
+"artificial-flavors",
+"emulsifiers",
+"refined-flour",
+"trans-fat-hydrogenated"
+]
+},
+{
+"barcode": "0028400090841",
+"flags": [
+"added-sugar-syrups",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400090889",
+"flags": [
+"added-sugar-syrups",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400183901",
+"flags": [
+"added-sugar-syrups",
+"artificial-colors",
+"artificial-flavors",
+"msg-flavor-enhancers",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400184762",
+"flags": [
+"seed-oils"
+]
+},
+{
+"barcode": "0028400200592",
+"flags": [
+"seed-oils"
+]
+},
+{
+"barcode": "0028400313995",
+"flags": [
+"added-sugar-syrups",
+"artificial-colors",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400331524",
+"flags": [
+"artificial-colors",
+"msg-flavor-enhancers",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400372169",
+"flags": [
+"added-sugar-syrups",
+"msg-flavor-enhancers",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400528177",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400528467",
+"flags": [
+"seed-oils"
+]
+},
+{
+"barcode": "0028400564656",
+"flags": [
+"seed-oils"
+]
+},
+{
+"barcode": "0028400705615",
+"flags": []
+},
+{
+"barcode": "0028400737425",
+"flags": [
+"added-sugar-syrups",
+"artificial-colors",
+"artificial-flavors",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400745826",
+"flags": [
+"added-sugar-syrups",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400759014",
+"flags": [
+"added-sugar-syrups",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028400762373",
+"flags": [
+"added-sugar-syrups",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0028435600282",
+"flags": [
+"caffeine",
+"gums-thickeners",
+"preservatives",
+"sugar-alcohols"
+]
+},
+{
+"barcode": "0028989100900",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0029000017931",
+"flags": []
+},
+{
+"barcode": "0029000073135",
+"flags": [
+"added-sugar-syrups",
+"natural-flavors"
+]
+},
+{
+"barcode": "00299114",
+"flags": [
+"gums-thickeners",
+"seed-oils"
+]
+},
+{
+"barcode": "0030000040904",
+"flags": []
+},
+{
+"barcode": "0030000063224",
+"flags": [
+"artificial-colors",
+"natural-flavors",
+"preservatives"
+]
+},
+{
+"barcode": "0030000169025",
+"flags": []
+},
+{
+"barcode": "0030000568286",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0030000568606",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0030000571842",
+"flags": []
+},
+{
+"barcode": "0030000659809",
+"flags": [
+"artificial-flavors",
+"gums-thickeners",
+"hfcs",
+"preservatives"
+]
+},
+{
+"barcode": "0030100112334",
+"flags": [
+"emulsifiers",
+"hfcs",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0030100132196",
+"flags": [
+"added-sugar-syrups",
+"refined-flour",
+"seed-oils",
+"trans-fat-hydrogenated"
+]
+},
+{
+"barcode": "0030100784678",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"natural-flavors",
+"preservatives",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0030771026367",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0031200006769",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0031200020857",
+"flags": []
+},
+{
+"barcode": "0031200023315",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0031200276278",
+"flags": [
+"natural-flavors"
+]
+},
+{
+"barcode": "0033383530505",
+"flags": []
+},
+{
+"barcode": "0033900000856",
+"flags": [
+"natural-flavors",
+"nitrates-nitrites"
+]
+},
+{
+"barcode": "0036200003008",
+"flags": [
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0036200005507",
+"flags": [
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0036632020819",
+"flags": [
+"gums-thickeners",
+"natural-flavors"
+]
+},
+{
+"barcode": "0036632020826",
+"flags": []
+},
+{
+"barcode": "0036632024206",
+"flags": [
+"emulsifiers",
+"gums-thickeners",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0037000788591",
+"flags": [
+"gums-thickeners",
+"sugar-alcohols"
+]
+},
+{
+"barcode": "0037000808220",
+"flags": []
+},
+{
+"barcode": "0037014000207",
+"flags": [
+"emulsifiers"
+]
+},
+{
+"barcode": "0037466023427",
+"flags": [
+"emulsifiers",
+"gums-thickeners",
+"natural-flavors"
+]
+},
+{
+"barcode": "0037600107433",
+"flags": []
+},
+{
+"barcode": "0037600445955",
+"flags": [
+"nitrates-nitrites"
+]
+},
+{
+"barcode": "0038000138812",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"seed-oils"
+]
+},
+{
+"barcode": "0038000199943",
+"flags": []
+},
+{
+"barcode": "0038000222634",
+"flags": [
+"emulsifiers",
+"hfcs",
+"preservatives",
+"refined-flour"
+]
+},
+{
+"barcode": "0038000222757",
+"flags": [
+"artificial-colors",
+"emulsifiers",
+"gums-thickeners",
+"hfcs",
+"natural-flavors",
+"preservatives",
+"refined-flour"
+]
+},
+{
+"barcode": "00380287",
+"flags": [
+"gums-thickeners",
+"natural-flavors",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0039000008907",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"preservatives"
+]
+},
+{
+"barcode": "0039400016069",
+"flags": [
+"gums-thickeners",
+"natural-flavors"
+]
+},
+{
+"barcode": "0039978111258",
+"flags": []
+},
+{
+"barcode": "0040000422068",
+"flags": [
+"added-sugar-syrups",
+"artificial-flavors",
+"emulsifiers"
+]
+},
+{
+"barcode": "0041000022432",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"msg-flavor-enhancers",
+"natural-flavors"
+]
+},
+{
+"barcode": "0041000022463",
+"flags": [
+"added-sugar-syrups",
+"msg-flavor-enhancers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0041000022661",
+"flags": [
+"added-sugar-syrups",
+"msg-flavor-enhancers",
+"natural-flavors"
+]
+},
+{
+"barcode": "0041143129562",
+"flags": []
+},
+{
+"barcode": "0041152102730",
+"flags": []
+},
+{
+"barcode": "0041164000222",
+"flags": [
+"emulsifiers",
+"msg-flavor-enhancers",
+"natural-flavors",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0041192101069",
+"flags": [
+"added-sugar-syrups",
+"preservatives"
+]
+},
+{
+"barcode": "0041192102172",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"natural-flavors",
+"preservatives"
+]
+},
+{
+"barcode": "0041192102455",
+"flags": [
+"artificial-flavors",
+"emulsifiers",
+"preservatives"
+]
+},
+{
+"barcode": "0041192102530",
+"flags": []
+},
+{
+"barcode": "0041196101850",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"gums-thickeners",
+"msg-flavor-enhancers",
+"natural-flavors",
+"preservatives",
+"seed-oils"
+]
+},
+{
+"barcode": "0041196891072",
+"flags": [
+"emulsifiers",
+"hfcs",
+"natural-flavors",
+"preservatives",
+"seed-oils"
+]
+},
+{
+"barcode": "0041196910360",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"natural-flavors"
+]
+},
+{
+"barcode": "0041271009552",
+"flags": [
+"artificial-flavors",
+"emulsifiers",
+"gums-thickeners"
+]
+},
+{
+"barcode": "0041321006609",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"msg-flavor-enhancers",
+"natural-flavors",
+"preservatives",
+"seed-oils"
+]
+},
+{
+"barcode": "0041331038423",
+"flags": []
+},
+{
+"barcode": "0041335000983",
+"flags": [
+"gums-thickeners",
+"natural-flavors",
+"preservatives",
+"seed-oils"
+]
+},
+{
+"barcode": "0041335001768",
+"flags": [
+"added-sugar-syrups",
+"artificial-colors",
+"gums-thickeners",
+"natural-flavors",
+"preservatives",
+"seed-oils"
+]
+},
+{
+"barcode": "0041383090431",
+"flags": []
+},
+{
+"barcode": "0041449300115",
+"flags": [
+"natural-flavors",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0041449301976",
+"flags": [
+"artificial-flavors",
+"emulsifiers",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0041449601236",
+"flags": [
+"added-sugar-syrups",
+"artificial-flavors",
+"msg-flavor-enhancers",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0041500785707",
+"flags": [
+"gums-thickeners",
+"seed-oils"
+]
+},
+{
+"barcode": "0041508802185",
+"flags": []
+},
+{
+"barcode": "0041570030837",
+"flags": [
+"added-sugar-syrups",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0041757025571",
+"flags": []
+},
+{
+"barcode": "0041780002815",
+"flags": [
+"added-sugar-syrups",
+"gums-thickeners",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0041790600803",
+"flags": []
+},
+{
+"barcode": "0042396628055",
+"flags": []
+},
+{
+"barcode": "0042400001058",
+"flags": []
+},
+{
+"barcode": "0043192505106",
+"flags": []
+},
+{
+"barcode": "0044000003357",
+"flags": [
+"artificial-flavors",
+"emulsifiers",
+"hfcs",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000020187",
+"flags": [
+"artificial-flavors",
+"emulsifiers",
+"hfcs",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000034207",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000040703",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000040840",
+"flags": [
+"added-sugar-syrups",
+"emulsifiers",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000045326",
+"flags": [
+"artificial-flavors",
+"emulsifiers",
+"hfcs",
+"natural-flavors",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000063771",
+"flags": [
+"emulsifiers",
+"hfcs",
+"natural-flavors",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000069940",
+"flags": [
+"added-sugar-syrups",
+"artificial-flavors",
+"emulsifiers",
+"gums-thickeners",
+"refined-flour",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000072995",
+"flags": [
+"added-sugar-syrups",
+"artificial-flavors",
+"emulsifiers",
+"gums-thickeners",
+"seed-oils"
+]
+},
+{
+"barcode": "0044000077655",
+"flags": [
+"added-sugar-syrups",
+"artificial-flavors",
+"emulsifiers",
+"gums-thickeners",
+"seed-oils"
+]
+},
+{
+"barcode": "0044800750062",
+"flags": [
+"added-sugar-syrups"
+]
+},
+{
+"barcode": "0045300005362",
+"flags": []
+},
+{
+"barcode": "0046000288697",
+"flags": [
+"added-sugar-syrups",
+"natural-flavors",
+"seed-oils"
+]
+},
+{
+"barcode": "0046100001219",
+"flags": []
+},
+{
+"barcode": "0046100001226",
+"flags": []
+},
+{
+"barcode": "0047900507307",
+"flags": [
+"natural-flavors",
+"preservatives",
+"seed-oils"
+]
+},
+{
+"barcode": "0048000000866",
+"flags": []
+}
+]

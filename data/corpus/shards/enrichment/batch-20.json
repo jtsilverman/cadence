@@ -1,0 +1,362 @@
+[
+  {
+    "id": "single-arm-dumbbell-thruster",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Rack dumbbell at shoulder", "Sit hips back into squat", "Drive up and press overhead in one motion", "Keep core braced against rotation"],
+    "setup": "Stand with feet shoulder-width apart holding one dumbbell racked at the shoulder in a front-rack position.",
+    "commonMistakes": ["Pressing before legs finish extending", "Leaning away from the loaded side", "Squat depth too shallow"]
+  },
+  {
+    "id": "single-arm-dumbbell-wrist-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Rest forearm on bench with wrist off the edge", "Curl wrist up through full range", "Lower slowly under control", "Keep forearm still"],
+    "setup": "Kneel or sit beside a bench, resting the forearm on it with the wrist and hand hanging off the edge holding a dumbbell.",
+    "commonMistakes": ["Using forearm swing instead of wrist motion", "Rushing the eccentric", "Overloading with too much weight"]
+  },
+  {
+    "id": "single-arm-front-rack-carry-dumbbell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Rack dumbbell at shoulder with elbow high", "Brace core against side bend", "Walk with tall posture", "Keep steps controlled"],
+    "setup": "Clean a dumbbell to the front-rack position at one shoulder and stand tall before walking.",
+    "commonMistakes": ["Leaning toward the loaded side", "Letting the elbow drop", "Walking too fast and losing rack position"]
+  },
+  {
+    "id": "single-arm-front-rack-carry-kettlebell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Rack kettlebell against forearm and shoulder", "Brace core against side bend", "Keep chest tall", "Take controlled steps"],
+    "setup": "Clean a kettlebell to the front-rack position at one shoulder, forearm vertical, before walking.",
+    "commonMistakes": ["Letting the kettlebell drift away from the body", "Leaning toward the loaded side", "Rounding the upper back"]
+  },
+  {
+    "id": "single-arm-incline-dumbbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Set bench to 30-45 degrees", "Brace core against rotation", "Press dumbbell straight up over chest", "Lower under control to chest level"],
+    "setup": "Lie back on an incline bench holding one dumbbell at shoulder height, free hand braced on the bench or hip.",
+    "commonMistakes": ["Rotating the torso to help drive the weight", "Flaring the elbow too wide", "Using momentum instead of controlled tempo"]
+  },
+  {
+    "id": "single-arm-incline-dumbbell-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Sit back fully on incline bench", "Keep elbow pinned at your side", "Curl through full range without swinging", "Lower slowly to full stretch"],
+    "setup": "Sit on an incline bench with the arm hanging straight down holding a dumbbell, shoulder pinned to the pad.",
+    "commonMistakes": ["Letting the elbow drift forward", "Using shoulder momentum", "Cutting the bottom stretch short"]
+  },
+  {
+    "id": "single-arm-inverted-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Grip bar with one hand under chest", "Keep body rigid in a straight line", "Pull chest to bar", "Avoid twisting the hips"],
+    "setup": "Lie under a fixed bar set at hip height, gripping it with one hand and body extended in a plank position.",
+    "commonMistakes": ["Letting hips sag or pike", "Rotating the torso toward the working arm", "Using a partial range of motion"]
+  },
+  {
+    "id": "single-arm-kettlebell-clean-and-press",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Hike kettlebell back then explosively extend hips", "Catch cleanly in rack position", "Press overhead with braced core", "Reset between reps if needed"],
+    "setup": "Stand over a kettlebell with feet hip-width, hinge to grip it with one hand before initiating the clean.",
+    "commonMistakes": ["Curling the kettlebell up with the arm", "Banging the wrist on the catch", "Pressing with excessive back lean"]
+  },
+  {
+    "id": "single-arm-kettlebell-farmers-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "beginner",
+    "formCues": ["Grip kettlebell firmly at your side", "Keep shoulders level and square", "Brace core against lateral lean", "Walk with steady, even steps"],
+    "setup": "Stand tall holding one kettlebell at arm's length by the side of the body.",
+    "commonMistakes": ["Leaning away from the loaded side", "Letting the shoulder hike up", "Shortening or rushing steps"]
+  },
+  {
+    "id": "single-arm-kettlebell-high-pull",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge slightly and swing kettlebell to hip height", "Drive elbow up and back explosively", "Keep kettlebell close to the body", "Control the descent"],
+    "setup": "Stand with feet shoulder-width apart holding a kettlebell in one hand in front of the hips.",
+    "commonMistakes": ["Pulling with the arm before hip drive", "Letting the kettlebell swing away from the body", "Shrugging instead of driving the elbow"]
+  },
+  {
+    "id": "single-arm-kettlebell-overhead-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": ["Lock kettlebell fully overhead", "Stack wrist, elbow, and shoulder", "Brace core and glutes", "Walk with controlled, even steps"],
+    "setup": "Press a kettlebell overhead to full lockout with one arm and stand tall before walking.",
+    "commonMistakes": ["Letting the arm drift forward of the ear", "Losing core brace and arching the back", "Bent elbow instead of full lockout"]
+  },
+  {
+    "id": "single-arm-kettlebell-overhead-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Start kettlebell racked at shoulder", "Brace core before pressing", "Press straight up to lockout", "Avoid leaning back"],
+    "setup": "Stand with feet hip-width apart, kettlebell racked against the forearm at shoulder height.",
+    "commonMistakes": ["Arching the lower back to press", "Pressing the bell out in front instead of straight up", "Losing rack position at the start"]
+  },
+  {
+    "id": "single-arm-kettlebell-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Rack kettlebell tight to the shoulder", "Brace core and glutes", "Press straight overhead to lockout", "Lower with control"],
+    "setup": "Stand tall with the kettlebell racked at the shoulder, elbow tucked in front of the ribs.",
+    "commonMistakes": ["Leaning to the opposite side to compensate", "Flaring the elbow out during the press", "Arching the back at lockout"]
+  },
+  {
+    "id": "single-arm-kettlebell-rack-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Rack kettlebell against forearm and shoulder", "Keep elbow tucked and tight", "Brace core against side bend", "Walk with even, controlled steps"],
+    "setup": "Clean the kettlebell to a front-rack position at one shoulder and stand tall before walking.",
+    "commonMistakes": ["Letting the elbow flare away from the ribs", "Leaning toward the loaded side", "Gripping too loosely and losing rack"]
+  },
+  {
+    "id": "single-arm-kettlebell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Hinge with flat back and support hand on bench", "Pull kettlebell to hip", "Keep elbow close to the body", "Lower under control"],
+    "setup": "Place one hand and knee on a bench for support, hinge forward with a flat back, and hold the kettlebell in the free hand.",
+    "commonMistakes": ["Rotating the torso to help the pull", "Rounding the lower back", "Using momentum instead of a controlled pull"]
+  },
+  {
+    "id": "single-arm-kettlebell-swing",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips, not the knees", "Snap hips forward to drive the kettlebell", "Keep arm relaxed and let hips do the work", "Keep back flat throughout"],
+    "setup": "Stand over the kettlebell with feet shoulder-width apart, hinge down to grip it with one hand.",
+    "commonMistakes": ["Squatting instead of hinging", "Using the arm to lift the kettlebell", "Overextending the lower back at the top"]
+  },
+  {
+    "id": "single-arm-kettlebell-thruster",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Rack kettlebell at shoulder", "Squat to full depth", "Drive up and press in one fluid motion", "Brace core against rotation"],
+    "setup": "Stand with feet shoulder-width apart, kettlebell racked at one shoulder in front-rack position.",
+    "commonMistakes": ["Pausing between the squat and press", "Leaning away from the loaded side", "Shallow squat depth"]
+  },
+  {
+    "id": "single-arm-landmine-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Hold barbell end at shoulder", "Brace core and stagger stance", "Press up and slightly forward", "Control the return to shoulder"],
+    "setup": "Stand in a staggered stance holding the end of a landmine barbell at shoulder height with one hand.",
+    "commonMistakes": ["Overextending the lower back at lockout", "Letting the elbow flare excessively", "Pressing with a jerky, uncontrolled motion"]
+  },
+  {
+    "id": "single-arm-landmine-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Hinge forward with flat back", "Pull barbell end to hip", "Keep elbow close to the body", "Squeeze shoulder blade at the top"],
+    "setup": "Stand over a landmine-anchored barbell, hinge forward with a flat back, and grip the end with one hand.",
+    "commonMistakes": ["Rounding the lower back", "Using body english to swing the weight up", "Not fully extending the arm at the bottom"]
+  },
+  {
+    "id": "single-arm-machine-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set seat so handle aligns with mid-chest", "Press handle forward to full extension", "Keep torso square, avoid twisting", "Return under control"],
+    "setup": "Sit in the machine with one hand gripping the press handle at chest height, back flat against the pad.",
+    "commonMistakes": ["Twisting the torso to add momentum", "Shrugging the shoulder during the press", "Locking out too fast without control"]
+  },
+  {
+    "id": "single-arm-machine-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Set seat so handle is at chest height", "Pull handle straight back to the torso", "Keep torso still, avoid twisting", "Squeeze shoulder blade at the finish"],
+    "setup": "Sit in the machine with chest against the pad, gripping the handle with one hand at arm's length.",
+    "commonMistakes": ["Rotating the torso to assist the pull", "Using a jerky yank instead of a steady pull", "Not returning to full arm extension"]
+  },
+  {
+    "id": "single-arm-medicine-ball-chest-pass",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Load ball at chest with braced core", "Rotate hips and drive through the throw", "Extend arm fully on release", "Reset stance between reps"],
+    "setup": "Stand facing a wall or partner in an athletic stance, holding a medicine ball at chest height in one hand.",
+    "commonMistakes": ["Throwing with the arm alone, no hip drive", "Losing balance on release", "Rounding the shoulder forward instead of extending"]
+  },
+  {
+    "id": "single-arm-pec-deck-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set pad so elbow is level with shoulder", "Squeeze pec to bring arm across the body", "Keep slight bend in the elbow", "Control the return to the stretch"],
+    "setup": "Sit in the machine with one forearm against the pad, elbow bent and level with the shoulder.",
+    "commonMistakes": ["Using momentum to swing the arm across", "Overextending the shoulder into a painful stretch", "Shrugging the shoulder up during the movement"]
+  },
+  {
+    "id": "single-arm-pulldown",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Sit tall with thighs secured under pad", "Pull handle down toward the hip", "Keep chest up, avoid leaning back excessively", "Control the return to full stretch"],
+    "setup": "Sit at the lat pulldown station gripping a single handle overhead with one hand, thighs braced under the pad.",
+    "commonMistakes": ["Leaning back too far to use body momentum", "Pulling with the shoulder shrugged up", "Not achieving a full stretch at the top"]
+  },
+  {
+    "id": "single-arm-reverse-grip-cable-pushdown",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Grip bar underhand at chest height", "Pin elbow to your side", "Extend arm down to full lockout", "Control the return without letting elbow rise"],
+    "setup": "Stand facing the cable stack, gripping the attachment underhand with one hand, elbow bent at the side.",
+    "commonMistakes": ["Letting the elbow drift away from the body", "Using shoulder movement instead of elbow extension", "Leaning forward to add momentum"]
+  },
+  {
+    "id": "single-arm-seated-cable-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Sit tall with knees slightly bent", "Pull handle to the hip", "Keep torso upright, avoid excessive lean", "Squeeze shoulder blade at the finish"],
+    "setup": "Sit at the cable row station with feet braced, gripping a single handle with one hand at arm's length.",
+    "commonMistakes": ["Rocking the torso to generate momentum", "Rounding the lower back", "Shrugging instead of pulling with the back"]
+  },
+  {
+    "id": "single-arm-ski-erg",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at hips as you pull the handle down", "Drive through the working arm to full extension", "Keep core braced throughout the stroke", "Return to the top under control"],
+    "setup": "Stand facing the ski erg machine, gripping one handle with one hand at the top of the stroke.",
+    "commonMistakes": ["Pulling with the arm only, no hip hinge", "Rounding the back excessively", "Losing rhythm and rushing the stroke"]
+  },
+  {
+    "id": "single-arm-sled-drag",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Grip strap or handle with one hand", "Keep torso upright and core braced", "Drive through the legs to walk backward or forward", "Maintain steady, controlled steps"],
+    "setup": "Attach a strap or handle to the sled, grip it with one hand, and stand facing it in an athletic stance.",
+    "commonMistakes": ["Leaning too far forward or backward", "Letting the working shoulder hike up", "Taking uneven or rushed steps"]
+  },
+  {
+    "id": "single-arm-sled-push",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Grip sled handle with one arm extended", "Lean into the sled with a straight body line", "Drive through the legs, not the arm", "Take short, powerful steps"],
+    "setup": "Stand behind the sled gripping a single handle with one hand, body angled forward.",
+    "commonMistakes": ["Pushing with the arm instead of the legs", "Rotating the torso toward the working side", "Standing too upright and losing drive angle"]
+  },
+  {
+    "id": "single-arm-sled-rope-pull",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Sit or stand facing the sled with rope in one hand", "Pull rope hand over hand with the working arm", "Keep core braced against rotation", "Maintain steady pulling rhythm"],
+    "setup": "Sit or stand facing the loaded sled, gripping the attached rope with one hand.",
+    "commonMistakes": ["Twisting the torso to assist the pull", "Using short, jerky pulls instead of steady ones", "Letting the working shoulder round forward"]
+  },
+  {
+    "id": "single-arm-standing-cable-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Stand tall in split stance facing the cable", "Pull handle to the ribs", "Keep core braced against rotation", "Squeeze shoulder blade at the finish"],
+    "setup": "Stand in a staggered stance facing the cable machine, gripping a single handle with one hand at arm's length.",
+    "commonMistakes": ["Rotating the torso to assist the pull", "Leaning back excessively to generate momentum", "Not returning to full arm extension"]
+  },
+  {
+    "id": "single-arm-straight-arm-pulldown",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Stand facing the cable with slight forward hinge", "Keep arm straight throughout", "Pull handle down to the thigh", "Control the return to shoulder height"],
+    "setup": "Stand facing the high cable pulley, gripping a single handle with one hand and arm extended overhead.",
+    "commonMistakes": ["Bending the elbow to turn it into a pushdown", "Using body momentum to swing the arm down", "Rounding the lower back"]
+  },
+  {
+    "id": "single-arm-trx-bicep-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Lean back with arm extended and handle gripped", "Keep elbow pointed forward and stationary", "Curl body up by flexing the elbow", "Lower under control to full extension"],
+    "setup": "Grip one TRX handle, lean back with the body at an angle and the arm extended toward the anchor.",
+    "commonMistakes": ["Letting the elbow drift or swing", "Using hip drive to substitute for the curl", "Choosing too shallow a lean angle to create resistance"]
+  },
+  {
+    "id": "single-arm-trx-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Lean forward with body in a straight line", "Grip one handle at chest height", "Press body away by extending the arm", "Keep core braced against rotation"],
+    "setup": "Face away from the anchor point, gripping one TRX handle at chest height with the body leaning forward.",
+    "commonMistakes": ["Letting the hips sag out of line", "Rotating the torso toward the working arm", "Using too shallow a lean, reducing resistance"]
+  },
+  {
+    "id": "single-arm-trx-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Lean back with body in a straight line", "Grip one handle and pull chest toward hand", "Keep core braced against rotation", "Lower under control to full arm extension"],
+    "setup": "Face the anchor point, gripping one TRX handle with the body leaning back at an angle, feet planted.",
+    "commonMistakes": ["Letting the hips sag or pike", "Rotating the torso to help the pull", "Pulling with a shrug instead of the back"]
+  },
+  {
+    "id": "single-leg-back-extension",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Position hips on pad, one leg secured", "Hinge down with a flat back", "Extend back up using the glute and hamstring", "Avoid hyperextending at the top"],
+    "setup": "Position the hips on the back extension pad with one leg anchored under the footpad, the other leg free.",
+    "commonMistakes": ["Hyperextending the lower back at the top", "Rounding the spine on the way down", "Using momentum instead of a controlled hinge"]
+  },
+  {
+    "id": "single-leg-back-lever",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Grip bar with false grip", "Extend one leg while tucking the other", "Keep body horizontal and rigid", "Brace shoulders and core throughout the hold"],
+    "setup": "Hang from a pull-up bar with a false grip, then invert and extend the body horizontally with one leg straight.",
+    "commonMistakes": ["Letting the hips sag below body line", "Losing shoulder tension and rounding forward", "Rushing into position without control"]
+  },
+  {
+    "id": "single-leg-barbell-romanian-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hinge at the hip while lifting the free leg back", "Keep the bar close to the shin", "Maintain a flat back throughout", "Drive hips forward to return to standing"],
+    "setup": "Stand on one leg holding a barbell at hip height, the other leg free to extend behind as you hinge.",
+    "commonMistakes": ["Rounding the lower back", "Rotating the hips instead of keeping them square", "Losing balance and rushing the rep"]
+  },
+  {
+    "id": "single-leg-bodyweight-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Balance on one foot, hand on wall for support", "Rise onto the ball of the foot", "Pause briefly at the top", "Lower slowly to a full stretch"],
+    "setup": "Stand on one foot near a wall or rail for light balance support, other foot lifted.",
+    "commonMistakes": ["Bouncing instead of pausing at the top", "Not lowering into a full stretch", "Relying too heavily on the support hand"]
+  },
+  {
+    "id": "single-leg-bodyweight-tibialis-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Stand on one leg, lean back slightly against a wall", "Lift toes and forefoot upward", "Pause at the top of the raise", "Lower under control"],
+    "setup": "Stand on one foot with heel planted, leaning back slightly with weight on the heel.",
+    "commonMistakes": ["Bending the knee to cheat the range", "Rushing through reps without pausing", "Shifting weight off the heel"]
+  }
+]

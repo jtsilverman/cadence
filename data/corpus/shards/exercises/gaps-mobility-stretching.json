@@ -1,0 +1,74 @@
+[
+  {
+    "id": "shoulder-cars",
+    "name": "Shoulder CARs (Controlled Articular Rotations)",
+    "aliases": ["controlled articular rotations", "shoulder circles CARs"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["side-delts"],
+    "secondaryMuscles": ["front-delts", "rear-delts"],
+    "laterality": "unilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "sleeper-stretch",
+    "name": "Sleeper Stretch",
+    "aliases": ["shoulder internal rotation stretch"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["rear-delts"],
+    "secondaryMuscles": [],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "standing-it-band-stretch",
+    "name": "Standing IT Band Stretch",
+    "aliases": ["crossover stretch", "IT band crossover stretch"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["abductors"],
+    "secondaryMuscles": ["obliques"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "plantar-fascia-stretch",
+    "name": "Plantar Fascia Stretch",
+    "aliases": ["plantar fascia calf stretch"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["calves"],
+    "secondaryMuscles": ["tibialis"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "seated-spinal-twist",
+    "name": "Seated or Supine Spinal Twist",
+    "aliases": ["supine spinal twist", "seated spinal twist", "lying spinal twist"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["obliques"],
+    "secondaryMuscles": ["lower-back"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "front-middle-splits-stretch",
+    "name": "Front/Middle Splits Stretch",
+    "aliases": ["front split stretch", "middle split stretch", "straddle split stretch", "hanumanasana"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["adductors"],
+    "secondaryMuscles": ["hamstrings", "hip-flexors"],
+    "laterality": "bilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  }
+]

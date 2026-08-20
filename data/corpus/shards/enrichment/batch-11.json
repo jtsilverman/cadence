@@ -1,0 +1,362 @@
+[
+  {
+    "id": "half-moon-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Stack hips vertically", "Ground through standing hand", "Reach through lifted heel", "Engage standing leg quad"],
+    "setup": "From a standing forward fold, place one hand on the floor or a block and shift weight onto the front foot.",
+    "commonMistakes": ["Collapsing into supporting shoulder", "Hips rotating open too far", "Losing balance by rushing the lift"]
+  },
+  {
+    "id": "half-turkish-get-up",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Keep eyes on the weight overhead", "Press through the floor to post up", "Sweep leg through to lunge", "Stack shoulder over wrist"],
+    "setup": "Lie on your back holding a kettlebell overhead with one arm, opposite knee bent, foot flat on the floor.",
+    "commonMistakes": ["Letting the arm drift out of vertical alignment", "Rushing the roll to elbow", "Weak wrist positioning under load"]
+  },
+  {
+    "id": "hammer-strength-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Set seat so handles align with mid-chest", "Drive handles forward without locking elbows hard", "Keep shoulder blades pinned to pad", "Control the return"],
+    "setup": "Sit in the machine with back flat against the pad and grip the handles at chest level.",
+    "commonMistakes": ["Flaring elbows excessively", "Bouncing the weight stack", "Seat height too high or low, misaligning the press path"]
+  },
+  {
+    "id": "hammer-strength-incline-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Align handles with upper chest", "Drive up and slightly back", "Keep core braced against the pad", "Avoid locking elbows out hard"],
+    "setup": "Sit in the incline machine with back against the angled pad and grip the handles at upper-chest height.",
+    "commonMistakes": ["Letting shoulders round forward off pad", "Using momentum to start the press", "Setting seat too low, turning it into a shoulder press"]
+  },
+  {
+    "id": "hand-gripper-crush",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Wrap fingers fully around handle", "Squeeze evenly through all fingers", "Keep wrist neutral", "Exhale on the crush"],
+    "setup": "Hold the gripper in one hand with the handles resting against the base of the fingers and palm.",
+    "commonMistakes": ["Using only fingertips instead of full grip", "Bending the wrist to cheat leverage", "Jerking instead of a controlled squeeze"]
+  },
+  {
+    "id": "hand-gripper-hold",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Close gripper to target width", "Hold steady without regripping", "Keep breathing throughout the hold", "Maintain neutral wrist"],
+    "setup": "Close the gripper to a set position and hold that closure isometrically for time.",
+    "commonMistakes": ["Letting the handles creep open mid-hold", "Holding breath the entire time", "Excess wrist flexion to compensate for grip fatigue"]
+  },
+  {
+    "id": "handstand-shoulder-taps",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Stack wrists under shoulders", "Brace core hard before tapping", "Tap shoulder without shifting hips", "Keep gaze between hands"],
+    "setup": "Kick up into a handstand against a wall, hands shoulder-width apart on the floor.",
+    "commonMistakes": ["Piking hips to compensate for balance loss", "Tapping too fast and losing tension", "Flared elbows collapsing under shifted weight"]
+  },
+  {
+    "id": "handstand-walk",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Keep core and glutes tight", "Take small controlled steps with fingers", "Keep gaze fixed between hands", "Stack shoulders over wrists"],
+    "setup": "Kick up into a freestanding handstand with hands shoulder-width apart and body fully extended.",
+    "commonMistakes": ["Overarching the lower back", "Taking steps too large, losing balance", "Looking around instead of fixed gaze point"]
+  },
+  {
+    "id": "hang-clean",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Start bar at mid-thigh", "Explode through hips and shrug", "Pull under bar fast into front rack", "Keep bar close to body throughout"],
+    "setup": "Stand holding a barbell at mid-thigh with a hip hinge and flat back, grip just outside shoulder width.",
+    "commonMistakes": ["Pulling early with arms instead of hips", "Bar drifting away from the body", "Catching in a soft, unstable front rack"]
+  },
+  {
+    "id": "hang-clean-pull",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Begin from mid-thigh hang position", "Drive hips forward explosively", "Shrug tall at full extension", "Keep bar tracking close to thighs"],
+    "setup": "Hold the barbell at mid-thigh in an athletic hinge position with shoulders slightly over the bar.",
+    "commonMistakes": ["Early arm bend during the pull", "Rounding the back at the hang position", "Insufficient hip extension before the shrug"]
+  },
+  {
+    "id": "hang-muscle-snatch",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Wide snatch grip on bar", "Extend hips fully before pulling with arms", "Keep bar close as it rises", "Finish with elbows high and locked overhead"],
+    "setup": "Hold the bar at mid-thigh with a wide snatch grip, torso upright and slight hip hinge.",
+    "commonMistakes": ["Muscling the bar up with arms too early", "Incomplete hip extension", "Pressing out the lockout instead of finishing with the pull"]
+  },
+  {
+    "id": "hang-power-clean",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hinge to mid-thigh start", "Explode hips forward and shrug", "Pull under bar into a higher power-position catch", "Land with feet stable, not full squat depth"],
+    "setup": "Stand with the barbell at mid-thigh, torso upright, in an athletic hinge position.",
+    "commonMistakes": ["Catching too low, unnecessarily deep in a full squat", "Bar swinging away from the body", "Early arm pull instead of hip drive"]
+  },
+  {
+    "id": "hang-power-snatch",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Wide grip from mid-thigh hang", "Extend hips explosively", "Pull under into an overhead catch above parallel", "Lock elbows out fast overhead"],
+    "setup": "Hold the bar at mid-thigh with a wide snatch grip and slight hip hinge, chest up.",
+    "commonMistakes": ["Catching with bent elbows overhead", "Pulling the bar out in front of the body", "Insufficient hip extension before the pull under"]
+  },
+  {
+    "id": "hang-single-arm-dumbbell-clean",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge to hold dumbbell at mid-thigh", "Extend hips and shrug explosively", "Pull elbow high then punch under to rack", "Catch in a stable front rack on shoulder"],
+    "setup": "Stand holding a single dumbbell at mid-thigh in one hand with a slight hip hinge.",
+    "commonMistakes": ["Letting the dumbbell swing away from the body", "Catching with excessive wrist flexion", "Using shoulder shrug alone without hip drive"]
+  },
+  {
+    "id": "hang-single-arm-dumbbell-snatch",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Start dumbbell at mid-thigh", "Drive hips forward explosively", "Keep dumbbell close as arm pulls high", "Punch straight overhead to lock out"],
+    "setup": "Hold a dumbbell at mid-thigh in one hand with feet hip-width apart and knees slightly bent.",
+    "commonMistakes": ["Muscling the weight up with a slow arm pull", "Catching with a bent elbow overhead", "Losing balance from an off-center path"]
+  },
+  {
+    "id": "hang-snatch",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Wide grip, hinge to mid-thigh", "Extend hips fully before arm pull", "Pull under bar aggressively", "Catch overhead in full squat, elbows locked"],
+    "setup": "Hold the barbell with a wide snatch grip at mid-thigh, torso upright, slight knee bend.",
+    "commonMistakes": ["Catching with bent arms overhead", "Bar path drifting forward away from body", "Insufficient depth or stability in the overhead squat catch"]
+  },
+  {
+    "id": "hang-snatch-pull",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Start at mid-thigh with wide grip", "Drive hips forward to full extension", "Shrug tall keeping bar close", "Avoid bending elbows during the pull"],
+    "setup": "Hold the bar with a wide snatch grip at mid-thigh in an athletic hinge position.",
+    "commonMistakes": ["Bending the arms too early", "Bar swinging out away from the body", "Rushing the extension without full hip drive"]
+  },
+  {
+    "id": "hanging-knee-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Hang with arms fully extended", "Curl knees toward chest using abs", "Avoid swinging the body", "Lower with control"],
+    "setup": "Hang from a pull-up bar with arms straight and shoulders engaged, legs extended below.",
+    "commonMistakes": ["Using momentum to swing knees up", "Shrugging shoulders instead of hanging actively", "Not achieving full range by stopping short"]
+  },
+  {
+    "id": "hanging-l-sit",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Hang with shoulders engaged, not shrugged", "Raise legs to parallel with floor", "Keep legs straight and together", "Brace core throughout the hold"],
+    "setup": "Hang from a pull-up bar with arms straight, then raise both legs to a horizontal L position.",
+    "commonMistakes": ["Bending knees to fake the hold", "Letting shoulders shrug up toward ears", "Arching the lower back instead of bracing"]
+  },
+  {
+    "id": "hanging-leg-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Hang with active shoulders", "Raise straight legs to hip height or above", "Avoid swinging or kipping", "Lower legs under control"],
+    "setup": "Hang from a pull-up bar with arms extended and legs straight beneath the body.",
+    "commonMistakes": ["Using momentum instead of controlled leg lift", "Bending knees to reduce the challenge", "Excessive body swing masking poor core control"]
+  },
+  {
+    "id": "hanging-oblique-knee-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Hang with shoulders active", "Raise knees toward one side of the ribs", "Keep hips from rotating fully to face wall", "Alternate sides with control"],
+    "setup": "Hang from a pull-up bar with arms straight, legs together, ready to raise knees diagonally.",
+    "commonMistakes": ["Swinging the body to generate momentum", "Rotating the whole torso instead of using obliques", "Uneven range of motion between sides"]
+  },
+  {
+    "id": "hanging-windshield-wipers",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "advanced",
+    "formCues": ["Hang with legs raised to horizontal", "Rotate legs side to side using obliques", "Keep shoulders stable on the bar", "Control the tempo, avoid flinging"],
+    "setup": "Hang from a pull-up bar with legs raised to parallel, core braced and hips level.",
+    "commonMistakes": ["Swinging legs with momentum instead of controlled rotation", "Losing shoulder stability and swaying on the bar", "Dropping leg height mid-set"]
+  },
+  {
+    "id": "happy-baby-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Grab outside edges of feet", "Pull knees toward armpits gently", "Keep tailbone grounded", "Relax shoulders and neck"],
+    "setup": "Lie on your back and draw knees toward chest, grabbing the outside of each foot.",
+    "commonMistakes": ["Lifting the tailbone off the floor", "Forcing the stretch with tension in the neck", "Holding breath instead of relaxing into it"]
+  },
+  {
+    "id": "head-to-knee-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Extend one leg, sole of other foot to inner thigh", "Hinge forward from the hips", "Keep spine long, not rounded", "Reach toward extended foot"],
+    "setup": "Sit with one leg extended straight and the opposite foot pressed against the inner thigh.",
+    "commonMistakes": ["Rounding the back to reach further", "Forcing the stretch past a comfortable range", "Letting the bent knee lift off the floor with tension"]
+  },
+  {
+    "id": "high-cable-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Set pulleys above shoulder height", "Curl hands toward ears", "Keep elbows fixed in space", "Squeeze biceps at peak contraction"],
+    "setup": "Stand centered between two high pulleys, arms extended out to the sides at shoulder height.",
+    "commonMistakes": ["Letting elbows drop or drift forward", "Using shoulder movement to assist the curl", "Partial range of motion at the top"]
+  },
+  {
+    "id": "high-cable-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Set cable at chest to shoulder height", "Pull elbows back and slightly down", "Squeeze shoulder blades together", "Control the return to full stretch"],
+    "setup": "Stand or sit facing a high cable pulley, gripping the handle with arms extended forward.",
+    "commonMistakes": ["Using body momentum to yank the weight", "Shrugging shoulders instead of retracting blades", "Rounding the upper back during the pull"]
+  },
+  {
+    "id": "high-foot-placement-leg-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": ["Place feet high on platform", "Push through full foot", "Lower until knees approach chest safely", "Avoid locking knees at top"],
+    "setup": "Sit in the leg press machine with feet placed near the top of the platform, shoulder-width apart.",
+    "commonMistakes": ["Letting knees cave inward", "Lifting hips off the seat at the bottom", "Locking knees hard at full extension"]
+  },
+  {
+    "id": "high-knee-jump-rope",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Drive knees up toward hip height", "Stay light on the balls of the feet", "Keep wrists doing the rope turning", "Maintain upright posture"],
+    "setup": "Hold rope handles at hip height and begin a light bounce, ready to drive knees up with each turn.",
+    "commonMistakes": ["Landing flat-footed and heavy", "Turning the rope with the whole arm instead of wrists", "Losing rhythm and timing between knee drive and rope pass"]
+  },
+  {
+    "id": "high-to-low-cable-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Set pulleys above shoulder height", "Sweep hands down and together in an arc", "Keep slight bend in elbows throughout", "Squeeze chest at bottom of the fly"],
+    "setup": "Stand centered between two high cable pulleys, grip handles with arms extended up and out.",
+    "commonMistakes": ["Bending elbows too much, turning it into a press", "Using momentum instead of a controlled arc", "Letting hands cross too far past midline"]
+  },
+  {
+    "id": "hiking",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Take shorter steps on inclines", "Engage core for stability on uneven ground", "Keep pace steady and sustainable", "Use trekking poles for balance if needed"],
+    "setup": "Begin walking on a trail with supportive footwear, maintaining an upright, relaxed posture.",
+    "commonMistakes": ["Overstriding downhill, stressing the knees", "Ignoring hydration and pacing on long routes", "Poor footwear leading to instability on terrain"]
+  },
+  {
+    "id": "hip-cars",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Brace core to isolate hip movement", "Move slowly through full rotational range", "Keep pelvis stable, avoid trunk compensation", "Explore end ranges without forcing"],
+    "setup": "Stand holding support, lift one knee up and begin a slow controlled circular rotation of the hip.",
+    "commonMistakes": ["Rushing through the rotation", "Using torso lean to fake extra range", "Skipping portions of the circle instead of full continuity"]
+  },
+  {
+    "id": "hollow-hold",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Press lower back into the floor", "Extend arms and legs while holding position", "Keep ribs down, avoid arching", "Breathe steadily during the hold"],
+    "setup": "Lie on your back, then lift shoulders and legs off the floor into a slight curved hollow shape.",
+    "commonMistakes": ["Letting the lower back arch off the floor", "Holding legs too high, reducing tension", "Straining the neck by pulling the chin up"]
+  },
+  {
+    "id": "hollow-rock",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Maintain hollow shape throughout the rock", "Drive motion from the core, not limbs flailing", "Keep lower back pressed down", "Control the tempo of each rock"],
+    "setup": "From a hollow hold position, initiate a gentle rocking motion along the length of the spine.",
+    "commonMistakes": ["Losing hollow shape and arching the back", "Using arms and legs to generate the rock instead of the core", "Rocking too fast and losing control"]
+  },
+  {
+    "id": "horizontal-leg-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": ["Position feet shoulder-width on platform", "Push through heels and midfoot", "Control the sled on the way back", "Avoid locking knees at extension"],
+    "setup": "Sit in the horizontal leg press with back against the pad and feet on the platform in front.",
+    "commonMistakes": ["Letting knees cave inward under load", "Bottoming out with rounded lower back", "Locking knees hard at the top of each rep"]
+  },
+  {
+    "id": "human-flag",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Grip pole with top and bottom hand opposite directions", "Brace entire core and obliques", "Keep body rigid and horizontal", "Squeeze legs together"],
+    "setup": "Grip a vertical pole with one hand high and one hand low, then lift the body into a horizontal line.",
+    "commonMistakes": ["Letting hips sag below shoulder line", "Insufficient oblique bracing causing rotation", "Bent legs reducing lever difficulty and control"]
+  },
+  {
+    "id": "human-flag-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Establish stable human flag position first", "Pull body toward top hand", "Keep torso rigid throughout the pull", "Lower with control back to start"],
+    "setup": "Set up in a human flag position on a vertical pole with top and bottom hand grip established.",
+    "commonMistakes": ["Losing horizontal body line during the pull", "Insufficient grip strength causing slippage", "Rotating the hips instead of pulling in a straight line"]
+  },
+  {
+    "id": "humble-warrior",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Ground firmly through front foot", "Clasp hands behind back and fold forward", "Keep front knee tracking over ankle", "Relax neck and let head hang"],
+    "setup": "From Warrior I, clasp hands behind the back and fold the torso forward between the front thigh.",
+    "commonMistakes": ["Letting the front knee collapse inward", "Rounding excessively through the lower back", "Losing balance by folding too fast"]
+  },
+  {
+    "id": "hurdle-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Load hips and knees before each jump", "Tuck knees to clear the hurdle", "Land softly with bent knees", "Reset briefly between reps if needed"],
+    "setup": "Stand facing a line of small hurdles with feet together, ready to jump over each one in succession.",
+    "commonMistakes": ["Landing stiff-legged", "Clipping hurdles from insufficient knee lift", "Rushing the rhythm and losing landing control"]
+  },
+  {
+    "id": "husafell-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": ["Hug the stone tight to the chest", "Brace core hard before walking", "Take controlled, deliberate steps", "Keep chest up and spine neutral"],
+    "setup": "Lift a Husafell stone off the ground and hold it against the chest with both arms wrapped around it.",
+    "commonMistakes": ["Letting the stone drift away from the torso", "Rounding the back during the lift-off", "Rushing steps and losing balance"]
+  },
+  {
+    "id": "inchworm",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Hinge and place hands on the floor", "Walk hands forward to a plank", "Keep legs as straight as comfortable", "Walk feet up to meet hands"],
+    "setup": "Stand with feet hip-width apart, then bend forward and place both hands on the floor.",
+    "commonMistakes": ["Letting hips sag in the plank position", "Bending knees excessively to avoid the hamstring stretch", "Rushing through without full hand walk-out"]
+  }
+]

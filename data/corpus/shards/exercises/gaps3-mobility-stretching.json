@@ -1,0 +1,26 @@
+[
+  {
+    "id": "chin-tuck",
+    "name": "Chin Tuck (Neck Retraction)",
+    "aliases": ["neck retraction", "cervical retraction", "chin tucks"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["neck"],
+    "secondaryMuscles": [],
+    "laterality": "bilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  },
+  {
+    "id": "levator-scapulae-stretch",
+    "name": "Levator Scapulae Stretch",
+    "aliases": ["levator scap stretch", "neck side stretch with rotation"],
+    "modality": "mobility",
+    "equipment": ["none"],
+    "primaryMuscles": ["neck"],
+    "secondaryMuscles": ["traps", "rhomboids"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  }
+]

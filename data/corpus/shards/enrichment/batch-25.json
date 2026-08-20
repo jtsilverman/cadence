@@ -1,0 +1,722 @@
+[
+  {
+    "id": "underhand-seated-cable-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep chest tall",
+      "Drive elbows back close to body",
+      "Squeeze shoulder blades together",
+      "Avoid leaning back excessively"
+    ],
+    "setup": "Sit at the cable row station with feet on the platform, knees slightly bent, and grip the underhand attachment with arms extended.",
+    "commonMistakes": [
+      "Using momentum by rocking the torso",
+      "Rounding the lower back",
+      "Shrugging shoulders instead of pulling with the back"
+    ]
+  },
+  {
+    "id": "upright-bike",
+    "mechanics": "isolation",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep a slight bend in the knee at full extension",
+      "Maintain upright posture",
+      "Keep a steady cadence",
+      "Engage core for stability"
+    ],
+    "setup": "Sit on the bike seat adjusted so the knee is slightly bent at the bottom of the pedal stroke, hands resting on the handlebars.",
+    "commonMistakes": [
+      "Seat set too low causing knee strain",
+      "Bouncing in the saddle",
+      "Gripping handlebars too tightly"
+    ]
+  },
+  {
+    "id": "upward-dog",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Press through the hands to lift the chest",
+      "Keep shoulders down away from ears",
+      "Engage the thighs off the floor",
+      "Keep elbows soft, not locked"
+    ],
+    "setup": "Lie face down, place hands under shoulders, and press up to lift the torso while thighs stay off the ground.",
+    "commonMistakes": [
+      "Collapsing shoulders toward ears",
+      "Sagging through the lower back excessively",
+      "Keeping thighs on the ground"
+    ]
+  },
+  {
+    "id": "v-bar-cable-pushdown",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows pinned to sides",
+      "Extend forearms fully without locking hard",
+      "Control the return upward",
+      "Keep torso upright"
+    ],
+    "setup": "Stand facing a high cable pulley with a V-bar attachment, grip with both hands, elbows bent at the sides.",
+    "commonMistakes": [
+      "Letting elbows flare outward",
+      "Using body weight to swing the bar down",
+      "Not fully controlling the eccentric"
+    ]
+  },
+  {
+    "id": "v-bar-pulldown",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pull the bar to upper chest",
+      "Drive elbows down and back",
+      "Keep chest up",
+      "Avoid leaning too far back"
+    ],
+    "setup": "Sit at the lat pulldown machine, grip the V-bar attachment, and secure knees under the pad.",
+    "commonMistakes": [
+      "Pulling behind the neck",
+      "Using excessive body lean",
+      "Not controlling the weight on the way up"
+    ]
+  },
+  {
+    "id": "v-sit",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lean back while lifting legs to form a V shape",
+      "Keep spine long, not rounded",
+      "Engage the core to hold the position",
+      "Point toes and keep legs straight"
+    ],
+    "setup": "Sit on the floor, balance on the sit bones, and lift both legs while leaning the torso back to form a V shape.",
+    "commonMistakes": [
+      "Rounding the lower back",
+      "Holding breath throughout the hold",
+      "Letting legs drop too low"
+    ]
+  },
+  {
+    "id": "v-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Reach hands toward toes simultaneously",
+      "Keep legs straight throughout",
+      "Lift shoulder blades fully off the floor",
+      "Exhale as you fold up"
+    ],
+    "setup": "Lie flat on the back with arms extended overhead and legs straight.",
+    "commonMistakes": [
+      "Bending the knees to cheat the range",
+      "Using momentum instead of control",
+      "Not lifting the shoulder blades off the ground"
+    ]
+  },
+  {
+    "id": "vertical-bounds",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": [
+      "Explode upward using full hip extension",
+      "Land softly with bent knees",
+      "Swing arms to generate power",
+      "Reset briefly between reps"
+    ],
+    "setup": "Stand with feet shoulder-width apart, knees slightly bent, ready to jump vertically for maximum height.",
+    "commonMistakes": [
+      "Landing stiff-legged",
+      "Not using the arms for drive",
+      "Rushing consecutive reps without resetting"
+    ]
+  },
+  {
+    "id": "vertical-climber",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep core engaged throughout",
+      "Drive knees up toward chest",
+      "Maintain a steady rhythm between arms and legs",
+      "Keep a slight forward lean"
+    ],
+    "setup": "Stand on the vertical climber footplates, grip the handles, and begin alternating climbing motion.",
+    "commonMistakes": [
+      "Locking arms and not engaging the upper body",
+      "Slouching through the torso",
+      "Moving too fast with shallow range of motion"
+    ]
+  },
+  {
+    "id": "vertical-leg-crunch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep legs extended straight up",
+      "Curl shoulders toward hips",
+      "Exhale on the crunch",
+      "Keep lower back pressed to the floor"
+    ],
+    "setup": "Lie on the back with legs extended straight up toward the ceiling, hands lightly behind the head.",
+    "commonMistakes": [
+      "Pulling on the neck with the hands",
+      "Letting legs drift away from vertical",
+      "Using momentum instead of controlled contraction"
+    ]
+  },
+  {
+    "id": "vertical-leg-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep feet flat on the platform",
+      "Lower with control until knees near chest",
+      "Avoid locking knees at the top",
+      "Keep lower back against the pad"
+    ],
+    "setup": "Lie on the vertical leg press machine with feet placed shoulder-width on the platform above.",
+    "commonMistakes": [
+      "Letting knees cave inward",
+      "Bouncing the weight at the bottom",
+      "Rounding the lower back off the pad"
+    ]
+  },
+  {
+    "id": "waiter-carry-dumbbell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Press the dumbbell overhead with a locked elbow",
+      "Keep wrist stacked over the shoulder",
+      "Brace core and walk with control",
+      "Keep shoulders level"
+    ],
+    "setup": "Press a single dumbbell overhead with one arm fully locked out, then begin walking.",
+    "commonMistakes": [
+      "Leaning to one side to compensate for the load",
+      "Letting the elbow drift forward or bend",
+      "Rushing the walking pace"
+    ]
+  },
+  {
+    "id": "waiter-carry-kettlebell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lock the elbow fully overhead",
+      "Stack wrist and shoulder in line",
+      "Brace the core while walking",
+      "Keep steps controlled and even"
+    ],
+    "setup": "Press a kettlebell overhead into a locked-out position with one arm, then begin walking.",
+    "commonMistakes": [
+      "Allowing the kettlebell to tilt off the wrist",
+      "Side-bending the torso under load",
+      "Walking too fast and losing control"
+    ]
+  },
+  {
+    "id": "waiter-carry-plate",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lock the elbow overhead",
+      "Keep the plate flat and stable",
+      "Brace core throughout the walk",
+      "Maintain even, controlled steps"
+    ],
+    "setup": "Press a weight plate overhead with one arm locked out, balancing it flat above the shoulder, then walk.",
+    "commonMistakes": [
+      "Letting the plate wobble or tilt",
+      "Leaning the torso to counterbalance",
+      "Bending the supporting elbow"
+    ]
+  },
+  {
+    "id": "walking",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep an upright posture",
+      "Swing arms naturally at the sides",
+      "Land midfoot with each step",
+      "Maintain a steady pace"
+    ],
+    "setup": "Stand tall and begin walking at a comfortable, steady pace with relaxed arm swing.",
+    "commonMistakes": [
+      "Slouching forward through the shoulders",
+      "Overstriding with the lead foot",
+      "Looking down at the ground instead of ahead"
+    ]
+  },
+  {
+    "id": "walking-knee-hug",
+    "mechanics": "isolation",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pull the knee firmly into the chest",
+      "Stay tall through the standing leg",
+      "Step forward smoothly between reps",
+      "Keep hips square"
+    ],
+    "setup": "Stand tall, then step forward while pulling one knee up and into the chest with both hands.",
+    "commonMistakes": [
+      "Rounding the back while pulling the knee in",
+      "Losing balance on the standing leg",
+      "Rushing through steps without full range"
+    ]
+  },
+  {
+    "id": "walking-lateral-lunge-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Step wide to the side before bending the knee",
+      "Keep the opposite leg straight",
+      "Sit hips back over the bent knee",
+      "Keep chest upright"
+    ],
+    "setup": "Stand with feet together, then step laterally into a wide stance and shift weight into one bent knee while the other leg stays straight.",
+    "commonMistakes": [
+      "Letting the bent knee cave inward",
+      "Rounding the back while reaching down",
+      "Not keeping the straight leg fully extended"
+    ]
+  },
+  {
+    "id": "wall-ball-shot",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Squat to full depth before driving up",
+      "Throw the ball to the target using leg drive",
+      "Catch the ball and absorb into the next squat",
+      "Keep chest up throughout"
+    ],
+    "setup": "Stand facing a wall holding a medicine ball at chest height, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Using only the arms to throw instead of leg drive",
+      "Not squatting to sufficient depth",
+      "Catching the ball with rounded shoulders"
+    ]
+  },
+  {
+    "id": "wall-chest-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Place forearm flat against the wall",
+      "Rotate torso away from the wall gently",
+      "Keep shoulder down, not shrugged",
+      "Breathe steadily through the hold"
+    ],
+    "setup": "Stand beside a wall, place the forearm and palm flat against it at shoulder height, and gently rotate the body away.",
+    "commonMistakes": [
+      "Overextending into pain rather than tension",
+      "Shrugging the shoulder up toward the ear",
+      "Rotating too aggressively"
+    ]
+  },
+  {
+    "id": "wall-handstand-back-to-wall",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Stack wrists, shoulders, and hips vertically",
+      "Press firmly through the hands",
+      "Squeeze glutes and brace the core",
+      "Keep the head neutral"
+    ],
+    "setup": "Kick up into a handstand facing away from the wall, resting the heels lightly against it for balance.",
+    "commonMistakes": [
+      "Overarching the lower back",
+      "Letting elbows bend under load",
+      "Turning the head to look around"
+    ]
+  },
+  {
+    "id": "wall-handstand-chest-to-wall",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Press firmly through the hands",
+      "Stack the body in a straight vertical line",
+      "Keep chest close to the wall",
+      "Brace the core and squeeze glutes"
+    ],
+    "setup": "Kick up into a handstand facing the wall, with the chest and toes close to the wall surface for support.",
+    "commonMistakes": [
+      "Arching the back excessively",
+      "Letting the hips pike away from the wall",
+      "Bending the elbows under fatigue"
+    ]
+  },
+  {
+    "id": "wall-handstand-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Lower the head slowly toward the floor",
+      "Keep elbows tracking over the wrists",
+      "Press back up to full lockout",
+      "Keep the body stacked and braced"
+    ],
+    "setup": "Get into a wall handstand position with hands on the floor and feet against the wall, body vertical.",
+    "commonMistakes": [
+      "Flaring elbows out wide",
+      "Losing the straight body line during descent",
+      "Rushing the press and short-changing range"
+    ]
+  },
+  {
+    "id": "wall-sit",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep thighs parallel to the floor",
+      "Press the back flat against the wall",
+      "Keep knees aligned over ankles",
+      "Breathe steadily throughout the hold"
+    ],
+    "setup": "Stand with the back against a wall, then slide down until the knees are bent at roughly 90 degrees.",
+    "commonMistakes": [
+      "Letting knees drift past the toes",
+      "Not sliding down to a full 90-degree bend",
+      "Holding breath during the hold"
+    ]
+  },
+  {
+    "id": "wall-walk",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Walk feet up the wall while walking hands back",
+      "Keep the core braced throughout",
+      "Move in small controlled steps",
+      "Stop before losing the straight body line"
+    ],
+    "setup": "Start in a push-up position with feet against the wall, then walk the feet up while walking hands back toward the wall.",
+    "commonMistakes": [
+      "Moving too fast and losing balance",
+      "Letting the hips sag during the climb",
+      "Walking hands too close to the wall too soon"
+    ]
+  },
+  {
+    "id": "warrior-1",
+    "mechanics": "isolation",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Square the hips toward the front",
+      "Bend the front knee over the ankle",
+      "Reach arms overhead",
+      "Keep the back heel grounded or lifted for balance"
+    ],
+    "setup": "Step one foot forward into a lunge stance, back foot angled slightly out, and raise both arms overhead.",
+    "commonMistakes": [
+      "Letting the front knee travel past the toes",
+      "Twisting the hips out of alignment",
+      "Overarching the lower back while reaching up"
+    ]
+  },
+  {
+    "id": "warrior-2",
+    "mechanics": "isolation",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the front knee tracking over the ankle",
+      "Extend arms parallel to the floor",
+      "Keep hips open to the side",
+      "Gaze over the front hand"
+    ],
+    "setup": "Stand in a wide stance, bend the front knee to 90 degrees, and extend both arms parallel to the ground.",
+    "commonMistakes": [
+      "Letting the front knee cave inward",
+      "Leaning the torso over the front leg",
+      "Dropping the back arm below shoulder height"
+    ]
+  },
+  {
+    "id": "warrior-3",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hinge forward while lifting the back leg",
+      "Keep hips square to the floor",
+      "Reach arms forward or alongside the body",
+      "Keep the standing knee soft, not locked"
+    ],
+    "setup": "Stand on one leg, then hinge forward at the hips while extending the other leg straight back to form a T shape.",
+    "commonMistakes": [
+      "Letting the hips rotate open",
+      "Losing balance by rushing into the hinge",
+      "Rounding the upper back"
+    ]
+  },
+  {
+    "id": "weighted-back-extension",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hinge from the hips, not the lower spine",
+      "Hold the plate close to the chest",
+      "Rise until the body forms a straight line",
+      "Avoid hyperextending at the top"
+    ],
+    "setup": "Position on a back extension bench with hips on the pad, ankles secured, holding a weight plate to the chest.",
+    "commonMistakes": [
+      "Hyperextending the lower back at the top",
+      "Using momentum to jerk upward",
+      "Rounding through the upper back"
+    ]
+  },
+  {
+    "id": "weighted-bench-dip",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lower until elbows reach about 90 degrees",
+      "Keep elbows tracking backward, not flaring",
+      "Press through the palms to rise",
+      "Keep hips close to the bench"
+    ],
+    "setup": "Sit on the edge of a bench with hands gripping the edge, place a weight plate on the lap, and extend legs out.",
+    "commonMistakes": [
+      "Sinking too low and straining the shoulders",
+      "Letting the hips drift away from the bench",
+      "Flaring elbows out wide"
+    ]
+  },
+  {
+    "id": "weighted-chest-dip",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Lean torso slightly forward for chest emphasis",
+      "Lower until shoulders are level with elbows",
+      "Press back up to full lockout",
+      "Keep core braced against the added load"
+    ],
+    "setup": "Attach a weight belt or plate, grip the dip bars, and support the body with arms extended.",
+    "commonMistakes": [
+      "Descending too deep and straining the shoulder joint",
+      "Flaring elbows excessively",
+      "Using momentum by kicking the legs"
+    ]
+  },
+  {
+    "id": "weighted-chin-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Pull chin fully over the bar",
+      "Keep shoulder blades pulled down and back",
+      "Control the descent",
+      "Keep core braced against the swinging load"
+    ],
+    "setup": "Attach additional weight via a belt or between the legs, grip the bar underhand, and hang with arms extended.",
+    "commonMistakes": [
+      "Using momentum or kipping to pull up",
+      "Not achieving full range of motion",
+      "Letting the added weight swing uncontrolled"
+    ]
+  },
+  {
+    "id": "weighted-crunch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hold the plate close to the chest",
+      "Curl shoulders off the floor using the abs",
+      "Exhale on the way up",
+      "Keep the lower back pressed down"
+    ],
+    "setup": "Lie on the back with knees bent, feet flat, holding a weight plate against the chest.",
+    "commonMistakes": [
+      "Pulling with the arms instead of the abs",
+      "Using momentum to jerk upward",
+      "Lifting the lower back off the floor"
+    ]
+  },
+  {
+    "id": "weighted-dead-bug",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Press lower back flat into the floor",
+      "Extend opposite arm and leg slowly",
+      "Hold the dumbbells stable overhead",
+      "Move with control, not speed"
+    ],
+    "setup": "Lie on the back with dumbbells held straight up over the shoulders, knees bent at 90 degrees.",
+    "commonMistakes": [
+      "Letting the lower back arch off the floor",
+      "Moving limbs too fast to maintain control",
+      "Letting the dumbbells drift out of alignment"
+    ]
+  },
+  {
+    "id": "weighted-dead-hang",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Relax shoulders into a full hang",
+      "Keep grip firm around the bar",
+      "Brace core to limit swinging",
+      "Breathe steadily throughout the hold"
+    ],
+    "setup": "Attach extra weight via a belt, grip the pull-up bar with both hands, and hang with arms fully extended.",
+    "commonMistakes": [
+      "Swinging the body during the hold",
+      "Using a grip that fatigues too quickly",
+      "Shrugging shoulders up instead of relaxing"
+    ]
+  },
+  {
+    "id": "weighted-deep-squat-hold",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Sink hips below knee level",
+      "Keep the chest upright",
+      "Hold the weight close to the body",
+      "Keep heels flat on the floor"
+    ],
+    "setup": "Hold a kettlebell or dumbbell at chest height, then squat down into the deepest comfortable position and hold.",
+    "commonMistakes": [
+      "Letting heels lift off the ground",
+      "Rounding the lower back at the bottom",
+      "Letting knees collapse inward"
+    ]
+  },
+  {
+    "id": "weighted-diamond-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Form a diamond shape with the hands under the chest",
+      "Keep elbows close to the body",
+      "Lower chest to the hands with control",
+      "Keep the body in a straight line"
+    ],
+    "setup": "Have a plate placed across the upper back, position hands together under the chest in a diamond shape, and set up in a push-up position.",
+    "commonMistakes": [
+      "Letting the hips sag or pike",
+      "Flaring elbows out wide",
+      "Not lowering to full depth"
+    ]
+  },
+  {
+    "id": "weighted-glute-ham-raise",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Lower the torso with control using the hamstrings",
+      "Keep the body in a straight line",
+      "Hold the weight securely against the chest",
+      "Drive back up using hamstring contraction"
+    ],
+    "setup": "Position on a glute-ham raise machine with ankles secured, holding a weight plate against the chest.",
+    "commonMistakes": [
+      "Dropping too fast without control",
+      "Bending at the hips instead of the knees",
+      "Losing the straight body line"
+    ]
+  },
+  {
+    "id": "weighted-pistol-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep the non-working leg extended forward",
+      "Lower under control to full depth",
+      "Keep the chest upright",
+      "Hold the weight to counterbalance"
+    ],
+    "setup": "Stand on one leg holding a dumbbell or kettlebell at chest height, with the other leg extended forward off the ground.",
+    "commonMistakes": [
+      "Letting the working knee cave inward",
+      "Losing balance and rushing the descent",
+      "Not reaching full depth"
+    ]
+  },
+  {
+    "id": "weighted-plank",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep the body in a straight line from head to heels",
+      "Brace the core throughout the hold",
+      "Place the plate stable on the upper back",
+      "Keep hips level, not sagging or piking"
+    ],
+    "setup": "Get into a forearm plank position with a weight plate placed across the upper back.",
+    "commonMistakes": [
+      "Letting the hips sag toward the floor",
+      "Piking the hips up too high",
+      "Holding the breath during the hold"
+    ]
+  },
+  {
+    "id": "weighted-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Pull chin fully above the bar",
+      "Keep shoulder blades depressed and retracted",
+      "Control the descent to a full hang",
+      "Brace the core against the added load"
+    ],
+    "setup": "Attach extra weight via a belt, grip the bar with an overhand grip, and hang with arms fully extended.",
+    "commonMistakes": [
+      "Using kipping momentum to pull up",
+      "Not descending to a full arm extension",
+      "Letting the added weight swing"
+    ]
+  }
+]

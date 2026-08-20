@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "downward-dog",
+    "name": "Downward-Facing Dog",
+    "aliases": [
+      "Adho Mukha Svanasana",
+      "Downward Dog"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hamstrings",
+      "calves",
+      "lats"
+    ],
+    "secondaryMuscles": [
+      "front-delts",
+      "forearms"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "three-legged-downward-dog",
+    "name": "Three-Legged Downward Dog",
+    "aliases": [
+      "Eka Pada Adho Mukha Svanasana",
+      "One-Legged Downward Dog"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hamstrings",
+      "glutes",
+      "calves"
+    ],
+    "secondaryMuscles": [
+      "lats",
+      "abs",
+      "hip-flexors"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "downward-dog"
+  },
+  {
+    "id": "dolphin-pose",
+    "name": "Dolphin Pose",
+    "aliases": [
+      "Ardha Pincha Mayurasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "front-delts",
+      "lats"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "calves",
+      "abs"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "downward-dog"
+  },
+  {
+    "id": "upward-dog",
+    "name": "Upward-Facing Dog",
+    "aliases": [
+      "Urdhva Mukha Svanasana",
+      "Upward Dog"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "pectorals",
+      "lower-back"
+    ],
+    "secondaryMuscles": [
+      "front-delts",
+      "triceps",
+      "abs"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "warrior-1",
+    "name": "Warrior I",
+    "aliases": [
+      "Virabhadrasana I",
+      "Warrior 1"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "quads",
+      "glutes",
+      "hip-flexors"
+    ],
+    "secondaryMuscles": [
+      "calves",
+      "front-delts",
+      "abs"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "humble-warrior",
+    "name": "Humble Warrior",
+    "aliases": [
+      "Baddha Virabhadrasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "quads",
+      "glutes",
+      "hip-flexors"
+    ],
+    "secondaryMuscles": [
+      "rear-delts",
+      "hamstrings"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "warrior-1"
+  },
+  {
+    "id": "warrior-2",
+    "name": "Warrior II",
+    "aliases": [
+      "Virabhadrasana II",
+      "Warrior 2"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "quads",
+      "glutes",
+      "adductors"
+    ],
+    "secondaryMuscles": [
+      "side-delts",
+      "abs"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "reverse-warrior",
+    "name": "Reverse Warrior",
+    "aliases": [
+      "Viparita Virabhadrasana",
+      "Peaceful Warrior"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "quads",
+      "glutes",
+      "obliques"
+    ],
+    "secondaryMuscles": [
+      "adductors",
+      "side-delts",
+      "lats"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "warrior-2"
+  },
+  {
+    "id": "warrior-3",
+    "name": "Warrior III",
+    "aliases": [
+      "Virabhadrasana III",
+      "Warrior 3"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "hamstrings",
+      "abs"
+    ],
+    "secondaryMuscles": [
+      "quads",
+      "calves",
+      "rear-delts"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "triangle-pose",
+    "name": "Triangle Pose",
+    "aliases": [
+      "Trikonasana",
+      "Extended Triangle Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hamstrings",
+      "adductors",
+      "obliques"
+    ],
+    "secondaryMuscles": [
+      "quads",
+      "side-delts"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "revolved-triangle-pose",
+    "name": "Revolved Triangle Pose",
+    "aliases": [
+      "Parivrtta Trikonasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "obliques",
+      "hamstrings"
+    ],
+    "secondaryMuscles": [
+      "adductors",
+      "abs",
+      "lower-back"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "triangle-pose"
+  },
+  {
+    "id": "chair-pose",
+    "name": "Chair Pose",
+    "aliases": [
+      "Utkatasana",
+      "Fierce Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "quads",
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "calves",
+      "front-delts",
+      "abs"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "revolved-chair-pose",
+    "name": "Revolved Chair Pose",
+    "aliases": [
+      "Parivrtta Utkatasana",
+      "Twisted Chair Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "quads",
+      "obliques"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "abs",
+      "calves"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "chair-pose"
+  },
+  {
+    "id": "tree-pose",
+    "name": "Tree Pose",
+    "aliases": [
+      "Vrksasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "abductors"
+    ],
+    "secondaryMuscles": [
+      "quads",
+      "calves",
+      "abs"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "pigeon-pose",
+    "name": "Pigeon Pose",
+    "aliases": [
+      "Kapotasana",
+      "Half Pigeon Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "hip-flexors"
+    ],
+    "secondaryMuscles": [
+      "adductors",
+      "lower-back"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "one-legged-king-pigeon-pose",
+    "name": "One-Legged King Pigeon Pose",
+    "aliases": [
+      "Eka Pada Rajakapotasana",
+      "King Pigeon Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "hip-flexors",
+      "quads"
+    ],
+    "secondaryMuscles": [
+      "lower-back",
+      "front-delts"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "pigeon-pose"
+  },
+  {
+    "id": "reclined-pigeon-pose",
+    "name": "Reclined Pigeon Pose",
+    "aliases": [
+      "Supta Kapotasana",
+      "Reclining Pigeon Pose",
+      "Figure-4 Stretch"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "abductors"
+    ],
+    "secondaryMuscles": [
+      "hamstrings"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "pigeon-pose"
+  },
+  {
+    "id": "childs-pose",
+    "name": "Child's Pose",
+    "aliases": [
+      "Balasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "lower-back",
+      "lats"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "hip-flexors"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "cobra-pose",
+    "name": "Cobra Pose",
+    "aliases": [
+      "Bhujangasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "lower-back",
+      "pectorals"
+    ],
+    "secondaryMuscles": [
+      "front-delts",
+      "triceps"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "sphinx-pose",
+    "name": "Sphinx Pose",
+    "aliases": [
+      "Salamba Bhujangasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "lower-back",
+      "pectorals"
+    ],
+    "secondaryMuscles": [
+      "front-delts"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "cobra-pose"
+  },
+  {
+    "id": "cat-cow-pose",
+    "name": "Cat-Cow Pose",
+    "aliases": [
+      "Marjaryasana-Bitilasana",
+      "Cat-Cow Stretch"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "lower-back",
+      "abs"
+    ],
+    "secondaryMuscles": [
+      "traps",
+      "rhomboids"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "bridge-pose",
+    "name": "Bridge Pose",
+    "aliases": [
+      "Setu Bandhasana",
+      "Setu Bandha Sarvangasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "secondaryMuscles": [
+      "lower-back",
+      "abs"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "single-leg-bridge-pose",
+    "name": "Single-Leg Bridge Pose",
+    "aliases": [
+      "Eka Pada Setu Bandhasana",
+      "One-Legged Bridge Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "hamstrings"
+    ],
+    "secondaryMuscles": [
+      "abs",
+      "lower-back"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "bridge-pose"
+  },
+  {
+    "id": "wheel-pose",
+    "name": "Wheel Pose",
+    "aliases": [
+      "Urdhva Dhanurasana",
+      "Upward Bow Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "lower-back",
+      "pectorals",
+      "front-delts"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "quads",
+      "glutes"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "crow-pose",
+    "name": "Crow Pose",
+    "aliases": [
+      "Bakasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "abs",
+      "hip-flexors"
+    ],
+    "secondaryMuscles": [
+      "forearms",
+      "triceps",
+      "front-delts"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "side-crow-pose",
+    "name": "Side Crow Pose",
+    "aliases": [
+      "Parsva Bakasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "obliques",
+      "abs"
+    ],
+    "secondaryMuscles": [
+      "forearms",
+      "triceps",
+      "hip-flexors"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "crow-pose"
+  },
+  {
+    "id": "crane-pose",
+    "name": "Crane Pose",
+    "aliases": [
+      "Kakasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "abs",
+      "front-delts"
+    ],
+    "secondaryMuscles": [
+      "triceps",
+      "forearms",
+      "hip-flexors"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "crow-pose"
+  },
+  {
+    "id": "boat-pose",
+    "name": "Boat Pose",
+    "aliases": [
+      "Navasana",
+      "Full Boat Pose"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "abs",
+      "hip-flexors"
+    ],
+    "secondaryMuscles": [
+      "quads",
+      "lower-back"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "half-boat-pose",
+    "name": "Half Boat Pose",
+    "aliases": [
+      "Ardha Navasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "abs",
+      "hip-flexors"
+    ],
+    "secondaryMuscles": [
+      "quads"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "boat-pose"
+  },
+  {
+    "id": "half-moon-pose",
+    "name": "Half Moon Pose",
+    "aliases": [
+      "Ardha Chandrasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "abs"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "abductors",
+      "side-delts"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "revolved-half-moon-pose",
+    "name": "Revolved Half Moon Pose",
+    "aliases": [
+      "Parivrtta Ardha Chandrasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "obliques",
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "abs",
+      "lower-back"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "half-moon-pose"
+  },
+  {
+    "id": "eagle-pose",
+    "name": "Eagle Pose",
+    "aliases": [
+      "Garudasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "abductors"
+    ],
+    "secondaryMuscles": [
+      "rear-delts",
+      "quads",
+      "abs"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "dancer-pose",
+    "name": "Dancer Pose",
+    "aliases": [
+      "Natarajasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "glutes",
+      "quads"
+    ],
+    "secondaryMuscles": [
+      "lower-back",
+      "front-delts",
+      "abs"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "camel-pose",
+    "name": "Camel Pose",
+    "aliases": [
+      "Ustrasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "lower-back",
+      "hip-flexors"
+    ],
+    "secondaryMuscles": [
+      "pectorals",
+      "quads"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "bow-pose",
+    "name": "Bow Pose",
+    "aliases": [
+      "Dhanurasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "lower-back",
+      "quads"
+    ],
+    "secondaryMuscles": [
+      "pectorals",
+      "front-delts",
+      "hip-flexors"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "seated-forward-fold",
+    "name": "Seated Forward Fold",
+    "aliases": [
+      "Paschimottanasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hamstrings",
+      "lower-back"
+    ],
+    "secondaryMuscles": [
+      "calves",
+      "glutes"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "head-to-knee-pose",
+    "name": "Head-to-Knee Pose",
+    "aliases": [
+      "Janu Sirsasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hamstrings",
+      "lower-back"
+    ],
+    "secondaryMuscles": [
+      "calves",
+      "obliques"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "seated-forward-fold"
+  },
+  {
+    "id": "wide-legged-seated-forward-fold",
+    "name": "Wide-Legged Seated Forward Fold",
+    "aliases": [
+      "Upavistha Konasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "adductors",
+      "hamstrings"
+    ],
+    "secondaryMuscles": [
+      "lower-back"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "seated-forward-fold"
+  },
+  {
+    "id": "happy-baby-pose",
+    "name": "Happy Baby Pose",
+    "aliases": [
+      "Ananda Balasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "adductors",
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "hip-flexors"
+    ],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "corpse-pose",
+    "name": "Corpse Pose",
+    "aliases": [
+      "Savasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "full-body"
+    ],
+    "secondaryMuscles": [],
+    "laterality": "bilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "lizard-pose",
+    "name": "Lizard Pose",
+    "aliases": [
+      "Utthan Pristhasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hip-flexors",
+      "adductors"
+    ],
+    "secondaryMuscles": [
+      "hamstrings",
+      "glutes"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "low-lunge",
+    "name": "Low Lunge",
+    "aliases": [
+      "Anjaneyasana"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hip-flexors",
+      "quads"
+    ],
+    "secondaryMuscles": [
+      "glutes",
+      "adductors"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": null
+  },
+  {
+    "id": "crescent-lunge",
+    "name": "Crescent Lunge",
+    "aliases": [
+      "Ashta Chandrasana",
+      "High Lunge"
+    ],
+    "modality": "yoga",
+    "equipment": [
+      "bodyweight"
+    ],
+    "primaryMuscles": [
+      "hip-flexors",
+      "quads",
+      "glutes"
+    ],
+    "secondaryMuscles": [
+      "calves",
+      "abs"
+    ],
+    "laterality": "unilateral",
+    "metrics": [
+      "time"
+    ],
+    "variationOf": "low-lunge"
+  }
+]

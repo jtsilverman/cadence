@@ -1,0 +1,26 @@
+[
+  {
+    "id": "copenhagen-plank",
+    "name": "Copenhagen Plank",
+    "aliases": ["Copenhagen Adductor Plank", "Copenhagen Side Plank"],
+    "modality": "strength",
+    "equipment": ["bench", "bodyweight"],
+    "primaryMuscles": ["adductors", "abs"],
+    "secondaryMuscles": ["obliques", "glutes", "hamstrings"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  },
+  {
+    "id": "b-stance-hip-thrust",
+    "name": "B-Stance (Kickstand) Hip Thrust",
+    "aliases": ["Kickstand Hip Thrust", "Foot-Elevated Hip Thrust", "Staggered-Stance Hip Thrust"],
+    "modality": "strength",
+    "equipment": ["barbell", "bench"],
+    "primaryMuscles": ["glutes", "hamstrings"],
+    "secondaryMuscles": ["quads", "abs"],
+    "laterality": "unilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

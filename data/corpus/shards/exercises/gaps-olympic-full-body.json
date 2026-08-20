@@ -1,0 +1,86 @@
+[
+  {
+    "id": "dumbbell-push-press",
+    "name": "Dumbbell Push Press",
+    "aliases": [],
+    "modality": "strength",
+    "equipment": ["dumbbell"],
+    "primaryMuscles": ["front-delts"],
+    "secondaryMuscles": ["side-delts", "triceps", "quads", "glutes"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "single-arm-dumbbell-push-press",
+    "name": "Single-Arm Dumbbell Push Press",
+    "aliases": [],
+    "modality": "strength",
+    "equipment": ["dumbbell"],
+    "primaryMuscles": ["front-delts"],
+    "secondaryMuscles": ["side-delts", "triceps", "quads", "glutes", "obliques", "abs"],
+    "laterality": "unilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "clean-grip-deadlift",
+    "name": "Clean-Grip Deadlift",
+    "aliases": ["Clean Grip Deadlift", "Shoulder-Width Grip Deadlift"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["glutes", "hamstrings", "lower-back"],
+    "secondaryMuscles": ["traps", "quads", "forearms", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "clean-jump-shrug",
+    "name": "Clean Jump Shrug",
+    "aliases": ["Jump Shrug"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["traps"],
+    "secondaryMuscles": ["hamstrings", "glutes", "calves", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "snatch-jump-shrug",
+    "name": "Snatch Jump Shrug",
+    "aliases": ["Jump Shrug", "Snatch-Grip Jump Shrug"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["traps"],
+    "secondaryMuscles": ["hamstrings", "glutes", "calves", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "clean-shrug",
+    "name": "Clean Shrug",
+    "aliases": ["Clean-Grip Shrug"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["traps"],
+    "secondaryMuscles": ["hamstrings", "glutes", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "snatch-shrug",
+    "name": "Snatch Shrug",
+    "aliases": ["Snatch-Grip Shrug"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["traps"],
+    "secondaryMuscles": ["hamstrings", "glutes", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "precor-amt",
+    "name": "Precor AMT (Adaptive Motion Trainer)",
+    "aliases": ["AMT", "adaptive motion trainer", "Precor adaptive motion trainer"],
+    "modality": "cardio",
+    "equipment": ["elliptical"],
+    "primaryMuscles": ["quads", "glutes", "hamstrings", "cardiovascular"],
+    "secondaryMuscles": ["calves", "front-delts", "triceps", "biceps"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "pace", "resistance-level", "incline", "calories"],
+    "variationOf": null
+  }
+]

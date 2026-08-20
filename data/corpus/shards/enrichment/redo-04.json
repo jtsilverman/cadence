@@ -1,0 +1,722 @@
+[
+  {
+    "id": "ez-bar-reverse-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows pinned to sides",
+      "Use overhand grip on EZ bar",
+      "Curl without swinging torso",
+      "Squeeze forearms at top"
+    ],
+    "setup": "Stand holding an EZ curl bar with an overhand (pronated) grip, hands shoulder-width apart, arms extended.",
+    "commonMistakes": [
+      "Using momentum to swing the bar",
+      "Letting elbows drift forward",
+      "Using too much weight and shortening range of motion"
+    ]
+  },
+  {
+    "id": "ez-bar-skull-crusher",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep upper arms vertical and stationary",
+      "Lower bar toward forehead under control",
+      "Extend elbows fully at top",
+      "Keep elbows tucked, not flared"
+    ],
+    "setup": "Lie on a flat bench holding an EZ bar with a shoulder-width grip, arms extended straight up over the chest.",
+    "commonMistakes": [
+      "Flaring elbows out to the sides",
+      "Letting upper arms drift back over the face",
+      "Using shoulders to help press instead of triceps"
+    ]
+  },
+  {
+    "id": "ez-bar-spider-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep chest pinned to the pad",
+      "Curl bar up without moving upper arms",
+      "Squeeze biceps hard at the top",
+      "Lower under control to full extension"
+    ],
+    "setup": "Lean chest-first against an angled spider curl bench or incline bench, arms hanging straight down holding an EZ bar.",
+    "commonMistakes": [
+      "Lifting chest off the pad to cheat the rep",
+      "Using momentum instead of a controlled curl",
+      "Not achieving full elbow extension at bottom"
+    ]
+  },
+  {
+    "id": "ez-bar-upright-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Pull bar up close to the body",
+      "Lead with elbows, keep them above wrists",
+      "Stop around chest height",
+      "Keep core braced and torso upright"
+    ],
+    "setup": "Stand holding an EZ bar with a shoulder-width overhand grip in front of the thighs.",
+    "commonMistakes": [
+      "Pulling bar too high, straining shoulders",
+      "Using back swing for momentum",
+      "Letting elbows drop below wrists"
+    ]
+  },
+  {
+    "id": "false-grip-hang",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Wrap wrist over the bar rather than fingers only",
+      "Keep shoulders engaged, not fully passive",
+      "Maintain a straight body line",
+      "Breathe steadily throughout the hold"
+    ],
+    "setup": "Grip a pull-up bar with the wrist rolled over the top so the palm faces down and the bar sits in the crook of the wrist, then hang with feet off the ground.",
+    "commonMistakes": [
+      "Letting the grip slip into a normal hang",
+      "Fully relaxing shoulders into a dead hang",
+      "Holding breath during the hold"
+    ]
+  },
+  {
+    "id": "farmer-carry-dumbbell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "beginner",
+    "formCues": [
+      "Stand tall with shoulders back",
+      "Grip dumbbells firmly at sides",
+      "Take controlled, even steps",
+      "Keep core braced throughout"
+    ],
+    "setup": "Stand between two dumbbells on the floor, hinge down to grip one in each hand, and stand up tall.",
+    "commonMistakes": [
+      "Letting shoulders round forward",
+      "Taking uneven or rushed steps",
+      "Leaning to one side under load"
+    ]
+  },
+  {
+    "id": "farmer-carry-handles",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep torso upright and braced",
+      "Grip handles firmly with neutral wrists",
+      "Walk with controlled, even strides",
+      "Keep shoulders packed down and back"
+    ],
+    "setup": "Stand between two loaded farmer's carry handles, squat down to grip them, and stand up to full height.",
+    "commonMistakes": [
+      "Rounding the lower back on pickup",
+      "Walking too fast and losing control",
+      "Letting handles bang against the legs"
+    ]
+  },
+  {
+    "id": "farmer-carry-kettlebell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep chest up and spine neutral",
+      "Grip kettlebell handles firmly",
+      "Take short, controlled steps",
+      "Keep core braced throughout the carry"
+    ],
+    "setup": "Stand between two kettlebells, hinge at the hips to grip the handles, and stand up tall.",
+    "commonMistakes": [
+      "Letting kettlebells swing and bang into legs",
+      "Rounding the back during pickup",
+      "Shrugging shoulders up toward ears"
+    ]
+  },
+  {
+    "id": "farmer-carry-trap-bar",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hinge and brace before lifting the bar",
+      "Stand tall with shoulders back once loaded",
+      "Take even, controlled steps",
+      "Keep grip firm and wrists neutral"
+    ],
+    "setup": "Stand inside a loaded trap bar, hinge at the hips to grip the handles, and drive through the legs to stand up.",
+    "commonMistakes": [
+      "Rounding the back during the initial lift",
+      "Rushing the walk and losing posture",
+      "Letting the bar shift or tilt while walking"
+    ]
+  },
+  {
+    "id": "feet-elevated-inverted-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep body in a straight line from head to heels",
+      "Pull chest toward the bar",
+      "Squeeze shoulder blades together at top",
+      "Control the descent back to arms extended"
+    ],
+    "setup": "Lie under a fixed bar with feet elevated on a bench, grip the bar with an overhand grip, and hang with body straight.",
+    "commonMistakes": [
+      "Letting hips sag toward the floor",
+      "Pulling with arms only, not engaging back",
+      "Shortening range of motion by not fully extending arms"
+    ]
+  },
+  {
+    "id": "fire-hydrant",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep hips and shoulders square to the floor",
+      "Lift knee out to the side, not backward",
+      "Keep core braced to avoid rotating torso",
+      "Move slowly through the full range"
+    ],
+    "setup": "Start on hands and knees in a tabletop position with hands under shoulders and knees under hips.",
+    "commonMistakes": [
+      "Rotating the hips to gain more height",
+      "Rushing the movement with momentum",
+      "Letting the supporting arm collapse"
+    ]
+  },
+  {
+    "id": "firefly-pose",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Wrap legs high around the upper arms",
+      "Press firmly through the hands",
+      "Lean weight forward as legs straighten",
+      "Keep core engaged to control the lift"
+    ],
+    "setup": "Sit with legs wide, place hands on the floor behind the legs, and hook the backs of the thighs over the upper arms.",
+    "commonMistakes": [
+      "Placing hands too far from the body, losing leverage",
+      "Trying to straighten legs before engaging the core",
+      "Not warming up hips and hamstrings first"
+    ]
+  },
+  {
+    "id": "fish-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Arch upper back and lift chest",
+      "Rest crown of head lightly on floor",
+      "Keep legs active and together",
+      "Breathe fully into the open chest"
+    ],
+    "setup": "Lie on the back, place hands under the hips, and press onto the forearms to lift and arch the chest while tilting the head back.",
+    "commonMistakes": [
+      "Putting excess weight on the head and neck",
+      "Forgetting to keep legs engaged",
+      "Rushing into the backbend without warming the spine"
+    ]
+  },
+  {
+    "id": "flexed-arm-hang",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Pull chin above the bar before starting the hold",
+      "Keep elbows bent and chest up",
+      "Engage lats to resist descending",
+      "Keep shoulders pulled down away from ears"
+    ],
+    "setup": "Grip a pull-up bar overhand and pull up so the chin clears the bar, holding that top position.",
+    "commonMistakes": [
+      "Letting chin drop below the bar too early",
+      "Shrugging shoulders instead of engaging lats",
+      "Swinging the body to extend the hold"
+    ]
+  },
+  {
+    "id": "flutter-kicks",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Press lower back into the floor",
+      "Keep legs straight and low",
+      "Kick in small, quick alternating movements",
+      "Keep core braced throughout"
+    ],
+    "setup": "Lie on the back with legs extended and hands under the glutes or by the sides, lifting the legs slightly off the floor.",
+    "commonMistakes": [
+      "Letting the lower back arch off the floor",
+      "Kicking with legs too high, reducing core tension",
+      "Holding breath instead of breathing steadily"
+    ]
+  },
+  {
+    "id": "foam-roll-adductors",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Position roller along the inner thigh",
+      "Support upper body with forearms",
+      "Roll slowly, pausing on tender spots",
+      "Keep hips relaxed and breathe steadily"
+    ],
+    "setup": "Lie face down with one leg bent out to the side and the foam roller positioned under the inner thigh.",
+    "commonMistakes": [
+      "Rolling too fast to feel any release",
+      "Tensing the leg instead of relaxing into it",
+      "Applying too much pressure directly on the knee"
+    ]
+  },
+  {
+    "id": "foam-roll-calves",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Support body weight with hands behind hips",
+      "Place roller under the calf muscle",
+      "Roll slowly from ankle to knee",
+      "Rotate leg slightly to hit different angles"
+    ],
+    "setup": "Sit on the floor with the foam roller placed under one calf and hands planted behind the hips for support.",
+    "commonMistakes": [
+      "Rolling directly over the back of the knee",
+      "Rushing through the movement",
+      "Not adjusting leg rotation to cover the whole muscle"
+    ]
+  },
+  {
+    "id": "foam-roll-glutes",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Sit on the roller with one ankle crossed over the opposite knee",
+      "Lean slightly toward the tighter side",
+      "Roll slowly across the glute muscle",
+      "Breathe and relax into tender spots"
+    ],
+    "setup": "Sit on a foam roller, cross one ankle over the opposite knee, and lean back slightly onto the glute of the crossed leg.",
+    "commonMistakes": [
+      "Rolling with too much speed",
+      "Staying too upright and missing the target area",
+      "Holding tension instead of relaxing into the pressure"
+    ]
+  },
+  {
+    "id": "foam-roll-hamstrings",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Support weight with hands behind hips",
+      "Place roller under the back of the thigh",
+      "Roll slowly from knee to glute",
+      "Keep the other foot on the floor for control"
+    ],
+    "setup": "Sit on the floor with the foam roller under one hamstring and hands planted behind the hips.",
+    "commonMistakes": [
+      "Rolling too quickly over tender areas",
+      "Letting the hips sag instead of staying supported",
+      "Rolling directly over the back of the knee joint"
+    ]
+  },
+  {
+    "id": "foam-roll-it-band",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Support upper body on the forearm",
+      "Position roller along the outer thigh",
+      "Roll slowly from hip to knee",
+      "Keep core braced to control body weight"
+    ],
+    "setup": "Lie on one side with the foam roller under the outer thigh, propped up on the forearm with the top leg crossed in front for balance.",
+    "commonMistakes": [
+      "Rolling too fast, causing sharp discomfort",
+      "Letting hips sag toward the floor",
+      "Spending too long directly on the knee"
+    ]
+  },
+  {
+    "id": "foam-roll-lats",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lie on the side with roller under the armpit region",
+      "Extend the top arm overhead",
+      "Roll slowly along the side of the ribcage",
+      "Breathe steadily to help the muscle release"
+    ],
+    "setup": "Lie on one side with the foam roller placed under the lat muscle just below the armpit, extending the top arm overhead.",
+    "commonMistakes": [
+      "Rolling directly over the ribs instead of the muscle",
+      "Moving too quickly to allow release",
+      "Holding breath during the roll"
+    ]
+  },
+  {
+    "id": "foam-roll-lower-back",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep chin tucked and core engaged",
+      "Roll only through the mid to lower back muscles",
+      "Avoid rolling directly on the spine",
+      "Move slowly and control the motion with the legs"
+    ],
+    "setup": "Sit on the floor with the foam roller behind the lower back, feet planted and knees bent, supporting the head with the hands.",
+    "commonMistakes": [
+      "Rolling directly over the spine",
+      "Using too much speed and losing control",
+      "Overarching the lower back during the roll"
+    ]
+  },
+  {
+    "id": "foam-roll-piriformis",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Cross ankle over opposite knee for targeting",
+      "Sit directly on the roller at the glute",
+      "Roll slowly and pause on tight spots",
+      "Lean into the target side for more pressure"
+    ],
+    "setup": "Sit on a foam roller, cross one ankle over the opposite knee, and lean toward the crossed side to target the piriformis.",
+    "commonMistakes": [
+      "Not crossing the leg, missing the deep muscle",
+      "Rolling too fast to allow release",
+      "Applying pressure directly on the sit bone"
+    ]
+  },
+  {
+    "id": "forearm-stand",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Stack shoulders directly over elbows",
+      "Press firmly through forearms into the floor",
+      "Engage core and squeeze legs together",
+      "Keep gaze fixed on a still point"
+    ],
+    "setup": "Kneel and place forearms on the floor shoulder-width apart, then kick up into an inverted balance on the forearms.",
+    "commonMistakes": [
+      "Letting elbows splay wider than shoulders",
+      "Overarching the lower back once inverted",
+      "Kicking up with too much force and losing control"
+    ]
+  },
+  {
+    "id": "frame-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": [
+      "Brace core fully before lifting the frame",
+      "Keep torso upright and chest tall",
+      "Take short, deliberate steps",
+      "Grip handles firmly throughout the carry"
+    ],
+    "setup": "Stand inside a loaded carrying frame, squat down to grip the handles, and drive up through the legs to stand.",
+    "commonMistakes": [
+      "Rounding the back during the lift-off",
+      "Rushing steps and losing balance",
+      "Letting the frame tilt or sway while walking"
+    ]
+  },
+  {
+    "id": "front-middle-splits-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Ease into the stretch gradually, never force it",
+      "Keep hips square to the front",
+      "Engage the surrounding muscles slightly for control",
+      "Breathe deeply to help ease tension"
+    ],
+    "setup": "Lower into a front or middle split position, using hands on the floor for support and sliding only as deep as mobility allows.",
+    "commonMistakes": [
+      "Forcing depth beyond current flexibility",
+      "Letting the hips rotate out of alignment",
+      "Bouncing instead of holding a steady stretch"
+    ]
+  },
+  {
+    "id": "garland-pose",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep heels grounded if possible",
+      "Press elbows against inner knees",
+      "Lengthen spine and lift chest",
+      "Bring palms together at heart center"
+    ],
+    "setup": "Stand with feet slightly wider than hip-width, squat down fully, and bring palms together in front of the chest.",
+    "commonMistakes": [
+      "Letting the heels lift excessively off the floor",
+      "Rounding the spine instead of lengthening it",
+      "Letting knees cave inward"
+    ]
+  },
+  {
+    "id": "gate-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Extend the straight leg directly out to the side",
+      "Reach the top arm overhead in line with the ear",
+      "Keep hips facing forward, not rotated",
+      "Lengthen through both sides of the torso evenly"
+    ],
+    "setup": "Kneel on one knee, extend the opposite leg straight out to the side with the foot flat, and reach the same-side arm overhead while leaning sideways.",
+    "commonMistakes": [
+      "Rotating the hips instead of staying square",
+      "Collapsing into the side body instead of lengthening",
+      "Placing the extended foot at the wrong angle, straining the knee"
+    ]
+  },
+  {
+    "id": "german-hang",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Lower slowly from a hang into shoulder extension",
+      "Keep arms straight throughout",
+      "Relax shoulders gradually into the stretch",
+      "Keep core lightly engaged for control"
+    ],
+    "setup": "Start hanging from a pull-up bar with an overhand grip, then rotate the shoulders to lower the body into an inverted-arm hang behind the bar.",
+    "commonMistakes": [
+      "Dropping into position too quickly without control",
+      "Forcing depth before shoulder mobility allows it",
+      "Letting the grip loosen during the hold"
+    ]
+  },
+  {
+    "id": "goddess-pose",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": [
+      "Turn toes out and bend knees over toes",
+      "Keep chest lifted and spine tall",
+      "Sink hips to about knee height",
+      "Press through the whole foot"
+    ],
+    "setup": "Stand with feet wide, toes turned out, and lower into a wide squat with hands at chest or reaching overhead.",
+    "commonMistakes": [
+      "Letting knees cave inward past the toes",
+      "Leaning the torso forward instead of staying upright",
+      "Not sinking hips deep enough to load the legs"
+    ]
+  },
+  {
+    "id": "half-lord-of-the-fishes-pose",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lengthen the spine before rotating",
+      "Rotate from the torso, not by pulling with arms",
+      "Keep both sit bones grounded",
+      "Turn head last, following the rotation"
+    ],
+    "setup": "Sit with one leg extended, cross the opposite foot over the extended knee, and twist the torso toward the bent knee.",
+    "commonMistakes": [
+      "Rounding the spine instead of sitting tall",
+      "Forcing the twist with the arms instead of the torso",
+      "Lifting the grounded sit bone off the floor"
+    ]
+  },
+  {
+    "id": "headstand",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Interlace fingers and place crown of head on the floor",
+      "Stack hips over shoulders once inverted",
+      "Engage core and squeeze legs together",
+      "Keep weight distributed between head and forearms, not head alone"
+    ],
+    "setup": "Kneel and interlace fingers on the floor, placing the crown of the head between the hands, then walk feet in and kick up to invert.",
+    "commonMistakes": [
+      "Placing too much weight directly on the head",
+      "Overarching or under-engaging the core once inverted",
+      "Kicking up with excess force and losing control"
+    ]
+  },
+  {
+    "id": "hero-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep spine tall and shoulders relaxed",
+      "Sit between the heels, not on them",
+      "Keep knees pointing straight ahead",
+      "Use a block under the hips if needed for comfort"
+    ],
+    "setup": "Kneel with knees together and feet slightly wider than hips, then sit back between the heels.",
+    "commonMistakes": [
+      "Forcing the sit without enough ankle or knee mobility",
+      "Letting the spine round forward",
+      "Placing excess pressure directly on the knees"
+    ]
+  },
+  {
+    "id": "hindu-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Start in downward-dog-like position with hips high",
+      "Sweep chest down and forward in an arcing motion",
+      "Rise into an upward-facing stretch at the bottom",
+      "Reverse the arc back to the starting position"
+    ],
+    "setup": "Begin in a pike position with hips lifted high and hands and feet on the floor.",
+    "commonMistakes": [
+      "Rushing the arc and skipping the full range of motion",
+      "Letting the lower back sag excessively at the bottom",
+      "Not lifting hips high enough at the start"
+    ]
+  },
+  {
+    "id": "ice-skating",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Bend knees and keep weight centered over the blades",
+      "Push off at an angle with each stride",
+      "Keep core engaged for balance",
+      "Swing arms in rhythm with the stride"
+    ],
+    "setup": "Stand on ice wearing skates, with knees slightly bent and weight balanced over the blades before pushing off.",
+    "commonMistakes": [
+      "Standing too upright, reducing balance and power",
+      "Leaning too far forward and losing control",
+      "Tensing up instead of staying relaxed through the stride"
+    ]
+  },
+  {
+    "id": "kayaking-canoeing-paddleboarding",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rotate the torso to drive each paddle stroke",
+      "Keep core braced for stability",
+      "Use the whole arm and back, not wrists alone",
+      "Maintain a tall, balanced posture"
+    ],
+    "setup": "Sit or stand on the watercraft with the paddle gripped shoulder-width apart, core braced and posture upright.",
+    "commonMistakes": [
+      "Paddling with arms only instead of rotating the torso",
+      "Slouching and losing core stability",
+      "Gripping the paddle too tightly, causing fatigue"
+    ]
+  },
+  {
+    "id": "kettlebell-bent-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep eyes on the kettlebell throughout",
+      "Hinge the torso sideways while pressing",
+      "Keep the pressing arm locked as the body moves under it",
+      "Maintain a braced, stable base with the legs"
+    ],
+    "setup": "Clean a kettlebell to the rack position at the shoulder, then set feet and prepare to hinge sideways under the bell.",
+    "commonMistakes": [
+      "Losing sight of the kettlebell during the movement",
+      "Bending the pressing arm instead of keeping it locked",
+      "Rushing the hinge without control"
+    ]
+  },
+  {
+    "id": "kettlebell-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows pinned to the sides",
+      "Curl with control, avoiding swing",
+      "Squeeze biceps at the top",
+      "Lower slowly to full extension"
+    ],
+    "setup": "Stand holding a kettlebell in each hand at the sides with a neutral or supinated grip, arms extended.",
+    "commonMistakes": [
+      "Swinging the torso to generate momentum",
+      "Letting elbows drift forward during the curl",
+      "Not fully extending the arms at the bottom"
+    ]
+  },
+  {
+    "id": "larsen-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep legs straight and off the bench",
+      "Brace core hard to prevent arching",
+      "Lower bar under control to the chest",
+      "Press bar back up in a straight line"
+    ],
+    "setup": "Lie on a flat bench with legs extended straight out, feet off the bench or floor, gripping the barbell above the chest.",
+    "commonMistakes": [
+      "Letting the lower back arch excessively without leg drive to stabilize",
+      "Losing bar path control without leg support",
+      "Using too much weight before mastering the stability demand"
+    ]
+  },
+  {
+    "id": "legs-up-the-wall-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Scoot hips close to the wall",
+      "Rest legs straight up against the wall",
+      "Relax arms out to the sides",
+      "Breathe slowly and let the body settle"
+    ],
+    "setup": "Sit sideways next to a wall, then swing legs up the wall while lying back onto the floor.",
+    "commonMistakes": [
+      "Positioning hips too far from the wall, causing strain",
+      "Tensing the legs instead of relaxing them",
+      "Holding breath instead of breathing deeply"
+    ]
+  }
+]

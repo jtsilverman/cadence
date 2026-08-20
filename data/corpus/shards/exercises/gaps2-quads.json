@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bodyweight-squat",
+    "name": "Bodyweight Squat (Air Squat)",
+    "aliases": ["Air Squat", "Bodyweight Squat"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads", "glutes"],
+    "secondaryMuscles": ["hamstrings", "adductors", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "pendulum-squat-machine",
+    "name": "Pendulum Squat (machine)",
+    "aliases": ["Pendulum Squat"],
+    "modality": "strength",
+    "equipment": ["machine"],
+    "primaryMuscles": ["quads"],
+    "secondaryMuscles": ["glutes", "hamstrings", "adductors"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

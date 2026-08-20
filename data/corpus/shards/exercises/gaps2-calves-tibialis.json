@@ -1,0 +1,26 @@
+[
+  {
+    "id": "heel-walks",
+    "name": "Heel Walks",
+    "aliases": ["walking on heels", "toe raises walk", "dorsiflexor walk"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["tibialis"],
+    "secondaryMuscles": ["calves"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "toe-walks-bodyweight",
+    "name": "Toe Walks",
+    "aliases": ["walking on toes", "tiptoe walk", "unloaded toe walk"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["calves"],
+    "secondaryMuscles": ["tibialis"],
+    "laterality": "bilateral",
+    "metrics": ["distance", "time", "reps"],
+    "variationOf": null
+  }
+]

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "rollerblading",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Keep knees slightly bent", "Push out to the side, not backward", "Keep chest up and core engaged", "Look ahead, not down"],
+    "setup": "Stand on rollerblades with knees bent and weight centered over the balls of the feet.",
+    "commonMistakes": ["Standing too upright with locked knees", "Pushing straight back instead of laterally", "Leaning too far forward"]
+  },
+  {
+    "id": "romanian-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips, not the knees", "Keep the bar close to the legs", "Maintain a neutral spine", "Push hips back until hamstrings stretch"],
+    "setup": "Stand holding a barbell at hip level with feet hip-width apart and knees slightly bent.",
+    "commonMistakes": ["Rounding the lower back", "Squatting the weight down instead of hinging", "Letting the bar drift away from the body"]
+  },
+  {
+    "id": "rope-climb",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Grip rope with hands and lock with feet", "Pull with lats, not just arms", "Drive through the legs on each ascent", "Control the descent"],
+    "setup": "Stand or sit beneath a suspended rope and grip it firmly overhead with both hands.",
+    "commonMistakes": ["Relying solely on arm strength", "Not locking the rope with the feet", "Sliding down too fast and burning the hands"]
+  },
+  {
+    "id": "rope-straight-arm-pulldown",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep arms straight throughout", "Pull rope down using lats", "Avoid bending elbows excessively", "Control the return upward"],
+    "setup": "Stand facing a cable machine with a rope attachment set at the high pulley, arms extended overhead.",
+    "commonMistakes": ["Bending the elbows to turn it into a triceps movement", "Using momentum from the torso", "Not achieving full lat stretch at the top"]
+  },
+  {
+    "id": "rowing-machine",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Drive with the legs first", "Lean back slightly, then pull with arms", "Keep back flat throughout", "Return in reverse order: arms, body, legs"],
+    "setup": "Sit on the rower with feet strapped in and hands gripping the handle, knees bent and arms extended.",
+    "commonMistakes": ["Pulling with the arms before the legs finish driving", "Rounding the back", "Rushing the recovery phase"]
+  },
+  {
+    "id": "rucking",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Keep the pack snug and high on the back", "Maintain upright posture", "Take natural strides", "Engage core to protect the spine"],
+    "setup": "Put on a weighted rucksack and stand tall before beginning to walk.",
+    "commonMistakes": ["Overloading the pack too early", "Slouching forward under load", "Wearing improper footwear"]
+  },
+  {
+    "id": "russian-twist",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Lean back to engage the core", "Rotate from the torso, not just the arms", "Keep feet lifted for added difficulty", "Move with control, not momentum"],
+    "setup": "Sit on the floor with knees bent, lean back slightly, and lift feet off the ground if able.",
+    "commonMistakes": ["Swinging the arms instead of rotating the torso", "Rounding the lower back", "Moving too fast to build momentum instead of control"]
+  },
+  {
+    "id": "sandbag-bear-hug-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Hug the sandbag tight to the chest", "Keep core braced throughout", "Walk with short, controlled steps", "Keep chest up and shoulders back"],
+    "setup": "Lift the sandbag off the ground and clutch it against the chest in a bear hug position.",
+    "commonMistakes": ["Letting the bag sag away from the chest", "Rounding the upper back", "Taking overly long strides that destabilize the carry"]
+  },
+  {
+    "id": "sandbag-clean",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hinge to grip the bag with a flat back", "Explode hips forward to lift", "Pull the bag to chest height", "Catch in a front-rack position"],
+    "setup": "Stand over the sandbag with feet shoulder-width apart, hinge down, and grip the sides or handles.",
+    "commonMistakes": ["Rounding the back during the pull", "Using arms instead of hip drive", "Catching the bag too low against the body"]
+  },
+  {
+    "id": "sandbag-over-bar-toss",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hinge and load the hips before the toss", "Explode upward driving through the legs", "Extend fully as you release the bag", "Keep the bag close on the initial pull"],
+    "setup": "Stand behind the sandbag facing a bar or box, feet shoulder-width apart, ready to hinge down and grip it.",
+    "commonMistakes": ["Using the arms to muscle the toss instead of hip drive", "Rounding the back on the pickup", "Standing too close or too far from the bar"]
+  },
+  {
+    "id": "sandbag-over-shoulder-toss",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hinge deep to grip the bag", "Drive hips explosively to generate power", "Extend upward and release over the shoulder", "Keep spine neutral throughout"],
+    "setup": "Stand with the sandbag between the feet, hinge down, and grip it firmly with both hands.",
+    "commonMistakes": ["Rounding the lower back on the pickup", "Relying on arms instead of hip extension", "Losing balance on the release"]
+  },
+  {
+    "id": "sandbag-shoulder-carry",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Rest the bag securely across one shoulder", "Brace the core to stay upright", "Keep steps controlled and even", "Switch shoulders as needed to stay balanced"],
+    "setup": "Lift the sandbag and position it across the top of one shoulder, gripping it with the same-side hand.",
+    "commonMistakes": ["Letting the torso lean excessively to one side", "Gripping the bag too loosely", "Overstriding and losing balance"]
+  },
+  {
+    "id": "scapular-pull-up",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Hang with arms fully extended", "Depress and retract the shoulder blades", "Avoid bending the elbows", "Keep the movement small and controlled"],
+    "setup": "Hang from a pull-up bar with arms straight and shoulders relaxed.",
+    "commonMistakes": ["Bending the elbows to turn it into a full pull-up", "Using momentum or swinging", "Shrugging the shoulders up instead of depressing them"]
+  },
+  {
+    "id": "scissor-kicks",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Keep lower back pressed into the floor", "Engage the core throughout", "Move legs in a controlled scissor motion", "Keep legs straight and low but off the ground"],
+    "setup": "Lie on the back with legs extended and slightly raised off the floor, hands at the sides or under the hips.",
+    "commonMistakes": ["Letting the lower back arch off the floor", "Kicking too high, reducing core tension", "Moving too fast with no control"]
+  },
+  {
+    "id": "scorpion-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Keep chest and shoulders flat on the floor", "Rotate hips to bring foot toward opposite hand", "Move slowly and stop at a comfortable stretch", "Breathe steadily throughout"],
+    "setup": "Lie face down with arms extended out to the sides at shoulder height.",
+    "commonMistakes": ["Lifting the shoulders off the floor", "Forcing the rotation past a comfortable range", "Rushing the movement instead of holding the stretch"]
+  },
+  {
+    "id": "seated-box-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Sit tall with feet flat before jumping", "Explode upward using arms and legs together", "Land softly on the box with bent knees", "Stand to full extension at the top"],
+    "setup": "Sit on a low box or bench facing a taller box, feet flat on the ground, ready to explode upward.",
+    "commonMistakes": ["Rocking excessively to build momentum instead of using power", "Landing with stiff knees", "Choosing a box height beyond current jump ability"]
+  },
+  {
+    "id": "seated-cable-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Sit tall with a slight forward hip hinge", "Pull handle to the lower abdomen", "Squeeze shoulder blades together", "Avoid leaning back excessively"],
+    "setup": "Sit at the cable row station with feet on the platform, knees slightly bent, and grip the handle with arms extended.",
+    "commonMistakes": ["Using body momentum to yank the weight", "Rounding the upper back", "Leaning too far back at the finish"]
+  },
+  {
+    "id": "seated-calf-stretch-strap",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Keep the leg being stretched straight", "Pull the strap gently to flex the foot", "Hold without bouncing", "Breathe and relax into the stretch"],
+    "setup": "Sit on the floor with one leg extended, loop a strap around the ball of that foot, and hold both ends.",
+    "commonMistakes": ["Bending the knee, which reduces the stretch", "Yanking the strap too forcefully", "Rounding the back instead of sitting tall"]
+  },
+  {
+    "id": "seated-dumbbell-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep elbows pinned to the sides", "Curl with control, no swinging", "Fully extend at the bottom", "Squeeze biceps at the top"],
+    "setup": "Sit on a bench holding a dumbbell in each hand, arms hanging at the sides.",
+    "commonMistakes": ["Swinging the elbows forward", "Using momentum instead of muscle control", "Not fully extending the arms at the bottom"]
+  },
+  {
+    "id": "seated-dumbbell-hammer-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep palms facing each other throughout", "Elbows stay fixed at the sides", "Curl with a controlled tempo", "Avoid shoulder swing"],
+    "setup": "Sit on a bench holding dumbbells with a neutral grip, arms hanging at the sides.",
+    "commonMistakes": ["Rotating the wrists during the curl", "Using body momentum to lift the weight", "Flaring the elbows outward"]
+  },
+  {
+    "id": "seated-dumbbell-lateral-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Raise arms to shoulder height, no higher", "Lead with the elbows, not the hands", "Keep a slight bend in the elbows", "Control the descent"],
+    "setup": "Sit on a bench holding a dumbbell in each hand at the sides, torso upright.",
+    "commonMistakes": ["Using momentum to swing the weights up", "Raising arms above shoulder height", "Shrugging the traps to assist the lift"]
+  },
+  {
+    "id": "seated-dumbbell-overhead-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep core braced against back support", "Press dumbbells directly overhead", "Avoid excessive arching of the lower back", "Lower with control to shoulder height"],
+    "setup": "Sit on a bench with back support, holding dumbbells at shoulder height with palms facing forward.",
+    "commonMistakes": ["Arching the lower back excessively", "Pressing the dumbbells forward instead of straight up", "Not controlling the lowering phase"]
+  },
+  {
+    "id": "seated-dumbbell-rear-delt-raise",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Hinge forward to load the rear delts", "Raise arms out to the sides with a slight elbow bend", "Squeeze shoulder blades at the top", "Lower with control"],
+    "setup": "Sit on the edge of a bench, hinge the torso forward, and let dumbbells hang beneath the shoulders.",
+    "commonMistakes": ["Using momentum to jerk the weights up", "Rounding the back instead of hinging properly", "Raising the arms too high, involving the traps"]
+  },
+  {
+    "id": "seated-figure-four-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Cross ankle over the opposite knee", "Sit tall and hinge forward from the hips", "Keep the crossed foot flexed", "Hold steady without bouncing"],
+    "setup": "Sit in a chair or on the floor and cross one ankle over the opposite knee to form a figure-four shape.",
+    "commonMistakes": ["Rounding the back instead of hinging at the hips", "Forcing the stretch too aggressively", "Letting the crossed knee collapse inward"]
+  },
+  {
+    "id": "seated-forward-fold",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Extend legs straight in front", "Hinge from the hips, not the back", "Reach toward the toes gradually", "Keep the neck relaxed"],
+    "setup": "Sit on the floor with legs extended straight and spine tall.",
+    "commonMistakes": ["Rounding the back to reach further", "Bending the knees to fake range of motion", "Bouncing to force the stretch"]
+  },
+  {
+    "id": "seated-good-morning",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Keep the bar secure across the upper back", "Hinge forward from the hips only", "Maintain a neutral spine", "Return to upright with control"],
+    "setup": "Sit on a bench with a barbell across the upper back, feet flat and firmly planted.",
+    "commonMistakes": ["Rounding the spine during the hinge", "Using excessive weight beyond hip mobility", "Hinging from the lower back instead of the hips"]
+  },
+  {
+    "id": "seated-hamstring-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Extend one leg straight, bend the other", "Hinge forward from the hips", "Keep the extended leg's toes pointed up", "Hold without bouncing"],
+    "setup": "Sit with one leg extended straight and the other bent with the foot resting against the inner thigh.",
+    "commonMistakes": ["Rounding the back excessively to reach further", "Bending the extended knee to cheat range", "Forcing the stretch with bouncing motions"]
+  },
+  {
+    "id": "seated-kettlebell-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Brace the core throughout the press", "Press the kettlebell straight overhead", "Avoid leaning back to compensate", "Lower under control to shoulder height"],
+    "setup": "Sit on a bench holding a kettlebell in the rack position at shoulder height.",
+    "commonMistakes": ["Leaning backward to generate momentum", "Pressing at an angle instead of straight up", "Losing core tension mid-press"]
+  },
+  {
+    "id": "seated-leg-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Adjust pad snug against the ankles", "Curl legs down with control", "Squeeze hamstrings at full flexion", "Return slowly, avoid dropping the weight"],
+    "setup": "Sit on the machine with the ankle pad positioned against the lower legs and back against the support.",
+    "commonMistakes": ["Using momentum to jerk the weight down", "Not achieving full range of motion", "Letting the weight stack slam on the return"]
+  },
+  {
+    "id": "seated-machine-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Sit tall with chest against the pad", "Pull handles toward the torso", "Squeeze shoulder blades together", "Control the return to full stretch"],
+    "setup": "Sit at the machine with chest supported against the pad and grip the handles with arms extended.",
+    "commonMistakes": ["Rounding the back away from the pad", "Using momentum instead of controlled pulling", "Shrugging the shoulders during the pull"]
+  },
+  {
+    "id": "seated-single-leg-hamstring-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Extend one leg straight, tuck the other in", "Hinge forward from the hips toward the extended leg", "Keep the extended foot flexed", "Hold steady, breathing evenly"],
+    "setup": "Sit with one leg extended straight in front and the opposite foot tucked against the inner thigh.",
+    "commonMistakes": ["Rounding the back to force the reach", "Bending the extended knee", "Bouncing instead of holding a steady stretch"]
+  },
+  {
+    "id": "seated-sled-rope-pull",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Brace feet against the platform", "Pull the rope hand over hand", "Keep core engaged throughout", "Maintain steady, controlled pulling rhythm"],
+    "setup": "Sit facing the sled with feet braced against a platform or anchor, gripping the attached rope.",
+    "commonMistakes": ["Jerking the rope instead of pulling smoothly", "Letting the torso collapse forward", "Losing foot brace position mid-pull"]
+  },
+  {
+    "id": "seated-thoracic-rotation",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Sit tall with hips square and stable", "Rotate from the upper back", "Keep hips from twisting with the torso", "Move slowly through the range"],
+    "setup": "Sit on a bench or chair with arms crossed over the chest and spine upright.",
+    "commonMistakes": ["Rotating from the hips instead of the thoracic spine", "Rushing through the rotation", "Slouching instead of maintaining tall posture"]
+  },
+  {
+    "id": "shadow-boxing",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Keep hands up to guard the face", "Rotate hips and shoulders into each punch", "Stay light on the feet", "Keep core engaged throughout"],
+    "setup": "Stand in a boxing stance with feet staggered, fists raised near the chin.",
+    "commonMistakes": ["Dropping the guard hand", "Punching with the arm only, no hip rotation", "Standing flat-footed instead of staying mobile"]
+  },
+  {
+    "id": "side-crow-pose",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Plant hands shoulder-width apart", "Shift torso to rest hips on one upper arm", "Engage core to lift the feet", "Gaze slightly forward to help balance"],
+    "setup": "Squat down, twist the torso, and place both hands flat on the floor to one side of the body.",
+    "commonMistakes": ["Placing hands too close together", "Not engaging the core enough to lift off", "Looking down, which shifts balance forward"]
+  },
+  {
+    "id": "side-lying-hip-abduction",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Keep hips stacked throughout", "Lift the top leg straight up", "Avoid rotating the leg forward", "Lower with control"],
+    "setup": "Lie on one side with legs stacked and the bottom arm supporting the head.",
+    "commonMistakes": ["Letting the hips roll backward", "Rotating the top leg forward during the lift", "Using momentum instead of controlled lifting"]
+  },
+  {
+    "id": "side-lying-hip-adduction",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Keep the bottom leg straight", "Lift the bottom leg up toward the top leg", "Avoid rotating the hips", "Control the descent"],
+    "setup": "Lie on one side with the top leg bent and foot planted in front, bottom leg extended straight.",
+    "commonMistakes": ["Rotating the hips instead of isolating the lift", "Using momentum to swing the leg up", "Not fully extending the bottom leg"]
+  },
+  {
+    "id": "side-plank",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Stack shoulders, hips, and ankles in one line", "Brace the obliques throughout", "Keep hips lifted, not sagging", "Keep neck neutral"],
+    "setup": "Lie on one side, prop up on the forearm, and stack the feet with the body forming a straight line.",
+    "commonMistakes": ["Letting the hips sag toward the floor", "Rotating the torso forward or backward", "Collapsing through the supporting shoulder"]
+  },
+  {
+    "id": "side-plank-leg-lift",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Hold a stable side plank first", "Lift the top leg without dropping the hips", "Keep the lifted leg straight", "Lower with control"],
+    "setup": "Get into a side plank position with the body in a straight line supported on the forearm and feet stacked.",
+    "commonMistakes": ["Letting hips drop when lifting the leg", "Rotating the torso during the leg lift", "Using momentum to swing the leg"]
+  },
+  {
+    "id": "side-plank-rotation",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "advanced",
+    "formCues": ["Start in a stable side plank", "Rotate the top arm under the torso", "Keep hips lifted throughout the rotation", "Return with control to starting side plank"],
+    "setup": "Get into a side plank position with the top arm extended toward the ceiling.",
+    "commonMistakes": ["Letting the hips drop during rotation", "Rotating too fast without control", "Losing the straight-line body position"]
+  }
+]

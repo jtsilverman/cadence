@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cadence — beat 02 preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#EFEDE6; --card:#FBFAF5; --ink:#101010; --grn:#1B7F4B; --rust:#AF4A28;
+  --dim:#8A8A83; --rule:#B5B1A3; --edge:#D6D2C5;
+  --ease:cubic-bezier(.2,0,0,1);
+}
+body{background:#26262A;font-family:Archivo,sans-serif;color:#C9C7C0}
+
+/* ---------- preview chrome ---------- */
+.note{max-width:76ch;margin:0 auto;padding:44px 24px 0}
+.note h1{font-size:24px;font-weight:600;letter-spacing:-.02em;color:#fff;margin-bottom:10px}
+.note p{font-size:14px;line-height:1.6;margin-bottom:8px}
+.note .k{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8f8d86;letter-spacing:.08em}
+.runway{height:65vh;display:flex;align-items:center;justify-content:center}
+.runway span,.tail span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6d6b66;text-transform:uppercase}
+.tail{height:45vh;display:flex;align-items:center;justify-content:center}
+#replay{position:fixed;right:20px;bottom:20px;z-index:9;background:#1a1a1d;border:1px solid #4a4a4e;
+  color:#C9C7C0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;
+  padding:9px 16px;cursor:pointer;text-transform:uppercase}
+#replay:hover{border-color:#8f8d86;color:#fff}
+
+/* ---------- the beat ---------- */
+.scroller{overflow-x:auto}
+.beat{min-width:1380px;background:var(--cream);color:var(--ink);
+  min-height:100vh;display:flex;align-items:center;padding:48px 44px}
+.inner{display:flex;align-items:center;gap:44px;width:100%;max-width:1560px;margin:0 auto}
+
+.copy{width:380px;flex:none;opacity:0;transform:translateY(12px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.copy.in{opacity:1;transform:none}
+.copy .bn{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--dim);letter-spacing:.14em;margin-bottom:16px}
+.copy h2{font-size:40px;font-weight:600;letter-spacing:-.03em;line-height:1.05;margin-bottom:18px}
+.copy p{font-size:17px;line-height:1.55;color:#3c3c38;max-width:34ch}
+
+.stagearea{flex:1;min-width:0}
+.main{display:flex;gap:22px;align-items:flex-start}
+.rail{width:172px;flex:none}
+.rail .rh{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:var(--dim);
+  text-transform:uppercase;padding-bottom:9px;border-bottom:2px solid var(--ink);margin-bottom:10px;
+  opacity:0;transition:opacity .35s var(--ease)}
+.rail .rh.in{opacity:1}
+.slot{height:46px;margin-bottom:8px}
+.rcard{position:relative;height:100%;background:var(--card);border:1px solid var(--edge);
+  padding:5px 8px 5px 12px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;
+  opacity:0;transform:translateX(-26px)}
+.rcard.in{opacity:1;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.rcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--ink)}
+.rcard.snackr::before{background:var(--rust)}
+.rcard .n{font-size:9px;font-weight:700;line-height:1.25;letter-spacing:0;text-transform:uppercase;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rcard .rk{display:flex;align-items:baseline;gap:8px;margin-top:3px}
+.rcard .rk b{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.rcard .rk span{font-family:'IBM Plex Mono',monospace;font-size:7.5px;color:var(--dim);white-space:nowrap}
+
+.boardwrap{flex:1;min-width:0}
+.mast{display:flex;justify-content:space-between;align-items:center}
+.mast h3{font-size:12px;font-weight:700;letter-spacing:.34em;text-transform:uppercase}
+.mast span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--dim)}
+.mast span b{color:var(--ink);font-weight:700}
+.rule2{border-bottom:2px solid var(--ink);margin:14px 0 0}
+.grid{display:grid;grid-template-columns:64px repeat(7,1fr)}
+.dh{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:10px 6px 11px;
+  border-right:1px dotted var(--rule)}
+.dh b{display:block;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:10px;color:var(--dim);letter-spacing:0;margin-top:2px}
+.lbl{border-right:1px dotted var(--rule);padding:0 10px 0 0;display:flex;align-items:flex-start;justify-content:flex-end;
+  font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);line-height:54px}
+.cell{position:relative;border-right:1px dotted var(--rule);padding:0 5px;display:flex;flex-direction:column;gap:6px}
+.grid>*:nth-child(8n){border-right:none}
+.gap{min-height:14px}
+.sp{height:9px;border-right:1px dotted var(--rule)}
+.sp:nth-child(8n){border-right:none}
+
+/* meal cards */
+.ev{position:relative;height:54px;flex:none;background:var(--card);border:1px solid var(--edge);
+    padding:4px 6px 4px 10px;display:flex;flex-direction:column;overflow:hidden;visibility:hidden}
+.ev.on{visibility:visible}
+.ev::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px}
+.ev.meal::before{background:var(--ink)}
+.ev.snack::before{background:var(--rust)}
+.ev.out::before{background:var(--grn)}
+.ev .n{font-size:8.5px;font-weight:700;line-height:1.2;letter-spacing:0;text-transform:uppercase;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  overflow-wrap:break-word;height:20px}
+.ev.snack .n{color:var(--rust)}
+.ev.out .n{color:var(--grn)}
+.ev .kc{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;letter-spacing:-.03em;margin-top:3px;line-height:1}
+.ev .mc{font-family:'IBM Plex Mono',monospace;font-size:8px;color:var(--dim);margin-top:2px;line-height:1;white-space:nowrap}
+.flyclone{position:fixed;z-index:6;margin:0;visibility:visible;
+  transition:top .38s var(--ease),left .38s var(--ease),width .38s var(--ease),height .38s var(--ease)}
+.emptyov{position:absolute;top:0;left:5px;right:5px;height:54px;border:1px dashed var(--rule);
+  opacity:0;transition:opacity .4s var(--ease);pointer-events:none}
+.beat.played .emptyov{opacity:.38}
+.beat .emptyov.gone{opacity:0 !important}
+
+/* footer table */
+.foot{margin-top:18px;border-top:5px solid var(--ink)}
+.tbl{display:grid;grid-template-columns:118px repeat(4,1fr);width:100%}
+.tbl>div{padding:7px 14px;border-right:1px dotted var(--rule);border-bottom:1px dotted var(--rule);
+  font-family:'IBM Plex Mono',monospace;font-size:14px;font-variant-numeric:tabular-nums;
+  text-align:right;letter-spacing:-.01em;line-height:1.2}
+.tbl>div:nth-child(5n){border-right:none}
+.tbl>div:nth-last-child(-n+5){border-bottom:none}
+.tbl>div.hd{font-family:Archivo,sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dim);padding-top:11px;padding-bottom:8px}
+.tbl>div.rl{font-family:Archivo,sans-serif;font-size:9px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;text-align:left;padding-left:0;color:var(--ink)}
+.tbl>div.rl.q{color:var(--dim)}
+.tbl .r-avg{font-weight:700;color:var(--ink)}
+.tbl .r-tgt{color:var(--dim)}
+.tbl .r-dif{font-weight:600;color:var(--dim)}
+.tbl .r-dif.ok{color:var(--grn)}
+.tbl .r-dif.off{color:var(--rust)}
+
+/* chat */
+.chat{margin-top:20px;opacity:0;transition:opacity .4s var(--ease)}
+.chat.in{opacity:1}
+.transcript{min-height:99px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.msg{display:grid;grid-template-columns:96px 1fr;padding:7px 0;border-bottom:1px dotted var(--rule);
+  opacity:0;transform:translateY(14px);transition:opacity .28s var(--ease),transform .28s var(--ease)}
+.msg.in{opacity:1;transform:none}
+.msg:last-child{border-bottom:none}
+.msg .wl{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.18em;
+  color:var(--dim);text-transform:uppercase;padding-top:3px}
+.msg.cad .wl{color:var(--grn)}
+.msg .tx{font-size:13px;line-height:1.4}
+.msg.cad .tx{color:#3c3c38}
+.dots span{display:inline-block;width:4px;height:4px;background:var(--dim);margin-right:4px;
+  animation:dot 1s infinite var(--ease)}
+.dots span:nth-child(2){animation-delay:.15s}
+.dots span:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,100%{opacity:.25}40%{opacity:1}}
+.inputrow{display:grid;grid-template-columns:96px 1fr;padding:7px 0 2px;border-top:2px solid var(--ink)}
+.inputrow .wl{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.18em;
+  color:var(--dim);text-transform:uppercase;padding-top:3px}
+.inputrow .tx{position:relative;font-size:13px;line-height:1.4;min-height:19px}
+.inputrow .ph{position:absolute;left:0;top:0;color:var(--rule);transition:opacity .2s var(--ease)}
+.cursor{display:inline-block;width:7px;height:13px;background:var(--ink);vertical-align:-1px;
+  animation:blink 1.05s steps(1) infinite;margin-left:2px}
+@keyframes blink{50%{opacity:0}}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition-duration:0s !important;transition-delay:0s !important;animation:none !important}
+}
+</style></head><body>
+
+<div class="note">
+  <h1>Beat 02 — The week fills itself in.</h1>
+  <p><span class="k">SEQUENCE&nbsp;</span> starts where beat 01 ended (food saved, targets set, week empty) → the week populates column by column, your library cards visibly flying into the plan → daily average counts up, difference resolves.</p>
+  <p><span class="k">LOOP&nbsp;</span> then it keeps living: a protein bar drags in from Your Food to Thursday, and a typed edit swaps Wednesday's lunch. Everything eases back and repeats.</p>
+  <p><span class="k">TRIGGER&nbsp;</span> fires once at 40% viewport, plays through, re-arms if you scroll fully out. Replay bottom right.</p>
+</div>
+<div class="runway"><span>scroll — beat arms on intersection</span></div>
+
+<div class="scroller">
+<section class="beat" id="beat">
+  <div class="inner">
+    <div class="copy" id="copy">
+      <div class="bn">02</div>
+      <h2>The week fills itself in.</h2>
+      <p>Every meal, snack, and drink, seven days out, portioned to hit your numbers. Approve it, or change anything.</p>
+    </div>
+    <div class="stagearea">
+      <div class="main">
+        <div class="rail">
+          <div class="rh" id="railhead">Your food</div>
+          <div id="slots"></div>
+        </div>
+        <div class="boardwrap">
+          <div class="mast"><h3>Cadence</h3><span>04–10 JUL 2026 · <b>FAT LOSS</b> · <b>HIGH PROTEIN</b></span></div>
+          <div class="rule2"></div>
+          <div class="grid" id="grid"></div>
+          <div class="foot"><div class="tbl" id="tbl"></div></div>
+          <div class="chat" id="chat">
+            <div class="transcript" id="transcript"></div>
+            <div class="inputrow">
+              <div class="wl">You</div>
+              <div class="tx"><span class="ph" id="ph">Message Cadence</span><span id="itx"></span><span class="cursor" id="icur" style="display:none"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="tail"><span>beat 03 continues here — the plan becomes the list</span></div>
+<button id="replay">Replay</button>
+
+<script>
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const EASE = p => 1 - Math.pow(1 - p, 3);
+
+/* ---------- fixtures ---------- */
+const DAYS=[['MON',4],['TUE',5],['WED',6],['THU',7],['FRI',8],['SAT',9],['SUN',10]];
+const ROWKEYS=['Breakfast','Morning','Lunch','Afternoon','Dinner','Evening'];
+const ROWS=[
+  {label:'Breakfast',meal:true},{label:'',meal:false},
+  {label:'Lunch',meal:true},{label:'',meal:false},
+  {label:'Dinner',meal:true},{label:'',meal:false}
+];
+const TGT={k:1900,p:150,c:185,f:62}, TOL={k:120,p:15,c:30,f:12};
+const MEALS=['Chicken shawarma bowl','Overnight oats','Salmon and rice','Turkey chili',
+  'Greek yogurt bowl','Steak and sweet potato','Eggs and sourdough','Chicken salad'];
+/* [name, kcal, P, C, F, kind] — Wed lunch is Turkey chili at base; the chat edit swaps it */
+const P=[
+ {Breakfast:[['Greek yogurt bowl',420,35,44,12,'meal']],
+  Morning:[['Cold brew',120,2,18,4,'out']],
+  Lunch:[['Chicken shawarma bowl',620,48,58,20,'meal']],
+  Afternoon:[['Protein shake',180,30,12,3,'snack']],
+  Dinner:[['Salmon and rice',640,48,62,22,'meal']], Evening:[]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']],
+  Afternoon:[['Protein bar and apple',240,20,30,6,'snack']],
+  Dinner:[['Steak and sweet potato',690,55,55,26,'meal']], Evening:[]},
+ {Breakfast:[['Eggs and sourdough',450,28,40,18,'meal']],
+  Morning:[['Cold brew',120,2,18,4,'out']],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']], Afternoon:[],
+  Dinner:[['Chicken shawarma bowl',620,48,58,20,'meal']], Evening:[]},
+ {Breakfast:[['Greek yogurt bowl',420,35,44,12,'meal']], Morning:[],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']], Afternoon:[],
+  Dinner:[['Salmon and rice',740,52,70,26,'meal']], Evening:[]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Chicken salad',480,44,24,24,'meal']], Afternoon:[],
+  Dinner:[['Dinner with Sam',1100,35,90,48,'out']], Evening:[]},
+ {Breakfast:[['Eggs and avocado toast',480,26,38,24,'meal']], Morning:[],
+  Lunch:[['Leftover chili',520,42,44,18,'meal']], Afternoon:[],
+  Dinner:[['Steak and sweet potato',700,55,56,26,'meal']],
+  Evening:[['Glass of wine',125,0,4,0,'out']]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Chicken shawarma bowl',620,48,58,20,'meal']],
+  Afternoon:[['Greek yogurt',230,26,18,4,'snack']],
+  Dinner:[['Salmon and rice',640,48,62,22,'meal']],
+  Evening:[['Kombucha',60,0,14,0,'out']]}
+];
+const CHIPOTLE=['Chipotle bowl',700,45,72,24,'out'];
+const CHILI=['Turkey chili',560,46,48,18,'meal'];
+const EDIT_MSG='add chipotle for lunch on wednesday';
+const EDIT_REPLY='Added. Wednesday still lands on target.';
+const CAD_SPEED=22, YOU_SPEED=42;
+
+/* ---------- board ---------- */
+function evHTML(m){return `<div class="n">${m[0]}</div><div class="kc">${m[1].toLocaleString()}</div><div class="mc">${m[2]}P&nbsp;&nbsp;${m[3]}C&nbsp;&nbsp;${m[4]}F</div>`;}
+const grid=document.getElementById('grid');
+let g=`<div class="dh"></div>`+DAYS.map(d=>`<div class="dh">${d[0]}<b>${String(d[1]).padStart(2,'0')} JUL</b></div>`).join('');
+ROWS.forEach((r,ri)=>{
+  g+=`<div class="lbl${r.meal?'':' gap'}">${r.label}</div>`;
+  P.forEach((day,di)=>{
+    const items=day[ROWKEYS[ri]]||[];
+    g+=`<div class="cell${r.meal?'':' gap'}" id="c-${di}-${ri}">`;
+    if(r.meal) g+=`<div class="emptyov" id="e-${di}-${ri}"></div>`;
+    items.forEach((m,ii)=>{g+=`<div class="ev ${m[5]}" id="v-${di}-${ri}-${ii}">${evHTML(m)}</div>`});
+    g+=`</div>`;
+  });
+  if(ri<ROWS.length-1) g+=`<div class="sp"></div>`.repeat(8);
+});
+grid.innerHTML=g;
+
+/* hidden slot for the loop's dragged-in protein bar (Thursday afternoon) */
+{
+  const c=document.createElement('div');
+  c.className='ev snack';c.id='x-thu-bar';
+  c.innerHTML=`<div class="n">Protein bar and apple</div><div class="kc">240</div><div class="mc">20P&nbsp;&nbsp;30C&nbsp;&nbsp;6F</div>`;
+  document.getElementById('c-3-3').appendChild(c);
+}
+
+const tbl=document.getElementById('tbl');
+const COLS=[['Calories','k',''],['Protein','p',' g'],['Carbs','c',' g'],['Fat','f',' g']];
+tbl.innerHTML =
+  `<div class="hd"></div>`+COLS.map(c=>`<div class="hd">${c[0]}</div>`).join('')+
+  `<div class="rl">Daily average</div>`+COLS.map(c=>`<div class="r-avg" id="a-${c[1]}" data-suf="${c[2]}">—</div>`).join('')+
+  `<div class="rl q">Target</div>`+COLS.map(c=>`<div class="r-tgt">${TGT[c[1]].toLocaleString()}${c[2]}</div>`).join('')+
+  `<div class="rl q">Difference</div>`+COLS.map(c=>`<div class="r-dif" id="d-${c[1]}" data-suf="${c[2]}">—</div>`).join('');
+
+const slotsEl=document.getElementById('slots');
+const RAILD=[
+ ['Chicken shawarma bowl',620,48,58,20],
+ ['Overnight oats',410,29,52,12],
+ ['Salmon and rice',640,48,62,22],
+ ['Turkey chili',560,46,48,18],
+ ['Greek yogurt bowl',420,35,44,12],
+ ['Steak and sweet potato',690,55,55,26],
+ ['Eggs and sourdough',450,28,40,18],
+ ['Chicken salad',480,44,24,24],
+ ['Protein bar and apple',240,20,30,6,true]
+];
+slotsEl.innerHTML = RAILD.map((r,i)=>
+  `<div class="slot"><div class="rcard${r[5]?' snackr':''}" data-name="${r[0]}" style="transition-delay:${i*30}ms"><div class="n">${r[0]}</div><div class="rk"><b>${r[1].toLocaleString()}</b><span>${r[2]}P&nbsp;&nbsp;${r[3]}C&nbsp;&nbsp;${r[4]}F</span></div></div></div>`).join('');
+
+/* ---------- sums & numbers ---------- */
+function sums(chipotle,extra){
+  const s={k:0,p:0,c:0,f:0};
+  P.forEach((day,di)=>ROWKEYS.forEach((rk,ri)=>(day[rk]||[]).forEach((m,ii)=>{
+    const it=(chipotle&&di===2&&ri===2&&ii===0)?CHIPOTLE:m;
+    s.k+=it[1];s.p+=it[2];s.c+=it[3];s.f+=it[4];
+  })));
+  (extra||[]).forEach(it=>{s.k+=it[1];s.p+=it[2];s.c+=it[3];s.f+=it[4]});
+  return {k:Math.round(s.k/7),p:Math.round(s.p/7),c:Math.round(s.c/7),f:Math.round(s.f/7)};
+}
+const BAR=['Protein bar and apple',240,20,30,6,'snack'];
+const GYBI=['Greek yogurt bowl',420,35,44,12,'meal'];
+const OATSI=['Overnight oats',410,29,52,12,'meal'];
+const AVG0=sums(false), AVGb=sums(false,[BAR]), AVGbc=sums(true,[BAR]);
+let cur={k:0,p:0,c:0,f:0}, raf=[];
+function fmtAvg(v,suf){return v.toLocaleString()+suf}
+function fmtDif(v,suf){return (v>0?'+':'−')+Math.abs(v)+suf}
+function tweenEl(el,from,to,dur,fmt){
+  const suf=el.dataset.suf;
+  if(REDUCED||dur===0){el.textContent=fmt(to,suf);return;}
+  const t0=performance.now();
+  function step(t){
+    const p=Math.min(1,(t-t0)/dur);
+    el.textContent=fmt(Math.round(from+(to-from)*EASE(p)),suf);
+    if(p<1) raf.push(requestAnimationFrame(step));
+  }
+  raf.push(requestAnimationFrame(step));
+}
+function setAvg(target,dur){
+  ['k','p','c','f'].forEach((key,i)=>setTimeout(()=>{
+    tweenEl(document.getElementById('a-'+key),cur[key],target[key],dur,fmtAvg);
+    const d=document.getElementById('d-'+key), dv=target[key]-TGT[key];
+    tweenEl(d,cur[key]?cur[key]-TGT[key]:0,dv,dur,fmtDif);
+    d.classList.toggle('ok',dv<=0);
+    d.classList.toggle('off',dv>0);
+    setTimeout(()=>{cur[key]=target[key]},dur);
+  },i*50));
+}
+function clearNums(){
+  raf.forEach(cancelAnimationFrame);raf=[];cur={k:0,p:0,c:0,f:0};
+  ['k','p','c','f'].forEach(k=>{
+    document.getElementById('a-'+k).textContent='—';
+    const d=document.getElementById('d-'+k);d.textContent='—';d.classList.remove('ok','off');
+  });
+}
+
+/* ---------- flights ---------- */
+function flyRect(fromR,toR,item,kind,onland,dur){
+  dur=dur||380;
+  const c=document.createElement('div');
+  c.className=`ev ${kind} flyclone on`;
+  c.innerHTML=evHTML(item);
+  c.style.transitionDuration=dur+'ms';
+  c.style.left=fromR.left+'px';c.style.top=fromR.top+'px';
+  c.style.width=fromR.width+'px';c.style.height=fromR.height+'px';
+  document.body.appendChild(c);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    c.style.left=toR.left+'px';c.style.top=toR.top+'px';
+    c.style.width=toR.width+'px';c.style.height=toR.height+'px';
+  }));
+  setTimeout(()=>{c.remove();onland&&onland()},dur+30);
+}
+function railRect(name){
+  const el=slotsEl.querySelector(`.rcard[data-name="${name}"]`);
+  return el?el.getBoundingClientRect():null;
+}
+function reveal(card,animate){
+  if(!animate||REDUCED){card.classList.add('on');return;}
+  card.style.opacity=0;card.style.transform='translateY(8px)';
+  card.classList.add('on');
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    card.style.transition='opacity .28s var(--ease),transform .28s var(--ease)';
+    card.style.opacity=1;card.style.transform='none';
+  }));
+}
+
+/* ---------- chat ---------- */
+const transcript=document.getElementById('transcript');
+const itx=document.getElementById('itx'), icur=document.getElementById('icur'), ph=document.getElementById('ph');
+function addMsg(who,html){
+  const d=document.createElement('div');
+  d.className='msg'+(who==='cad'?' cad':'');
+  d.innerHTML=`<div class="wl">${who==='cad'?'Cadence':'You'}</div><div class="tx">${html}</div>`;
+  transcript.appendChild(d);
+  if(REDUCED){d.classList.add('in');return d;}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>d.classList.add('in')));
+  return d;
+}
+function dotsHTML(){return `<span class="dots"><span></span><span></span><span></span></span>`;}
+
+/* ---------- sequence ---------- */
+const beat=document.getElementById('beat');
+let played=false, timers=[];
+function at(ms,fn){timers.push(setTimeout(fn,ms))}
+
+function populate(base){
+  let t=base;
+  P.forEach((day,di)=>{
+    let j=0;
+    ROWKEYS.forEach((rk,ri)=>{
+      (day[rk]||[]).forEach((m,ii)=>{
+        const T=base+di*130+j*70; j++;
+        at(T,()=>{
+          const card=document.getElementById(`v-${di}-${ri}-${ii}`);
+          const emp=document.getElementById(`e-${di}-${ri}`);
+          const rr=railRect(m[0]);
+          if(rr&&!REDUCED){
+            const toR=card.getBoundingClientRect();
+            emp&&emp.classList.add('gone');
+            flyRect(rr,toR,m,m[5],()=>card.classList.add('on'));
+          }else{
+            emp&&emp.classList.add('gone');
+            reveal(card,true);
+          }
+        });
+      });
+    });
+  });
+  return base+6*130+4*70+420; /* rough end */
+}
+
+/* --- loop edits --- */
+function setCardEl(el,it){el.className=`ev ${it[5]} on`;el.innerHTML=evHTML(it);}
+function dragBarToThu(){
+  const bar=document.getElementById('x-thu-bar');
+  const from=railRect('Protein bar and apple');
+  const toR=bar.getBoundingClientRect();
+  flyRect(from,toR,BAR,'snack',()=>bar.classList.add('on'),750);
+}
+function removeBarFromThu(){
+  const bar=document.getElementById('x-thu-bar');
+  if(!bar.classList.contains('on')) return;
+  const to=railRect('Protein bar and apple');
+  const fromR=bar.getBoundingClientRect();
+  bar.classList.remove('on');
+  flyRect(fromR,to,BAR,'snack',null,380);
+}
+function swapWedLunch(toChipotle,slow){
+  const card=document.getElementById('v-2-2-0');
+  const it=toChipotle?CHIPOTLE:CHILI;
+  const o=slow?250:140, n=slow?380:220, gap=slow?280:150;
+  card.style.transition=`opacity ${o}ms var(--ease),transform ${o}ms var(--ease)`;
+  card.style.opacity=0;card.style.transform='translateY(6px)';
+  setTimeout(()=>{
+    setCardEl(card,it);
+    card.style.opacity=0;card.style.transform='translateY(-8px)';
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      card.style.transition=`opacity ${n}ms var(--ease),transform ${n}ms var(--ease)`;
+      card.style.opacity=1;card.style.transform='none';
+    }));
+  },gap);
+}
+function loopCycle(base){
+  let t=base;
+  /* 1 — protein bar drags in from Your Food to Thursday, unhurried */
+  at(t,dragBarToThu);
+  at(t+800,()=>setAvg(AVGb,500));
+  t+=2200;
+  /* 2 — chat edit, a beat slower throughout */
+  at(t-120,()=>{ph.style.opacity=0});
+  at(t,()=>{icur.style.display='inline-block'});
+  EDIT_MSG.split('').forEach((ch,i)=>at(t+i*YOU_SPEED,()=>{itx.textContent=EDIT_MSG.slice(0,i+1)}));
+  t+=EDIT_MSG.length*YOU_SPEED+600;
+  at(t,()=>{icur.style.display='none';itx.textContent='';ph.style.opacity=1;addMsg('you',EDIT_MSG);});
+  t+=650;
+  let rm;
+  at(t,()=>{rm=addMsg('cad',dotsHTML())});
+  t+=950;
+  at(t,()=>{rm.querySelector('.tx').textContent=''});
+  EDIT_REPLY.split('').forEach((ch,i)=>at(t+i*28,()=>{rm.querySelector('.tx').textContent=EDIT_REPLY.slice(0,i+1)}));
+  at(t+350,()=>{swapWedLunch(true,true);setAvg(AVGbc,600);});
+  t+=EDIT_REPLY.length*28;
+  /* hold, then ease back */
+  t+=2600;
+  at(t,()=>{
+    swapWedLunch(false,false);removeBarFromThu();setAvg(AVG0,450);
+    transcript.style.transition='opacity .35s var(--ease)';transcript.style.opacity=0;
+  });
+  t+=900;
+  at(t,()=>{transcript.innerHTML='';transcript.style.opacity=1;});
+  t+=500;
+  at(t,()=>loopCycle(0));
+}
+
+function play(){
+  if(played) return; played=true;
+  if(REDUCED){
+    beat.classList.add('played');
+    document.getElementById('copy').classList.add('in');
+    document.getElementById('railhead').classList.add('in');
+    slotsEl.querySelectorAll('.rcard').forEach(el=>el.classList.add('in'));
+    document.getElementById('chat').classList.add('in');
+    document.querySelectorAll('.ev').forEach(el=>el.classList.add('on'));
+    document.querySelectorAll('.emptyov').forEach(el=>el.classList.add('gone'));
+    setAvg(AVG0,0);
+    return;
+  }
+  /* start state: beat 01's end, settled */
+  at(0,  ()=>document.getElementById('copy').classList.add('in'));
+  at(100,()=>beat.classList.add('played'));
+  at(150,()=>{document.getElementById('railhead').classList.add('in');
+    slotsEl.querySelectorAll('.rcard').forEach(el=>el.classList.add('in'));});
+  at(450,()=>document.getElementById('chat').classList.add('in'));
+  /* population */
+  const popEnd=populate(1100);
+  /* numbers */
+  at(popEnd+250,()=>setAvg(AVG0,700));
+  /* ambient loop */
+  at(popEnd+1900,()=>loopCycle(0));
+}
+function reset(){
+  timers.forEach(clearTimeout);timers=[];
+  played=false; clearNums();
+  document.querySelectorAll('.flyclone').forEach(el=>el.remove());
+  transcript.innerHTML='';transcript.style.opacity=1;
+  itx.textContent='';icur.style.display='none';ph.style.opacity=1;
+  beat.classList.remove('played');
+  document.getElementById('copy').classList.remove('in');
+  document.getElementById('chat').classList.remove('in');
+  document.getElementById('railhead').classList.remove('in');
+  slotsEl.querySelectorAll('.rcard').forEach(el=>el.classList.remove('in'));
+  /* restore board to base */
+  const wed=document.getElementById('v-2-2-0');
+  wed.className='ev meal';wed.innerHTML=evHTML(CHILI);wed.style.cssText='';
+  const thu=document.getElementById('v-3-0-0');thu.className='ev meal';thu.innerHTML=evHTML(GYBI);
+  const fri=document.getElementById('v-4-0-0');fri.className='ev meal';fri.innerHTML=evHTML(OATSI);
+  document.querySelectorAll('.ev').forEach(el=>{el.classList.remove('on');el.style.cssText='';});
+  document.querySelectorAll('.emptyov').forEach(el=>el.classList.remove('gone'));
+}
+new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.intersectionRatio>=.4 && !played) play();
+  else if(e.intersectionRatio===0 && played) reset();
+}),{threshold:[0,.4]}).observe(beat);
+document.getElementById('replay').addEventListener('click',()=>{
+  reset();
+  beat.scrollIntoView({behavior:'instant',block:'center'});
+  setTimeout(play,180);
+});
+</script>
+</body></html>

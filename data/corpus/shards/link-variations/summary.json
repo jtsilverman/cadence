@@ -1,0 +1,12 @@
+{
+ "clusters": 131,
+ "singletonClusters": 118,
+ "totalRequests": 262,
+ "unparseableRebatched": 1,
+ "linksApplied": 538,
+ "chainsCollapsed": 0,
+ "disagreements": 156,
+ "totalExercises": 1185,
+ "linked": 538,
+ "standalone": 647
+}

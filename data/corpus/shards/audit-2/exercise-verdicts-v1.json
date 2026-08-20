@@ -1,0 +1,586 @@
+[
+ {
+  "id": "rucking",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "kettlebell-floor-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-shrug",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "false-grip-hang",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "wrist-ulnar-deviation",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "stability-ball-crunch",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Crunch is a dynamic spinal flexion movement, not isometric."
+   }
+  ]
+ },
+ {
+  "id": "box-jump-burpee",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "reverse-grip-barbell-bench-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "band-assisted-triceps-dip",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "formCues/setup",
+    "severity": "major",
+    "issue": "A resistance band on a dip station is typically used for assistance by looping under the knees/feet to reduce bodyweight load, not simply 'looped around the bars for support' with no mention of how it reduces load."
+   }
+  ]
+ },
+ {
+  "id": "plank",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "weighted-wall-sit",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "keg-carry-shoulder",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "log-press-strict",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "two-arm-american-kettlebell-swing",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "cobra-pose",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "secondaryMuscles",
+    "severity": "minor",
+    "issue": "Triceps are not significantly involved in Cobra Pose; the arms are typically kept in slight elbow flexion or minimally loaded, primarily supporting rather than extending."
+   }
+  ]
+ },
+ {
+  "id": "bodyweight-pistol-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "decline-diamond-push-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "farmer-carry-kettlebell",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "tuck-planche",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "cable-overhead-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-swing",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "surfing",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Surfing involves dynamic balance and paddling/pop-up movements, not purely isometric; could be classified as dynamic-mobility or gait instead."
+   }
+  ]
+ },
+ {
+  "id": "single-leg-dumbbell-hip-thrust",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Hip thrust is generally considered a compound movement (hip extension involving glutes, hamstrings, core), not isolation."
+   }
+  ]
+ },
+ {
+  "id": "atlas-stone-to-platform",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "kettlebell-standing-calf-raise",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "power-snatch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "cable-lateral-raise",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "battle-rope-circles",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Battle rope circles are a rhythmic conditioning exercise, better classified under dynamic upper-body cardio rather than dynamic-mobility (which typically refers to ROM drills like leg swings)."
+   }
+  ]
+ },
+ {
+  "id": "ab-wheel-rollout",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "diamond-push-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "landmine-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-sots-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-reverse-lunge",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "close-grip-seated-cable-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "weighted-dead-hang",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-arm-trx-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "goddess-pose",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-front-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-arm-chest-supported-dumbbell-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-leg-swiss-ball-leg-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "standing-toe-touch-stretch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "band-chest-fly",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-snatch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-arm-dumbbell-lateral-raise",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "dumbbell-overhead-triceps-extension",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "yates-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "smith-machine-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "vertical-leg-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "vertical-bounds",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "wrist-circles",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "pec-deck-fly",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "pogo-hop",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "hammer-strength-incline-chest-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "front-to-back-leg-swing",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "conans-wheel",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "equipment",
+    "severity": "major",
+    "issue": "Conan's Wheel requires a specialized strongman wheel/yoke implement, not 'none'"
+   }
+  ]
+ },
+ {
+  "id": "open-book-thoracic-rotation",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-leg-pogo-hop",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-floor-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "warrior-1",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "decline-cable-chest-press",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "formCues",
+    "severity": "minor",
+    "issue": "For a decline press targeting lower chest, cables should be set at a high pulley pressing downward, but description of standing on a decline bench facing away is anatomically confusing/inconsistent setup"
+   }
+  ]
+ },
+ {
+  "id": "barbell-good-morning",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "incline-ez-bar-skull-crusher",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-push-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "tire-flip",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "major",
+    "issue": "Tire flip is a compound hinge/squat-based lifting movement, not a plyometric explosive jump/throw exercise."
+   }
+  ]
+ },
+ {
+  "id": "ring-skin-the-cat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-leg-vertical-hop",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-leg-hurdle-hop",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "scissor-kicks",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "major",
+    "issue": "Scissor kicks are a controlled core strength/isolation exercise, not a dynamic-mobility drill."
+   }
+  ]
+ },
+ {
+  "id": "standing-cable-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-21s-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "hang-single-arm-dumbbell-snatch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "seated-calf-stretch-strap",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "dumbbell-reverse-wrist-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "commando-pull-up",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "primaryMuscles",
+    "severity": "minor",
+    "issue": "Obliques are not a primary mover in commando pull-ups; lats and biceps are primary, obliques are minimal stabilizers at best."
+   }
+  ]
+ },
+ {
+  "id": "straddle-back-lever",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "close-grip-smith-machine-bench-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "kettlebell-farmer-walk-on-toes",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "dumbbell-concentration-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "wide-stance-leg-press",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "primaryMuscles",
+    "severity": "minor",
+    "issue": "Wide stance leg press shifts emphasis more toward glutes/adductors; quads are still involved but listing quads as sole primary undersells the glute/adductor role typical of this variation."
+   }
+  ]
+ },
+ {
+  "id": "wall-push-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "landmine-rotational-twist",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "resistance-band-hammer-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "suspension-plank",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "hand-gripper-crush",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "box-assisted-pistol-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "upward-dog",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "foam-roll-calves",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "smith-machine-shrug",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "half-turkish-get-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "cossack-squat-stretch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "trx-chest-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "lateral-pogo-hop",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-arm-band-overhead-triceps-extension",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "seated-dumbbell-hammer-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "resistance-band-triceps-pushdown",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "alternating-kettlebell-swing",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "laterality",
+    "severity": "minor",
+    "issue": "Swing involves alternating hands but the movement pattern itself (hip hinge) is bilateral; labeling as unilateral is debatable but arguably should be bilateral since both legs/hips drive it symmetrically."
+   }
+  ]
+ },
+ {
+  "id": "decline-dumbbell-fly",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "sleeper-stretch",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "A static held stretch is better classified as isometric/static-stretch rather than dynamic-mobility, which implies controlled movement through a range."
+   }
+  ]
+ },
+ {
+  "id": "german-hang",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "ez-bar-skull-crusher",
+  "verdict": "ok",
+  "errors": []
+ }
+]

@@ -1,0 +1,658 @@
+[
+ {
+  "id": "landmine-rotational-twist",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "resistance-band-hammer-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "suspension-plank",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "hand-gripper-crush",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "box-assisted-pistol-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "upward-dog",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Upward dog involves multiple joints/muscles (shoulder extension, spinal extension, hip extension) so compound is more appropriate than isolation."
+   }
+  ]
+ },
+ {
+  "id": "foam-roll-calves",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "smith-machine-shrug",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "half-turkish-get-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "cossack-squat-stretch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "hang-single-arm-dumbbell-snatch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "seated-calf-stretch-strap",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "dumbbell-reverse-wrist-curl",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Wrist extension against gravity is more of a push/extension action rather than a pull movement pattern."
+   }
+  ]
+ },
+ {
+  "id": "commando-pull-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "straddle-back-lever",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "close-grip-smith-machine-bench-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "kettlebell-farmer-walk-on-toes",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "dumbbell-concentration-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "wide-stance-leg-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "wall-push-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "standing-toe-touch-stretch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "band-chest-fly",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-snatch",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Snatch is better classified as a full-body/explosive hinge-to-overhead movement; 'hinge' alone undersells the overhead punch phase, though not strictly wrong."
+   }
+  ]
+ },
+ {
+  "id": "single-arm-dumbbell-lateral-raise",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "dumbbell-overhead-triceps-extension",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "yates-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "smith-machine-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "vertical-leg-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "vertical-bounds",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "wrist-circles",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "rucking",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "kettlebell-floor-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-shrug",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "false-grip-hang",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Compound is more appropriate given lats/biceps/traps involvement in a hang; isolation is debatable but lean minor."
+   }
+  ]
+ },
+ {
+  "id": "wrist-ulnar-deviation",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "stability-ball-crunch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "box-jump-burpee",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Should be classified as a jump/plyometric or squat-hinge combo pattern rather than 'gait'."
+   }
+  ]
+ },
+ {
+  "id": "reverse-grip-barbell-bench-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "band-assisted-triceps-dip",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "plank",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "pec-deck-fly",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "pogo-hop",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Pogo hops involve ankle/knee/hip coordination and could be considered compound rather than isolation."
+   }
+  ]
+ },
+ {
+  "id": "hammer-strength-incline-chest-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "front-to-back-leg-swing",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "major",
+    "issue": "Leg swings are a dynamic swinging movement, not isometric; should be classified as a dynamic mobility/hip movement (e.g. 'hinge' or unclassified dynamic, not isometric)."
+   }
+  ]
+ },
+ {
+  "id": "conans-wheel",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "open-book-thoracic-rotation",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-leg-pogo-hop",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-floor-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "warrior-1",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Warrior I is a multi-joint standing pose involving hips, knees, and shoulders; better classified as compound rather than isolation."
+   }
+  ]
+ },
+ {
+  "id": "decline-cable-chest-press",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "setup",
+    "severity": "minor",
+    "issue": "Decline cable press setup and high pulley description is inconsistent; decline pressing typically uses low pulleys pressing upward/forward, not high pulleys pressing down, which contradicts standard decline press mechanics."
+   }
+  ]
+ },
+ {
+  "id": "landmine-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-sots-press",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "primaryMuscles",
+    "severity": "minor",
+    "issue": "Quads listed as primary but Sots press is primarily a shoulder press with minimal quad involvement while seated in the bottom squat position; quads are more stabilizer/secondary."
+   }
+  ]
+ },
+ {
+  "id": "barbell-reverse-lunge",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "close-grip-seated-cable-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "weighted-dead-hang",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-arm-trx-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "goddess-pose",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-front-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-arm-chest-supported-dumbbell-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-leg-swiss-ball-leg-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-good-morning",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "incline-ez-bar-skull-crusher",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-push-press",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "primaryMuscles",
+    "severity": "minor",
+    "issue": "Quads are heavily involved only in the initial dip/drive, not a primary target muscle for a press; better as secondary."
+   }
+  ]
+ },
+ {
+  "id": "tire-flip",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "major",
+    "issue": "Tire flip is a combination hinge-to-squat/press movement, better classified as 'squat' or a compound full-body pattern, not purely 'hinge'."
+   }
+  ]
+ },
+ {
+  "id": "ring-skin-the-cat",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Skin the cat is a dynamic rotational/pulling movement through a range, not truly isometric."
+   }
+  ]
+ },
+ {
+  "id": "single-leg-vertical-hop",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Vertical hop is better classified as a jump/plyometric pattern rather than 'gait', which implies locomotion."
+   }
+  ]
+ },
+ {
+  "id": "single-leg-hurdle-hop",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Hurdle hopping involves forward locomotion so 'gait' is defensible, but could also be classified as plyometric jump; minor classification concern."
+   }
+  ]
+ },
+ {
+  "id": "scissor-kicks",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "major",
+    "issue": "Scissor kicks involve continuous dynamic leg movement, not an isometric hold; should be classified differently (e.g., core/dynamic)."
+   }
+  ]
+ },
+ {
+  "id": "standing-cable-row",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "barbell-21s-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "weighted-wall-sit",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Wall sit is often classified as compound (multi-joint hip/knee) despite isometric nature; isolation is debatable but somewhat off."
+   }
+  ]
+ },
+ {
+  "id": "keg-carry-shoulder",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "log-press-strict",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "two-arm-american-kettlebell-swing",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "cobra-pose",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "primaryMuscles",
+    "severity": "minor",
+    "issue": "Pectorals are not primary movers in cobra pose; spinal extensors (lower-back) are primary, chest is more of a stretch target."
+   }
+  ]
+ },
+ {
+  "id": "bodyweight-pistol-squat",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "decline-diamond-push-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "farmer-carry-kettlebell",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "tuck-planche",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Tuck planche is a compound, multi-joint movement (shoulders, elbows, core), not isolation."
+   }
+  ]
+ },
+ {
+  "id": "cable-overhead-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "double-kettlebell-swing",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "surfing",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-leg-dumbbell-hip-thrust",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "mechanics",
+    "severity": "minor",
+    "issue": "Hip thrust is generally considered a compound movement (hip and knee involvement), not isolation."
+   }
+  ]
+ },
+ {
+  "id": "atlas-stone-to-platform",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Atlas stone lift is more of a squat/deadlift-hybrid pattern; labeling purely as hinge is debatable but not clearly wrong; flagged as minor."
+   }
+  ]
+ },
+ {
+  "id": "kettlebell-standing-calf-raise",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Calf raise is better classified as isolation push/plantarflexion movement rather than isometric, since it involves dynamic ROM."
+   }
+  ]
+ },
+ {
+  "id": "power-snatch",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Power snatch is typically classified under 'olympic' or 'explosive' pattern rather than plain hinge, though hinge is part of it."
+   }
+  ]
+ },
+ {
+  "id": "cable-lateral-raise",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "battle-rope-circles",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Battle rope circles involve more of a rotational/isometric shoulder pattern than a true push pattern."
+   }
+  ]
+ },
+ {
+  "id": "ab-wheel-rollout",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "movementPattern",
+    "severity": "minor",
+    "issue": "Ab wheel rollout is a dynamic anti-extension core movement, better classified as isometric-anti-extension or its own category, not strictly isometric."
+   }
+  ]
+ },
+ {
+  "id": "diamond-push-up",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "trx-chest-press",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "lateral-pogo-hop",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "single-arm-band-overhead-triceps-extension",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "seated-dumbbell-hammer-curl",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "resistance-band-triceps-pushdown",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "alternating-kettlebell-swing",
+  "verdict": "errors",
+  "errors": [
+   {
+    "field": "laterality",
+    "severity": "minor",
+    "issue": "Hand-to-hand swing alternates but overall movement is often classified bilateral like standard swing; debatable but arguably fine as unilateral per-arm phase."
+   }
+  ]
+ },
+ {
+  "id": "decline-dumbbell-fly",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "sleeper-stretch",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "german-hang",
+  "verdict": "ok",
+  "errors": []
+ },
+ {
+  "id": "ez-bar-skull-crusher",
+  "verdict": "ok",
+  "errors": []
+ }
+]

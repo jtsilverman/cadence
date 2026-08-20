@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cadence — beat 01 preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#EFEDE6; --card:#FBFAF5; --ink:#101010; --grn:#1B7F4B; --rust:#AF4A28;
+  --dim:#8A8A83; --rule:#B5B1A3; --edge:#D6D2C5;
+  --ease:cubic-bezier(.2,0,0,1);
+}
+body{background:#26262A;font-family:Archivo,sans-serif;color:#C9C7C0}
+
+/* ---------- preview chrome (not part of the site) ---------- */
+.note{max-width:76ch;margin:0 auto;padding:44px 24px 0}
+.note h1{font-size:24px;font-weight:600;letter-spacing:-.02em;color:#fff;margin-bottom:10px}
+.note p{font-size:14px;line-height:1.6;margin-bottom:8px}
+.note .k{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8f8d86;letter-spacing:.08em}
+.runway{height:65vh;display:flex;align-items:center;justify-content:center}
+.runway span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6d6b66;text-transform:uppercase}
+.tail{height:45vh;display:flex;align-items:center;justify-content:center}
+.tail span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6d6b66;text-transform:uppercase}
+#replay{position:fixed;right:20px;bottom:20px;z-index:9;background:#1a1a1d;border:1px solid #4a4a4e;
+  color:#C9C7C0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;
+  padding:9px 16px;cursor:pointer;text-transform:uppercase}
+#replay:hover{border-color:#8f8d86;color:#fff}
+
+/* ---------- the beat ---------- */
+.scroller{overflow-x:auto}
+.beat{min-width:1380px;background:var(--cream);color:var(--ink);
+  min-height:100vh;display:flex;align-items:center;padding:48px 44px}
+.inner{display:flex;align-items:center;gap:44px;width:100%;max-width:1560px;margin:0 auto}
+
+/* copy column */
+.copy{width:380px;flex:none;opacity:0;transform:translateY(12px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.copy.in{opacity:1;transform:none}
+.copy .bn{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--dim);letter-spacing:.14em;margin-bottom:16px}
+.copy h2{font-size:40px;font-weight:600;letter-spacing:-.03em;line-height:1.05;margin-bottom:18px}
+.copy p{font-size:17px;line-height:1.55;color:#3c3c38;max-width:34ch}
+
+/* stage */
+.stagearea{flex:1;min-width:0}
+
+/* main: rail + board */
+.main{display:flex;gap:22px;align-items:flex-start}
+.rail{width:172px;flex:none}
+.rail .rh{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:var(--dim);
+  text-transform:uppercase;padding-bottom:9px;border-bottom:2px solid var(--ink);margin-bottom:10px;
+  opacity:0;transition:opacity .35s var(--ease)}
+.rail .rh.in{opacity:1}
+.slot{height:46px;margin-bottom:8px}
+.rcard{position:relative;height:100%;background:var(--card);border:1px solid var(--edge);
+  padding:5px 8px 5px 12px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;
+  opacity:0;transform:translateX(-26px)}
+.rcard.in{opacity:1;transform:none;transition:opacity .3s var(--ease),transform .3s var(--ease)}
+.rcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--ink)}
+.rcard .n{font-size:9px;font-weight:700;line-height:1.25;letter-spacing:0;text-transform:uppercase;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rcard .rk{display:flex;align-items:baseline;gap:8px;margin-top:3px}
+.rcard .rk b{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.rcard .rk span{font-family:'IBM Plex Mono',monospace;font-size:7.5px;color:var(--dim);white-space:nowrap}
+
+/* board — locked week-view anatomy, empty state */
+.boardwrap{flex:1;min-width:0}
+.mast{display:flex;justify-content:space-between;align-items:center}
+.mast h3{font-size:12px;font-weight:700;letter-spacing:.34em;text-transform:uppercase}
+.mast span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--dim)}
+.mast span b{color:var(--ink);font-weight:700}
+.rule2{border-bottom:2px solid var(--ink);margin:14px 0 0}
+.grid{display:grid;grid-template-columns:64px repeat(7,1fr)}
+.dh{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:10px 6px 11px;
+  border-right:1px dotted var(--rule)}
+.dh b{display:block;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:10px;color:var(--dim);letter-spacing:0;margin-top:2px}
+.lbl{border-right:1px dotted var(--rule);padding:0 10px 0 0;display:flex;align-items:flex-start;justify-content:flex-end;
+  font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);line-height:54px}
+.cell{border-right:1px dotted var(--rule);padding:0 5px;display:flex;flex-direction:column;gap:6px}
+.grid>*:nth-child(8n){border-right:none}
+.gap{min-height:14px}
+.sp{height:9px;border-right:1px dotted var(--rule)}
+.sp:nth-child(8n){border-right:none}
+.empty{height:54px;border:1px dashed var(--rule);opacity:0;flex:none;transition:opacity .45s var(--ease)}
+.beat.played .empty{opacity:.38}
+
+/* footer table */
+.foot{margin-top:18px;border-top:5px solid var(--ink)}
+.tbl{display:grid;grid-template-columns:118px repeat(4,1fr);width:100%}
+.tbl>div{padding:7px 14px;border-right:1px dotted var(--rule);border-bottom:1px dotted var(--rule);
+  font-family:'IBM Plex Mono',monospace;font-size:14px;font-variant-numeric:tabular-nums;
+  text-align:right;letter-spacing:-.01em;line-height:1.2}
+.tbl>div:nth-child(5n){border-right:none}
+.tbl>div:nth-last-child(-n+5){border-bottom:none}
+.tbl>div.hd{font-family:Archivo,sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dim);padding-top:11px;padding-bottom:8px}
+.tbl>div.rl{font-family:Archivo,sans-serif;font-size:9px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;text-align:left;padding-left:0;color:var(--ink)}
+.tbl>div.rl.q{color:var(--dim)}
+.tbl .r-tgt{font-weight:700;color:var(--ink)}
+.tbl .r-mut{color:var(--dim)}
+
+/* ---------- the chat: ledger rows over an input line ---------- */
+.chat{margin-top:20px;opacity:0;transition:opacity .4s var(--ease)}
+.chat.in{opacity:1}
+.transcript{min-height:99px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.msg{display:grid;grid-template-columns:96px 1fr;padding:7px 0;border-bottom:1px dotted var(--rule);
+  opacity:0;transform:translateY(14px);transition:opacity .28s var(--ease),transform .28s var(--ease)}
+.msg.in{opacity:1;transform:none}
+.msg:last-child{border-bottom:none}
+.msg .wl{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.18em;
+  color:var(--dim);text-transform:uppercase;padding-top:3px}
+.msg.cad .wl{color:var(--grn)}
+.msg .tx{font-size:13px;line-height:1.4}
+.msg.cad .tx{color:#3c3c38}
+.dots span{display:inline-block;width:4px;height:4px;background:var(--dim);margin-right:4px;
+  animation:dot 1s infinite var(--ease)}
+.dots span:nth-child(2){animation-delay:.15s}
+.dots span:nth-child(3){animation-delay:.3s}
+@keyframes dot{0%,100%{opacity:.25}40%{opacity:1}}
+.inputrow{display:grid;grid-template-columns:96px 1fr;padding:7px 0 2px;border-top:2px solid var(--ink)}
+.inputrow .wl{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:500;letter-spacing:.18em;
+  color:var(--dim);text-transform:uppercase;padding-top:3px}
+.inputrow .tx{position:relative;font-size:13px;line-height:1.4;min-height:19px}
+.inputrow .ph{position:absolute;left:0;top:0;color:var(--rule);transition:opacity .2s var(--ease)}
+.cursor{display:inline-block;width:7px;height:13px;background:var(--ink);vertical-align:-1px;
+  animation:blink 1.05s steps(1) infinite;margin-left:2px}
+@keyframes blink{50%{opacity:0}}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition-duration:0s !important;transition-delay:0s !important;animation:none !important}
+}
+</style></head><body>
+
+<div class="note">
+  <h1>Beat 01 — Your food, your goal.</h1>
+  <p><span class="k">SEQUENCE&nbsp;</span> empty frame → Cadence types its question → your reply types at the line, rises on submit → Cadence types back → targets count up, FAT LOSS · HIGH PROTEIN bolds in the top bar → your food docks in.</p>
+  <p><span class="k">CHAT&nbsp;</span> both sides type in the same ledger. Submitted messages go above the line; replies land above it too. The exchange loops.</p>
+  <p><span class="k">TRIGGER&nbsp;</span> fires once at 40% viewport, plays through, re-arms if you scroll fully out. Replay bottom right.</p>
+</div>
+<div class="runway"><span>scroll — beat arms on intersection</span></div>
+
+<div class="scroller">
+<section class="beat" id="beat">
+  <div class="inner">
+    <div class="copy" id="copy">
+      <div class="bn">01</div>
+      <h2>Your food, your goal.</h2>
+      <p>Save recipes from anywhere. Set your goal. Cadence builds the rest, so staying on plan doesn't mean eating food you hate.</p>
+    </div>
+    <div class="stagearea">
+      <div class="main">
+        <div class="rail">
+          <div class="rh" id="railhead">Your food</div>
+          <div id="slots"></div>
+        </div>
+        <div class="boardwrap">
+          <div class="mast"><h3>Cadence</h3><span>04–10 JUL 2026<span id="metaGP"></span></span></div>
+          <div class="rule2"></div>
+          <div class="grid" id="grid"></div>
+          <div class="foot"><div class="tbl" id="tbl"></div></div>
+          <div class="chat" id="chat">
+            <div class="transcript" id="transcript"></div>
+            <div class="inputrow">
+              <div class="wl">You</div>
+              <div class="tx"><span class="ph" id="ph">Message Cadence</span><span id="itx"></span><span class="cursor" id="icur" style="display:none"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="tail"><span>beat 02 continues here — the week fills itself in</span></div>
+<button id="replay">Replay</button>
+
+<script>
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const EASE = p => 1 - Math.pow(1 - p, 3);
+
+/* ---------- fixtures ---------- */
+const DAYS=[['MON',4],['TUE',5],['WED',6],['THU',7],['FRI',8],['SAT',9],['SUN',10]];
+const ROWS=[
+  {label:'Breakfast',meal:true},{label:'',meal:false},
+  {label:'Lunch',meal:true},{label:'',meal:false},
+  {label:'Dinner',meal:true},{label:'',meal:false}
+];
+const TGT={k:1900,p:150,c:185,f:62};
+const MEALS=['Chicken shawarma bowl','Overnight oats','Salmon and rice','Turkey chili',
+  'Greek yogurt bowl','Steak and sweet potato','Eggs and sourdough','Chicken salad'];
+const Q='What are your goals?';
+const A='lose fat but maintain fuel for my workouts!';
+const R='Fat loss, fueled for training. 1,900 kcal and 150 g protein a day, and the week builds around it.';
+const CAD_SPEED=22, YOU_SPEED=42;
+
+/* ---------- build static board ---------- */
+const grid=document.getElementById('grid');
+let g=`<div class="dh"></div>`+DAYS.map(d=>`<div class="dh">${d[0]}<b>${String(d[1]).padStart(2,'0')} JUL</b></div>`).join('');
+ROWS.forEach((r,ri)=>{
+  g+=`<div class="lbl${r.meal?'':' gap'}">${r.label}</div>`;
+  DAYS.forEach((d,di)=>{
+    g+=`<div class="cell${r.meal?'':' gap'}">`;
+    if(r.meal) g+=`<div class="empty" style="transition-delay:${di*50}ms"></div>`;
+    g+=`</div>`;
+  });
+  if(ri<ROWS.length-1) g+=`<div class="sp"></div>`.repeat(8);
+});
+grid.innerHTML=g;
+
+const tbl=document.getElementById('tbl');
+const COLS=[['Calories','k',''],['Protein','p',' g'],['Carbs','c',' g'],['Fat','f',' g']];
+tbl.innerHTML =
+  `<div class="hd"></div>`+COLS.map(c=>`<div class="hd">${c[0]}</div>`).join('')+
+  `<div class="rl q">Daily average</div>`+COLS.map(()=>`<div class="r-mut">—</div>`).join('')+
+  `<div class="rl">Target</div>`+COLS.map(c=>`<div class="r-tgt" id="t-${c[1]}" data-suf="${c[2]}">—</div>`).join('')+
+  `<div class="rl q">Difference</div>`+COLS.map(()=>`<div class="r-mut">—</div>`).join('');
+
+const slotsEl=document.getElementById('slots');
+const RAILD=[
+ ['Chicken shawarma bowl',620,48,58,20],
+ ['Overnight oats',410,29,52,12],
+ ['Salmon and rice',640,48,62,22],
+ ['Turkey chili',560,46,48,18],
+ ['Greek yogurt bowl',420,35,44,12],
+ ['Steak and sweet potato',690,55,55,26],
+ ['Eggs and sourdough',450,28,40,18],
+ ['Chicken salad',480,44,24,24],
+ ['Protein bar and apple',240,20,30,6,true]
+];
+slotsEl.innerHTML = RAILD.slice(0,8).map((r,i)=>
+  `<div class="slot"><div class="rcard${r[5]?' snackr':''}" data-name="${r[0]}" style="transition-delay:${i*80}ms"><div class="n">${r[0]}</div><div class="rk"><b>${r[1].toLocaleString()}</b><span>${r[2]}P&nbsp;&nbsp;${r[3]}C&nbsp;&nbsp;${r[4]}F</span></div></div></div>`).join('');
+
+/* ---------- numbers ---------- */
+let cur={k:0,p:0,c:0,f:0}, raf=[];
+function tween(key,to,dur){
+  const el=document.getElementById('t-'+key), suf=el.dataset.suf, from=cur[key];
+  if(REDUCED||dur===0){cur[key]=to;el.textContent=to.toLocaleString()+suf;return;}
+  const t0=performance.now();
+  function step(t){
+    const p=Math.min(1,(t-t0)/dur), v=Math.round(from+(to-from)*EASE(p));
+    el.textContent=v.toLocaleString()+suf;
+    if(p<1) raf.push(requestAnimationFrame(step)); else cur[key]=to;
+  }
+  raf.push(requestAnimationFrame(step));
+}
+function setTargets(){['k','p','c','f'].forEach((key,i)=>setTimeout(()=>tween(key,TGT[key],700),i*60));}
+function clearTargets(){
+  raf.forEach(cancelAnimationFrame);raf=[];cur={k:0,p:0,c:0,f:0};
+  ['k','p','c','f'].forEach(k=>document.getElementById('t-'+k).textContent='—');
+}
+
+/* ---------- chat ---------- */
+const transcript=document.getElementById('transcript');
+const itx=document.getElementById('itx'), icur=document.getElementById('icur'), ph=document.getElementById('ph');
+function addMsg(who,html){
+  const d=document.createElement('div');
+  d.className='msg'+(who==='cad'?' cad':'');
+  d.innerHTML=`<div class="wl">${who==='cad'?'Cadence':'You'}</div><div class="tx">${html}</div>`;
+  transcript.appendChild(d);
+  if(REDUCED){d.classList.add('in');return d;}
+  requestAnimationFrame(()=>requestAnimationFrame(()=>d.classList.add('in')));
+  return d;
+}
+function dotsHTML(){return `<span class="dots"><span></span><span></span><span></span></span>`;}
+
+/* ---------- sequence ---------- */
+const beat=document.getElementById('beat');
+let played=false, timers=[];
+function at(ms,fn){timers.push(setTimeout(fn,ms))}
+function railIn(){
+  document.getElementById('railhead').classList.add('in');
+  slotsEl.querySelectorAll('.rcard').forEach(el=>el.classList.add('in'));
+}
+function railOut(){
+  document.getElementById('railhead').classList.remove('in');
+  slotsEl.querySelectorAll('.rcard').forEach(el=>el.classList.remove('in'));
+}
+function stageReact(){
+  setTargets();
+  at(350,()=>{document.getElementById('metaGP').innerHTML=' · <b>FAT LOSS</b> · <b>HIGH PROTEIN</b>'});
+  at(600,railIn);
+}
+function stageReset(){
+  clearTargets();
+  document.getElementById('metaGP').innerHTML='';
+  railOut();
+}
+function chatCycle(base){
+  let t=base, qm, rm;
+  /* Cadence types its question */
+  at(t,()=>{qm=addMsg('cad','')});
+  Q.split('').forEach((ch,i)=>at(t+180+i*CAD_SPEED,()=>{qm.querySelector('.tx').textContent=Q.slice(0,i+1)}));
+  t+=180+Q.length*CAD_SPEED;
+  /* your reply types at the line */
+  t+=700;
+  at(t-120,()=>{ph.style.opacity=0});
+  at(t,()=>{icur.style.display='inline-block'});
+  A.split('').forEach((ch,i)=>at(t+i*YOU_SPEED,()=>{itx.textContent=A.slice(0,i+1)}));
+  t+=A.length*YOU_SPEED;
+  /* submit: message rises above the line */
+  t+=450;
+  at(t,()=>{
+    icur.style.display='none'; itx.textContent=''; ph.style.opacity=1;
+    addMsg('you',A);
+  });
+  /* Cadence thinks, then types back; stage reacts as it types */
+  t+=500;
+  at(t,()=>{rm=addMsg('cad',dotsHTML())});
+  t+=750;
+  at(t,()=>{rm.querySelector('.tx').textContent=''});
+  R.split('').forEach((ch,i)=>at(t+i*CAD_SPEED,()=>{rm.querySelector('.tx').textContent=R.slice(0,i+1)}));
+  at(t+300,stageReact);
+  t+=R.length*CAD_SPEED;
+  /* hold, then clean reset and loop */
+  t+=5200;
+  at(t,()=>{
+    transcript.style.transition='opacity .35s var(--ease)';transcript.style.opacity=0;
+    at(400,()=>{transcript.innerHTML='';transcript.style.opacity=1;stageReset();chatCycle(300);});
+  });
+}
+function play(){
+  if(played) return; played=true;
+  if(REDUCED){
+    beat.classList.add('played');
+    document.getElementById('copy').classList.add('in');
+    document.getElementById('chat').classList.add('in');
+    addMsg('cad',Q); addMsg('you',A); addMsg('cad',R);
+    setTargets();
+    document.getElementById('metaGP').innerHTML=' · <b>FAT LOSS</b> · <b>HIGH PROTEIN</b>';
+    railIn();
+    return;
+  }
+  at(0,   ()=>document.getElementById('copy').classList.add('in'));
+  at(150, ()=>beat.classList.add('played'));
+  at(800, ()=>document.getElementById('chat').classList.add('in'));
+  chatCycle(1300);
+}
+function reset(){
+  timers.forEach(clearTimeout);timers=[];
+  played=false; stageReset();
+  transcript.innerHTML=''; transcript.style.opacity=1;
+  itx.textContent=''; icur.style.display='none'; ph.style.opacity=1;
+  beat.classList.remove('played');
+  document.getElementById('copy').classList.remove('in');
+  document.getElementById('chat').classList.remove('in');
+}
+new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.intersectionRatio>=.4 && !played) play();
+  else if(e.intersectionRatio===0 && played) reset();
+}),{threshold:[0,.4]}).observe(beat);
+document.getElementById('replay').addEventListener('click',()=>{
+  reset();
+  beat.scrollIntoView({behavior:'instant',block:'center'});
+  setTimeout(play,180);
+});
+</script>
+</body></html>

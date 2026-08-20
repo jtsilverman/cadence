@@ -1,0 +1,38 @@
+[
+  {
+    "id": "barbell-sots-press",
+    "name": "Barbell Sots Press",
+    "aliases": ["Sots Press", "Snatch-Grip Overhead Squat Press", "Pauschek Press"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["front-delts"],
+    "secondaryMuscles": ["side-delts", "triceps", "traps", "quads", "glutes", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "hang-muscle-clean",
+    "name": "Hang Muscle Clean",
+    "aliases": ["Hang Muscle Snatch Clean"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["traps"],
+    "secondaryMuscles": ["front-delts", "hamstrings", "glutes", "forearms", "biceps"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "dumbbell-clean-and-jerk",
+    "name": "Dumbbell Clean and Jerk",
+    "aliases": ["DB Clean and Jerk"],
+    "modality": "strength",
+    "equipment": ["dumbbell"],
+    "primaryMuscles": ["quads", "front-delts"],
+    "secondaryMuscles": ["glutes", "hamstrings", "traps", "triceps", "forearms", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

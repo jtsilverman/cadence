@@ -1,0 +1,362 @@
+[
+  {
+    "id": "arc-trainer",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Stand tall, avoid leaning on handles", "Drive through full foot", "Keep core braced", "Push and pull arms in rhythm with legs"],
+    "setup": "Step onto the arc trainer pedals, grip the moving or stationary handles, and select a resistance level before starting the stride.",
+    "commonMistakes": ["Leaning body weight onto the handles", "Taking short, shuffling strides", "Slouching forward at the hips"]
+  },
+  {
+    "id": "b-stance-hip-thrust",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Set kickstand foot lightly on ball of foot", "Drive through the working heel", "Squeeze glute hard at top", "Keep chin tucked and ribs down"],
+    "setup": "Upper back braced on a bench, load across the hips, one foot flat and the other staggered back on its toes in a kickstand position.",
+    "commonMistakes": ["Overloading the kickstand leg", "Hyperextending the lower back at lockout", "Letting knees cave inward"]
+  },
+  {
+    "id": "band-front-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Keep slight bend in elbows", "Raise to shoulder height only", "Avoid using momentum", "Keep ribs down and core tight"],
+    "setup": "Stand on the middle of a resistance band with feet hip-width, holding the handles or ends in front of the thighs.",
+    "commonMistakes": ["Swinging the torso to generate lift", "Raising arms above shoulder height", "Shrugging shoulders up toward ears"]
+  },
+  {
+    "id": "band-internal-rotation",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Pin elbow to your side", "Rotate only the forearm", "Keep wrist neutral", "Move slowly and with control"],
+    "setup": "Anchor a band at elbow height to your side, elbow bent 90 degrees and tucked against the ribs, forearm starting rotated outward.",
+    "commonMistakes": ["Letting the elbow drift away from the body", "Using shoulder or torso rotation instead of the forearm", "Moving too fast to feel the rotator cuff work"]
+  },
+  {
+    "id": "band-lat-pulldown",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Pull elbows down and back", "Squeeze shoulder blades together", "Keep chest up", "Avoid leaning back excessively"],
+    "setup": "Anchor a band overhead, kneel or sit facing the anchor, and grip the band with arms extended overhead.",
+    "commonMistakes": ["Using body lean instead of lat contraction to pull", "Shrugging shoulders during the pull", "Only partially extending arms at the top"]
+  },
+  {
+    "id": "band-lateral-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Lead with elbows, not hands", "Raise to shoulder height", "Keep slight bend in elbows", "Control the lowering phase"],
+    "setup": "Stand on the band with feet hip-width apart, holding handles at the sides with a slight bend in the elbows.",
+    "commonMistakes": ["Shrugging traps to lift the arms higher", "Swinging the torso for momentum", "Raising hands above shoulder height"]
+  },
+  {
+    "id": "band-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Keep elbows pointed forward and stationary", "Extend fully at the top", "Avoid flaring elbows out", "Keep core braced to prevent arching"],
+    "setup": "Anchor the band underfoot or low behind you, hold the other end overhead with elbows bent and pointed forward.",
+    "commonMistakes": ["Letting elbows drift outward or backward", "Arching the lower back for extra range", "Not fully extending the arms at the top"]
+  },
+  {
+    "id": "band-pallof-press",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Brace core to resist rotation", "Press straight out from chest", "Keep hips and shoulders square", "Move slowly and with control"],
+    "setup": "Stand perpendicular to a band anchored at chest height, holding the band with both hands at the sternum, feet shoulder-width apart.",
+    "commonMistakes": ["Letting the torso rotate toward the anchor", "Pressing with arms only instead of bracing the trunk", "Standing too close, reducing band tension"]
+  },
+  {
+    "id": "band-pull-apart",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep arms straight throughout", "Squeeze shoulder blades together", "Pull band to chest level", "Control the return"],
+    "setup": "Stand tall holding a light band with both hands, arms extended straight out in front at shoulder height.",
+    "commonMistakes": ["Bending the elbows to cheat the range", "Using momentum instead of controlled pulling", "Shrugging shoulders up during the pull"]
+  },
+  {
+    "id": "band-resisted-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep body in a straight line", "Lower chest close to floor", "Drive through palms to press up", "Keep band secured across upper back"],
+    "setup": "Loop a band across the upper back and under both hands in a push-up position, hands slightly wider than shoulders.",
+    "commonMistakes": ["Letting hips sag or pike up", "Band slipping off the hands mid-set", "Flaring elbows out to 90 degrees"]
+  },
+  {
+    "id": "band-resisted-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Keep chest up and core braced", "Push knees out in line with toes", "Descend to at least parallel", "Drive through mid-foot to stand"],
+    "setup": "Stand on the band with feet shoulder-width, band looped over the shoulders or held at the chest, anchored under both feet.",
+    "commonMistakes": ["Letting knees cave inward", "Rounding the lower back at the bottom", "Rising onto the toes when standing up"]
+  },
+  {
+    "id": "band-resisted-squat-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Load into a quarter squat before jumping", "Explode upward through the hips", "Land soft with bent knees", "Keep band tension consistent"],
+    "setup": "Stand on the band with feet shoulder-width, band anchored under the feet and looped over the shoulders or held at the chest.",
+    "commonMistakes": ["Landing stiff-legged instead of absorbing impact", "Losing band tension mid-jump", "Letting knees collapse inward on landing"]
+  },
+  {
+    "id": "band-reverse-fly",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Hinge slightly at the hips", "Lead with elbows out to the sides", "Squeeze shoulder blades at the top", "Keep slight bend in elbows"],
+    "setup": "Stand on the band with a slight forward hip hinge, holding handles crossed in front of the body with arms extended.",
+    "commonMistakes": ["Standing too upright and using arms instead of rear delts", "Using momentum to swing the arms back", "Rounding the lower back"]
+  },
+  {
+    "id": "band-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep chest up and shoulders back", "Pull elbows straight back", "Squeeze shoulder blades together", "Avoid leaning back to pull"],
+    "setup": "Anchor the band at chest height in front of you, holding the handles with arms extended and feet staggered or together for stability.",
+    "commonMistakes": ["Using body lean instead of back muscles", "Shrugging shoulders during the pull", "Not fully extending arms at the start"]
+  },
+  {
+    "id": "band-shoulder-dislocate",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Use a wide grip for less mobile shoulders", "Keep arms straight throughout", "Move slowly through the full arc", "Stop if you feel pinching"],
+    "setup": "Stand holding a light band or PVC pipe with a wide overhand grip in front of the thighs, arms fully extended.",
+    "commonMistakes": ["Gripping too narrow and forcing the range", "Bending the elbows to complete the arc", "Rushing the movement instead of moving slowly"]
+  },
+  {
+    "id": "band-shoulder-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Brace core to avoid arching", "Press straight overhead", "Keep wrists stacked over elbows", "Avoid locking out aggressively"],
+    "setup": "Stand on the band with feet shoulder-width apart, holding handles at shoulder height with elbows bent.",
+    "commonMistakes": ["Arching the lower back to press up", "Pressing the band forward instead of straight up", "Shrugging shoulders at lockout"]
+  },
+  {
+    "id": "band-shrug",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep arms straight", "Elevate shoulders straight up", "Avoid rolling shoulders", "Control the descent"],
+    "setup": "Stand on the band with feet hip-width apart, holding handles at the sides with arms fully extended.",
+    "commonMistakes": ["Rolling the shoulders instead of a straight up-down path", "Using momentum from the knees", "Bending the elbows to assist"]
+  },
+  {
+    "id": "band-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Rise onto the balls of the feet", "Pause briefly at the top", "Lower with control below neutral", "Keep knees soft, not locked"],
+    "setup": "Stand on a band looped under the balls of both feet, holding the ends at shoulder height for resistance.",
+    "commonMistakes": ["Bouncing at the bottom instead of controlling the stretch", "Not reaching full extension at the top", "Bending the knees to cheat the range"]
+  },
+  {
+    "id": "band-standing-leg-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Keep standing leg slightly bent", "Curl heel toward glute", "Keep hips square and still", "Control the return"],
+    "setup": "Anchor a band at ankle height behind you, loop the other end around one ankle, and stand facing away from the anchor.",
+    "commonMistakes": ["Letting the hips rotate during the curl", "Using momentum to swing the leg", "Not controlling the eccentric return"]
+  },
+  {
+    "id": "band-straight-arm-pulldown",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep arms straight throughout", "Hinge slightly at the hips", "Pull down using the lats", "Avoid shrugging shoulders"],
+    "setup": "Anchor a band overhead, stand facing the anchor with a slight forward lean, and hold the band with arms extended overhead.",
+    "commonMistakes": ["Bending the elbows to turn it into a pushdown", "Using body weight instead of lat contraction", "Standing too upright, losing hip hinge"]
+  },
+  {
+    "id": "band-tibialis-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Flex the foot up toward the shin", "Keep the leg still, isolate the ankle", "Control the return", "Full range each rep"],
+    "setup": "Anchor a band low, loop the other end around the top of one foot, and sit or stand with the leg extended in front.",
+    "commonMistakes": ["Moving the whole leg instead of just the ankle", "Using momentum instead of a controlled flex", "Not achieving full dorsiflexion range"]
+  },
+  {
+    "id": "band-upright-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Lead with elbows, higher than hands", "Pull to about chest height", "Keep band close to the body", "Avoid shrugging excessively"],
+    "setup": "Stand on the band with feet shoulder-width apart, holding handles in front of the thighs with an overhand grip.",
+    "commonMistakes": ["Pulling too high and stressing the shoulder", "Using a very narrow grip that increases impingement risk", "Swinging the torso for momentum"]
+  },
+  {
+    "id": "band-woodchop",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Rotate through the torso and hips together", "Keep arms relatively straight", "Pivot the back foot", "Control the return to start"],
+    "setup": "Anchor a band low to one side, stand sideways to the anchor with feet shoulder-width, and hold the band with both hands near the hip.",
+    "commonMistakes": ["Moving only the arms without hip and torso rotation", "Rounding the back during the pull", "Using excessive momentum instead of controlled rotation"]
+  },
+  {
+    "id": "banded-assisted-nordic-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Keep hips extended throughout", "Lower with control using hamstrings", "Use the band to reduce difficulty as needed", "Catch yourself with hands if you lose control"],
+    "setup": "Kneel with ankles anchored, a band around the torso attached to a sturdy anchor in front to assist the lowering phase.",
+    "commonMistakes": ["Letting the hips flex, turning it into a fold instead of a lean", "Dropping too fast without control", "Insufficient band assistance leading to a hard fall"]
+  },
+  {
+    "id": "banded-clamshell",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Keep feet together throughout", "Rotate hip to open top knee", "Keep hips stacked, don't roll back", "Avoid tilting pelvis"],
+    "setup": "Lie on one side with knees bent about 90 degrees and a band around the thighs, feet stacked together.",
+    "commonMistakes": ["Rolling the hips backward to cheat range", "Using momentum instead of controlled hip rotation", "Letting the feet separate"]
+  },
+  {
+    "id": "banded-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Push hips back to initiate", "Keep back flat and chest up", "Drive through heels to stand", "Keep band tension constant"],
+    "setup": "Stand on a band with feet hip-width, gripping the ends or handles just outside the legs in a hip-hinge starting position.",
+    "commonMistakes": ["Rounding the lower back", "Squatting the weight up instead of hinging", "Letting the band slacken at the top"]
+  },
+  {
+    "id": "banded-frog-pump",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Keep soles of feet together", "Drive knees out against the band", "Squeeze glutes hard at top", "Keep lower back flat on floor"],
+    "setup": "Lie on your back with a band around the thighs, soles of the feet together and knees dropped open to the sides.",
+    "commonMistakes": ["Arching the lower back excessively at the top", "Using a small range of motion", "Letting knees collapse inward on the way down"]
+  },
+  {
+    "id": "banded-glute-bridge",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Push knees out against the band", "Drive through heels", "Squeeze glutes at the top", "Avoid overarching the lower back"],
+    "setup": "Lie on your back with knees bent, feet flat, and a band positioned just above the knees.",
+    "commonMistakes": ["Letting knees cave inward against the band tension", "Pushing through toes instead of heels", "Hyperextending the lumbar spine at the top"]
+  },
+  {
+    "id": "banded-glute-kickback",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Keep core braced, avoid arching", "Extend hip, not just the knee", "Squeeze glute at full extension", "Control the return"],
+    "setup": "Get on all fours with a band looped around one foot and anchored under the opposite hand or foot, torso stable.",
+    "commonMistakes": ["Arching the lower back to gain range", "Kicking with momentum instead of a controlled hip extension", "Rotating the hips instead of keeping them square"]
+  },
+  {
+    "id": "banded-good-morning",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Push hips back, not down", "Keep back flat throughout", "Soft bend in the knees", "Feel the stretch in hamstrings"],
+    "setup": "Stand on the band with the other end looped over the shoulders and traps, feet shoulder-width apart.",
+    "commonMistakes": ["Rounding the spine as you hinge", "Bending the knees too much, turning it into a squat", "Not hinging far enough to load the hamstrings"]
+  },
+  {
+    "id": "banded-hip-thrust",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Push knees outward against band", "Drive through heels", "Squeeze glutes hard at top", "Keep chin tucked"],
+    "setup": "Upper back on a bench, band positioned above the knees, feet flat on the floor shoulder-width apart.",
+    "commonMistakes": ["Letting knees cave inward", "Hyperextending the low back at the top", "Pushing through the toes instead of heels"]
+  },
+  {
+    "id": "banded-pull-through",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Hinge at the hips, not the knees", "Keep back flat", "Squeeze glutes to finish standing tall", "Keep the band taut throughout"],
+    "setup": "Anchor a band low behind you, straddle it facing away, and hold the band between the legs with a slight hip hinge.",
+    "commonMistakes": ["Rounding the back during the hinge", "Squatting instead of hinging", "Not fully extending the hips at the finish"]
+  },
+  {
+    "id": "banded-reverse-hyper",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Keep torso stable on the bench", "Extend hips, don't hyperextend the low back", "Squeeze glutes at the top", "Control the lowering phase"],
+    "setup": "Lie face down on a bench with hips at the edge, a band looped around both ankles anchored behind you, legs hanging down.",
+    "commonMistakes": ["Using lower back extension instead of hip extension", "Swinging the legs with momentum", "Raising the legs too high, overarching the spine"]
+  },
+  {
+    "id": "banded-standing-hip-abduction",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Keep standing leg stable", "Lift leg out to the side, not forward", "Keep torso upright", "Control the return"],
+    "setup": "Stand with a band around both ankles or anchored to one side, holding onto support for balance.",
+    "commonMistakes": ["Leaning the torso to swing the leg higher", "Rotating the hip to substitute for true abduction", "Using momentum instead of a controlled lift"]
+  },
+  {
+    "id": "banded-standing-hip-adduction",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Keep standing leg stable", "Pull working leg across midline with control", "Keep torso upright", "Avoid twisting the hips"],
+    "setup": "Stand sideways to an anchor point with a band around the ankle of the leg farther from the anchor, holding support for balance.",
+    "commonMistakes": ["Twisting the torso to assist the movement", "Using momentum instead of controlled adduction", "Leaning away from the working leg"]
+  },
+  {
+    "id": "bar-muscle-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Generate a strong pull-up first", "Transition by driving elbows forward and up", "Keep the bar close to the body", "Finish with a straight-arm support"],
+    "setup": "Hang from a pull-up bar with a false grip, arms fully extended and body relaxed before initiating the pull.",
+    "commonMistakes": ["Excessive kipping instead of controlled transition", "Letting the bar drift away from the body", "Failing to fully lock out at the top"]
+  },
+  {
+    "id": "barbell-21s-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Keep elbows pinned to sides", "Perform bottom-half reps, then top-half, then full reps", "Avoid swinging the torso", "Control each partial range"],
+    "setup": "Stand holding a barbell with an underhand shoulder-width grip, arms fully extended, ready to perform seven bottom-half, seven top-half, then seven full curls.",
+    "commonMistakes": ["Using body momentum to swing the weight", "Letting elbows drift forward or backward", "Rushing the partial reps and losing range precision"]
+  },
+  {
+    "id": "barbell-back-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Brace core before descending", "Push knees out in line with toes", "Keep chest up and back flat", "Drive through mid-foot to stand"],
+    "setup": "Bar racked across the upper traps, feet shoulder-width apart, unrack and step back before initiating the squat.",
+    "commonMistakes": ["Knees caving inward on the ascent", "Rounding the lower back at the bottom", "Rising onto the toes when standing up"]
+  },
+  {
+    "id": "barbell-behind-the-neck-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Only go as deep as shoulder mobility allows", "Keep core braced", "Press bar in a controlled vertical path", "Avoid excessive neck flexion"],
+    "setup": "Bar racked behind the neck across the upper traps, feet shoulder-width, grip slightly wider than shoulders.",
+    "commonMistakes": ["Forcing range beyond available shoulder mobility", "Leaning the head too far forward to clear the bar", "Arching the lower back excessively to press"]
+  },
+  {
+    "id": "barbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Retract shoulder blades before unracking", "Lower bar to mid-chest with control", "Keep wrists stacked over elbows", "Drive feet into the floor for stability"],
+    "setup": "Lie on a flat bench with eyes under the bar, feet flat on the floor, grip slightly wider than shoulder-width.",
+    "commonMistakes": ["Bouncing the bar off the chest", "Flaring elbows to a full 90 degrees", "Losing shoulder blade retraction mid-set"]
+  }
+]

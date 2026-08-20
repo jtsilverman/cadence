@@ -1,0 +1,14 @@
+[
+  {
+    "id": "kettlebell-bent-press",
+    "name": "Kettlebell Bent Press",
+    "aliases": ["Bent Press"],
+    "modality": "strength",
+    "equipment": ["kettlebell"],
+    "primaryMuscles": ["front-delts", "triceps", "obliques"],
+    "secondaryMuscles": ["side-delts", "abs", "lats", "quads"],
+    "laterality": "unilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

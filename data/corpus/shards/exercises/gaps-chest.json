@@ -1,0 +1,50 @@
+[
+  {
+    "id": "wall-push-up",
+    "name": "Wall Push-Up",
+    "aliases": ["Wall Press", "Standing Push-Up"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["pectorals", "triceps"],
+    "secondaryMuscles": ["front-delts"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "hindu-push-up",
+    "name": "Hindu Push-Up (Dive Bomber Push-Up)",
+    "aliases": ["Dive Bomber Push-Up", "Hindu Pushup"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["pectorals", "front-delts", "triceps"],
+    "secondaryMuscles": ["abs", "lower-back"],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "pin-press",
+    "name": "Pin Press",
+    "aliases": ["Pin Bench Press", "Dead Stop Bench Press"],
+    "modality": "strength",
+    "equipment": ["barbell", "bench"],
+    "primaryMuscles": ["pectorals", "triceps", "front-delts"],
+    "secondaryMuscles": ["side-delts"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "larsen-press",
+    "name": "Larsen Press",
+    "aliases": ["Feet-Up Bench Press", "Larsen Bench Press"],
+    "modality": "strength",
+    "equipment": ["barbell", "bench"],
+    "primaryMuscles": ["pectorals", "triceps", "front-delts"],
+    "secondaryMuscles": ["side-delts", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

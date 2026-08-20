@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vertical-jump",
+    "name": "Vertical Jump / Countermovement Jump",
+    "aliases": ["countermovement jump", "CMJ", "vertical leap"],
+    "modality": "plyometric",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads", "glutes", "calves"],
+    "secondaryMuscles": ["hamstrings", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["reps", "height"],
+    "variationOf": null
+  },
+  {
+    "id": "star-jump",
+    "name": "Star Jump",
+    "aliases": ["star jumps"],
+    "modality": "plyometric",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads", "glutes", "calves"],
+    "secondaryMuscles": ["side-delts", "abs", "hip-flexors", "adductors"],
+    "laterality": "bilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  },
+  {
+    "id": "squat-jack",
+    "name": "Squat Jack",
+    "aliases": ["squat jacks", "jump squat jack"],
+    "modality": "plyometric",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads", "glutes", "adductors"],
+    "secondaryMuscles": ["calves", "abductors", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  }
+]

@@ -1,0 +1,722 @@
+[
+  {
+    "id": "kettlebell-lateral-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Push hips back into the step",
+      "Keep stepping foot flat",
+      "Chest up, weight in heel",
+      "Push off to return center"
+    ],
+    "setup": "Stand tall holding a kettlebell in goblet or racked position with feet hip-width apart.",
+    "commonMistakes": [
+      "Letting the knee cave inward",
+      "Rounding the back",
+      "Stepping too far too soon"
+    ]
+  },
+  {
+    "id": "kettlebell-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbows close to head",
+      "Lower bell behind head slowly",
+      "Only move at the elbow",
+      "Keep core braced"
+    ],
+    "setup": "Hold a kettlebell overhead with both hands cupping the horns, arms extended.",
+    "commonMistakes": [
+      "Flaring elbows out wide",
+      "Using momentum to swing the weight",
+      "Arching the lower back"
+    ]
+  },
+  {
+    "id": "kettlebell-push-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Dip slightly at the knees",
+      "Drive through the legs explosively",
+      "Punch the bell overhead",
+      "Lock out arm at top"
+    ],
+    "setup": "Stand with a kettlebell racked at shoulder, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Pressing with arms only, no leg drive",
+      "Leaning back excessively",
+      "Losing wrist alignment overhead"
+    ]
+  },
+  {
+    "id": "kettlebell-renegade-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep hips square to floor",
+      "Brace core hard throughout",
+      "Row elbow straight up",
+      "Avoid rotating torso"
+    ],
+    "setup": "Start in a plank position with hands gripping two kettlebells on the floor.",
+    "commonMistakes": [
+      "Rotating the hips during the row",
+      "Sagging through the lower back",
+      "Widening feet too much for stability"
+    ]
+  },
+  {
+    "id": "kettlebell-side-bend",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep hips and shoulders facing forward",
+      "Bend straight sideways only",
+      "Control the movement, no swinging",
+      "Keep the weight close to leg"
+    ],
+    "setup": "Stand tall holding a kettlebell in one hand at your side.",
+    "commonMistakes": [
+      "Twisting the torso instead of bending laterally",
+      "Leaning forward",
+      "Using momentum instead of control"
+    ]
+  },
+  {
+    "id": "kettlebell-snatch",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Hike the bell back like a swing",
+      "Drive hips forward explosively",
+      "Punch hand through at top",
+      "Keep bell close to body on the way up"
+    ],
+    "setup": "Stand over a kettlebell with feet shoulder-width, gripping the handle with one hand.",
+    "commonMistakes": [
+      "Muscling the bell up with the arm",
+      "Letting the bell crash on the wrist",
+      "Insufficient hip drive"
+    ]
+  },
+  {
+    "id": "kettlebell-sots-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Sit in a deep front squat",
+      "Press the bell overhead from the bottom",
+      "Keep torso upright",
+      "Move slowly and with control"
+    ],
+    "setup": "Hold a kettlebell racked at the shoulder while squatting down to the bottom of a front squat.",
+    "commonMistakes": [
+      "Leaning forward to press",
+      "Losing squat depth mid-press",
+      "Rushing the tempo"
+    ]
+  },
+  {
+    "id": "kettlebell-squat-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Squat down with control",
+      "Explode upward through the feet",
+      "Land softly with bent knees",
+      "Keep the kettlebell close to chest"
+    ],
+    "setup": "Hold a kettlebell at chest height in goblet position, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Landing with stiff knees",
+      "Rounding the back on the descent",
+      "Losing grip on the bell mid-jump"
+    ]
+  },
+  {
+    "id": "kettlebell-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rise onto the balls of the feet",
+      "Pause briefly at the top",
+      "Lower with control",
+      "Keep knees soft, not locked"
+    ],
+    "setup": "Stand holding kettlebells at your sides with feet hip-width apart.",
+    "commonMistakes": [
+      "Bouncing through the reps",
+      "Not achieving full range of motion",
+      "Rolling ankles outward"
+    ]
+  },
+  {
+    "id": "kettlebell-suitcase-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep the bell close to your shin",
+      "Hinge at the hips, chest up",
+      "Avoid leaning toward the loaded side",
+      "Drive through the floor to stand"
+    ],
+    "setup": "Stand beside a kettlebell on the floor, feet hip-width apart, one arm at your side.",
+    "commonMistakes": [
+      "Side-bending to compensate for asymmetric load",
+      "Rounding the spine",
+      "Squatting the weight instead of hinging"
+    ]
+  },
+  {
+    "id": "kettlebell-sumo-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Stand wide with toes turned out",
+      "Grip the bell centered between feet",
+      "Push knees out during the pull",
+      "Stand tall by driving hips forward"
+    ],
+    "setup": "Stand with a wide stance over a kettlebell placed centrally on the floor.",
+    "commonMistakes": [
+      "Knees caving inward",
+      "Rounding the upper back",
+      "Pulling with the arms rather than the legs"
+    ]
+  },
+  {
+    "id": "kettlebell-thruster",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Squat to full depth",
+      "Drive up explosively out of the squat",
+      "Press bells overhead as legs extend",
+      "Keep core tight throughout"
+    ],
+    "setup": "Hold kettlebells racked at the shoulders, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Pausing between squat and press instead of linking them",
+      "Leaning back during the press",
+      "Squatting shallow"
+    ]
+  },
+  {
+    "id": "kettlebell-windmill",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep the arm locked overhead",
+      "Push hips back as you hinge sideways",
+      "Keep eyes on the bell",
+      "Slide the free hand down the leg"
+    ],
+    "setup": "Stand with a kettlebell locked out overhead in one hand, feet turned slightly away from that arm.",
+    "commonMistakes": [
+      "Bending the overhead elbow",
+      "Rotating the hips instead of hinging",
+      "Rushing the descent"
+    ]
+  },
+  {
+    "id": "kipping-bar-muscle-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Initiate with a strong kip swing",
+      "Pull aggressively to transition over the bar",
+      "Drive hips into the bar",
+      "Finish with a straight-arm press out"
+    ],
+    "setup": "Hang from a pull-up bar with a false grip, hands shoulder-width apart.",
+    "commonMistakes": [
+      "Pulling straight up instead of transitioning forward",
+      "Insufficient kip momentum",
+      "Missing the false grip"
+    ]
+  },
+  {
+    "id": "kipping-ring-muscle-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Use a strong hip-driven kip",
+      "Pull rings to hips through transition",
+      "Keep rings close to the body",
+      "Press out to full lockout"
+    ],
+    "setup": "Hang from gymnastic rings with a false grip, arms extended.",
+    "commonMistakes": [
+      "Rings drifting away from the body",
+      "Weak transition causing a hitch",
+      "Incomplete lockout at top"
+    ]
+  },
+  {
+    "id": "kipping-toes-to-bar",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Generate a rhythmic kip swing",
+      "Engage lats to initiate the pull",
+      "Bring toes to touch the bar",
+      "Control the swing on the way down"
+    ],
+    "setup": "Hang from a pull-up bar with an active shoulder grip.",
+    "commonMistakes": [
+      "Using only ab flexion without the kip",
+      "Bending the knees excessively",
+      "Losing bar grip under fatigue"
+    ]
+  },
+  {
+    "id": "knee-diamond-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Form a diamond with thumbs and index fingers",
+      "Keep elbows tracking back, not flared",
+      "Lower chest to hands",
+      "Keep hips in line with knees"
+    ],
+    "setup": "Kneel on the floor with hands together beneath the chest in a diamond shape.",
+    "commonMistakes": [
+      "Flaring elbows out wide",
+      "Sagging hips",
+      "Partial range of motion"
+    ]
+  },
+  {
+    "id": "knee-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep a straight line from knees to head",
+      "Lower chest close to the floor",
+      "Keep elbows at roughly 45 degrees",
+      "Push through the palms to extend"
+    ],
+    "setup": "Kneel on the floor with hands slightly wider than shoulders, body in a straight line from knees to head.",
+    "commonMistakes": [
+      "Sagging or piking the hips",
+      "Not lowering far enough",
+      "Flaring elbows excessively"
+    ]
+  },
+  {
+    "id": "kneeling-kettlebell-halo",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep the bell close to the head",
+      "Brace core to avoid leaning",
+      "Circle smoothly in both directions",
+      "Keep hips stacked over knees"
+    ],
+    "setup": "Kneel tall holding a kettlebell by the horns at chest level.",
+    "commonMistakes": [
+      "Leaning the torso to circle the bell",
+      "Letting the bell drift far from the head",
+      "Rushing the circles"
+    ]
+  },
+  {
+    "id": "kneeling-lat-stretch-box",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Reach arms forward onto the bench",
+      "Sit hips back toward heels",
+      "Relax the shoulders down",
+      "Hold the stretch, breathe deeply"
+    ],
+    "setup": "Kneel in front of a bench with hands placed on top and hips pushed back.",
+    "commonMistakes": [
+      "Rounding the upper back instead of reaching long",
+      "Bouncing in the stretch",
+      "Not sitting hips back far enough"
+    ]
+  },
+  {
+    "id": "kneeling-quad-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Squeeze glute of the stretching leg",
+      "Keep hips pushed forward",
+      "Maintain an upright torso",
+      "Hold steady without bouncing"
+    ],
+    "setup": "Kneel on one knee with the rear foot held or resting behind you, front leg planted.",
+    "commonMistakes": [
+      "Arching the lower back excessively",
+      "Letting hips sag backward",
+      "Holding the foot instead of engaging the glute"
+    ]
+  },
+  {
+    "id": "knees-to-elbows",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Engage lats to control the hang",
+      "Curl knees up toward the elbows",
+      "Avoid excessive swinging",
+      "Lower with control"
+    ],
+    "setup": "Hang from a pull-up bar with arms fully extended.",
+    "commonMistakes": [
+      "Swinging excessively to generate momentum",
+      "Not reaching full knee flexion",
+      "Losing shoulder engagement"
+    ]
+  },
+  {
+    "id": "kroc-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Brace the free hand on a bench",
+      "Row with a slight body english",
+      "Drive the elbow up and back",
+      "Squeeze the shoulder blade at top"
+    ],
+    "setup": "Support one hand and knee on a bench, holding a dumbbell in the opposite hand.",
+    "commonMistakes": [
+      "Rounding the lower back",
+      "Using excessive body momentum instead of the lat",
+      "Not fully extending at the bottom"
+    ]
+  },
+  {
+    "id": "l-sit",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": [
+      "Press shoulders down away from ears",
+      "Keep legs straight and together",
+      "Point toes, engage quads",
+      "Hold with core braced"
+    ],
+    "setup": "Support the body on parallettes or the floor with arms straight and legs extended forward.",
+    "commonMistakes": [
+      "Letting shoulders shrug up",
+      "Bending the knees to compensate",
+      "Sagging through the hips"
+    ]
+  },
+  {
+    "id": "l-sit-chin-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Hold legs extended in an L throughout",
+      "Pull chin over the bar with control",
+      "Keep core braced to prevent swinging",
+      "Lower with control while maintaining the L"
+    ],
+    "setup": "Hang from a pull-up bar with an underhand grip and legs extended in front in an L position.",
+    "commonMistakes": [
+      "Dropping the L-sit position during the pull",
+      "Using momentum to swing up",
+      "Incomplete range of motion"
+    ]
+  },
+  {
+    "id": "l-sit-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Maintain the L throughout the pull",
+      "Pull elbows down and back",
+      "Keep chest up toward the bar",
+      "Control the descent"
+    ],
+    "setup": "Hang from a pull-up bar with an overhand grip and legs extended forward in an L position.",
+    "commonMistakes": [
+      "Kipping to generate momentum",
+      "Losing leg position mid-rep",
+      "Not achieving chin over bar"
+    ]
+  },
+  {
+    "id": "landmine-clean-and-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hinge and pull the bar to the shoulder",
+      "Catch in a strong front rack",
+      "Press overhead in one motion",
+      "Keep core braced throughout"
+    ],
+    "setup": "Stand over the sleeve end of a landmine bar, gripping it with both hands.",
+    "commonMistakes": [
+      "Muscling the clean with the arms",
+      "Rounding the back during the pull",
+      "Losing rack position before pressing"
+    ]
+  },
+  {
+    "id": "landmine-reverse-lunge-to-press",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Step back into a controlled lunge",
+      "Press the bar as legs extend",
+      "Keep torso upright",
+      "Drive through the front heel to return"
+    ],
+    "setup": "Hold the landmine bar in a front rack at one shoulder, standing tall.",
+    "commonMistakes": [
+      "Pressing before the lunge stabilizes",
+      "Leaning forward during the lunge",
+      "Short, unstable step back"
+    ]
+  },
+  {
+    "id": "landmine-rotational-twist",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rotate from the hips and core",
+      "Keep arms relatively extended",
+      "Control the bar through the full arc",
+      "Avoid rounding the spine"
+    ],
+    "setup": "Stand holding the end of the landmine bar with both hands extended in front of the chest.",
+    "commonMistakes": [
+      "Using only the arms to swing the bar",
+      "Rounding the back during rotation",
+      "Moving too fast to control the arc"
+    ]
+  },
+  {
+    "id": "landmine-single-arm-clean-and-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": [
+      "Pull the bar to the shoulder in one motion",
+      "Catch with elbow tucked under bar",
+      "Press overhead without leaning",
+      "Keep core braced against rotation"
+    ],
+    "setup": "Stand over the landmine bar gripping the sleeve end with one hand.",
+    "commonMistakes": [
+      "Letting the torso rotate under load",
+      "Muscling the clean instead of using hip drive",
+      "Pressing with a bent elbow lockout"
+    ]
+  },
+  {
+    "id": "landmine-single-arm-squat-to-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Squat to full depth with the bar racked",
+      "Drive up explosively",
+      "Press as legs extend",
+      "Brace core against rotation"
+    ],
+    "setup": "Rack the landmine bar at one shoulder, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Rotating the torso under load",
+      "Shallow squat depth",
+      "Disconnecting the press from leg drive"
+    ]
+  },
+  {
+    "id": "landmine-squat-to-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hold the bar with both hands at the chest",
+      "Squat to full depth",
+      "Press overhead as you stand",
+      "Keep elbows under the bar"
+    ],
+    "setup": "Hold the landmine bar with both hands at chest height, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Leaning back to press",
+      "Cutting squat depth short",
+      "Disconnecting press timing from the stand"
+    ]
+  },
+  {
+    "id": "lat-pulldown-wide-grip",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Grip the bar wider than shoulder-width",
+      "Pull the bar to the upper chest",
+      "Squeeze shoulder blades together",
+      "Control the bar back up"
+    ],
+    "setup": "Sit at a lat pulldown machine with thighs secured, gripping the bar wide overhead.",
+    "commonMistakes": [
+      "Leaning back excessively to use momentum",
+      "Pulling behind the neck",
+      "Not controlling the eccentric"
+    ]
+  },
+  {
+    "id": "lateral-band-walk",
+    "mechanics": "isolation",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep a slight bend in the knees",
+      "Step sideways maintaining band tension",
+      "Keep toes pointed forward",
+      "Avoid letting feet touch together"
+    ],
+    "setup": "Place a resistance band around the legs above the knees or ankles, standing in a quarter squat.",
+    "commonMistakes": [
+      "Standing too upright, losing tension",
+      "Letting knees cave inward",
+      "Rocking the torso side to side"
+    ]
+  },
+  {
+    "id": "lateral-bear-crawl",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep hips low and level",
+      "Move hand and opposite foot together",
+      "Keep knees just off the floor",
+      "Brace core throughout"
+    ],
+    "setup": "Start on hands and feet in a tabletop position, hips slightly elevated.",
+    "commonMistakes": [
+      "Hips rising too high",
+      "Crossing feet or hands during the step",
+      "Losing core brace and sagging"
+    ]
+  },
+  {
+    "id": "lateral-bound",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": [
+      "Push explosively off the outside leg",
+      "Land softly and stick the landing",
+      "Absorb impact by bending the knee",
+      "Immediately load for the next bound"
+    ],
+    "setup": "Stand on one leg with a slight knee bend, ready to push off sideways.",
+    "commonMistakes": [
+      "Landing with a stiff knee",
+      "Failing to stick the landing before rebounding",
+      "Insufficient lateral push"
+    ]
+  },
+  {
+    "id": "lateral-box-jump",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Load the hips and knees before jumping",
+      "Drive arms up for momentum",
+      "Land softly with bent knees on the box",
+      "Step down, don't jump down"
+    ],
+    "setup": "Stand sideways next to a box, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Jumping down off the box, risking injury",
+      "Not achieving full hip extension",
+      "Landing off balance"
+    ]
+  },
+  {
+    "id": "lateral-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Push off the ground sideways",
+      "Land softly on the balls of the feet",
+      "Keep knees slightly bent on landing",
+      "Stay light and quick"
+    ],
+    "setup": "Stand on one or both feet, ready to hop laterally over a line or marker.",
+    "commonMistakes": [
+      "Landing flat-footed and stiff",
+      "Losing balance on landing",
+      "Hopping too far for control"
+    ]
+  },
+  {
+    "id": "lateral-hurdle-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Drive knees up and over the hurdle",
+      "Land softly and absorb impact",
+      "Keep hops quick and rhythmic",
+      "Maintain an upright torso"
+    ],
+    "setup": "Stand beside a line of small hurdles, feet together, facing sideways to the hurdles.",
+    "commonMistakes": [
+      "Clipping the hurdle due to insufficient clearance",
+      "Landing heavy and stiff-legged",
+      "Losing rhythm between hops"
+    ]
+  },
+  {
+    "id": "lateral-leg-swing",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Hold onto a support for balance",
+      "Swing the leg side to side with control",
+      "Keep the torso upright",
+      "Gradually increase range of motion"
+    ],
+    "setup": "Stand next to a wall or support, holding on with one hand for balance.",
+    "commonMistakes": [
+      "Swinging with momentum instead of control",
+      "Leaning the torso to increase range",
+      "Rounding the standing leg's posture"
+    ]
+  }
+]

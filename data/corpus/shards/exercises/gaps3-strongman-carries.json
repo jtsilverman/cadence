@@ -1,0 +1,14 @@
+[
+  {
+    "id": "firemans-carry",
+    "name": "Fireman's Carry",
+    "aliases": ["Fireman Carry", "Shoulder Carry"],
+    "modality": "carry",
+    "equipment": ["sandbag"],
+    "primaryMuscles": ["traps", "glutes", "quads", "abs"],
+    "secondaryMuscles": ["hamstrings", "lower-back", "forearms", "calves"],
+    "laterality": "unilateral",
+    "metrics": ["weight", "distance", "time"],
+    "variationOf": null
+  }
+]

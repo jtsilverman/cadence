@@ -1,0 +1,362 @@
+[
+  {
+    "id": "foam-roll-quads",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Prop up on forearms", "Keep core braced", "Roll slowly from hip to knee", "Pause on tender spots"],
+    "setup": "Lie face down with a foam roller under the thighs and forearms supporting the upper body.",
+    "commonMistakes": ["Rolling too fast", "Rolling directly over the knee joint", "Letting hips sag"]
+  },
+  {
+    "id": "foam-roll-shins-peroneals",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Support weight with hands", "Roll along the outer shin", "Move slowly", "Avoid rolling directly on the shin bone"],
+    "setup": "Kneel with the outer shin resting on a foam roller, hands on the floor for support.",
+    "commonMistakes": ["Pressing directly on the tibia", "Rushing through the roll", "Ignoring sharp pain signals"]
+  },
+  {
+    "id": "foam-roll-upper-back",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Cross arms over chest", "Lift hips slightly", "Roll between shoulder blades and mid-back", "Avoid rolling over the lower back"],
+    "setup": "Lie on the back with a foam roller positioned horizontally under the shoulder blades, knees bent.",
+    "commonMistakes": ["Rolling into the lumbar spine", "Holding breath", "Rolling too fast to feel tender spots"]
+  },
+  {
+    "id": "foam-roller-thoracic-extension",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Support head with hands", "Extend gently over the roller", "Keep hips down", "Breathe through the stretch"],
+    "setup": "Sit with a foam roller placed horizontally at mid-back level, then recline over it with knees bent.",
+    "commonMistakes": ["Extending from the lower back instead of thoracic spine", "Letting hips lift off the floor", "Forcing the range too fast"]
+  },
+  {
+    "id": "forty-five-degree-back-extension",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips", "Keep spine neutral", "Squeeze glutes at the top", "Control the descent"],
+    "setup": "Position the hips on the pad of a 45-degree back extension bench with ankles secured and torso hanging forward.",
+    "commonMistakes": ["Hyperextending the lower back at the top", "Using momentum to swing up", "Rounding the spine on the way down"]
+  },
+  {
+    "id": "forward-arm-circle",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Extend arms out to sides", "Make small controlled circles", "Keep shoulders down", "Gradually increase circle size"],
+    "setup": "Stand tall with feet shoulder-width apart and arms raised to shoulder height.",
+    "commonMistakes": ["Shrugging shoulders up", "Circling too fast", "Locking the elbows rigidly"]
+  },
+  {
+    "id": "frankenstein-walk",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Keep legs straight", "Kick leg up to hand height", "Stand tall through the torso", "Step forward with control"],
+    "setup": "Stand tall with arms extended forward at shoulder height, ready to walk forward.",
+    "commonMistakes": ["Bending the knee on the kick", "Rounding the back to reach", "Rushing the tempo"]
+  },
+  {
+    "id": "freestanding-handstand",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Stack shoulders over wrists", "Squeeze glutes and brace core", "Push the floor away", "Keep gaze between hands"],
+    "setup": "Kick up into an inverted position balancing on the hands with the body extended vertically, away from a wall.",
+    "commonMistakes": ["Overarching the lower back", "Splaying fingers without gripping the floor", "Looking forward instead of down"]
+  },
+  {
+    "id": "freestanding-handstand-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Maintain a tight handstand hold", "Lower head toward the floor with control", "Press through the palms to full extension", "Keep core and glutes braced throughout"],
+    "setup": "Balance in a freestanding handstand with shoulders stacked over the wrists as the starting position.",
+    "commonMistakes": ["Losing balance mid-rep", "Flaring elbows excessively", "Arching the back to gain range"]
+  },
+  {
+    "id": "freestyle-swimming",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Keep body horizontal", "Rotate hips with each stroke", "Breathe to the side rhythmically", "Kick from the hips, not knees"],
+    "setup": "Begin floating face down in the water in a streamlined position before initiating alternating arm strokes.",
+    "commonMistakes": ["Lifting head too high to breathe", "Crossing the arm over the midline", "Kicking only from the knees"]
+  },
+  {
+    "id": "frog-pump",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Press soles of feet together", "Drive hips up through glutes", "Squeeze at the top", "Lower with control"],
+    "setup": "Lie on the back with knees bent, soles of the feet touching, and knees dropped open toward the floor.",
+    "commonMistakes": ["Arching the lower back excessively", "Using momentum instead of glute squeeze", "Not reaching full hip extension"]
+  },
+  {
+    "id": "front-lever",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Retract shoulder blades", "Keep body in a straight horizontal line", "Brace the core hard", "Press down and back through the bar"],
+    "setup": "Hang from a bar with an overhand grip, then pull the body into a horizontal position parallel to the floor.",
+    "commonMistakes": ["Letting hips sag below the line", "Bending the knees", "Losing scapular retraction"]
+  },
+  {
+    "id": "front-lever-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Hold the horizontal body position", "Pull chest toward the bar", "Keep body rigid throughout", "Avoid letting hips drop"],
+    "setup": "Start in a front lever position hanging horizontally from the bar with an overhand grip.",
+    "commonMistakes": ["Bending at the hips during the pull", "Losing horizontal alignment", "Using leg kick for momentum"]
+  },
+  {
+    "id": "front-rack-carry-barbell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Rest bar on front delts", "Keep elbows high", "Brace core tightly", "Walk with controlled steps"],
+    "setup": "Clean or rack a barbell across the front shoulders with elbows raised, then stand tall to begin walking.",
+    "commonMistakes": ["Letting elbows drop", "Leaning torso backward", "Taking overly long strides"]
+  },
+  {
+    "id": "front-rack-carry-dumbbell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Rest dumbbells on shoulders", "Keep elbows up and in", "Brace core", "Walk with even steps"],
+    "setup": "Clean two dumbbells to shoulder height, resting them on the front delts, then stand tall to walk.",
+    "commonMistakes": ["Letting dumbbells drift forward off the shoulders", "Arching the lower back", "Rushing the walking pace"]
+  },
+  {
+    "id": "front-rack-carry-kettlebell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Nest kettlebells against the forearms", "Keep elbows tucked and close to the ribs", "Brace core", "Walk with controlled steps"],
+    "setup": "Clean two kettlebells to the rack position against the forearms and stand tall to begin walking.",
+    "commonMistakes": ["Letting elbows flare out", "Gripping too tightly and shrugging shoulders", "Leaning backward"]
+  },
+  {
+    "id": "front-rack-carry-sandbag",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Hug the sandbag to the chest", "Keep elbows down and tight", "Brace core hard", "Walk with short controlled steps"],
+    "setup": "Lift a sandbag into a bear-hug position against the chest and stand tall to begin walking.",
+    "commonMistakes": ["Letting the bag shift and pull the torso forward", "Rounding the upper back", "Overstriding"]
+  },
+  {
+    "id": "front-to-back-leg-swing",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Hold support with one hand", "Swing leg forward and back with control", "Keep torso upright", "Gradually increase range"],
+    "setup": "Stand beside a wall or rack holding on for balance with one hand, weight on the standing leg.",
+    "commonMistakes": ["Swinging with excessive momentum", "Leaning the torso to compensate", "Bending the standing knee"]
+  },
+  {
+    "id": "ghd-back-extension",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips over the pad", "Keep spine neutral", "Rise to a straight line", "Control the lowering phase"],
+    "setup": "Position the hips on the GHD pad with ankles locked under the rollers, torso hanging forward.",
+    "commonMistakes": ["Hyperextending at the top", "Rounding the back on the descent", "Using momentum to bounce up"]
+  },
+  {
+    "id": "ghd-sit-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Lower back until fully extended", "Drive through the hips to sit up", "Keep core braced throughout", "Avoid excessive lumbar arch at the bottom"],
+    "setup": "Sit on the GHD with ankles locked under the rollers and hips positioned on the pad, ready to lower back.",
+    "commonMistakes": ["Overextending the lower back at the bottom", "Using momentum rather than core control", "Rushing the tempo"]
+  },
+  {
+    "id": "gironda-sternum-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Lean torso back slightly", "Pull chest to the bar", "Drive elbows down and back", "Squeeze shoulder blades together"],
+    "setup": "Hang from a bar with a wide grip, torso angled slightly backward from the start.",
+    "commonMistakes": ["Pulling with the chin instead of the chest", "Losing the backward torso lean", "Using momentum to swing up"]
+  },
+  {
+    "id": "glute-bridge",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Drive through the heels", "Squeeze glutes at the top", "Keep ribs down", "Lower with control"],
+    "setup": "Lie on the back with knees bent, feet flat on the floor hip-width apart.",
+    "commonMistakes": ["Arching the lower back instead of extending hips", "Pushing through the toes", "Not reaching full hip extension"]
+  },
+  {
+    "id": "glute-focused-back-extension",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Round upper back slightly", "Hinge with a posterior pelvic tilt", "Squeeze glutes hard at the top", "Avoid lumbar hyperextension"],
+    "setup": "Position the hips on a back extension bench with a rounded upper back and chin tucked to bias the glutes.",
+    "commonMistakes": ["Extending the lower back instead of the hips", "Rising too high into hyperextension", "Using momentum"]
+  },
+  {
+    "id": "glute-ham-raise",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Keep hips extended throughout", "Lower with control using the hamstrings", "Curl back up leading with the hips", "Brace the core"],
+    "setup": "Kneel on the GHD pad with ankles secured behind the rollers, torso upright to begin.",
+    "commonMistakes": ["Letting hips pike during the movement", "Dropping too fast without control", "Relying on the calves for support"]
+  },
+  {
+    "id": "goblet-cossack-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Hold weight at chest", "Sit deep into one hip", "Keep opposite leg straight with foot flat", "Push back to center with control"],
+    "setup": "Stand in a wide stance holding a dumbbell or kettlebell at the chest in goblet position.",
+    "commonMistakes": ["Letting the straight-leg heel lift", "Rounding the back", "Not sitting deep enough into the hip"]
+  },
+  {
+    "id": "goblet-good-morning",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hold weight at chest", "Hinge at the hips with a soft knee bend", "Keep spine neutral", "Drive hips forward to stand"],
+    "setup": "Stand with feet hip-width apart holding a weight at the chest in goblet position.",
+    "commonMistakes": ["Rounding the lower back", "Bending the knees too much and squatting instead of hinging", "Not reaching full hip extension at the top"]
+  },
+  {
+    "id": "goblet-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": ["Hold weight at chest", "Step forward into a lunge", "Keep front knee tracking over the foot", "Drive through the front heel to return"],
+    "setup": "Stand tall holding a dumbbell or kettlebell at the chest, feet together.",
+    "commonMistakes": ["Letting the front knee cave inward", "Leaning the torso forward", "Taking too short a step"]
+  },
+  {
+    "id": "goblet-reverse-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "beginner",
+    "formCues": ["Hold weight at chest", "Step backward into a lunge", "Lower the back knee toward the floor", "Drive through the front heel to stand"],
+    "setup": "Stand tall holding a dumbbell or kettlebell at the chest, feet together.",
+    "commonMistakes": ["Leaning the torso forward", "Letting the front knee travel past the toes excessively", "Pushing off the back foot instead of the front"]
+  },
+  {
+    "id": "goblet-split-squat",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Hold weight at chest", "Keep torso upright", "Lower the back knee toward the floor", "Drive through the front heel"],
+    "setup": "Stand in a staggered stance with one foot forward and one back, holding a weight at the chest.",
+    "commonMistakes": ["Letting the front knee cave in", "Placing feet too narrow, causing balance loss", "Bouncing at the bottom"]
+  },
+  {
+    "id": "goblet-step-up",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Hold weight at chest", "Drive through the lead heel", "Stand fully upright on top of the box", "Lower with control"],
+    "setup": "Stand facing a box holding a weight at the chest, one foot planted on top of the box.",
+    "commonMistakes": ["Pushing off the trailing leg", "Not standing to full hip extension at the top", "Stepping down uncontrolled"]
+  },
+  {
+    "id": "gravel-cycling",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Keep a relaxed grip on the bars", "Shift weight back on descents", "Maintain a steady cadence", "Stay loose through the shoulders over rough terrain"],
+    "setup": "Mount the bike on a gravel or unpaved surface with feet clipped or positioned on the pedals.",
+    "commonMistakes": ["Gripping the handlebars too tightly", "Braking hard on loose surfaces", "Poor line choice through rough sections"]
+  },
+  {
+    "id": "guillotine-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Lower bar to the neck/upper chest", "Keep elbows flared wide", "Press directly upward with control", "Use a lighter load than a standard bench press"],
+    "setup": "Lie on a flat bench with a barbell gripped wider than shoulder-width, positioned over the neck.",
+    "commonMistakes": ["Lowering the bar too fast toward the throat", "Using too heavy a load", "Losing shoulder stability under the wide grip"]
+  },
+  {
+    "id": "hack-squat-machine",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Place feet shoulder-width on the platform", "Keep back flat against the pad", "Lower until knees reach a deep bend", "Drive through mid-foot to extend"],
+    "setup": "Position the shoulders and back against the pads of the hack squat machine with feet set on the platform.",
+    "commonMistakes": ["Letting knees cave inward", "Lifting the heels off the platform", "Not controlling the descent"]
+  },
+  {
+    "id": "hack-squat-machine-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Position balls of feet on the platform edge", "Press through the forefoot to rise", "Lower heels for a full stretch", "Pause briefly at the top"],
+    "setup": "Stand on the hack squat machine platform with only the balls of the feet on the edge, legs extended.",
+    "commonMistakes": ["Using a partial range of motion", "Bouncing at the bottom", "Bending the knees to assist"]
+  },
+  {
+    "id": "half-boat-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Balance on the sit bones", "Lift shins parallel to the floor", "Keep chest lifted and spine long", "Engage the core to hold position"],
+    "setup": "Sit on the floor with knees bent, feet flat, leaning back slightly to balance on the sit bones.",
+    "commonMistakes": ["Rounding the lower back", "Collapsing the chest forward", "Holding the breath"]
+  },
+  {
+    "id": "half-kneeling-band-pallof-press",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Kneel in a half-kneeling stance", "Press band straight out from the chest", "Resist rotation toward the anchor", "Brace core throughout"],
+    "setup": "Kneel half-kneeling perpendicular to a band anchor, holding the band at the chest with both hands.",
+    "commonMistakes": ["Letting the torso rotate toward the anchor", "Pressing the arms at an angle instead of straight out", "Losing the half-kneeling hip position"]
+  },
+  {
+    "id": "half-kneeling-cable-pallof-press",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Kneel in a half-kneeling stance", "Press cable straight out from the chest", "Resist rotation toward the machine", "Keep hips square"],
+    "setup": "Kneel half-kneeling perpendicular to a cable stack set at chest height, holding the handle at the chest.",
+    "commonMistakes": ["Rotating the torso toward the cable", "Using too much weight and losing form", "Letting the front knee drift inward"]
+  },
+  {
+    "id": "half-kneeling-hip-flexor-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Tuck the pelvis under", "Squeeze the glute of the back leg", "Shift hips forward gently", "Keep torso upright"],
+    "setup": "Kneel on one knee with the opposite foot planted forward, hips facing forward.",
+    "commonMistakes": ["Arching the lower back instead of tucking the pelvis", "Leaning the torso forward", "Not engaging the back glute"]
+  },
+  {
+    "id": "half-kneeling-kettlebell-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Kneel in a half-kneeling stance", "Brace core and keep ribs down", "Press kettlebell straight overhead", "Avoid leaning to the side"],
+    "setup": "Kneel half-kneeling with a kettlebell racked at the shoulder on the same side as the up leg.",
+    "commonMistakes": ["Leaning the torso away from the load", "Flaring the ribs and arching the back", "Losing the half-kneeling hip stability"]
+  },
+  {
+    "id": "half-kneeling-landmine-rotation",
+    "mechanics": "compound",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Kneel in a half-kneeling stance", "Rotate the torso while keeping arms extended", "Drive the rotation from the core, not the arms", "Return with control"],
+    "setup": "Kneel half-kneeling holding a landmine bar with both hands extended in front of the chest.",
+    "commonMistakes": ["Rotating from the arms instead of the torso", "Letting the hips shift out of the half-kneeling position", "Using excessive momentum"]
+  }
+]

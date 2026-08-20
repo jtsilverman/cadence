@@ -1,0 +1,38 @@
+[
+  {
+    "id": "frog-jump",
+    "name": "Frog Jump",
+    "aliases": ["frog jumps", "squat frog jump"],
+    "modality": "plyometric",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads", "glutes", "calves"],
+    "secondaryMuscles": ["hamstrings", "adductors", "hip-flexors", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["reps", "distance", "height"],
+    "variationOf": null
+  },
+  {
+    "id": "180-degree-jump",
+    "name": "180-Degree Jump",
+    "aliases": ["rotational jump squat", "180 jump squat", "180 degree squat jump"],
+    "modality": "plyometric",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads", "glutes", "calves"],
+    "secondaryMuscles": ["abs", "obliques", "hamstrings"],
+    "laterality": "bilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  },
+  {
+    "id": "plyo-step-up",
+    "name": "Plyo Step-Up",
+    "aliases": ["jumping step-up", "explosive step-up", "power step-up"],
+    "modality": "plyometric",
+    "equipment": ["box", "bodyweight"],
+    "primaryMuscles": ["quads", "glutes", "calves"],
+    "secondaryMuscles": ["hamstrings", "abs"],
+    "laterality": "unilateral",
+    "metrics": ["reps", "height"],
+    "variationOf": null
+  }
+]

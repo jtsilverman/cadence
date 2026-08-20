@@ -1,0 +1,14 @@
+[
+  {
+    "id": "copenhagen-plank",
+    "name": "Copenhagen Plank",
+    "aliases": ["Copenhagen Side Plank", "Copenhagen Adductor Plank", "Copenhagen Hip Adduction"],
+    "modality": "strength",
+    "equipment": ["bench", "suspension"],
+    "primaryMuscles": ["adductors"],
+    "secondaryMuscles": ["obliques", "abs", "glutes", "hip-flexors"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  }
+]

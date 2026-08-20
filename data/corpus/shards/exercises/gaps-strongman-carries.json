@@ -1,0 +1,38 @@
+[
+  {
+    "id": "log-carry",
+    "name": "Log Carry",
+    "aliases": ["Strongman Log Carry", "Log Bear Hug Carry"],
+    "modality": "carry",
+    "equipment": ["none"],
+    "primaryMuscles": ["abs", "traps", "forearms"],
+    "secondaryMuscles": ["quads", "glutes", "lower-back"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "distance", "time"],
+    "variationOf": null
+  },
+  {
+    "id": "frame-carry",
+    "name": "Frame Carry",
+    "aliases": ["Conan's Frame Carry", "Strongman Frame Walk"],
+    "modality": "carry",
+    "equipment": ["none"],
+    "primaryMuscles": ["traps", "forearms", "abs"],
+    "secondaryMuscles": ["quads", "glutes", "lower-back"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "distance", "time"],
+    "variationOf": null
+  },
+  {
+    "id": "conans-wheel",
+    "name": "Conan's Wheel",
+    "aliases": ["Conan's Wheel Carry", "Wheel Walk"],
+    "modality": "carry",
+    "equipment": ["none"],
+    "primaryMuscles": ["traps", "forearms", "quads"],
+    "secondaryMuscles": ["abs", "glutes", "lower-back"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "distance", "time"],
+    "variationOf": null
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "barbell-squat-jerk",
+    "name": "Squat Jerk",
+    "aliases": ["Barbell Squat Jerk"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["front-delts", "quads", "triceps"],
+    "secondaryMuscles": ["glutes", "hamstrings", "traps", "side-delts", "abs", "calves"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

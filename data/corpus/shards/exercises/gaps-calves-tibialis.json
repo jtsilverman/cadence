@@ -1,0 +1,48 @@
+[
+    {
+        "id": "deficit-step-calf-raise",
+        "name": "Deficit (Step) Calf Raise",
+        "aliases": [
+            "step calf raise",
+            "calf raise on step",
+            "bodyweight deficit calf raise"
+        ],
+        "modality": "strength",
+        "equipment": [
+            "box"
+        ],
+        "primaryMuscles": [
+            "calves"
+        ],
+        "secondaryMuscles": [],
+        "laterality": "bilateral",
+        "metrics": [
+            "reps"
+        ],
+        "variationOf": null
+    },
+    {
+        "id": "eccentric-calf-raise-heel-drop",
+        "name": "Eccentric Calf Raise / Heel Drop",
+        "aliases": [
+            "heel drop",
+            "eccentric heel drop",
+            "calf lowering",
+            "negative calf raise"
+        ],
+        "modality": "strength",
+        "equipment": [
+            "box"
+        ],
+        "primaryMuscles": [
+            "calves"
+        ],
+        "secondaryMuscles": [],
+        "laterality": "unilateral",
+        "metrics": [
+            "reps",
+            "time"
+        ],
+        "variationOf": null
+    }
+]

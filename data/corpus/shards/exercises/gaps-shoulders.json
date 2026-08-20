@@ -1,0 +1,14 @@
+[
+  {
+    "id": "seated-barbell-overhead-press",
+    "name": "Seated Barbell Overhead Press",
+    "aliases": ["Seated Military Press", "Seated Strict Press", "Seated Barbell Military Press"],
+    "modality": "strength",
+    "equipment": ["barbell", "bench"],
+    "primaryMuscles": ["front-delts"],
+    "secondaryMuscles": ["side-delts", "triceps", "traps"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

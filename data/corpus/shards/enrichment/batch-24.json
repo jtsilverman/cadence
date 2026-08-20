@@ -1,0 +1,362 @@
+[
+  {
+    "id": "treadmill-run",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Land midfoot under hips", "Keep shoulders relaxed", "Drive arms front to back", "Maintain steady breathing rhythm"],
+    "setup": "Set the treadmill to a comfortable running pace and step on with the belt moving.",
+    "commonMistakes": ["Overstriding ahead of the body", "Gripping the handrails", "Looking down at feet"]
+  },
+  {
+    "id": "treadmill-sprints",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": ["Drive knees up powerfully", "Pump arms aggressively", "Land on the balls of the feet", "Stay tall through the torso"],
+    "setup": "Set the treadmill to a high speed for interval sprints and straddle the belt before starting.",
+    "commonMistakes": ["Jumping on too fast a belt speed", "Leaning too far forward", "Skipping the warm-up"]
+  },
+  {
+    "id": "treadmill-walk",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": ["Walk with an upright posture", "Swing arms naturally", "Land heel to toe", "Keep a consistent pace"],
+    "setup": "Set the treadmill to a walking pace and step on with the belt already moving slowly.",
+    "commonMistakes": ["Holding onto the handrails", "Slouching forward", "Taking overly short steps"]
+  },
+  {
+    "id": "tree-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Root standing foot into the floor", "Press raised foot into inner thigh", "Engage core for balance", "Keep hips level"],
+    "setup": "Stand tall, shift weight onto one leg, and place the opposite foot against the standing leg's calf or thigh.",
+    "commonMistakes": ["Resting foot on the knee joint", "Letting hips tilt sideways", "Fixing gaze downward instead of a steady point"]
+  },
+  {
+    "id": "triangle-pose",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Keep both legs straight", "Hinge from the hip, not the waist", "Stack shoulders vertically", "Reach through both fingertips"],
+    "setup": "Stand with feet wide, turn the front foot out, and reach the front hand toward the front shin or floor.",
+    "commonMistakes": ["Rounding the spine forward", "Letting the front knee collapse inward", "Rotating the chest toward the floor"]
+  },
+  {
+    "id": "triceps-dip",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep elbows tracking backward", "Lower until shoulders near elbow height", "Keep torso upright for triceps focus", "Press through the palms to lockout"],
+    "setup": "Grip the dip bars, support the body with arms extended, and lower the torso by bending the elbows.",
+    "commonMistakes": ["Flaring elbows out wide", "Descending too deep and straining shoulders", "Using momentum to bounce out of the bottom"]
+  },
+  {
+    "id": "trx-atomic-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Keep body in a straight line", "Drive knees to chest after each push-up", "Control the tuck without swinging", "Keep core braced throughout"],
+    "setup": "Place feet in the TRX straps in plank position with hands under shoulders on the floor.",
+    "commonMistakes": ["Letting hips sag", "Rushing the knee tuck", "Losing plank alignment mid-rep"]
+  },
+  {
+    "id": "trx-bicep-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Lean back with straight body", "Keep elbows fixed in place", "Curl by bending elbows only", "Squeeze biceps at the top"],
+    "setup": "Hold the TRX handles, lean back with arms extended and body angled away from the anchor.",
+    "commonMistakes": ["Bending at the hips", "Letting elbows drift forward", "Using body swing for momentum"]
+  },
+  {
+    "id": "trx-chest-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep arms slightly bent", "Lean forward from a plank-like stance", "Open arms wide with control", "Squeeze chest to return to center"],
+    "setup": "Hold the TRX handles with arms extended wide, leaning forward with feet firmly planted.",
+    "commonMistakes": ["Bending elbows too much and turning it into a press", "Losing core tension", "Letting hands drop below chest level"]
+  },
+  {
+    "id": "trx-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep body rigid like a plank", "Lower chest between the handles", "Press back to start with control", "Keep elbows at a moderate angle"],
+    "setup": "Face away from the anchor holding the handles, lean forward with arms extended.",
+    "commonMistakes": ["Sagging hips during the press", "Flaring elbows excessively", "Not leaning far enough for resistance"]
+  },
+  {
+    "id": "trx-fallout",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Keep spine neutral throughout", "Extend arms forward slowly", "Brace core to prevent arching", "Pull back using the abs"],
+    "setup": "Hold the TRX handles facing the anchor, arms extended forward at shoulder height in a plank stance.",
+    "commonMistakes": ["Letting the lower back arch", "Extending too far beyond control", "Rushing the return"]
+  },
+  {
+    "id": "trx-hamstring-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Keep hips lifted throughout", "Drive heels into the straps", "Curl heels toward glutes", "Control the extension back out"],
+    "setup": "Lie on the back with heels in the TRX straps, hips raised off the floor.",
+    "commonMistakes": ["Letting hips drop during the curl", "Using momentum instead of hamstring control", "Not fully extending the legs"]
+  },
+  {
+    "id": "trx-mountain-climber",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Keep hands under shoulders", "Drive knees toward chest quickly", "Keep hips level and low", "Maintain a braced core"],
+    "setup": "Place feet in the TRX straps in a plank position with hands on the floor under the shoulders.",
+    "commonMistakes": ["Letting hips pike upward", "Losing plank line as speed increases", "Not fully driving the knee forward"]
+  },
+  {
+    "id": "trx-oblique-crunch",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "advanced",
+    "formCues": ["Start in a side plank position", "Drive knees toward the elbow", "Rotate through the obliques", "Return with control"],
+    "setup": "Place feet in the TRX straps in a side plank, supporting the body on one forearm.",
+    "commonMistakes": ["Twisting the shoulders instead of the hips", "Letting hips sag", "Losing the side plank alignment"]
+  },
+  {
+    "id": "trx-pike",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Keep legs straight", "Lift hips toward the ceiling", "Keep hands planted firmly", "Control the return to plank"],
+    "setup": "Place feet in the TRX straps in a plank position with hands under the shoulders.",
+    "commonMistakes": ["Bending knees to fake range", "Letting hips sag before the pike", "Moving too fast to control"]
+  },
+  {
+    "id": "trx-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep body in a straight line", "Pull chest toward the handles", "Squeeze shoulder blades together", "Lead with the elbows"],
+    "setup": "Hold the TRX handles, lean back with arms extended and feet planted under the anchor.",
+    "commonMistakes": ["Letting hips sag", "Pulling with the arms only", "Not achieving full body lean"]
+  },
+  {
+    "id": "trx-side-plank",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Stack shoulders over the supporting elbow", "Keep hips lifted and level", "Brace obliques throughout", "Keep feet stacked in the strap"],
+    "setup": "Place feet in the TRX straps, resting on one forearm in a side plank position.",
+    "commonMistakes": ["Letting hips drop", "Rotating the torso forward", "Holding breath instead of breathing steadily"]
+  },
+  {
+    "id": "trx-single-leg-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Keep chest up throughout", "Sit back into the standing hip", "Keep knee tracking over toes", "Use straps for balance, not pulling"],
+    "setup": "Hold the TRX handles for balance, standing on one leg with the other extended forward.",
+    "commonMistakes": ["Letting the knee cave inward", "Relying too heavily on the straps for support", "Rounding the lower back"]
+  },
+  {
+    "id": "trx-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": ["Keep heels planted", "Sit hips back and down", "Keep chest lifted", "Drive through the floor to stand"],
+    "setup": "Hold the TRX handles for light support, standing with feet shoulder-width apart.",
+    "commonMistakes": ["Leaning too much weight into the straps", "Letting knees collapse inward", "Rounding the back at the bottom"]
+  },
+  {
+    "id": "trx-suspended-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Keep rear foot suspended and relaxed", "Lower straight down through the front knee", "Keep torso upright", "Push through the front heel to rise"],
+    "setup": "Place one foot in the TRX strap behind the body and stand on the other leg facing away from the anchor.",
+    "commonMistakes": ["Letting the front knee travel past the toes excessively", "Losing balance from an unstable rear foot", "Leaning too far forward"]
+  },
+  {
+    "id": "trx-t-raise",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Lean back with a straight body", "Raise arms out to form a T", "Keep arms mostly straight", "Squeeze shoulder blades at the top"],
+    "setup": "Hold the TRX handles with arms extended forward, leaning back at an angle.",
+    "commonMistakes": ["Bending the elbows too much", "Using momentum instead of control", "Not achieving a full T shape"]
+  },
+  {
+    "id": "trx-tricep-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep elbows fixed near the head", "Face away from the anchor", "Extend arms fully forward", "Control the return bend"],
+    "setup": "Hold the TRX handles overhead, leaning forward with elbows bent near the head.",
+    "commonMistakes": ["Letting elbows flare out wide", "Not leaning enough for resistance", "Arching the lower back"]
+  },
+  {
+    "id": "trx-w-raise",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Lean back with a straight body", "Pull handles into a W shape", "Squeeze shoulder blades together", "Keep elbows below shoulder height"],
+    "setup": "Hold the TRX handles with arms extended, leaning back at an angle from the anchor.",
+    "commonMistakes": ["Raising elbows too high", "Using body swing for momentum", "Shortening the range of motion"]
+  },
+  {
+    "id": "trx-y-raise",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Lean back with a straight body", "Raise arms overhead into a Y", "Keep arms straight throughout", "Engage rear delts, not traps"],
+    "setup": "Hold the TRX handles with arms extended down, leaning back at an angle.",
+    "commonMistakes": ["Shrugging shoulders toward ears", "Bending the elbows", "Not reaching a full overhead Y"]
+  },
+  {
+    "id": "tuck-back-lever",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Keep shoulders depressed and rotated", "Tuck knees toward chest", "Keep body inverted and horizontal", "Brace core to hold position"],
+    "setup": "Hang from the pull-up bar, invert the body, and tuck the knees into a compact position.",
+    "commonMistakes": ["Letting shoulders shrug up", "Losing the tuck and dropping hips", "Rushing into the position without control"]
+  },
+  {
+    "id": "tuck-front-lever",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Depress shoulders firmly", "Tuck knees to chest", "Keep back flat and horizontal", "Brace the core hard"],
+    "setup": "Hang from the pull-up bar and pull the tucked knees up until the torso is horizontal.",
+    "commonMistakes": ["Letting shoulders elevate toward ears", "Sagging the hips below horizontal", "Losing the tuck too early"]
+  },
+  {
+    "id": "tuck-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Load into a quarter squat", "Explode upward driving knees to chest", "Land softly with bent knees", "Reset before the next rep"],
+    "setup": "Stand with feet shoulder-width apart, ready to jump explosively upward.",
+    "commonMistakes": ["Landing with stiff, locked knees", "Not fully tucking the knees", "Losing balance on landing"]
+  },
+  {
+    "id": "tuck-l-sit",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Press palms firmly into the floor", "Lift hips off the ground", "Keep knees tucked to chest", "Keep shoulders depressed"],
+    "setup": "Sit on the floor with hands beside the hips, then press down to lift the tucked body off the ground.",
+    "commonMistakes": ["Shrugging shoulders during the press", "Not fully lifting hips", "Leaning too far forward or back"]
+  },
+  {
+    "id": "tuck-planche",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Lean shoulders past the hands", "Tuck knees tightly to chest", "Press through straight arms", "Keep core braced hard"],
+    "setup": "From a crouched position with hands on the floor, lean forward and lift the tucked body off the ground.",
+    "commonMistakes": ["Bending the elbows under load", "Not leaning far enough forward", "Losing the tuck and touching down"]
+  },
+  {
+    "id": "tuck-planche-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Hold the tuck planche lean", "Lower chest toward the hands", "Keep elbows tracking back", "Press back to full arm extension"],
+    "setup": "Begin in a tuck planche hold with shoulders leaned past the hands and knees tucked.",
+    "commonMistakes": ["Losing the planche lean during the press", "Flaring elbows outward", "Dropping the tuck mid-rep"]
+  },
+  {
+    "id": "tuck-press-to-handstand",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Start seated in a tuck", "Press hips up and over the shoulders", "Keep arms straight throughout", "Extend to a controlled handstand"],
+    "setup": "Sit on the floor in a tucked position with hands planted beside the hips.",
+    "commonMistakes": ["Bending the arms during the press", "Rushing the hip elevation", "Losing the tuck before reaching handstand"]
+  },
+  {
+    "id": "tucked-human-flag",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Grip the vertical bar firmly", "Keep body sideways and tucked", "Brace obliques to stay horizontal", "Keep top arm pushing, bottom arm pulling"],
+    "setup": "Grip a vertical pull-up bar with one hand above the other and lift the tucked body sideways off the ground.",
+    "commonMistakes": ["Letting hips drop toward the floor", "Weak grip causing rotation on the bar", "Not engaging the top arm push"]
+  },
+  {
+    "id": "turkish-get-up",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": ["Keep eyes on the kettlebell throughout", "Press the bell overhead before rising", "Move through each stage deliberately", "Keep the arm vertical at all times"],
+    "setup": "Lie on the back holding a kettlebell overhead in one hand with that knee bent.",
+    "commonMistakes": ["Rushing through the transition stages", "Letting the arm drift out of vertical", "Losing eye contact with the bell"]
+  },
+  {
+    "id": "two-arm-american-kettlebell-swing",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips, not the knees", "Drive hips forward explosively", "Let the bell float to overhead", "Keep arms relaxed, not lifting"],
+    "setup": "Stand with feet shoulder-width apart holding a kettlebell with both hands in front of the hips.",
+    "commonMistakes": ["Squatting instead of hinging", "Muscling the bell up with the arms", "Overextending the lower back at the top"]
+  },
+  {
+    "id": "two-arm-bent-over-dumbbell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Hinge forward with a flat back", "Pull dumbbells toward the ribs", "Squeeze shoulder blades together", "Lower with control"],
+    "setup": "Hold a dumbbell in each hand, hinge forward at the hips with knees soft and back flat.",
+    "commonMistakes": ["Rounding the lower back", "Using momentum to jerk the weight up", "Standing too upright and losing the hinge"]
+  },
+  {
+    "id": "two-arm-landmine-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Grip the bar sleeve with both hands", "Press up and slightly forward", "Brace the core against the angle", "Control the descent back to the chest"],
+    "setup": "Load a barbell into a landmine attachment and hold the sleeve end at chest height with both hands.",
+    "commonMistakes": ["Arching the lower back excessively", "Pressing straight up instead of along the bar's arc", "Using leg drive to cheat the press"]
+  },
+  {
+    "id": "two-arm-landmine-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge forward with a flat back", "Pull the sleeve toward the torso", "Squeeze shoulder blades at the top", "Lower with control"],
+    "setup": "Load a barbell into a landmine attachment, hinge forward, and grip the sleeve end with both hands.",
+    "commonMistakes": ["Rounding the back during the pull", "Using momentum instead of the back muscles", "Not hinging low enough for range"]
+  },
+  {
+    "id": "two-arm-russian-kettlebell-swing",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at the hips explosively", "Swing bell only to shoulder height", "Keep the spine neutral", "Snap the hips to drive momentum"],
+    "setup": "Stand with feet shoulder-width apart holding a kettlebell with both hands in front of the hips.",
+    "commonMistakes": ["Swinging the bell too high like the American variant", "Squatting instead of hinging", "Rounding the back on the backswing"]
+  },
+  {
+    "id": "two-plate-pinch-hold",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Pinch plates firmly between fingers and thumb", "Keep wrists neutral", "Stand tall with shoulders back", "Hold for the target duration"],
+    "setup": "Press two weight plates smooth-side out and pinch them together with the fingers and thumb of one hand.",
+    "commonMistakes": ["Letting the wrist bend under load", "Using the body to brace the plates", "Gripping with only the fingertips instead of full palm pressure"]
+  },
+  {
+    "id": "underhand-barbell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge forward with a flat back", "Use an underhand grip shoulder-width", "Pull the bar to the lower ribs", "Squeeze the back at the top"],
+    "setup": "Grip a barbell underhand, hinge forward at the hips with knees soft and back flat.",
+    "commonMistakes": ["Rounding the lower back", "Yanking the bar with momentum", "Standing too upright during the pull"]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "kettlebell-curl",
+    "name": "Kettlebell Curl",
+    "aliases": ["standing kettlebell curl", "double kettlebell curl", "single-arm kettlebell curl"],
+    "modality": "strength",
+    "equipment": ["kettlebell"],
+    "primaryMuscles": ["biceps"],
+    "secondaryMuscles": ["forearms"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

@@ -1,0 +1,628 @@
+/* Cadence marketing styles — landing v4 (specs/landing-v4.md: Eight Sleep
+   anatomy transplant — hero, statement, Plan, Shop, Live, Save, personas,
+   CTA close), /faq, /waitlist, /waitlist/thanks.
+   tokens.css (design.md §1) is the base layer; this file carries the layout
+   + motion supplementary tokens and the marketing-only component classes.
+   Reference of record: design-refs/eightsleep (band rhythm, type scale,
+   hotspot tour, card carousels); assets/motion-refs/notes.md for pacing.
+   design.md §5.2 is the motion ruleset (hover never transforms; reduced
+   motion = static). */
+
+:root {
+  --container-max: 1552px;
+  --container-gutter: 64px;
+  --grid-gutter: 16px;
+  --dur-micro: 150ms;
+  --dur-panel: 400ms;
+  --dur-slow: 1400ms;
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  /* §8.3 #2 button case convention */
+  --btn-case: uppercase;
+  --btn-track: 0.08em;
+  /* v4.2 (Jake 2026-08-04, "doesn't look like Eight Sleep"): the warm client
+     override from the dark-editorial era is retired; neutrals return to the
+     corpus-measured Eight Sleep values in tokens.css (#ffffff / #f8f7f3). */
+}
+
+.landing,
+.landing * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Light-first (eightsleep): the page is cream/white with black type; dark
+   bands opt in for app moments only. */
+.landing {
+  font-family: var(--font-familjen), system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--surface-bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+.landing a {
+  text-decoration: none;
+}
+.landing input::placeholder,
+.landing textarea::placeholder {
+  color: var(--color-grey-500);
+}
+
+/* ---- shared pieces ---- */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--container-gutter);
+}
+
+.eyebrow {
+  display: block;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: var(--space-16);
+}
+.eyebrow--accent { color: var(--text-accent); } /* light surfaces only (§1.3) */
+.eyebrow--muted { color: var(--text-secondary-inverse); }
+.eyebrow--on-photo { color: var(--color-white); }
+
+/* Eight Sleep display scale: huge, tight-tracked, centered on marketing
+   bands (design-refs/eightsleep 006 measures ~64px CSS on 1280w). */
+.h-display {
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  text-wrap: balance;
+  margin-bottom: var(--space-24);
+}
+.lede {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-wrap: pretty;
+}
+
+.btn {
+  height: 52px;
+  padding-inline: var(--space-32);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: var(--btn-track);
+  text-transform: var(--btn-case);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity var(--dur-micro) var(--ease-out);
+}
+.btn:hover { opacity: 0.7; }
+/* CTA anchors styled as buttons still need the button's box */
+a.btn { display: inline-flex; align-items: center; }
+/* The nav CTA: Eight Sleep's black bar button ("Shop the Pod"). */
+.btn--ink {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+/* Over the closing photo: white button, black label (the photo band's own
+   contrast, no floating black slab on a dark image). */
+.btn--white {
+  background: #ffffff;
+  color: var(--color-black);
+}
+.btn--hero {
+  height: var(--space-64);
+  padding-inline: var(--space-40);
+}
+
+/* Photography: cover-cropped, darkened so copy keeps contrast on any image. */
+.photo-slot {
+  position: absolute;
+  inset: 0;
+  background: var(--color-ink);
+}
+.photo-slot--photo {
+  background-size: cover;
+  background-position: center;
+}
+.photo-slot--photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.45));
+}
+
+/* ---- nav (eightsleep bar: links left, wordmark center, CTA right) ---- */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+  background: var(--color-white);
+  color: var(--text-primary);
+  min-height: var(--space-80);
+  display: flex;
+  align-items: center;
+}
+.nav-inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: var(--space-40);
+  padding-block: var(--space-16);
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-32);
+}
+.wordmark {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: inherit;
+  white-space: nowrap;
+}
+a.wordmark:hover { opacity: 0.7; }
+.wordmark--mark {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  letter-spacing: 0.22em;
+  font-weight: 600;
+  justify-self: center;
+}
+.nav-link {
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: inherit;
+  white-space: nowrap;
+}
+.nav-link:hover { opacity: 0.7; }
+.nav-ctas {
+  display: flex;
+  align-items: center;
+  gap: var(--space-32);
+  justify-self: end;
+}
+.nav--static { position: static; }
+/* The footer wordmark sits on dark; the nav's sits on cream. */
+.footer .wordmark { color: var(--text-primary-inverse); }
+
+/* ---- 1: hero (eightsleep 006→008: headline on cream, giant inset photo
+        below) ---- */
+
+.hero {
+  background: var(--surface-bg);
+  padding-block: var(--space-96) var(--space-64);
+  /* clip, not hidden: overflow:hidden makes the band a scroll container and
+     freezes every view() reveal timeline inside it. */
+  overflow: clip;
+}
+.hero-inner {
+  text-align: center;
+  max-width: 920px;
+  margin-inline: auto;
+  margin-bottom: var(--space-64);
+}
+.hero-lede {
+  color: var(--text-secondary);
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: var(--space-40);
+}
+.hero .cta-footnote { color: var(--text-secondary); }
+.hero-photo {
+  height: 72vh;
+  min-height: 480px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ---- band system: cream marketing / dark app moments, hard cuts ---- */
+
+.band {
+  padding-block: var(--space-120);
+}
+.band--dark {
+  background: var(--surface-inverse);
+  color: var(--text-primary-inverse);
+}
+.band--cream { background: var(--color-off-white); }
+/* Alternating with cream, the eightsleep way of seaming light sections. */
+.band--white { background: var(--color-white); }
+.band-copy { max-width: 720px; }
+.band-copy--center {
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: var(--space-64);
+}
+.band-title {
+  font-size: 48px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  margin-bottom: var(--space-16);
+  text-wrap: balance;
+}
+.band-lede { color: var(--text-secondary); }
+.band--dark .band-lede { color: var(--text-secondary-inverse); }
+
+/* ---- 2: statement band (eightsleep 006 value-prop breather) ---- */
+
+.statement {
+  max-width: 880px;
+  margin-inline: auto;
+  text-align: center;
+}
+.statement-title {
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-24);
+  text-wrap: balance;
+}
+.statement-lede {
+  color: var(--text-secondary);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+/* ---- 3: plan — the eightsleep-144 feature band, cloned: full-bleed photo,
+        copy block left in white ---- */
+
+.photo-band {
+  position: relative;
+  min-height: 82vh;
+  display: flex;
+  align-items: center;
+  overflow: clip;
+}
+.photo-band-inner {
+  position: relative;
+  z-index: 1;
+}
+.photo-band-copy { max-width: 480px; }
+.photo-band-copy .band-title { color: var(--color-white); }
+.band-lede--on-photo { color: var(--color-grey-300); }
+
+/* ---- 4: shop (eightsleep 144 feature-card row, on cream) ---- */
+
+.band .band-copy { margin-bottom: var(--space-64); }
+.shop-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gutter);
+}
+.shop-card-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+.shop-card-photo {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.shop-card-text {
+  padding: var(--space-24);
+  border-top: var(--border-width) solid var(--border);
+  background: transparent;
+  transition:
+    background-color var(--dur-panel) var(--ease-out),
+    color var(--dur-panel) var(--ease-out);
+}
+.shop-card-text h3 {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: var(--space-8);
+  color: var(--text-primary);
+  transition: color var(--dur-panel) var(--ease-out);
+}
+.shop-card-text p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  transition: color var(--dur-panel) var(--ease-out);
+}
+/* The highlight: the active card's text block tints to cream on the white
+   band. No transform, no padding change — colors only. */
+.shop-card--active .shop-card-text { background: var(--color-off-white); }
+.shop-card-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---- 5: live (dark app-moment band: the change feed is the artifact) ---- */
+
+.live-inner {
+  display: grid;
+  grid-template-columns: minmax(320px, 480px) 1fr;
+  gap: var(--space-96);
+  align-items: center;
+}
+.live-feed {
+  max-width: 520px;
+  justify-self: end;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+.live-moment {
+  padding: var(--space-16) var(--space-24);
+  max-width: 88%;
+}
+.live-moment--you {
+  align-self: flex-end;
+  background: var(--color-off-white);
+  color: var(--text-primary);
+}
+.live-moment--plan {
+  align-self: flex-start;
+  background: var(--color-ink);
+  color: var(--text-primary-inverse);
+  border-left: 2px solid var(--accent);
+}
+.live-moment-when {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  opacity: 0.6;
+  margin-bottom: var(--space-4);
+}
+.live-moment p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* ---- 6: save (all four cards at once on cream — Jake 2026-08-04 dropped
+        the carousel) ---- */
+
+.save-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--grid-gutter);
+}
+.save-card {
+  background: var(--color-off-white);
+  display: flex;
+  flex-direction: column;
+}
+.save-card-media {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-24);
+}
+.save-card-media--reel { background: linear-gradient(160deg, #2b2b28, #151514); }
+.save-card-media--screenshot { background: linear-gradient(160deg, #23282b, #131416); }
+.save-card-media--blog { background: linear-gradient(160deg, #2b2523, #161413); }
+.save-card-media--card { background: linear-gradient(160deg, #2a2820, #151412); }
+.save-card-source {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--color-grey-300);
+  max-width: 220px;
+}
+.save-card-body {
+  padding: var(--space-24);
+}
+.save-card-result {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--space-8);
+}
+.save-card-body p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+/* ---- 7: persona grid (eightsleep sleep-challenges cards, 040/056) ---- */
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--grid-gutter);
+}
+.persona-card {
+  background: var(--surface-raised);
+  display: flex;
+  flex-direction: column;
+}
+.persona-photo {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+.persona-text { padding: var(--space-24); }
+.persona-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-accent);
+  margin-bottom: var(--space-8);
+}
+.persona-text h3 {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-wrap: balance;
+}
+
+/* ---- 8: the close (statement over sunset, sized-up ask) ---- */
+
+.cta-band {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  overflow: clip;
+}
+.cta-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 880px;
+}
+.cta-title {
+  font-size: 64px;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  color: var(--text-primary-inverse);
+  margin-bottom: var(--space-24);
+  text-wrap: balance;
+}
+.cta-lede {
+  color: var(--color-grey-300);
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: var(--space-40);
+}
+.cta-footnote {
+  margin-top: var(--space-24);
+  font-size: 13px;
+  color: var(--text-secondary-inverse);
+}
+.hero .cta-footnote { color: var(--color-grey-300); }
+
+/* ---- footer ---- */
+
+.footer {
+  background: var(--surface-inverse);
+  border-top: var(--border-width) solid var(--border-inverse);
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-16) var(--space-32);
+  padding-block: var(--space-32);
+}
+.footer-link {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--text-primary-inverse);
+}
+.footer-link:hover { color: var(--text-secondary-inverse); }
+.footer-legal {
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--text-secondary-inverse);
+}
+@keyframes cadence-expand {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* ==== §5 motion ==== */
+
+@keyframes cadence-rise {
+  from { opacity: 0; transform: translateY(28px); }
+  to { opacity: 1; transform: none; }
+}
+@supports (animation-timeline: view()) {
+  /* Scroll-linked reveal for editorial text. Stagger comes from the entry
+     range, not a delay — scroll-driven animations have no clock. cover, not
+     entry: an entry range on a tall block finishes the moment the block has
+     finished entering, so the reveal was over before it was read. */
+  [data-reveal] {
+    animation: cadence-rise var(--dur-panel) var(--ease-out) both;
+    animation-timeline: view();
+    animation-range: cover 5% cover 42%;
+  }
+  [data-reveal="2"] { animation-range: cover 13% cover 50%; }
+  [data-reveal="3"] { animation-range: cover 21% cover 58%; }
+  [data-reveal="4"] { animation-range: cover 29% cover 66%; }
+}
+
+/* The popup keeps its anchoring transform under reduced motion (the global
+   rule below kills animations/transitions, and transforms are layout here,
+   not motion). */
+
+/* design.md §5.2: reduced motion means static, everywhere — every band
+   renders its settled state, nothing cycles, nothing drifts. */
+@media (prefers-reduced-motion: reduce) {
+  .landing *,
+  .landing *::before,
+  .landing *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---- viewports ---- */
+
+@media (max-width: 1100px) {
+  .live-inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-64);
+  }
+  .live-feed { justify-self: start; }
+  .persona-grid { grid-template-columns: repeat(2, 1fr); }
+  .save-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Tablet: the three nav columns plus 40px gaps outgrow the viewport once
+   links stop wrapping; tighten the gaps so nothing clips. */
+@media (max-width: 900px) {
+  .nav-inner { gap: var(--space-24); }
+  .nav-links { gap: var(--space-16); }
+}
+
+@media (max-width: 760px) {
+  :root { --container-gutter: 24px; }
+  .h-display { font-size: 40px; }
+  .statement-title { font-size: 36px; }
+  .band-title { font-size: 32px; }
+  .cta-title { font-size: 40px; }
+  .shop-cards { grid-template-columns: 1fr; }
+  .persona-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .nav-inner { grid-template-columns: auto 1fr; }
+  .nav-ctas { justify-self: end; }
+  .photo-band { min-height: 60vh; }
+  .save-grid { grid-template-columns: 1fr; }
+  .hero { padding-block: var(--space-64) var(--space-40); }
+  .hero-photo { height: 48vh; min-height: 320px; }
+}
+
+/* Phone widths: the 760px tier still assumes the full-size wordmark + CTA
+   pair, which measures ~458px and clips the nav button at 390. */
+@media (max-width: 480px) {
+  .nav-inner { gap: var(--space-16); }
+  .wordmark--mark { font-size: 13px; letter-spacing: 0.18em; gap: var(--space-8); }
+  .nav .btn {
+    height: 44px;
+    padding-inline: var(--space-16);
+    font-size: 12px;
+  }
+}

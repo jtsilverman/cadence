@@ -1,0 +1,362 @@
+[
+  {
+    "id": "barbell-bent-over-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge at hips, flat back", "Pull bar to lower ribs", "Squeeze shoulder blades together", "Keep neck neutral"],
+    "setup": "Stand with feet hip-width, hinge forward to roughly 45-70 degrees holding a barbell with an overhand grip, spine flat.",
+    "commonMistakes": ["Rounding the lower back", "Using momentum to jerk the bar up", "Standing too upright, turning it into a shrug"]
+  },
+  {
+    "id": "barbell-box-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Sit back onto the box, don't collapse down", "Keep shins near vertical", "Pause without relaxing at the bottom", "Drive up through the whole foot"],
+    "setup": "Set a box or bench at or slightly below parallel height, position the barbell on the upper back, and stand in front of the box.",
+    "commonMistakes": ["Plopping down and losing tension", "Rounding the back when touching the box", "Rocking forward to stand up instead of driving through legs"]
+  },
+  {
+    "id": "barbell-bulgarian-split-squat",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "advanced",
+    "formCues": ["Keep torso mostly upright", "Lower until rear knee nearly grazes floor", "Drive through front heel", "Keep front shin roughly vertical"],
+    "setup": "Rest the top of the rear foot on a bench behind you, hold the barbell on the upper back, with the front foot far enough forward for a stable base.",
+    "commonMistakes": ["Placing the front foot too close to the bench", "Letting the front knee cave inward", "Pushing off the back foot excessively"]
+  },
+  {
+    "id": "barbell-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Keep elbows pinned to sides", "Curl without swinging the torso", "Squeeze biceps at the top", "Lower under control"],
+    "setup": "Stand holding a barbell with an underhand shoulder-width grip, arms extended, elbows close to the body.",
+    "commonMistakes": ["Swinging the hips to generate momentum", "Letting elbows drift forward", "Not fully extending at the bottom"]
+  },
+  {
+    "id": "barbell-curtsy-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Step back and across the body", "Keep chest up", "Lower rear knee toward the floor", "Push through front heel to return"],
+    "setup": "Stand with the barbell on the upper back, feet hip-width apart.",
+    "commonMistakes": ["Rotating the hips excessively", "Losing balance from too large a cross-step", "Letting front knee track inward"]
+  },
+  {
+    "id": "barbell-cyclist-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Heels elevated on plates", "Keep torso upright", "Track knees forward over toes", "Drive up through the quads"],
+    "setup": "Place heels on a small platform or plates, feet closer together than a standard squat, with the barbell on the upper back.",
+    "commonMistakes": ["Using too much heel elevation and losing balance", "Leaning forward too much", "Not controlling the descent"]
+  },
+  {
+    "id": "barbell-drag-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Drag the bar up along the torso", "Keep elbows pulling back, not forward", "Avoid flaring wrists", "Control the descent"],
+    "setup": "Stand holding a barbell with an underhand grip close to the thighs, elbows slightly behind the torso line.",
+    "commonMistakes": ["Letting the bar drift away from the body", "Using shoulder flexion instead of a drag path", "Swinging for momentum"]
+  },
+  {
+    "id": "barbell-floor-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Lie flat with knees bent", "Lower until triceps touch the floor", "Pause briefly at the bottom", "Press bar back up in a straight line"],
+    "setup": "Lie on the floor under a racked barbell or with spotter handoff, feet flat, gripping the bar slightly wider than shoulder-width.",
+    "commonMistakes": ["Bouncing elbows off the floor", "Flaring elbows to 90 degrees", "Arching excessively off the floor"]
+  },
+  {
+    "id": "barbell-forward-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Step forward and lower straight down", "Keep front shin vertical", "Push back to start through the front heel", "Keep torso upright"],
+    "setup": "Stand with the barbell on the upper back, feet hip-width apart.",
+    "commonMistakes": ["Letting the front knee travel past the toes excessively", "Taking too short a step", "Leaning the torso forward"]
+  },
+  {
+    "id": "barbell-frog-pump",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Soles of feet together, knees out", "Drive hips up by squeezing glutes", "Avoid arching the lower back", "Pause at the top"],
+    "setup": "Lie on your back with the barbell over the hips, soles of the feet pressed together and knees splayed outward.",
+    "commonMistakes": ["Hyperextending the lower back", "Using leg drive instead of glutes", "Not achieving full hip extension"]
+  },
+  {
+    "id": "barbell-front-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Raise bar to shoulder height", "Keep slight bend in elbows", "Avoid using momentum", "Lower with control"],
+    "setup": "Stand holding a barbell with an overhand grip in front of the thighs, arms extended.",
+    "commonMistakes": ["Swinging the torso to lift the weight", "Raising above shoulder height", "Using too heavy a load and shrugging"]
+  },
+  {
+    "id": "barbell-front-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Keep elbows high", "Sit down between the hips", "Maintain an upright torso", "Drive through the mid-foot"],
+    "setup": "Rest the barbell across the front deltoids in a clean-grip rack position, elbows raised, feet shoulder-width apart.",
+    "commonMistakes": ["Letting elbows drop, causing the bar to roll forward", "Excessive forward lean", "Heels lifting off the floor"]
+  },
+  {
+    "id": "barbell-front-squat-clean-grip",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Hook grip or full clean grip on the bar", "Elbows driven up and forward", "Descend with an upright torso", "Drive through the whole foot"],
+    "setup": "Grip the bar just outside the shoulders in a full clean grip, rack it on the front deltoids with elbows high.",
+    "commonMistakes": ["Insufficient wrist flexibility causing elbow drop", "Rounding the upper back", "Losing bar contact with the shoulders"]
+  },
+  {
+    "id": "barbell-front-squat-cross-arm",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Cross arms over the bar to hold it in place", "Keep elbows up", "Sit down between hips", "Keep chest tall throughout"],
+    "setup": "Cross the arms in front of the body, hands gripping the opposite side of the bar to pin it against the front deltoids.",
+    "commonMistakes": ["Letting elbows drop and the bar slide down", "Gripping too loosely", "Leaning forward excessively"]
+  },
+  {
+    "id": "barbell-glute-bridge",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Drive through heels", "Squeeze glutes at the top", "Avoid overarching the lower back", "Keep chin tucked"],
+    "setup": "Lie on your back with the barbell across the hips, knees bent, feet flat on the floor hip-width apart.",
+    "commonMistakes": ["Pushing through toes instead of heels", "Hyperextending the spine at the top", "Using a partial range of motion"]
+  },
+  {
+    "id": "barbell-good-morning",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": ["Hinge at the hips with a soft knee bend", "Keep the back flat throughout", "Push hips back as torso lowers", "Stand tall by driving hips forward"],
+    "setup": "Rest the barbell on the upper back as in a squat, feet shoulder-width apart, knees slightly bent.",
+    "commonMistakes": ["Rounding the spine", "Bending the knees too much, turning it into a squat", "Using too much load before mastering hip hinge mechanics"]
+  },
+  {
+    "id": "barbell-hack-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Hold bar behind the legs", "Keep torso as upright as possible", "Squat down keeping bar close to legs", "Drive up through the heels"],
+    "setup": "Stand with a barbell held behind the body at arm's length, feet shoulder-width apart.",
+    "commonMistakes": ["Letting the bar drift away from the legs", "Rounding the back to reach the bar", "Rising onto the toes"]
+  },
+  {
+    "id": "barbell-hip-thrust",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": ["Upper back braced on a bench", "Drive hips up until torso is parallel to floor", "Squeeze glutes hard at the top", "Chin tucked, avoid overarching"],
+    "setup": "Sit with upper back against a bench, barbell padded and positioned over the hip crease, feet flat and knees bent.",
+    "commonMistakes": ["Overextending the lumbar spine at lockout", "Pushing through toes instead of heels", "Bench positioned too high or low for full range"]
+  },
+  {
+    "id": "barbell-jm-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Lower bar toward the neck/chin area", "Keep elbows tucked", "Blend triceps extension with a slight press", "Control the bar path closely"],
+    "setup": "Lie on a bench holding the barbell with a close grip, arms extended above the upper chest.",
+    "commonMistakes": ["Flaring elbows out wide", "Losing control of the bar path near the face", "Using too heavy a load before mastering technique"]
+  },
+  {
+    "id": "barbell-low-bar-back-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Bar rests on rear deltoids, low on the back", "Sit hips back first", "Keep a moderate forward torso lean", "Drive up through mid-foot"],
+    "setup": "Position the barbell low across the rear deltoids just below the traps, feet shoulder-width apart, grip just outside shoulders.",
+    "commonMistakes": ["Bar creeping too high onto the neck", "Knees caving inward on the ascent", "Excessive forward lean losing bar path"]
+  },
+  {
+    "id": "barbell-overhead-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Brace core before pressing", "Press bar in a straight vertical line", "Tuck chin slightly as bar passes the face", "Lock out fully overhead"],
+    "setup": "Stand holding a barbell at shoulder height with an overhand grip, feet shoulder-width apart, core braced.",
+    "commonMistakes": ["Overarching the lower back", "Pressing the bar forward instead of straight up", "Failing to fully lock out at the top"]
+  },
+  {
+    "id": "barbell-overhead-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Lock the bar overhead with a wide grip", "Keep the torso as vertical as possible", "Sit deep between the hips", "Maintain active shoulders throughout"],
+    "setup": "Hold the barbell locked out overhead with a wide snatch-style grip, feet shoulder-width apart.",
+    "commonMistakes": ["Bar drifting forward of the mid-foot", "Insufficient shoulder or ankle mobility limiting depth", "Losing overhead lockout under load"]
+  },
+  {
+    "id": "barbell-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep upper arms stationary and close to the head", "Lower bar behind the head", "Extend through the elbows only", "Avoid flaring elbows outward"],
+    "setup": "Stand or sit holding a barbell overhead with a narrow grip, arms fully extended.",
+    "commonMistakes": ["Letting elbows flare out wide", "Moving the shoulders instead of isolating the elbows", "Using excessive weight and losing control behind the head"]
+  },
+  {
+    "id": "barbell-pause-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Squat to depth and pause 1-3 seconds", "Maintain tension, don't relax at the bottom", "Keep torso angle consistent through the pause", "Drive up explosively after the pause"],
+    "setup": "Set up as in a standard back squat with the barbell on the upper back, feet shoulder-width apart.",
+    "commonMistakes": ["Relaxing and losing tightness during the pause", "Shifting weight forward while paused", "Bouncing out of the bottom instead of a controlled drive"]
+  },
+  {
+    "id": "barbell-pin-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": ["Set safety pins at desired depth", "Lower under control to touch the pins", "Pause without resting full weight", "Drive up from a dead stop"],
+    "setup": "Set rack safety pins at the target depth, position the barbell on the upper back inside a squat rack.",
+    "commonMistakes": ["Crashing the bar onto the pins", "Losing back tightness at the bottom", "Setting pins at inconsistent height between reps"]
+  },
+  {
+    "id": "barbell-preacher-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Rest upper arms flat on the preacher pad", "Curl without lifting elbows off the pad", "Extend fully at the bottom", "Control the eccentric"],
+    "setup": "Sit at a preacher bench with upper arms resting on the angled pad, gripping a barbell with an underhand grip.",
+    "commonMistakes": ["Lifting elbows off the pad", "Not fully extending at the bottom", "Using momentum to heave the weight up"]
+  },
+  {
+    "id": "barbell-pullover",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Keep a slight elbow bend throughout", "Lower bar back behind the head", "Feel a stretch through the lats", "Pull back over the chest using the lats"],
+    "setup": "Lie perpendicular on a bench with only the upper back supported, holding a barbell above the chest with arms extended.",
+    "commonMistakes": ["Bending the elbows too much, shifting to a triceps movement", "Lowering too far and straining the shoulders", "Losing hip support and sagging"]
+  },
+  {
+    "id": "barbell-push-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Dip slightly at the knees", "Drive explosively through the legs", "Press bar overhead using the leg drive momentum", "Lock out fully overhead"],
+    "setup": "Stand holding the barbell at shoulder height, feet shoulder-width apart, knees soft.",
+    "commonMistakes": ["Dipping too deep like a squat", "Pressing before the leg drive transfers upward", "Failing to lock out overhead"]
+  },
+  {
+    "id": "barbell-rack-pull",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": ["Set bar at knee height or above on pins", "Keep back flat, chest up", "Drive hips forward to lock out", "Keep the bar close to the shins/thighs"],
+    "setup": "Set the barbell on rack pins at a partial height, typically at or above the knee, and grip it with feet hip-width apart.",
+    "commonMistakes": ["Rounding the back at the start", "Letting the bar drift away from the body", "Hyperextending at lockout"]
+  },
+  {
+    "id": "barbell-reverse-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Grip bar with palms facing down", "Keep elbows pinned to sides", "Curl without swinging", "Lower under control"],
+    "setup": "Stand holding a barbell with an overhand (pronated) grip, arms extended, elbows close to the torso.",
+    "commonMistakes": ["Swinging the body for momentum", "Letting elbows drift forward", "Using too much weight and losing wrist position"]
+  },
+  {
+    "id": "barbell-reverse-lunge",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Step backward and lower straight down", "Keep front shin vertical", "Push through the front heel to return", "Keep torso upright"],
+    "setup": "Stand with the barbell on the upper back, feet hip-width apart.",
+    "commonMistakes": ["Taking too short a step back", "Letting the front knee cave inward", "Leaning the torso forward excessively"]
+  },
+  {
+    "id": "barbell-reverse-wrist-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Rest forearms on a bench or thighs", "Extend wrists upward against the bar", "Keep movement isolated to the wrist", "Lower under control"],
+    "setup": "Sit with forearms resting on the thighs or a bench, holding a barbell with an overhand grip, wrists just past the edge.",
+    "commonMistakes": ["Using the forearms/elbows to lift instead of wrists", "Using too much weight and limiting range of motion", "Rushing the eccentric phase"]
+  },
+  {
+    "id": "barbell-rollout",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Brace core before rolling out", "Keep back flat, avoid sagging hips", "Roll out only as far as control allows", "Pull back in using the core, not just the arms"],
+    "setup": "Kneel on the floor gripping a barbell loaded with small plates in front of the knees, core braced.",
+    "commonMistakes": ["Letting the lower back sag as the bar rolls out", "Rolling out too far past control", "Using the arms to pull back instead of the abs"]
+  },
+  {
+    "id": "barbell-seal-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Chest pinned to the bench throughout", "Pull bar to the lower ribs", "Squeeze shoulder blades together", "Avoid lifting the chest off the pad"],
+    "setup": "Lie face down on a raised bench with a barbell hanging below, gripping it with arms extended.",
+    "commonMistakes": ["Lifting the chest off the bench to cheat the rep", "Using a partial range of motion", "Yanking the bar instead of a controlled pull"]
+  },
+  {
+    "id": "barbell-seated-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Balls of feet on the platform edge", "Lower heels for a full stretch", "Press up onto the toes fully", "Pause briefly at the top"],
+    "setup": "Sit with a padded barbell or machine resting across the knees, balls of the feet on a raised platform.",
+    "commonMistakes": ["Using a partial range of motion", "Bouncing instead of controlling the stretch", "Letting knees shift instead of isolating the ankle"]
+  },
+  {
+    "id": "barbell-shrug",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Elevate shoulders straight up toward the ears", "Avoid rolling the shoulders", "Pause briefly at the top", "Lower under control"],
+    "setup": "Stand holding a barbell in front of the thighs with an overhand grip, arms straight.",
+    "commonMistakes": ["Rolling the shoulders instead of a vertical shrug", "Using the arms/elbows to assist the lift", "Using excessive weight and shortening range of motion"]
+  },
+  {
+    "id": "barbell-side-bend",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "beginner",
+    "formCues": ["Bend directly to the side, not forward", "Keep hips facing forward", "Return to upright with control", "Avoid twisting the torso"],
+    "setup": "Stand with the barbell resting on the upper back or shoulders as in a squat, feet shoulder-width apart.",
+    "commonMistakes": ["Twisting the torso instead of a pure lateral bend", "Using momentum to swing side to side", "Bending too far and straining the lower back"]
+  },
+  {
+    "id": "barbell-skull-crusher",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep upper arms perpendicular to the floor", "Lower bar toward the forehead/behind the head", "Extend through the elbows only", "Keep elbows stationary throughout"],
+    "setup": "Lie on a bench holding a barbell with a close overhand grip, arms extended straight above the chest.",
+    "commonMistakes": ["Letting elbows flare or drift backward", "Losing control of the bar near the head", "Moving the shoulders instead of isolating the elbows"]
+  },
+  {
+    "id": "barbell-split-squat",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Keep a long stable stance", "Lower straight down between the legs", "Keep front shin vertical", "Drive up through the front heel"],
+    "setup": "Stand in a staggered stance with the barbell on the upper back, front foot forward and rear foot back with heel raised.",
+    "commonMistakes": ["Stance too narrow, causing balance issues", "Letting the front knee cave inward", "Leaning the torso too far forward"]
+  },
+  {
+    "id": "barbell-squat-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Squat to a moderate depth", "Explode upward into a jump", "Land softly with bent knees", "Reset before the next rep"],
+    "setup": "Stand with a light barbell on the upper back, feet shoulder-width apart, ready to squat and jump explosively.",
+    "commonMistakes": ["Using too much load, limiting explosiveness", "Landing stiff-legged", "Losing bar control on landing"]
+  }
+]

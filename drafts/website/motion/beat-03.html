@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cadence — beat 03 preview</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#EFEDE6; --card:#FBFAF5; --ink:#101010; --grn:#1B7F4B; --rust:#AF4A28;
+  --dim:#8A8A83; --rule:#B5B1A3; --edge:#D6D2C5;
+  --ease:cubic-bezier(.2,0,0,1);
+}
+body{background:#26262A;font-family:Archivo,sans-serif;color:#C9C7C0}
+
+/* ---------- preview chrome ---------- */
+.note{max-width:76ch;margin:0 auto;padding:44px 24px 0}
+.note h1{font-size:24px;font-weight:600;letter-spacing:-.02em;color:#fff;margin-bottom:10px}
+.note p{font-size:14px;line-height:1.6;margin-bottom:8px}
+.note .k{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#8f8d86;letter-spacing:.08em}
+.runway{height:65vh;display:flex;align-items:center;justify-content:center}
+.runway span,.tail span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6d6b66;text-transform:uppercase}
+.tail{height:45vh;display:flex;align-items:center;justify-content:center}
+#replay{position:fixed;right:20px;bottom:20px;z-index:9;background:#1a1a1d;border:1px solid #4a4a4e;
+  color:#C9C7C0;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;
+  padding:9px 16px;cursor:pointer;text-transform:uppercase}
+#replay:hover{border-color:#8f8d86;color:#fff}
+
+/* ---------- the beat ---------- */
+.scroller{overflow-x:auto}
+.beat{min-width:1380px;background:var(--cream);color:var(--ink);
+  min-height:100vh;display:flex;align-items:center;padding:48px 44px}
+.inner{display:flex;align-items:center;gap:44px;width:100%;max-width:1560px;margin:0 auto}
+
+.copy{width:380px;flex:none;opacity:0;transform:translateY(12px);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+.copy.in{opacity:1;transform:none}
+.copy .bn{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--dim);letter-spacing:.14em;margin-bottom:16px}
+.copy h2{font-size:40px;font-weight:600;letter-spacing:-.03em;line-height:1.05;margin-bottom:18px}
+.copy p{font-size:17px;line-height:1.55;color:#3c3c38;max-width:34ch}
+
+.stagearea{flex:1;min-width:0}
+.main{display:flex;gap:22px;align-items:flex-start}
+.rail{width:172px;flex:none;transition:width .45s var(--ease),margin-right .45s var(--ease),
+  opacity .35s var(--ease),transform .45s var(--ease);overflow:hidden}
+.main.railgone .rail{width:0;margin-right:-22px;opacity:0;transform:translateX(-26px)}
+.rail .rh{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.2em;color:var(--dim);
+  text-transform:uppercase;padding-bottom:9px;border-bottom:2px solid var(--ink);margin-bottom:10px}
+.slot{height:46px;margin-bottom:8px}
+.rcard{position:relative;height:100%;background:var(--card);border:1px solid var(--edge);
+  padding:5px 8px 5px 12px;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+.rcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--ink)}
+.rcard.snackr::before{background:var(--rust)}
+.rcard .n{font-size:9px;font-weight:700;line-height:1.25;letter-spacing:0;text-transform:uppercase;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rcard .rk{display:flex;align-items:baseline;gap:8px;margin-top:3px}
+.rcard .rk b{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:700;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.rcard .rk span{font-family:'IBM Plex Mono',monospace;font-size:7.5px;color:var(--dim);white-space:nowrap}
+
+.boardwrap{flex:1;min-width:0}
+.shrink{transform-origin:top center;transition:transform .55s var(--ease),margin-bottom .55s var(--ease)}
+.mast{display:flex;justify-content:space-between;align-items:center}
+.mast h3{font-size:12px;font-weight:700;letter-spacing:.34em;text-transform:uppercase}
+.mast span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--dim)}
+.mast span b{color:var(--ink);font-weight:700}
+.rule2{border-bottom:2px solid var(--ink);margin:14px 0 0}
+.grid{display:grid;grid-template-columns:64px repeat(7,1fr)}
+.dh{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;padding:10px 6px 11px;
+  border-right:1px dotted var(--rule)}
+.dh b{display:block;font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:10px;color:var(--dim);letter-spacing:0;margin-top:2px}
+.lbl{border-right:1px dotted var(--rule);padding:0 10px 0 0;display:flex;align-items:flex-start;justify-content:flex-end;
+  font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);line-height:54px}
+.cell{position:relative;border-right:1px dotted var(--rule);padding:0 5px;display:flex;flex-direction:column;gap:6px}
+.grid>*:nth-child(8n){border-right:none}
+.gap{min-height:14px}
+.sp{height:9px;border-right:1px dotted var(--rule)}
+.sp:nth-child(8n){border-right:none}
+
+.ev{position:relative;height:54px;flex:none;background:var(--card);border:1px solid var(--edge);
+    padding:4px 6px 4px 10px;display:flex;flex-direction:column;overflow:hidden}
+.ev::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px}
+.ev.meal::before{background:var(--ink)}
+.ev.snack::before{background:var(--rust)}
+.ev.out::before{background:var(--grn)}
+.ev .n{font-size:8.5px;font-weight:700;line-height:1.2;letter-spacing:0;text-transform:uppercase;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  overflow-wrap:break-word;height:20px}
+.ev.snack .n{color:var(--rust)}
+.ev.out .n{color:var(--grn)}
+.ev .kc{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:700;letter-spacing:-.03em;margin-top:3px;line-height:1}
+.ev .mc{font-family:'IBM Plex Mono',monospace;font-size:8px;color:var(--dim);margin-top:2px;line-height:1;white-space:nowrap}
+
+.foot{margin-top:18px;border-top:5px solid var(--ink)}
+.tbl{display:grid;grid-template-columns:118px repeat(4,1fr);width:100%}
+.tbl>div{padding:7px 14px;border-right:1px dotted var(--rule);border-bottom:1px dotted var(--rule);
+  font-family:'IBM Plex Mono',monospace;font-size:14px;font-variant-numeric:tabular-nums;
+  text-align:right;letter-spacing:-.01em;line-height:1.2}
+.tbl>div:nth-child(5n){border-right:none}
+.tbl>div:nth-last-child(-n+5){border-bottom:none}
+.tbl>div.hd{font-family:Archivo,sans-serif;font-size:8.5px;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--dim);padding-top:11px;padding-bottom:8px}
+.tbl>div.rl{font-family:Archivo,sans-serif;font-size:9px;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;text-align:left;padding-left:0;color:var(--ink)}
+.tbl>div.rl.q{color:var(--dim)}
+.tbl .r-avg{font-weight:700;color:var(--ink)}
+.tbl .r-tgt{color:var(--dim)}
+.tbl .r-dif{font-weight:600}
+.tbl .r-dif.ok{color:var(--grn)}
+.tbl .r-dif.off{color:var(--rust)}
+
+/* ---------- the shopping list ---------- */
+.listpanel{margin-top:22px;opacity:0;transform:translateY(14px);
+  transition:opacity .45s var(--ease),transform .45s var(--ease)}
+.listpanel.in{opacity:1;transform:none}
+.lhead{display:flex;justify-content:space-between;align-items:center;
+  border-bottom:2px solid var(--ink);padding-bottom:9px}
+.lhead h4{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
+.lhead span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--dim)}
+.lrows{display:grid;grid-template-columns:1fr 1fr;column-gap:44px}
+.lrow{display:grid;grid-template-columns:24px 1fr auto;align-items:center;
+  padding:8px 0;border-bottom:1px dotted var(--rule);min-height:34px}
+.lrow .cb{display:block;width:11px;height:11px;border:1px solid var(--ink);
+  transition:background .2s var(--ease),border-color .2s var(--ease)}
+.lrow.done .cb{background:var(--grn);border-color:var(--grn)}
+.lrow .nm{font-size:12.5px;color:var(--ink)}
+.lrow .qt{font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--dim);
+  font-variant-numeric:tabular-nums;text-align:right}
+.lrow .have{display:none;font-family:'IBM Plex Mono',monospace;font-size:8px;font-weight:500;letter-spacing:.14em;
+  color:#55534B;border:1px solid var(--rule);padding:2px 6px;margin-left:10px;white-space:nowrap}
+.lrow>div{opacity:0;transition:opacity .25s var(--ease)}
+.lrow.landed>div{opacity:1}
+.lrow.pantry .nm{color:var(--dim);text-decoration:line-through;text-decoration-thickness:1px}
+.lrow.pantry .qt{text-decoration:line-through}
+.lrow.pantry .cb{border-color:var(--rule)}
+.lrow.pantry .have{display:inline}
+.lrow.pantry,.lrow.done{transition:opacity .3s var(--ease)}
+
+/* flying ingredient tokens */
+.token{position:fixed;z-index:6;background:var(--card);border:1px solid var(--edge);
+  font-family:'IBM Plex Mono',monospace;font-size:8px;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink);padding:4px 7px;white-space:nowrap;
+  transition:left .5s var(--ease),top .5s var(--ease),opacity .18s var(--ease)}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition-duration:0s !important;transition-delay:0s !important;animation:none !important}
+}
+</style></head><body>
+
+<div class="note">
+  <h1>Beat 03 — The plan becomes the list.</h1>
+  <p><span class="k">SEQUENCE&nbsp;</span> starts from the finished week → the library exits left and the board shrinks to the top of the stage → the list panel arrives → ingredient tokens lift out of the meal cards and coalesce into 12 specific lines → three grey out as already-in-your-pantry → the rest check off.</p>
+  <p><span class="k">QUIET DETAIL&nbsp;</span> Friday's night out emits nothing. A night out doesn't generate groceries; nobody says so.</p>
+  <p><span class="k">TRIGGER&nbsp;</span> fires once at 40% viewport, plays through, re-arms if you scroll fully out. Replay bottom right.</p>
+</div>
+<div class="runway"><span>scroll — beat arms on intersection</span></div>
+
+<div class="scroller">
+<section class="beat" id="beat">
+  <div class="inner">
+    <div class="copy" id="copy">
+      <div class="bn">03</div>
+      <h2>The plan becomes the list.</h2>
+      <p>Everything the week needs and nothing you already have, in the sizes your store actually sells.</p>
+    </div>
+    <div class="stagearea">
+      <div class="main" id="main">
+        <div class="rail" id="rail">
+          <div class="rh">Your food</div>
+          <div id="slots"></div>
+        </div>
+        <div class="boardwrap">
+          <div class="shrink" id="shrink">
+            <div class="mast"><h3>Cadence</h3><span>04–10 JUL 2026 · <b>FAT LOSS</b> · <b>HIGH PROTEIN</b></span></div>
+            <div class="rule2"></div>
+            <div class="grid" id="grid"></div>
+            <div class="foot"><div class="tbl" id="tbl"></div></div>
+          </div>
+          <div class="listpanel" id="listpanel">
+            <div class="lhead"><h4>Shopping list</h4><span>KROGER · 12 ITEMS</span></div>
+            <div class="lrows" id="lrows"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<div class="tail"><span>beat 04 continues here — logging is one tap, not twenty</span></div>
+<button id="replay">Replay</button>
+
+<script>
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- fixtures (beat 02 base state) ---------- */
+const DAYS=[['MON',4],['TUE',5],['WED',6],['THU',7],['FRI',8],['SAT',9],['SUN',10]];
+const ROWKEYS=['Breakfast','Morning','Lunch','Afternoon','Dinner','Evening'];
+const ROWS=[
+  {label:'Breakfast',meal:true},{label:'',meal:false},
+  {label:'Lunch',meal:true},{label:'',meal:false},
+  {label:'Dinner',meal:true},{label:'',meal:false}
+];
+const TGT={k:1900,p:150,c:185,f:62}, TOL={k:120,p:15,c:30,f:12};
+const MEALS=['Chicken shawarma bowl','Overnight oats','Salmon and rice','Turkey chili',
+  'Greek yogurt bowl','Steak and sweet potato','Eggs and sourdough','Chicken salad'];
+const P=[
+ {Breakfast:[['Greek yogurt bowl',420,35,44,12,'meal']],
+  Morning:[['Cold brew',120,2,18,4,'out']],
+  Lunch:[['Chicken shawarma bowl',620,48,58,20,'meal']],
+  Afternoon:[['Protein shake',180,30,12,3,'snack']],
+  Dinner:[['Salmon and rice',640,48,62,22,'meal']], Evening:[]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']],
+  Afternoon:[['Protein bar and apple',240,20,30,6,'snack']],
+  Dinner:[['Steak and sweet potato',690,55,55,26,'meal']], Evening:[]},
+ {Breakfast:[['Eggs and sourdough',450,28,40,18,'meal']],
+  Morning:[['Cold brew',120,2,18,4,'out']],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']], Afternoon:[],
+  Dinner:[['Chicken shawarma bowl',620,48,58,20,'meal']], Evening:[]},
+ {Breakfast:[['Greek yogurt bowl',420,35,44,12,'meal']], Morning:[],
+  Lunch:[['Turkey chili',560,46,48,18,'meal']], Afternoon:[],
+  Dinner:[['Salmon and rice',740,52,70,26,'meal']], Evening:[]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Chicken salad',480,44,24,24,'meal']], Afternoon:[],
+  Dinner:[['Dinner with Sam',1100,35,90,48,'out']], Evening:[]},
+ {Breakfast:[['Eggs and avocado toast',480,26,38,24,'meal']], Morning:[],
+  Lunch:[['Leftover chili',520,42,44,18,'meal']], Afternoon:[],
+  Dinner:[['Steak and sweet potato',700,55,56,26,'meal']],
+  Evening:[['Glass of wine',125,0,4,0,'out']]},
+ {Breakfast:[['Overnight oats',410,29,52,12,'meal']], Morning:[],
+  Lunch:[['Chicken shawarma bowl',620,48,58,20,'meal']],
+  Afternoon:[['Greek yogurt',230,26,18,4,'snack']],
+  Dinner:[['Salmon and rice',640,48,62,22,'meal']],
+  Evening:[['Kombucha',60,0,14,0,'out']]}
+];
+
+/* list lines: [name, qty, source card id, pantry] */
+const LIST=[
+ ['Boneless skinless chicken thighs','2.5 lb','v-0-2-0',false],
+ ['Ground turkey, 93/7','2 lb','v-1-2-0',false],
+ ['Kroger jasmine rice','32 oz','v-0-4-0',false],
+ ['Baby spinach','1 bag','v-4-2-0',false],
+ ['Greek yogurt, plain, 2%','32 oz','v-0-0-0',false],
+ ['Sweet potatoes','4','v-1-4-0',false],
+ ['Rolled oats','18 oz','v-1-0-0',true],
+ ['Eggs, large','18 ct','v-2-0-0',false],
+ ['Avocados','3','v-5-0-0',false],
+ ['Black beans, no salt added','2 cans','v-2-2-0',true],
+ ['Sourdough loaf','1','v-2-0-0',false],
+ ['Olive oil, extra virgin','500 ml','v-6-4-0',true]
+];
+
+/* ---------- build board (settled state) ---------- */
+function evHTML(m){return `<div class="n">${m[0]}</div><div class="kc">${m[1].toLocaleString()}</div><div class="mc">${m[2]}P&nbsp;&nbsp;${m[3]}C&nbsp;&nbsp;${m[4]}F</div>`;}
+const grid=document.getElementById('grid');
+let g=`<div class="dh"></div>`+DAYS.map(d=>`<div class="dh">${d[0]}<b>${String(d[1]).padStart(2,'0')} JUL</b></div>`).join('');
+ROWS.forEach((r,ri)=>{
+  g+=`<div class="lbl${r.meal?'':' gap'}">${r.label}</div>`;
+  P.forEach((day,di)=>{
+    const items=day[ROWKEYS[ri]]||[];
+    g+=`<div class="cell${r.meal?'':' gap'}" id="c-${di}-${ri}">`;
+    items.forEach((m,ii)=>{g+=`<div class="ev ${m[5]}" id="v-${di}-${ri}-${ii}">${evHTML(m)}</div>`});
+    g+=`</div>`;
+  });
+  if(ri<ROWS.length-1) g+=`<div class="sp"></div>`.repeat(8);
+});
+grid.innerHTML=g;
+
+const s={k:0,p:0,c:0,f:0};
+P.forEach(day=>ROWKEYS.forEach(rk=>(day[rk]||[]).forEach(m=>{s.k+=m[1];s.p+=m[2];s.c+=m[3];s.f+=m[4]})));
+const AVG={k:Math.round(s.k/7),p:Math.round(s.p/7),c:Math.round(s.c/7),f:Math.round(s.f/7)};
+const COLS=[['Calories','k',''],['Protein','p',' g'],['Carbs','c',' g'],['Fat','f',' g']];
+document.getElementById('tbl').innerHTML =
+  `<div class="hd"></div>`+COLS.map(c=>`<div class="hd">${c[0]}</div>`).join('')+
+  `<div class="rl">Daily average</div>`+COLS.map(c=>`<div class="r-avg">${AVG[c[1]].toLocaleString()}${c[2]}</div>`).join('')+
+  `<div class="rl q">Target</div>`+COLS.map(c=>`<div class="r-tgt">${TGT[c[1]].toLocaleString()}${c[2]}</div>`).join('')+
+  `<div class="rl q">Difference</div>`+COLS.map(c=>{const d=AVG[c[1]]-TGT[c[1]];
+    return `<div class="r-dif ${d>0?'off':'ok'}">${d>0?'+':'−'}${Math.abs(d)}${c[2]}</div>`}).join('');
+
+const RAILD=[
+ ['Chicken shawarma bowl',620,48,58,20],
+ ['Overnight oats',410,29,52,12],
+ ['Salmon and rice',640,48,62,22],
+ ['Turkey chili',560,46,48,18],
+ ['Greek yogurt bowl',420,35,44,12],
+ ['Steak and sweet potato',690,55,55,26],
+ ['Eggs and sourdough',450,28,40,18],
+ ['Chicken salad',480,44,24,24],
+ ['Protein bar and apple',240,20,30,6,true]
+];
+document.getElementById('slots').innerHTML = RAILD.map((r,i)=>
+  `<div class="slot"><div class="rcard${r[5]?' snackr':''}" data-name="${r[0]}" style="transition-delay:${i*0}ms"><div class="n">${r[0]}</div><div class="rk"><b>${r[1].toLocaleString()}</b><span>${r[2]}P&nbsp;&nbsp;${r[3]}C&nbsp;&nbsp;${r[4]}F</span></div></div></div>`).join('');
+
+/* ---------- list rows ---------- */
+document.getElementById('lrows').innerHTML = LIST.map((l,i)=>
+  `<div class="lrow" id="lr-${i}"><div><span class="cb"></span></div>
+   <div><span class="nm">${l[0]}</span><span class="have">ALREADY HAVE</span></div>
+   <div class="qt">${l[1]}</div></div>`).join('');
+
+/* ---------- sequence ---------- */
+const beat=document.getElementById('beat');
+let played=false, timers=[];
+function at(ms,fn){timers.push(setTimeout(fn,ms))}
+function tokenName(name){
+  /* short ingredient label for the flying token */
+  const t=name.split(',')[0];
+  return t.length>22?t.slice(0,22):t;
+}
+function flyToken(i){
+  const l=LIST[i];
+  const src=document.getElementById(l[2]);
+  const row=document.getElementById('lr-'+i);
+  const sR=src.getBoundingClientRect(), rR=row.getBoundingClientRect();
+  const tk=document.createElement('div');
+  tk.className='token';tk.textContent=tokenName(l[0]);
+  tk.style.left=(sR.left+sR.width*0.35)+'px';
+  tk.style.top=(sR.top+sR.height*0.4)+'px';
+  document.body.appendChild(tk);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    tk.style.left=(rR.left+26)+'px';
+    tk.style.top=(rR.top+rR.height/2-9)+'px';
+  }));
+  setTimeout(()=>{
+    tk.style.opacity=0;
+    row.classList.add('landed');
+    setTimeout(()=>tk.remove(),200);
+  },500);
+}
+function play(){
+  if(played) return; played=true;
+  const shrink=document.getElementById('shrink');
+  if(REDUCED){
+    document.getElementById('copy').classList.add('in');
+    document.getElementById('main').classList.add('railgone');
+    shrink.style.transform='scale(.74)';
+    shrink.style.marginBottom=(-shrink.offsetHeight*0.26)+'px';
+    document.getElementById('listpanel').classList.add('in');
+    LIST.forEach((l,i)=>{
+      const r=document.getElementById('lr-'+i);
+      r.classList.add('landed');
+      if(l[3]) r.classList.add('pantry'); else r.classList.add('done');
+    });
+    return;
+  }
+  at(0,()=>document.getElementById('copy').classList.add('in'));
+  /* library exits, board shrinks to the top */
+  at(700,()=>{
+    document.getElementById('main').classList.add('railgone');
+    const h=shrink.offsetHeight;
+    shrink.style.transform='scale(.74)';
+    shrink.style.marginBottom=(-h*0.26)+'px';
+  });
+  /* list panel arrives */
+  at(1350,()=>document.getElementById('listpanel').classList.add('in'));
+  /* tokens lift out of the meals and coalesce into lines */
+  LIST.forEach((l,i)=>at(1750+i*95,()=>flyToken(i)));
+  const tokensDone=1750+LIST.length*95+520;
+  /* pantry subtraction */
+  LIST.forEach((l,i)=>{ if(l[3]){
+    at(tokensDone+500+i*40,()=>document.getElementById('lr-'+i).classList.add('pantry'));
+  }});
+  /* checkoff run */
+  let n=0;
+  LIST.forEach((l,i)=>{ if(!l[3]){
+    at(tokensDone+1600+n*140,()=>document.getElementById('lr-'+i).classList.add('done'));
+    n++;
+  }});
+}
+function reset(){
+  timers.forEach(clearTimeout);timers=[];
+  played=false;
+  document.querySelectorAll('.token').forEach(el=>el.remove());
+  document.getElementById('copy').classList.remove('in');
+  document.getElementById('main').classList.remove('railgone');
+  const shrink=document.getElementById('shrink');
+  shrink.style.transform='';shrink.style.marginBottom='';
+  document.getElementById('listpanel').classList.remove('in');
+  document.querySelectorAll('.lrow').forEach(r=>r.classList.remove('landed','pantry','done'));
+}
+new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.intersectionRatio>=.4 && !played) play();
+  else if(e.intersectionRatio===0 && played) reset();
+}),{threshold:[0,.4]}).observe(beat);
+document.getElementById('replay').addEventListener('click',()=>{
+  reset();
+  beat.scrollIntoView({behavior:'instant',block:'center'});
+  setTimeout(play,180);
+});
+</script>
+</body></html>

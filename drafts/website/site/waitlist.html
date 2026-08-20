@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Join the waitlist — Cadence</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* shared site styles (inlined so each page is self-contained) */
+/* cadence — validation site, board aesthetic. Archivo + IBM Plex Mono, cream, radius 0. */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#EFEDE6; --card:#FBFAF5; --ink:#101010; --grn:#576860; --rust:#AF4A28;
+  --dim:#8A8A83; --rule:#B5B1A3; --edge:#D6D2C5;
+  --matte:#576860;
+  --ease:cubic-bezier(.2,0,0,1);
+  --navh:74px;
+}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:Archivo,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+a{color:inherit}
+
+/* ---------- nav: links left, name and logo centered, CTA right ---------- */
+.nav{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:1px solid var(--edge)}
+.nav--static{position:static}
+.nav-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:var(--navh);max-width:none;padding:0 22px}
+.nav-links{display:flex;gap:24px}
+.nav-link{font-size:16.5px;font-weight:600;letter-spacing:.02em;color:#3c3c38;text-decoration:none}
+.nav-link:hover{color:var(--ink)}
+.brand{display:flex;align-items:center;gap:10px;justify-self:center;text-decoration:none;color:var(--ink)}
+.brand svg{display:block}
+.brand span{font-size:18px;font-weight:700;letter-spacing:.34em;text-transform:uppercase}
+.nav-cta{justify-self:end}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block;background:var(--matte);color:var(--cream);border:0;cursor:pointer;
+  font-family:Archivo,sans-serif;font-size:14px;font-weight:600;letter-spacing:.04em;
+  padding:13px 24px;text-decoration:none;transition:background .15s var(--ease)}
+.btn:hover{background:#49584F}
+.btn--big{padding:21px 42px;font-size:19px}
+.btn--nav{padding:13px 23px;font-size:15.5px}
+.btn[disabled]{opacity:.55;cursor:default}
+.cta-note{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.06em;color:var(--dim);margin-top:14px}
+
+/* ---------- type helpers ---------- */
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--dim)}
+.lede{font-size:18.5px;line-height:1.6;color:#3c3c38}
+
+/* ---------- hero ---------- */
+.hero{padding:104px 0 96px;text-align:center}
+.hero h1{font-size:62px;font-weight:600;letter-spacing:-.035em;line-height:1.02;max-width:14ch;margin:0 auto}
+.hero .sub{font-size:18px;line-height:1.62;color:#3c3c38;max-width:54ch;margin:28px auto 36px}
+@media(max-width:760px){.hero h1{font-size:42px}}
+
+/* ---------- how-it-works kicker ---------- */
+.kicker{border-top:2px solid var(--ink);padding:26px 0 0;text-align:left}
+
+/* ---------- statement close ---------- */
+.statement{padding:130px 0 120px;text-align:center;border-top:2px solid var(--ink)}
+.statement h2{font-size:38px;font-weight:600;letter-spacing:-.03em;line-height:1.1;max-width:22ch;margin:0 auto}
+.statement .lede{max-width:58ch;margin:24px auto 40px}
+.statement .qlink{display:inline-block;margin-top:26px;font-family:'IBM Plex Mono',monospace;
+  font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);text-decoration:none}
+.statement .qlink:hover{color:var(--ink)}
+
+/* ---------- footer: one honest row ---------- */
+.footer{border-top:2px solid var(--ink)}
+.footer-inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px;
+  padding:24px 22px;max-width:none;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:var(--dim)}
+.footer .wm{font-family:Archivo,sans-serif;font-weight:700;letter-spacing:.3em;text-transform:uppercase;
+  font-size:12.5px;color:var(--ink)}
+.footer-inner>:first-child{justify-self:start}.footer-inner>:nth-child(2){justify-self:center}.footer-inner>:last-child{justify-self:end}
+.footer a{color:var(--dim);text-decoration:none}
+.footer a:hover{color:var(--ink)}
+
+/* ---------- page head (faq / waitlist / thanks) ---------- */
+.page-head{padding:88px 0 34px}
+.page-head h1{font-size:56px;font-weight:600;letter-spacing:-.03em}
+.page-head .lede{margin-top:16px;max-width:56ch}
+
+/* ---------- faq accordion ---------- */
+.faq-list{max-width:780px;margin:26px 0 0;border-top:2px solid var(--ink)}
+.faq-item{border-bottom:1px dotted var(--rule)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+  padding:21px 0;background:none;border:0;cursor:pointer;text-align:left;
+  font-family:Archivo,sans-serif;font-size:19px;font-weight:600;color:var(--ink)}
+.faq-toggle{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--dim);flex:none}
+.faq-panel{max-height:0;overflow:hidden;transition:max-height .4s var(--ease)}
+.faq-panel p{padding:0 0 24px;max-width:66ch}
+.ask{max-width:780px;margin:64px 0 100px}
+.ask h2{font-size:24px;font-weight:600;letter-spacing:-.02em;margin-bottom:14px}
+.sent-note{font-size:16.5px;color:var(--matte);font-weight:600}
+.err-note{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--rust);margin-left:14px}
+
+/* ---------- forms ---------- */
+.txt,textarea{background:var(--card);border:1px solid var(--edge);color:var(--ink);
+  font-family:Archivo,sans-serif;font-size:16.5px;padding:14px 15px;width:100%}
+.txt:focus,textarea:focus{outline:2px solid var(--ink);outline-offset:-1px}
+textarea{resize:vertical;line-height:1.5}
+.txt::placeholder,textarea::placeholder{color:var(--dim)}
+.blk{margin:40px 0;border:0}
+.blk>.eyebrow,.blk legend.eyebrow{display:block;margin-bottom:13px;
+  font-family:Archivo,sans-serif;font-size:16.5px;font-weight:600;letter-spacing:-.01em;
+  text-transform:none;color:var(--ink)}
+.opts{display:flex;flex-direction:column}
+.opt{display:flex;align-items:center;gap:11px;padding:7px 0;cursor:pointer;font-size:16.5px;color:#2c2c28}
+.vh{position:absolute;opacity:0;pointer-events:none}
+.box{width:13px;height:13px;border:1px solid var(--ink);flex:none;display:grid;place-items:center}
+.box i{width:7px;height:7px;background:var(--matte);display:none}
+.opt input:checked ~ .box i{display:block}
+.opt input:focus-visible ~ .box{outline:2px solid var(--ink);outline-offset:2px}
+.form-col{max-width:640px;padding-bottom:110px}
+.signup-email{max-width:420px}
+.form-sub{margin:30px 0 0;font-size:16.5px;color:var(--dim)}
+
+/* ---------- thanks ---------- */
+.thanks{padding:140px 0 160px}
+.thanks h1{font-size:56px;font-weight:600;letter-spacing:-.03em}
+.thanks .lede{margin-top:22px;max-width:54ch}
+.thanks a{color:var(--ink)}
+
+@media (prefers-reduced-motion: reduce){
+  *{transition-duration:0s !important;animation:none !important;scroll-behavior:auto}
+}
+
+</style>
+</head><body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <nav class="nav-links" aria-label="Site">
+      <a class="nav-link" href="index.html#how">How it works</a>
+      <a class="nav-link" href="faq.html">Questions</a>
+    </nav>
+    <a class="brand" href="index.html" aria-label="Cadence home">
+      <svg width="56" height="28" viewBox="0 0 120 60" fill="none" stroke="currentColor" stroke-width="6" aria-hidden="true">
+        <path d="M8 12 V48"/><path d="M38 12 V48"/><path d="M62 12 V48"/><path d="M80 12 V48"/><path d="M94 4 V56" stroke-width="8"/>
+      </svg>
+      <span>Cadence</span>
+    </a>
+    <div class="nav-cta"></div>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <h1>Join the waitlist.</h1>
+    <p class="lede">Early access opens through the waitlist. One short note a week until your invite lands.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap"><div class="form-col">
+    <form id="wform">
+      <div class="blk">
+        <label class="eyebrow" for="email">Email — the only required field</label>
+        <div class="signup-email"><input class="txt" id="email" type="email" required placeholder="Email address"></div>
+      </div>
+
+      <p class="form-sub">The rest is optional — four quick questions that decide what gets built first.</p>
+
+      <fieldset class="blk">
+        <legend class="eyebrow">What&rsquo;s the hardest part of eating the way you want?</legend>
+        <div class="opts" id="opts-pain"></div>
+      </fieldset>
+
+      <fieldset class="blk">
+        <legend class="eyebrow">What do you use for this today? Pick all that apply.</legend>
+        <div class="opts" id="opts-tools"></div>
+      </fieldset>
+
+      <fieldset class="blk">
+        <legend class="eyebrow">Which would you want alongside it? Pick up to two.</legend>
+        <div class="opts" id="opts-features"></div>
+      </fieldset>
+
+      <fieldset class="blk">
+        <legend class="eyebrow">If it worked as described, what&rsquo;s it worth monthly?</legend>
+        <div class="opts" id="opts-price"></div>
+      </fieldset>
+
+      <div class="blk">
+        <label class="eyebrow" for="wish">What made you stop using something you tried?</label>
+        <textarea id="wish" rows="4" placeholder="Anything — the app that didn't stick, the dealbreaker, the thing you wish existed."></textarea>
+      </div>
+
+      <div class="blk">
+        <button type="submit" class="btn btn--big" id="joinbtn">Join the waitlist</button>
+        <span class="err-note" id="joinerr" style="display:none">That didn&rsquo;t go through — check the email and try again.</span>
+      </div>
+    </form>
+  </div></div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span class="wm">Cadence</span>
+    <span>© 2026 Cadence Health</span>
+    <a href="mailto:hello@cadence.app">hello@cadence.app</a>
+  </div>
+</footer>
+
+<script>
+const PAINS=[
+ "Recipes scattered across apps and screenshots",
+ "Deciding what to eat each day",
+ "Finding time to plan and shop",
+ "One off-plan meal and the whole week feels blown",
+ "Getting bored of the same prep by Wednesday",
+ "Sticking to calories or macros",
+ "Buying food that goes to waste",
+ "Something else"];
+const TOOLS=[
+ "MyFitnessPal or similar tracker",
+ "A meal-planning app",
+ "Notes app or spreadsheet",
+ "Paper",
+ "A meal kit or delivery service",
+ "Nothing"];
+const FEATURES=[
+ "Wearable sync to tune daily calories",
+ "Workout planning that informs my diet",
+ "An AI coach that checks in and adjusts",
+ "Household or family sharing",
+ "None — just the food part"];
+const PRICES=[
+ "$0 — I'd only use it free",
+ "~$5 a month",
+ "~$10 a month",
+ "~$15+ a month"];
+const FEATURE_CAP=2;
+
+function fill(id,items,type,name){
+  document.getElementById(id).innerHTML=items.map(v=>
+    `<label class="opt"><input class="vh" type="${type}" ${type==='radio'?`name="${name}"`:''} value="${v.replace(/"/g,'&quot;')}"><span class="box"><i></i></span><span>${v}</span></label>`).join('');
+}
+fill('opts-pain',PAINS,'radio','pain');
+fill('opts-tools',TOOLS,'checkbox');
+fill('opts-features',FEATURES,'checkbox');
+fill('opts-price',PRICES,'radio','price');
+
+/* scarcity is the point: two picks force a ranking */
+document.getElementById('opts-features').addEventListener('change',()=>{
+  const boxes=[...document.querySelectorAll('#opts-features input')];
+  const n=boxes.filter(b=>b.checked).length;
+  boxes.forEach(b=>{if(!b.checked)b.disabled=n>=FEATURE_CAP;});
+});
+
+document.getElementById('wform').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const btn=document.getElementById('joinbtn'), err=document.getElementById('joinerr');
+  const email=document.getElementById('email').value.trim().toLowerCase();
+  if(!email)return;
+  btn.disabled=true;btn.textContent='Joining…';err.style.display='none';
+  const cta=new URLSearchParams(location.search).get('cta')||'waitlist-page';
+  const pick=(document.querySelector('#opts-pain input:checked')||{}).value||null;
+  const tools=[...document.querySelectorAll('#opts-tools input:checked')].map(b=>b.value);
+  const features=[...document.querySelectorAll('#opts-features input:checked')].map(b=>b.value);
+  const price=(document.querySelector('#opts-price input:checked')||{}).value||null;
+  const wish=document.getElementById('wish').value;
+  const answered=pick||tools.length||features.length||price||wish.trim();
+  const go=()=>{location.href='thanks.html'};
+  if(location.protocol==='file:'){setTimeout(go,400);return;}
+  try{
+    const res=await fetch('/api/waitlist',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email,cta})});
+    if(!res.ok)throw 0;
+    if(answered){
+      try{
+        await fetch('/api/waitlist/survey',{method:'POST',headers:{'Content-Type':'application/json'},
+          body:JSON.stringify({email,pick,tools,features,price,wish})});
+      }catch{}
+    }
+    go();
+  }catch{
+    btn.disabled=false;btn.textContent='Join the waitlist';err.style.display='inline';
+  }
+});
+</script>
+</body></html>

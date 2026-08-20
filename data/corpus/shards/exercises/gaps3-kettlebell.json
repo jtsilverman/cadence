@@ -1,0 +1,26 @@
+[
+  {
+    "id": "kettlebell-romanian-deadlift",
+    "name": "Kettlebell Romanian Deadlift (KB RDL)",
+    "aliases": ["KB RDL", "Kettlebell RDL", "Single Kettlebell Romanian Deadlift"],
+    "modality": "strength",
+    "equipment": ["kettlebell"],
+    "primaryMuscles": ["hamstrings", "glutes"],
+    "secondaryMuscles": ["lower-back", "forearms"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "double-kettlebell-front-squat",
+    "name": "Double Kettlebell Front Squat (Rack Squat)",
+    "aliases": ["Double KB Front Squat", "Kettlebell Rack Squat", "Double Kettlebell Rack Squat"],
+    "modality": "strength",
+    "equipment": ["kettlebell"],
+    "primaryMuscles": ["quads", "glutes"],
+    "secondaryMuscles": ["hamstrings", "abs", "front-delts"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  }
+]

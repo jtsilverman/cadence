@@ -1,0 +1,209 @@
+[
+  {
+    "id": "weighted-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Keep body in a straight line", "Load a plate or vest before setup", "Lower chest to just above floor", "Drive through palms to full lock-out"],
+    "setup": "Attach a weight vest or have a partner place a plate on your upper back, then set up in a standard high plank with hands under shoulders.",
+    "commonMistakes": ["Sagging hips under added load", "Flaring elbows too wide", "Partial range of motion"]
+  },
+  {
+    "id": "weighted-ring-dip",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "advanced",
+    "formCues": ["Attach weight via belt or vest", "Keep rings close to torso", "Lower until shoulders are below elbows", "Press up while controlling ring drift"],
+    "setup": "Hang a dip belt loaded with weight, grip the rings, and support yourself with arms extended and rings stabilized at your sides.",
+    "commonMistakes": ["Letting rings swing outward", "Excessive shoulder rounding", "Kipping the legs for momentum"]
+  },
+  {
+    "id": "weighted-russian-twist",
+    "mechanics": "isolation",
+    "movementPattern": "rotation",
+    "difficulty": "intermediate",
+    "formCues": ["Lean back to engage core", "Hold weight at chest height", "Rotate from the torso, not just arms", "Tap weight lightly beside hip each side"],
+    "setup": "Sit on the floor with knees bent and heels lightly touching the ground, holding a plate or dumbbell at chest level, torso leaned back at roughly 45 degrees.",
+    "commonMistakes": ["Rounding the lower back", "Using arm swing instead of torso rotation", "Feet stomping for momentum"]
+  },
+  {
+    "id": "weighted-sissy-squat",
+    "mechanics": "isolation",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": ["Hold weight against chest", "Rise onto toes as you descend", "Keep hips extended throughout", "Lower under control to full knee flexion"],
+    "setup": "Stand holding onto a stable support with one hand and a weight plate against your chest, feet hip-width apart and heels rising.",
+    "commonMistakes": ["Bending at the hips instead of the knees", "Losing balance without support", "Rushing the eccentric lowering"]
+  },
+  {
+    "id": "weighted-sit-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Hold plate at chest or overhead", "Curl spine up vertebra by vertebra", "Exhale on the way up", "Control the descent back down"],
+    "setup": "Lie on your back with knees bent, feet anchored or flat on the floor, holding a weight plate against your chest.",
+    "commonMistakes": ["Yanking the neck forward", "Using momentum instead of core control", "Feet popping up off the floor"]
+  },
+  {
+    "id": "weighted-triceps-dip",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Load weight via belt or lap plate", "Keep torso upright to bias triceps", "Lower until elbows reach about 90 degrees", "Press through palms to lockout"],
+    "setup": "Support yourself on parallel bars or a bench with added weight secured, arms extended and torso as vertical as possible.",
+    "commonMistakes": ["Leaning too far forward, shifting to chest", "Dropping too deep and straining shoulders", "Using leg swing for momentum"]
+  },
+  {
+    "id": "weighted-wall-sit",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": ["Slide back until thighs are parallel to floor", "Hold weight on lap or chest", "Keep knees tracking over ankles", "Press back flat against the wall"],
+    "setup": "Stand with back against a wall, slide down until knees are bent to about 90 degrees, and place a plate or dumbbell across your thighs.",
+    "commonMistakes": ["Knees caving inward", "Sliding too low or too high", "Holding breath instead of breathing steadily"]
+  },
+  {
+    "id": "wheel-pose",
+    "mechanics": "compound",
+    "movementPattern": "isometric",
+    "difficulty": "advanced",
+    "formCues": ["Place hands by ears, fingers toward shoulders", "Press through hands and feet evenly", "Straighten arms and lift hips high", "Keep knees tracking forward, not splayed"],
+    "setup": "Lie on your back with knees bent, feet flat near hips, and hands planted beside your head with fingers pointing toward your shoulders.",
+    "commonMistakes": ["Letting elbows flare outward", "Feet turning out excessively", "Collapsing through the lower back instead of lifting from hips"]
+  },
+  {
+    "id": "wide-grip-barbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": ["Grip bar wider than shoulder width", "Retract shoulder blades before unracking", "Lower bar to upper chest", "Press up in a slight arc"],
+    "setup": "Lie on a flat bench, grip the bar wide, and unrack it over the upper chest with feet planted firmly on the floor.",
+    "commonMistakes": ["Flaring elbows to 90 degrees", "Bouncing the bar off the chest", "Losing shoulder blade retraction mid-set"]
+  },
+  {
+    "id": "wide-grip-barbell-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": ["Grip bar wider than shoulder width", "Keep elbows pinned to sides", "Curl without swinging the torso", "Squeeze biceps at the top"],
+    "setup": "Stand holding a barbell with a wide overhand grip, arms extended and elbows close to your torso.",
+    "commonMistakes": ["Using body momentum to swing the weight", "Letting elbows drift forward", "Not fully extending at the bottom"]
+  },
+  {
+    "id": "wide-grip-pull-up",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": ["Grip bar well outside shoulder width", "Initiate pull by depressing shoulder blades", "Pull chin over the bar", "Lower under control to full arm extension"],
+    "setup": "Hang from a pull-up bar with a wide overhand grip, arms fully extended and core braced.",
+    "commonMistakes": ["Using kipping momentum", "Not reaching full extension at the bottom", "Shrugging shoulders instead of engaging lats"]
+  },
+  {
+    "id": "wide-grip-push-up",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": ["Place hands wider than shoulder width", "Keep body in a straight line", "Lower chest toward the floor", "Push back up through the palms"],
+    "setup": "Set up in a plank position with hands placed noticeably wider than shoulder-width, fingers pointing forward.",
+    "commonMistakes": ["Sagging hips", "Elbows flaring excessively", "Limiting range of motion"]
+  },
+  {
+    "id": "wide-legged-seated-forward-fold",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Sit with legs spread wide", "Hinge forward from the hips", "Keep spine long, not rounded", "Reach forward and hold the stretch"],
+    "setup": "Sit on the floor with legs extended wide apart and spine tall before hinging forward.",
+    "commonMistakes": ["Rounding the lower back to reach farther", "Bending the knees", "Forcing the stretch with bouncing"]
+  },
+  {
+    "id": "wide-stance-leg-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": ["Place feet wide near top of platform", "Toes turned slightly outward", "Lower until knees reach about 90 degrees", "Press through heels to extend"],
+    "setup": "Sit in the leg press machine with back flat against the pad and feet set wide on the platform.",
+    "commonMistakes": ["Letting knees cave inward", "Locking knees forcefully at the top", "Lifting hips off the seat pad"]
+  },
+  {
+    "id": "worlds-greatest-stretch",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": ["Step into a deep lunge", "Place opposite hand inside front foot", "Rotate torso and reach arm toward ceiling", "Keep back leg extended and active"],
+    "setup": "Start standing, step one foot forward into a deep lunge, and plant both hands on the floor inside the front foot.",
+    "commonMistakes": ["Letting front knee collapse inward", "Rushing the rotation without control", "Back knee dropping to the floor"]
+  },
+  {
+    "id": "wrist-circles",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Extend arms in front of body", "Rotate wrists in slow circles", "Keep motion controlled, not fast", "Reverse direction after several reps"],
+    "setup": "Stand or sit with arms extended forward and hands relaxed, ready to rotate at the wrist joint.",
+    "commonMistakes": ["Moving too fast to feel the joint", "Involving the elbow or shoulder", "Limiting the circle to a small range"]
+  },
+  {
+    "id": "wrist-extensor-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Extend arm in front, palm down", "Use other hand to press hand downward", "Keep elbow straight", "Hold stretch without bouncing"],
+    "setup": "Extend one arm forward with palm facing down, then use the opposite hand to gently flex the wrist downward.",
+    "commonMistakes": ["Bending the elbow to reduce stretch intensity", "Yanking instead of holding steady pressure", "Forcing beyond a comfortable range"]
+  },
+  {
+    "id": "wrist-flexor-stretch",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": ["Extend arm in front, palm up", "Use other hand to press fingers back", "Keep elbow straight", "Hold stretch without bouncing"],
+    "setup": "Extend one arm forward with palm facing up, then use the opposite hand to gently pull the fingers back toward the body.",
+    "commonMistakes": ["Bending the elbow to reduce stretch intensity", "Overextending into pain", "Rushing through the hold"]
+  },
+  {
+    "id": "wrist-roller",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hold roller with arms extended forward", "Rotate wrists to wind the rope up", "Keep elbows stationary", "Control the unwind on the way down"],
+    "setup": "Hold a wrist roller device with both hands, arms extended at shoulder height, weight hanging from the attached cord.",
+    "commonMistakes": ["Using shoulder movement instead of wrist rotation", "Letting the weight drop uncontrolled", "Gripping too loosely and losing tension"]
+  },
+  {
+    "id": "yates-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": ["Hinge forward at roughly 45 degrees", "Use an underhand grip", "Pull bar toward lower abdomen", "Squeeze back at the top before lowering"],
+    "setup": "Stand holding a barbell with an underhand grip, hinge forward to about a 45-degree torso angle with knees slightly bent.",
+    "commonMistakes": ["Standing too upright, losing tension", "Using excessive body English to heave the bar", "Rounding the lower back"]
+  },
+  {
+    "id": "yoke-walk",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": ["Brace core before lifting the yoke", "Keep chest up and spine neutral", "Take short controlled steps", "Set the yoke down with control at the finish"],
+    "setup": "Position yourself under a loaded yoke frame, stand up to lift it off the rack, and settle the weight across your upper back and shoulders.",
+    "commonMistakes": ["Leaning too far forward under the load", "Taking overly long, unstable strides", "Dropping the yoke instead of controlling the descent"]
+  },
+  {
+    "id": "zercher-carry-barbell",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "advanced",
+    "formCues": ["Cradle bar in the crooks of both elbows", "Keep torso upright and core braced", "Walk with short, controlled steps", "Avoid excessive lower back arch"],
+    "setup": "Clean a barbell into the crooks of your elbows, standing tall with the bar resting against your forearms and chest.",
+    "commonMistakes": ["Letting the bar slide down toward the wrists", "Rounding the upper back", "Overstriding and losing balance"]
+  },
+  {
+    "id": "zercher-carry-sandbag",
+    "mechanics": "compound",
+    "movementPattern": "carry",
+    "difficulty": "intermediate",
+    "formCues": ["Cradle sandbag in the crooks of both elbows", "Keep chest up and core tight", "Walk with short, deliberate steps", "Breathe steadily under load"],
+    "setup": "Lift a sandbag and hug it into the crooks of your elbows against your chest, standing tall before beginning to walk.",
+    "commonMistakes": ["Letting the bag sag away from the body", "Rounding the shoulders forward", "Rushing the walk and losing control"]
+  }
+]

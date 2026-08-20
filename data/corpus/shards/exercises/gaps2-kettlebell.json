@@ -1,0 +1,14 @@
+[
+  {
+    "id": "kettlebell-arm-bar",
+    "name": "Kettlebell Arm Bar",
+    "aliases": ["Arm Bar", "KB Arm Bar"],
+    "modality": "mobility",
+    "equipment": ["kettlebell"],
+    "primaryMuscles": ["front-delts", "obliques", "abs"],
+    "secondaryMuscles": ["triceps", "lats"],
+    "laterality": "unilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  }
+]

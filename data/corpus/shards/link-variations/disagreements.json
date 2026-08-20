@@ -1,0 +1,944 @@
+[
+ {
+  "id": "alternating-dumbbell-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "cable-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "cheat-barbell-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "barbell-curl",
+  "v2": null
+ },
+ {
+  "id": "dumbbell-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": null,
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "kettlebell-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "machine-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "overhead-cable-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": null,
+  "v2": "cable-rope-curl"
+ },
+ {
+  "id": "resistance-band-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "seated-dumbbell-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "single-arm-band-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": null,
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "single-arm-bayesian-cable-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "cable-rope-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "single-arm-cable-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "single-arm-dumbbell-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "single-arm-trx-bicep-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "trx-bicep-curl",
+  "cluster": "stem:bicep-curl|biceps",
+  "v1": "dumbbell-curl",
+  "v2": "barbell-curl"
+ },
+ {
+  "id": "clean-grip-high-pull",
+  "cluster": "stem:clean-lift",
+  "v1": null,
+  "v2": "clean-pull"
+ },
+ {
+  "id": "hang-muscle-snatch",
+  "cluster": "stem:snatch-lift",
+  "v1": null,
+  "v2": "muscle-snatch"
+ },
+ {
+  "id": "hang-power-snatch",
+  "cluster": "stem:snatch-lift",
+  "v1": null,
+  "v2": "power-snatch"
+ },
+ {
+  "id": "hang-single-arm-dumbbell-snatch",
+  "cluster": "stem:snatch-lift",
+  "v1": "hang-snatch",
+  "v2": "single-arm-dumbbell-snatch"
+ },
+ {
+  "id": "hang-snatch",
+  "cluster": "stem:snatch-lift",
+  "v1": null,
+  "v2": "snatch"
+ },
+ {
+  "id": "muscle-snatch",
+  "cluster": "stem:snatch-lift",
+  "v1": "hang-muscle-snatch",
+  "v2": null
+ },
+ {
+  "id": "single-arm-dumbbell-snatch",
+  "cluster": "stem:snatch-lift",
+  "v1": "snatch",
+  "v2": null
+ },
+ {
+  "id": "scapular-pull-up",
+  "cluster": "stem:pull-up",
+  "v1": "pull-up",
+  "v2": null
+ },
+ {
+  "id": "hindu-push-up",
+  "cluster": "stem:push-up",
+  "v1": null,
+  "v2": "push-up"
+ },
+ {
+  "id": "assisted-chest-dip-machine",
+  "cluster": "stem:dip",
+  "v1": "chest-dip",
+  "v2": "triceps-dip"
+ },
+ {
+  "id": "chest-dip",
+  "cluster": "stem:dip",
+  "v1": null,
+  "v2": "triceps-dip"
+ },
+ {
+  "id": "ring-dip",
+  "cluster": "stem:dip",
+  "v1": null,
+  "v2": "triceps-dip"
+ },
+ {
+  "id": "weighted-chest-dip",
+  "cluster": "stem:dip",
+  "v1": "chest-dip",
+  "v2": "triceps-dip"
+ },
+ {
+  "id": "weighted-ring-dip",
+  "cluster": "stem:dip",
+  "v1": "ring-dip",
+  "v2": "triceps-dip"
+ },
+ {
+  "id": "band-shoulder-press",
+  "cluster": "stem:overhead-press",
+  "v1": null,
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "barbell-sots-press",
+  "cluster": "stem:overhead-press",
+  "v1": "barbell-overhead-press",
+  "v2": null
+ },
+ {
+  "id": "cable-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": null,
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "double-kettlebell-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": "standing-dumbbell-overhead-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "double-kettlebell-sots-press",
+  "cluster": "stem:overhead-press",
+  "v1": "kettlebell-sots-press",
+  "v2": "barbell-sots-press"
+ },
+ {
+  "id": "dumbbell-arnold-press",
+  "cluster": "stem:overhead-press",
+  "v1": "standing-dumbbell-overhead-press",
+  "v2": null
+ },
+ {
+  "id": "dumbbell-cuban-press",
+  "cluster": "stem:overhead-press",
+  "v1": "standing-dumbbell-overhead-press",
+  "v2": null
+ },
+ {
+  "id": "kettlebell-sots-press",
+  "cluster": "stem:overhead-press",
+  "v1": null,
+  "v2": "barbell-sots-press"
+ },
+ {
+  "id": "machine-shoulder-press",
+  "cluster": "stem:overhead-press",
+  "v1": "cable-overhead-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "resistance-band-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": "band-shoulder-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "seated-dumbbell-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": "standing-dumbbell-overhead-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "single-arm-band-shoulder-press",
+  "cluster": "stem:overhead-press",
+  "v1": "band-shoulder-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "single-arm-dumbbell-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": "standing-dumbbell-overhead-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "single-arm-kettlebell-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": "standing-dumbbell-overhead-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "smith-machine-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": "cable-overhead-press",
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "standing-dumbbell-overhead-press",
+  "cluster": "stem:overhead-press",
+  "v1": null,
+  "v2": "barbell-overhead-press"
+ },
+ {
+  "id": "viking-press",
+  "cluster": "stem:overhead-press",
+  "v1": "barbell-push-press",
+  "v2": null
+ },
+ {
+  "id": "band-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": null
+ },
+ {
+  "id": "cable-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": null
+ },
+ {
+  "id": "close-grip-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "decline-cable-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "cable-chest-press"
+ },
+ {
+  "id": "decline-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "decline-machine-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "machine-chest-press"
+ },
+ {
+  "id": "double-kettlebell-floor-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "kettlebell-floor-press"
+ },
+ {
+  "id": "dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": null
+ },
+ {
+  "id": "dumbbell-floor-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "hammer-strength-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "machine-chest-press"
+ },
+ {
+  "id": "hammer-strength-incline-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "machine-chest-press"
+ },
+ {
+  "id": "incline-cable-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "cable-chest-press"
+ },
+ {
+  "id": "incline-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "incline-machine-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "machine-chest-press"
+ },
+ {
+  "id": "kettlebell-floor-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": null
+ },
+ {
+  "id": "machine-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": null
+ },
+ {
+  "id": "neutral-grip-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "neutral-grip-incline-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "single-arm-band-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "band-chest-press"
+ },
+ {
+  "id": "single-arm-cable-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "cable-chest-press"
+ },
+ {
+  "id": "single-arm-decline-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "single-arm-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "single-arm-dumbbell-floor-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "single-arm-incline-dumbbell-bench-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "dumbbell-bench-press"
+ },
+ {
+  "id": "single-arm-machine-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "machine-chest-press"
+ },
+ {
+  "id": "single-arm-trx-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": "trx-chest-press"
+ },
+ {
+  "id": "trx-chest-press",
+  "cluster": "stem:bench-press",
+  "v1": "barbell-bench-press",
+  "v2": null
+ },
+ {
+  "id": "band-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": "barbell-front-raise",
+  "v2": "dumbbell-front-raise"
+ },
+ {
+  "id": "barbell-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": null,
+  "v2": "dumbbell-front-raise"
+ },
+ {
+  "id": "cable-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": "barbell-front-raise",
+  "v2": "dumbbell-front-raise"
+ },
+ {
+  "id": "dumbbell-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": "barbell-front-raise",
+  "v2": null
+ },
+ {
+  "id": "machine-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": "barbell-front-raise",
+  "v2": "dumbbell-front-raise"
+ },
+ {
+  "id": "plate-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": "barbell-front-raise",
+  "v2": "dumbbell-front-raise"
+ },
+ {
+  "id": "single-arm-cable-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": "barbell-front-raise",
+  "v2": "dumbbell-front-raise"
+ },
+ {
+  "id": "single-arm-dumbbell-front-raise",
+  "cluster": "stem:front-raise",
+  "v1": "barbell-front-raise",
+  "v2": "dumbbell-front-raise"
+ },
+ {
+  "id": "single-arm-cross-body-cable-triceps-extension",
+  "cluster": "stem:tricep-extension",
+  "v1": "barbell-overhead-triceps-extension",
+  "v2": null
+ },
+ {
+  "cluster": "stem:squat|glutes,quads",
+  "ids": [
+   "band-resisted-squat",
+   "bodyweight-squat",
+   "double-kettlebell-front-squat",
+   "goblet-split-squat",
+   "trx-single-leg-squat",
+   "trx-squat"
+  ],
+  "reason": "vote(s) failed to parse"
+ },
+ {
+  "id": "barbell-hack-squat",
+  "cluster": "stem:squat|quads",
+  "v1": "barbell-back-squat",
+  "v2": null
+ },
+ {
+  "id": "hack-squat-machine",
+  "cluster": "stem:squat|quads",
+  "v1": "barbell-back-squat",
+  "v2": "barbell-hack-squat"
+ },
+ {
+  "id": "skater-squat",
+  "cluster": "stem:squat|quads",
+  "v1": "shrimp-squat",
+  "v2": null
+ },
+ {
+  "id": "smith-machine-hack-squat",
+  "cluster": "stem:squat|quads",
+  "v1": "barbell-back-squat",
+  "v2": "barbell-hack-squat"
+ },
+ {
+  "id": "spanish-squat",
+  "cluster": "stem:squat|quads",
+  "v1": "barbell-back-squat",
+  "v2": null
+ },
+ {
+  "id": "band-reverse-fly",
+  "cluster": "stem:rear-delt-raise",
+  "v1": "bent-over-dumbbell-rear-delt-raise",
+  "v2": null
+ },
+ {
+  "id": "cable-rear-delt-fly",
+  "cluster": "stem:rear-delt-raise",
+  "v1": "bent-over-dumbbell-rear-delt-raise",
+  "v2": null
+ },
+ {
+  "id": "cable-reverse-fly",
+  "cluster": "stem:rear-delt-raise",
+  "v1": "bent-over-dumbbell-rear-delt-raise",
+  "v2": "cable-rear-delt-fly"
+ },
+ {
+  "id": "machine-reverse-fly",
+  "cluster": "stem:rear-delt-raise",
+  "v1": "bent-over-dumbbell-rear-delt-raise",
+  "v2": null
+ },
+ {
+  "id": "plate-rear-delt-raise",
+  "cluster": "stem:rear-delt-raise",
+  "v1": "bent-over-dumbbell-rear-delt-raise",
+  "v2": null
+ },
+ {
+  "id": "single-arm-cable-rear-delt-fly",
+  "cluster": "stem:rear-delt-raise",
+  "v1": "bent-over-dumbbell-rear-delt-raise",
+  "v2": "cable-rear-delt-fly"
+ },
+ {
+  "id": "single-arm-cable-reverse-fly",
+  "cluster": "stem:rear-delt-raise",
+  "v1": "bent-over-dumbbell-rear-delt-raise",
+  "v2": "cable-rear-delt-fly"
+ },
+ {
+  "id": "barbell-seal-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": null,
+  "v2": "barbell-bent-over-row"
+ },
+ {
+  "id": "chest-supported-barbell-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": "barbell-seal-row",
+  "v2": "chest-supported-dumbbell-row"
+ },
+ {
+  "id": "chest-supported-dumbbell-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": "barbell-seal-row",
+  "v2": null
+ },
+ {
+  "id": "chest-supported-machine-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": "barbell-seal-row",
+  "v2": "chest-supported-dumbbell-row"
+ },
+ {
+  "id": "chest-supported-t-bar-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": "t-bar-row",
+  "v2": "chest-supported-dumbbell-row"
+ },
+ {
+  "id": "dumbbell-seal-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": "barbell-seal-row",
+  "v2": "barbell-bent-over-row"
+ },
+ {
+  "id": "meadows-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": "t-bar-row",
+  "v2": "barbell-bent-over-row"
+ },
+ {
+  "id": "two-arm-landmine-row",
+  "cluster": "stem:row|lats,rhomboids,traps",
+  "v1": "t-bar-row",
+  "v2": "barbell-bent-over-row"
+ },
+ {
+  "id": "bodyweight-donkey-calf-raise",
+  "cluster": "stem:calf-raise",
+  "v1": null,
+  "v2": "machine-donkey-calf-raise"
+ },
+ {
+  "id": "deficit-step-calf-raise",
+  "cluster": "stem:calf-raise",
+  "v1": null,
+  "v2": "bodyweight-standing-calf-raise"
+ },
+ {
+  "id": "eccentric-calf-raise-heel-drop",
+  "cluster": "stem:calf-raise",
+  "v1": "deficit-step-calf-raise",
+  "v2": "bodyweight-standing-calf-raise"
+ },
+ {
+  "id": "hack-squat-machine-calf-raise",
+  "cluster": "stem:calf-raise",
+  "v1": "leg-press-calf-raise",
+  "v2": "bodyweight-standing-calf-raise"
+ },
+ {
+  "id": "machine-donkey-calf-raise",
+  "cluster": "stem:calf-raise",
+  "v1": "bodyweight-donkey-calf-raise",
+  "v2": null
+ },
+ {
+  "id": "jefferson-deadlift",
+  "cluster": "stem:deadlift",
+  "v1": null,
+  "v2": "conventional-deadlift"
+ },
+ {
+  "id": "plank-up-down",
+  "cluster": "stem:plank",
+  "v1": "plank",
+  "v2": null
+ },
+ {
+  "id": "treadmill-backward-run",
+  "cluster": "stem:cardio-treadmill",
+  "v1": null,
+  "v2": "treadmill-run"
+ },
+ {
+  "id": "treadmill-backward-walk",
+  "cluster": "stem:cardio-treadmill",
+  "v1": "treadmill-backward-run",
+  "v2": "treadmill-run"
+ },
+ {
+  "id": "double-kettlebell-overhead-carry",
+  "cluster": "stem:loaded-carry",
+  "v1": "overhead-carry-barbell",
+  "v2": null
+ },
+ {
+  "id": "frame-carry",
+  "cluster": "stem:loaded-carry",
+  "v1": null,
+  "v2": "yoke-walk"
+ },
+ {
+  "id": "front-rack-carry-barbell",
+  "cluster": "stem:loaded-carry",
+  "v1": null,
+  "v2": "double-kettlebell-rack-carry"
+ },
+ {
+  "id": "front-rack-carry-dumbbell",
+  "cluster": "stem:loaded-carry",
+  "v1": "front-rack-carry-barbell",
+  "v2": "double-kettlebell-rack-carry"
+ },
+ {
+  "id": "front-rack-carry-kettlebell",
+  "cluster": "stem:loaded-carry",
+  "v1": "front-rack-carry-barbell",
+  "v2": "double-kettlebell-rack-carry"
+ },
+ {
+  "id": "front-rack-carry-sandbag",
+  "cluster": "stem:loaded-carry",
+  "v1": "front-rack-carry-barbell",
+  "v2": "double-kettlebell-rack-carry"
+ },
+ {
+  "id": "overhead-carry-barbell",
+  "cluster": "stem:loaded-carry",
+  "v1": null,
+  "v2": "double-kettlebell-overhead-carry"
+ },
+ {
+  "id": "overhead-carry-dumbbell",
+  "cluster": "stem:loaded-carry",
+  "v1": "overhead-carry-barbell",
+  "v2": "double-kettlebell-overhead-carry"
+ },
+ {
+  "id": "overhead-carry-kettlebell",
+  "cluster": "stem:loaded-carry",
+  "v1": "overhead-carry-barbell",
+  "v2": "double-kettlebell-overhead-carry"
+ },
+ {
+  "id": "single-arm-front-rack-carry-dumbbell",
+  "cluster": "stem:loaded-carry",
+  "v1": "front-rack-carry-barbell",
+  "v2": "double-kettlebell-rack-carry"
+ },
+ {
+  "id": "single-arm-front-rack-carry-kettlebell",
+  "cluster": "stem:loaded-carry",
+  "v1": "front-rack-carry-barbell",
+  "v2": "double-kettlebell-rack-carry"
+ },
+ {
+  "id": "single-arm-kettlebell-overhead-carry",
+  "cluster": "stem:loaded-carry",
+  "v1": "overhead-carry-barbell",
+  "v2": "double-kettlebell-overhead-carry"
+ },
+ {
+  "id": "broad-jump-to-vertical-jump",
+  "cluster": "cc:single-leg-pogo-hop",
+  "v1": "broad-jump",
+  "v2": null
+ },
+ {
+  "id": "depth-drop",
+  "cluster": "cc:single-leg-pogo-hop",
+  "v1": "depth-jump",
+  "v2": null
+ },
+ {
+  "id": "lateral-pogo-hop",
+  "cluster": "cc:single-leg-pogo-hop",
+  "v1": "lateral-hop",
+  "v2": "pogo-hop"
+ },
+ {
+  "id": "vertical-bounds",
+  "cluster": "cc:single-leg-pogo-hop",
+  "v1": "vertical-jump",
+  "v2": null
+ },
+ {
+  "id": "stability-ball-pike",
+  "cluster": "cc:tucked-human-flag|abs",
+  "v1": null,
+  "v2": "trx-pike"
+ },
+ {
+  "id": "trx-pike",
+  "cluster": "cc:tucked-human-flag|abs",
+  "v1": "stability-ball-pike",
+  "v2": null
+ },
+ {
+  "id": "upward-dog",
+  "cluster": "cc:tucked-human-flag|lower-back,pectorals",
+  "v1": null,
+  "v2": "cobra-pose"
+ },
+ {
+  "id": "wall-chest-stretch",
+  "cluster": "cc:tucked-human-flag|pectorals",
+  "v1": null,
+  "v2": "doorway-chest-stretch"
+ },
+ {
+  "id": "standing-hamstring-stretch",
+  "cluster": "cc:tucked-human-flag|hamstrings",
+  "v1": "seated-hamstring-stretch",
+  "v2": null
+ },
+ {
+  "id": "pike-press-to-handstand",
+  "cluster": "cc:tuck-press-to-handstand",
+  "v1": "tuck-press-to-handstand",
+  "v2": null
+ },
+ {
+  "id": "straddle-press-to-handstand",
+  "cluster": "cc:tuck-press-to-handstand",
+  "v1": "tuck-press-to-handstand",
+  "v2": "pike-press-to-handstand"
+ },
+ {
+  "id": "tuck-press-to-handstand",
+  "cluster": "cc:tuck-press-to-handstand",
+  "v1": null,
+  "v2": "pike-press-to-handstand"
+ },
+ {
+  "id": "band-external-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": "cable-external-rotation",
+  "v2": null
+ },
+ {
+  "id": "band-internal-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": "cable-internal-rotation",
+  "v2": null
+ },
+ {
+  "id": "cable-cuban-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": null,
+  "v2": "dumbbell-cuban-rotation"
+ },
+ {
+  "id": "cable-external-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": null,
+  "v2": "band-external-rotation"
+ },
+ {
+  "id": "cable-internal-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": null,
+  "v2": "band-internal-rotation"
+ },
+ {
+  "id": "dumbbell-cuban-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": "cable-cuban-rotation",
+  "v2": null
+ },
+ {
+  "id": "dumbbell-external-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": "cable-external-rotation",
+  "v2": "band-external-rotation"
+ },
+ {
+  "id": "dumbbell-internal-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": "cable-internal-rotation",
+  "v2": "band-internal-rotation"
+ },
+ {
+  "id": "machine-external-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": "cable-external-rotation",
+  "v2": "band-external-rotation"
+ },
+ {
+  "id": "machine-internal-rotation",
+  "cluster": "cc:standing-landmine-rotation",
+  "v1": "cable-internal-rotation",
+  "v2": "band-internal-rotation"
+ },
+ {
+  "id": "barbell-pullover",
+  "cluster": "cc:machine-pullover",
+  "v1": "dumbbell-pullover",
+  "v2": null
+ },
+ {
+  "id": "cable-pullover",
+  "cluster": "cc:machine-pullover",
+  "v1": "dumbbell-pullover",
+  "v2": "barbell-pullover"
+ },
+ {
+  "id": "dumbbell-pullover",
+  "cluster": "cc:machine-pullover",
+  "v1": null,
+  "v2": "barbell-pullover"
+ },
+ {
+  "id": "machine-pullover",
+  "cluster": "cc:machine-pullover",
+  "v1": "dumbbell-pullover",
+  "v2": "barbell-pullover"
+ },
+ {
+  "id": "bench-thoracic-extension",
+  "cluster": "cc:foam-roller-thoracic-extension",
+  "v1": null,
+  "v2": "foam-roller-thoracic-extension"
+ },
+ {
+  "id": "foam-roller-thoracic-extension",
+  "cluster": "cc:foam-roller-thoracic-extension",
+  "v1": "bench-thoracic-extension",
+  "v2": null
+ },
+ {
+  "id": "lateral-neck-stretch",
+  "cluster": "cc:standing-toe-touch-stretch",
+  "v1": null,
+  "v2": "neck-flexion-stretch"
+ },
+ {
+  "id": "neck-rotation-stretch",
+  "cluster": "cc:standing-toe-touch-stretch",
+  "v1": null,
+  "v2": "neck-flexion-stretch"
+ },
+ {
+  "id": "stair-running",
+  "cluster": "cc:trail-running",
+  "v1": "road-running",
+  "v2": null
+ },
+ {
+  "id": "trail-running",
+  "cluster": "cc:trail-running",
+  "v1": "road-running",
+  "v2": null
+ }
+]

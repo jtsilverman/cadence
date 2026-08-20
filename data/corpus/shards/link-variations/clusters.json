@@ -1,0 +1,1724 @@
+[
+ {
+  "key": "stem:bicep-curl|biceps",
+  "ids": [
+   "alternating-dumbbell-curl",
+   "barbell-curl",
+   "barbell-drag-curl",
+   "barbell-preacher-curl",
+   "cable-concentration-curl",
+   "cable-curl",
+   "cable-preacher-curl",
+   "cable-rope-curl",
+   "cable-rope-hammer-curl",
+   "cheat-barbell-curl",
+   "close-grip-barbell-curl",
+   "cross-body-hammer-curl",
+   "dumbbell-concentration-curl",
+   "dumbbell-curl",
+   "dumbbell-hammer-curl",
+   "dumbbell-preacher-curl",
+   "dumbbell-spider-curl",
+   "dumbbell-zottman-curl",
+   "ez-bar-curl",
+   "ez-bar-preacher-curl",
+   "ez-bar-spider-curl",
+   "high-cable-curl",
+   "incline-dumbbell-curl",
+   "incline-dumbbell-hammer-curl",
+   "kettlebell-curl",
+   "machine-curl",
+   "machine-preacher-curl",
+   "overhead-cable-curl",
+   "resistance-band-curl",
+   "resistance-band-hammer-curl",
+   "seated-dumbbell-curl",
+   "seated-dumbbell-hammer-curl",
+   "single-arm-band-curl",
+   "single-arm-bayesian-cable-curl",
+   "single-arm-cable-curl",
+   "single-arm-cable-rope-curl",
+   "single-arm-dumbbell-curl",
+   "single-arm-dumbbell-hammer-curl",
+   "single-arm-dumbbell-preacher-curl",
+   "single-arm-incline-dumbbell-curl",
+   "single-arm-trx-bicep-curl",
+   "trx-bicep-curl",
+   "wide-grip-barbell-curl"
+  ]
+ },
+ {
+  "key": "stem:clean-lift",
+  "ids": [
+   "alternating-kettlebell-clean",
+   "axle-clean-and-press",
+   "clean",
+   "clean-and-jerk",
+   "clean-and-press",
+   "clean-grip-high-pull",
+   "clean-pull",
+   "double-dumbbell-clean-and-press",
+   "double-kettlebell-clean",
+   "double-kettlebell-clean-and-jerk",
+   "double-kettlebell-clean-and-press",
+   "dumbbell-clean-and-jerk",
+   "hang-clean",
+   "hang-clean-pull",
+   "hang-muscle-clean",
+   "hang-power-clean",
+   "hang-single-arm-dumbbell-clean",
+   "kettlebell-bottoms-up-clean",
+   "kettlebell-clean",
+   "kettlebell-clean-and-jerk",
+   "kettlebell-clean-and-press",
+   "landmine-clean-and-press",
+   "landmine-single-arm-clean-and-press",
+   "log-clean-and-press",
+   "muscle-clean",
+   "power-clean",
+   "power-clean-and-jerk",
+   "sandbag-clean",
+   "single-arm-dumbbell-clean",
+   "single-arm-dumbbell-clean-and-press",
+   "single-arm-kettlebell-clean-and-press"
+  ]
+ },
+ {
+  "key": "stem:snatch-lift",
+  "ids": [
+   "alternating-kettlebell-snatch",
+   "double-kettlebell-snatch",
+   "hang-muscle-snatch",
+   "hang-power-snatch",
+   "hang-single-arm-dumbbell-snatch",
+   "hang-snatch",
+   "hang-snatch-pull",
+   "kettlebell-snatch",
+   "muscle-snatch",
+   "power-snatch",
+   "single-arm-dumbbell-snatch",
+   "snatch",
+   "snatch-balance",
+   "snatch-grip-high-pull",
+   "snatch-pull"
+  ]
+ },
+ {
+  "key": "stem:kb-swing",
+  "ids": [
+   "alternating-kettlebell-swing",
+   "dead-stop-kettlebell-swing",
+   "double-kettlebell-swing",
+   "front-to-back-leg-swing",
+   "lateral-leg-swing",
+   "single-arm-dead-stop-kettlebell-swing",
+   "single-arm-kettlebell-swing",
+   "two-arm-american-kettlebell-swing",
+   "two-arm-russian-kettlebell-swing"
+  ]
+ },
+ {
+  "key": "stem:cardio-elliptical",
+  "ids": [
+   "arc-trainer",
+   "elliptical",
+   "elliptical-reverse",
+   "precor-amt"
+  ]
+ },
+ {
+  "key": "stem:pull-up",
+  "ids": [
+   "archer-pull-up",
+   "assisted-chin-up-machine",
+   "assisted-pull-up-machine",
+   "band-assisted-pull-up",
+   "burpee-pull-up",
+   "chest-to-bar-pull-up",
+   "chin-up",
+   "clapping-pull-up",
+   "close-grip-pull-up",
+   "commando-pull-up",
+   "false-grip-hang",
+   "front-lever-pull-up",
+   "gironda-sternum-pull-up",
+   "human-flag-pull-up",
+   "l-sit-chin-up",
+   "l-sit-pull-up",
+   "neutral-grip-pull-up",
+   "one-arm-pull-up",
+   "pull-up",
+   "ring-pull-up",
+   "scapular-pull-up",
+   "towel-pull-up",
+   "typewriter-pull-up",
+   "weighted-chin-up",
+   "weighted-pull-up",
+   "wide-grip-pull-up"
+  ]
+ },
+ {
+  "key": "stem:push-up",
+  "ids": [
+   "archer-push-up",
+   "band-resisted-push-up",
+   "box-plyo-push-up",
+   "burpee-push-up",
+   "clap-push-up",
+   "close-grip-push-up",
+   "decline-diamond-push-up",
+   "decline-push-up",
+   "deficit-push-up",
+   "diamond-push-up",
+   "hindu-push-up",
+   "incline-diamond-push-up",
+   "incline-push-up",
+   "knee-diamond-push-up",
+   "knee-push-up",
+   "one-arm-push-up",
+   "pike-push-up",
+   "planche-push-up",
+   "plyo-push-up",
+   "push-up",
+   "push-up-plus",
+   "ring-push-up",
+   "suspension-push-up",
+   "t-push-up",
+   "trx-atomic-push-up",
+   "tuck-planche-push-up",
+   "typewriter-push-up",
+   "wall-push-up",
+   "weighted-diamond-push-up",
+   "weighted-push-up",
+   "wide-grip-push-up"
+  ]
+ },
+ {
+  "key": "stem:cardio-assault-bike",
+  "ids": [
+   "assault-bike",
+   "assault-bike-arms-only",
+   "assault-bike-legs-only"
+  ]
+ },
+ {
+  "key": "stem:dip",
+  "ids": [
+   "assisted-chest-dip-machine",
+   "band-assisted-triceps-dip",
+   "bench-dip",
+   "chest-dip",
+   "machine-triceps-dip",
+   "ring-dip",
+   "triceps-dip",
+   "weighted-bench-dip",
+   "weighted-chest-dip",
+   "weighted-ring-dip",
+   "weighted-triceps-dip"
+  ]
+ },
+ {
+  "key": "stem:overhead-press",
+  "ids": [
+   "axle-push-press",
+   "band-shoulder-press",
+   "barbell-behind-the-neck-press",
+   "barbell-overhead-press",
+   "barbell-push-press",
+   "barbell-sots-press",
+   "barbell-z-press",
+   "cable-overhead-press",
+   "double-kettlebell-overhead-press",
+   "double-kettlebell-push-press",
+   "double-kettlebell-sots-press",
+   "dumbbell-arnold-press",
+   "dumbbell-cuban-press",
+   "dumbbell-push-press",
+   "dumbbell-z-press",
+   "kettlebell-bent-press",
+   "kettlebell-push-press",
+   "kettlebell-sots-press",
+   "log-push-press",
+   "machine-shoulder-press",
+   "resistance-band-overhead-press",
+   "seated-barbell-overhead-press",
+   "seated-dumbbell-overhead-press",
+   "single-arm-band-shoulder-press",
+   "single-arm-dumbbell-overhead-press",
+   "single-arm-dumbbell-push-press",
+   "single-arm-kettlebell-overhead-press",
+   "single-arm-landmine-press",
+   "smith-machine-overhead-press",
+   "standing-dumbbell-overhead-press",
+   "two-arm-landmine-press",
+   "viking-press"
+  ]
+ },
+ {
+  "key": "stem:hip-thrust",
+  "ids": [
+   "b-stance-hip-thrust",
+   "banded-hip-thrust",
+   "barbell-hip-thrust",
+   "dumbbell-hip-thrust",
+   "machine-hip-thrust",
+   "single-leg-dumbbell-hip-thrust",
+   "single-leg-hip-thrust-bodyweight",
+   "smith-machine-hip-thrust"
+  ]
+ },
+ {
+  "key": "stem:back-extension",
+  "ids": [
+   "back-extension",
+   "forty-five-degree-back-extension",
+   "ghd-back-extension",
+   "glute-focused-back-extension",
+   "reverse-hyperextension",
+   "single-leg-back-extension",
+   "weighted-back-extension"
+  ]
+ },
+ {
+  "key": "stem:chest-fly",
+  "ids": [
+   "band-chest-fly",
+   "cable-fly",
+   "decline-dumbbell-fly",
+   "dumbbell-fly",
+   "high-to-low-cable-fly",
+   "incline-dumbbell-fly",
+   "low-to-high-cable-fly",
+   "pec-deck-fly",
+   "single-arm-cable-fly",
+   "single-arm-dumbbell-fly",
+   "single-arm-pec-deck-fly",
+   "trx-chest-fly"
+  ]
+ },
+ {
+  "key": "stem:bench-press",
+  "ids": [
+   "band-chest-press",
+   "barbell-bench-press",
+   "barbell-floor-press",
+   "board-press",
+   "cable-chest-press",
+   "close-grip-barbell-bench-press",
+   "close-grip-dumbbell-bench-press",
+   "close-grip-smith-machine-bench-press",
+   "decline-barbell-bench-press",
+   "decline-cable-chest-press",
+   "decline-dumbbell-bench-press",
+   "decline-machine-chest-press",
+   "double-kettlebell-floor-press",
+   "dumbbell-bench-press",
+   "dumbbell-floor-press",
+   "guillotine-press",
+   "hammer-strength-chest-press",
+   "hammer-strength-incline-chest-press",
+   "incline-barbell-bench-press",
+   "incline-cable-chest-press",
+   "incline-dumbbell-bench-press",
+   "incline-machine-chest-press",
+   "kettlebell-floor-press",
+   "larsen-press",
+   "machine-chest-press",
+   "neutral-grip-dumbbell-bench-press",
+   "neutral-grip-incline-dumbbell-bench-press",
+   "pin-press",
+   "reverse-grip-barbell-bench-press",
+   "single-arm-band-chest-press",
+   "single-arm-cable-chest-press",
+   "single-arm-decline-dumbbell-bench-press",
+   "single-arm-dumbbell-bench-press",
+   "single-arm-dumbbell-floor-press",
+   "single-arm-incline-dumbbell-bench-press",
+   "single-arm-machine-chest-press",
+   "single-arm-trx-chest-press",
+   "smith-machine-bench-press",
+   "smith-machine-close-grip-bench-press",
+   "smith-machine-decline-bench-press",
+   "smith-machine-incline-bench-press",
+   "spoto-press",
+   "svend-press",
+   "trx-chest-press",
+   "wide-grip-barbell-bench-press"
+  ]
+ },
+ {
+  "key": "stem:crunch",
+  "ids": [
+   "band-crunch",
+   "bicycle-crunch",
+   "bird-dog-crunch",
+   "cable-crunch",
+   "cross-body-crunch",
+   "crunch",
+   "decline-crunch",
+   "double-crunch",
+   "long-arm-crunch",
+   "machine-crunch",
+   "oblique-crunch",
+   "reverse-crunch",
+   "stability-ball-crunch",
+   "standing-cable-crunch",
+   "toe-touch-crunch",
+   "trx-oblique-crunch",
+   "vertical-leg-crunch",
+   "weighted-crunch"
+  ]
+ },
+ {
+  "key": "stem:front-raise",
+  "ids": [
+   "band-front-raise",
+   "barbell-front-raise",
+   "cable-front-raise",
+   "dumbbell-front-raise",
+   "machine-front-raise",
+   "plate-front-raise",
+   "single-arm-cable-front-raise",
+   "single-arm-dumbbell-front-raise"
+  ]
+ },
+ {
+  "key": "stem:lat-pulldown",
+  "ids": [
+   "band-lat-pulldown",
+   "band-straight-arm-pulldown",
+   "behind-the-neck-pulldown",
+   "close-grip-pulldown",
+   "lat-pulldown-wide-grip",
+   "neutral-grip-pulldown",
+   "reverse-grip-pulldown",
+   "rope-straight-arm-pulldown",
+   "single-arm-pulldown",
+   "single-arm-straight-arm-pulldown",
+   "straight-arm-pulldown",
+   "v-bar-pulldown"
+  ]
+ },
+ {
+  "key": "stem:lateral-raise",
+  "ids": [
+   "band-lateral-raise",
+   "cable-lateral-raise",
+   "dumbbell-lateral-raise",
+   "leaning-cable-lateral-raise",
+   "leaning-dumbbell-lateral-raise",
+   "lying-dumbbell-lateral-raise",
+   "machine-lateral-raise",
+   "plate-lateral-raise",
+   "seated-dumbbell-lateral-raise",
+   "single-arm-cable-lateral-raise",
+   "single-arm-dumbbell-lateral-raise"
+  ]
+ },
+ {
+  "key": "stem:tricep-extension",
+  "ids": [
+   "band-overhead-triceps-extension",
+   "barbell-overhead-triceps-extension",
+   "cable-overhead-triceps-extension",
+   "dumbbell-overhead-triceps-extension",
+   "ez-bar-overhead-triceps-extension",
+   "kettlebell-overhead-triceps-extension",
+   "machine-triceps-extension",
+   "single-arm-band-overhead-triceps-extension",
+   "single-arm-cable-overhead-triceps-extension",
+   "single-arm-cross-body-cable-triceps-extension",
+   "single-arm-dumbbell-overhead-triceps-extension",
+   "trx-tricep-extension"
+  ]
+ },
+ {
+  "key": "stem:squat|glutes,quads",
+  "ids": [
+   "band-resisted-squat",
+   "bodyweight-squat",
+   "double-kettlebell-front-squat",
+   "goblet-split-squat",
+   "trx-single-leg-squat",
+   "trx-squat"
+  ]
+ },
+ {
+  "key": "stem:squat|quads",
+  "ids": [
+   "barbell-back-squat",
+   "barbell-box-squat",
+   "barbell-bulgarian-split-squat",
+   "barbell-cyclist-squat",
+   "barbell-front-squat",
+   "barbell-front-squat-clean-grip",
+   "barbell-front-squat-cross-arm",
+   "barbell-hack-squat",
+   "barbell-low-bar-back-squat",
+   "barbell-overhead-squat",
+   "barbell-pause-squat",
+   "barbell-pin-squat",
+   "barbell-split-squat",
+   "barbell-zercher-squat",
+   "belt-squat",
+   "bodyweight-bulgarian-split-squat",
+   "bodyweight-cyclist-squat",
+   "bodyweight-pistol-squat",
+   "bodyweight-sissy-squat",
+   "bodyweight-split-squat",
+   "box-assisted-pistol-squat",
+   "dumbbell-bulgarian-split-squat",
+   "dumbbell-goblet-squat",
+   "dumbbell-split-squat",
+   "hack-squat-machine",
+   "kettlebell-goblet-squat",
+   "landmine-squat",
+   "pendulum-squat-machine",
+   "safety-squat-bar-squat",
+   "shrimp-squat",
+   "single-arm-dumbbell-overhead-squat",
+   "sissy-squat-machine",
+   "skater-squat",
+   "smith-machine-bulgarian-split-squat",
+   "smith-machine-hack-squat",
+   "smith-machine-squat",
+   "spanish-squat",
+   "weighted-pistol-squat",
+   "weighted-sissy-squat"
+  ]
+ },
+ {
+  "key": "stem:squat|hip-flexors",
+  "ids": [
+   "deep-squat-hold",
+   "weighted-deep-squat-hold"
+  ]
+ },
+ {
+  "key": "stem:squat|front-delts,glutes,quads",
+  "ids": [
+   "landmine-single-arm-squat-to-press",
+   "landmine-squat-to-press"
+  ]
+ },
+ {
+  "key": "stem:squat-jump",
+  "ids": [
+   "band-resisted-squat-jump",
+   "barbell-squat-jump",
+   "dumbbell-split-squat-jump",
+   "dumbbell-squat-jump",
+   "kettlebell-squat-jump",
+   "split-squat-jump",
+   "squat-jump",
+   "sumo-squat-jump"
+  ]
+ },
+ {
+  "key": "stem:rear-delt-raise",
+  "ids": [
+   "band-reverse-fly",
+   "bent-over-dumbbell-rear-delt-raise",
+   "bent-over-dumbbell-reverse-fly",
+   "cable-rear-delt-fly",
+   "cable-reverse-fly",
+   "incline-bench-reverse-fly",
+   "lying-rear-delt-raise",
+   "machine-reverse-fly",
+   "plate-rear-delt-raise",
+   "seated-dumbbell-rear-delt-raise",
+   "single-arm-cable-rear-delt-fly",
+   "single-arm-cable-reverse-fly",
+   "single-arm-dumbbell-rear-delt-raise"
+  ]
+ },
+ {
+  "key": "stem:row|lats,rhomboids",
+  "ids": [
+   "band-row",
+   "close-grip-seated-cable-row",
+   "double-kettlebell-row",
+   "kettlebell-gorilla-row",
+   "machine-low-row",
+   "single-arm-band-row",
+   "single-arm-chest-supported-dumbbell-row",
+   "single-arm-dumbbell-row",
+   "single-arm-inverted-row",
+   "single-arm-kettlebell-row",
+   "single-arm-landmine-row",
+   "single-arm-machine-row",
+   "single-arm-seated-cable-row",
+   "single-arm-standing-cable-row",
+   "single-arm-trx-row"
+  ]
+ },
+ {
+  "key": "stem:row|lats,rhomboids,traps",
+  "ids": [
+   "barbell-bent-over-row",
+   "barbell-seal-row",
+   "chest-supported-barbell-row",
+   "chest-supported-dumbbell-row",
+   "chest-supported-machine-row",
+   "chest-supported-t-bar-row",
+   "dumbbell-seal-row",
+   "feet-elevated-inverted-row",
+   "inverted-row",
+   "meadows-row",
+   "pendlay-row",
+   "ring-inverted-row",
+   "seated-cable-row",
+   "seated-machine-row",
+   "smith-machine-bent-over-row",
+   "standing-cable-row",
+   "t-bar-row",
+   "trx-row",
+   "two-arm-bent-over-dumbbell-row",
+   "two-arm-landmine-row"
+  ]
+ },
+ {
+  "key": "stem:row|abs,lats,rhomboids",
+  "ids": [
+   "dumbbell-renegade-row",
+   "kettlebell-renegade-row"
+  ]
+ },
+ {
+  "key": "stem:row|rear-delts,rhomboids,traps",
+  "ids": [
+   "high-cable-row",
+   "machine-high-row"
+  ]
+ },
+ {
+  "key": "stem:row|lats,traps",
+  "ids": [
+   "kroc-row",
+   "yates-row"
+  ]
+ },
+ {
+  "key": "stem:row|biceps,lats",
+  "ids": [
+   "underhand-barbell-row",
+   "underhand-seated-cable-row"
+  ]
+ },
+ {
+  "key": "stem:shrug",
+  "ids": [
+   "band-shrug",
+   "barbell-shrug",
+   "behind-the-back-barbell-shrug",
+   "cable-shrug",
+   "clean-jump-shrug",
+   "clean-shrug",
+   "dumbbell-shrug",
+   "incline-dumbbell-shrug",
+   "machine-shrug",
+   "smith-machine-shrug",
+   "snatch-jump-shrug",
+   "snatch-shrug",
+   "trap-bar-shrug"
+  ]
+ },
+ {
+  "key": "stem:calf-raise",
+  "ids": [
+   "band-standing-calf-raise",
+   "barbell-seated-calf-raise",
+   "barbell-standing-calf-raise",
+   "bodyweight-donkey-calf-raise",
+   "bodyweight-standing-calf-raise",
+   "cable-standing-calf-raise",
+   "deficit-step-calf-raise",
+   "dumbbell-seated-calf-raise",
+   "dumbbell-standing-calf-raise",
+   "eccentric-calf-raise-heel-drop",
+   "hack-squat-machine-calf-raise",
+   "kettlebell-standing-calf-raise",
+   "leg-press-calf-raise",
+   "machine-donkey-calf-raise",
+   "machine-seated-calf-raise",
+   "machine-standing-calf-raise",
+   "single-leg-bodyweight-standing-calf-raise",
+   "single-leg-dumbbell-standing-calf-raise",
+   "single-leg-leg-press-calf-raise",
+   "single-leg-seated-calf-raise-machine",
+   "single-leg-smith-machine-calf-raise",
+   "smith-machine-standing-calf-raise"
+  ]
+ },
+ {
+  "key": "stem:leg-curl",
+  "ids": [
+   "band-standing-leg-curl",
+   "banded-assisted-nordic-curl",
+   "cable-lying-leg-curl",
+   "lying-leg-curl",
+   "nordic-hamstring-curl",
+   "seated-leg-curl",
+   "single-leg-lying-leg-curl",
+   "single-leg-seated-leg-curl",
+   "single-leg-slider-leg-curl",
+   "single-leg-swiss-ball-leg-curl",
+   "single-leg-trx-hamstring-curl",
+   "slider-leg-curl",
+   "standing-leg-curl-machine",
+   "swiss-ball-leg-curl",
+   "trx-hamstring-curl"
+  ]
+ },
+ {
+  "key": "stem:tibialis-raise",
+  "ids": [
+   "band-tibialis-raise",
+   "bodyweight-tibialis-raise",
+   "machine-tibialis-raise",
+   "plate-tibialis-raise",
+   "single-leg-bodyweight-tibialis-raise"
+  ]
+ },
+ {
+  "key": "stem:upright-row",
+  "ids": [
+   "band-upright-row",
+   "barbell-upright-row",
+   "cable-upright-row",
+   "dumbbell-upright-row",
+   "ez-bar-upright-row",
+   "smith-machine-upright-row"
+  ]
+ },
+ {
+  "key": "stem:deadlift",
+  "ids": [
+   "banded-deadlift",
+   "barbell-stiff-leg-deadlift",
+   "bodyweight-single-leg-deadlift",
+   "clean-grip-deadlift",
+   "conventional-deadlift",
+   "deficit-deadlift",
+   "dumbbell-deadlift",
+   "dumbbell-romanian-deadlift",
+   "dumbbell-stiff-leg-deadlift",
+   "dumbbell-sumo-deadlift",
+   "jefferson-deadlift",
+   "kettlebell-deadlift",
+   "kettlebell-romanian-deadlift",
+   "kettlebell-suitcase-deadlift",
+   "kettlebell-sumo-deadlift",
+   "romanian-deadlift",
+   "single-leg-barbell-romanian-deadlift",
+   "single-leg-dumbbell-romanian-deadlift",
+   "single-leg-kettlebell-deadlift",
+   "smith-machine-deadlift",
+   "smith-machine-romanian-deadlift",
+   "snatch-grip-deadlift",
+   "sumo-deadlift",
+   "trap-bar-deadlift",
+   "trap-bar-deadlift-high-handle"
+  ]
+ },
+ {
+  "key": "stem:lunge",
+  "ids": [
+   "barbell-curtsy-lunge",
+   "barbell-forward-lunge",
+   "barbell-reverse-lunge",
+   "barbell-walking-lunge",
+   "bodyweight-curtsy-lunge",
+   "bodyweight-forward-lunge",
+   "bodyweight-lateral-lunge",
+   "bodyweight-reverse-lunge",
+   "bodyweight-walking-lunge",
+   "crescent-lunge",
+   "dumbbell-curtsy-lunge",
+   "dumbbell-forward-lunge",
+   "dumbbell-lateral-lunge",
+   "dumbbell-reverse-lunge",
+   "dumbbell-walking-lunge",
+   "goblet-lunge",
+   "goblet-reverse-lunge",
+   "kettlebell-lateral-lunge",
+   "landmine-reverse-lunge-to-press",
+   "low-lunge",
+   "plyo-lunge",
+   "reverse-plyo-lunge",
+   "trx-suspended-lunge",
+   "walking-lateral-lunge-stretch"
+  ]
+ },
+ {
+  "key": "stem:reverse-curl",
+  "ids": [
+   "barbell-reverse-curl",
+   "cable-reverse-curl",
+   "dumbbell-reverse-curl",
+   "ez-bar-reverse-curl"
+  ]
+ },
+ {
+  "key": "stem:wrist-curl",
+  "ids": [
+   "barbell-reverse-wrist-curl",
+   "barbell-wrist-curl",
+   "behind-the-back-barbell-wrist-curl",
+   "cable-wrist-curl",
+   "dumbbell-reverse-wrist-curl",
+   "dumbbell-wrist-curl",
+   "single-arm-dumbbell-reverse-wrist-curl",
+   "single-arm-dumbbell-wrist-curl"
+  ]
+ },
+ {
+  "key": "stem:thruster",
+  "ids": [
+   "barbell-thruster",
+   "double-kettlebell-thruster",
+   "dumbbell-thruster",
+   "kettlebell-thruster",
+   "single-arm-dumbbell-thruster",
+   "single-arm-kettlebell-thruster"
+  ]
+ },
+ {
+  "key": "stem:cardio-bike",
+  "ids": [
+   "bike-erg",
+   "dual-action-recumbent-bike",
+   "gravel-cycling",
+   "mountain-biking",
+   "recumbent-bike",
+   "road-cycling",
+   "spin-bike",
+   "upright-bike"
+  ]
+ },
+ {
+  "key": "stem:plank",
+  "ids": [
+   "body-saw-plank",
+   "copenhagen-plank",
+   "long-lever-plank",
+   "plank",
+   "plank-jack",
+   "plank-leg-lift",
+   "plank-shoulder-taps",
+   "plank-up-down",
+   "reverse-plank",
+   "rkc-plank",
+   "side-plank",
+   "side-plank-leg-lift",
+   "side-plank-rotation",
+   "suspension-plank",
+   "trx-side-plank",
+   "weighted-plank"
+  ]
+ },
+ {
+  "key": "stem:tricep-pushdown",
+  "ids": [
+   "cable-pushdown",
+   "cable-rope-pushdown",
+   "resistance-band-triceps-pushdown",
+   "reverse-grip-cable-pushdown",
+   "single-arm-cable-pushdown",
+   "single-arm-reverse-grip-cable-pushdown",
+   "v-bar-cable-pushdown"
+  ]
+ },
+ {
+  "key": "stem:wrist-extension",
+  "ids": [
+   "cable-wrist-extension",
+   "finger-extension"
+  ]
+ },
+ {
+  "key": "stem:leg-raise",
+  "ids": [
+   "captain-chair-knee-raise",
+   "captain-chair-leg-raise",
+   "hanging-knee-raise",
+   "hanging-leg-raise",
+   "hanging-oblique-knee-raise",
+   "lying-knee-raise",
+   "lying-leg-raise"
+  ]
+ },
+ {
+  "key": "stem:cardio-treadmill",
+  "ids": [
+   "curved-treadmill-run",
+   "curved-treadmill-sprints",
+   "curved-treadmill-walk",
+   "treadmill-backward-run",
+   "treadmill-backward-walk",
+   "treadmill-incline-run",
+   "treadmill-incline-walk",
+   "treadmill-run",
+   "treadmill-sprints",
+   "treadmill-walk"
+  ]
+ },
+ {
+  "key": "stem:handstand-push-up",
+  "ids": [
+   "deficit-handstand-push-up",
+   "freestanding-handstand-push-up",
+   "ring-handstand-push-up",
+   "wall-handstand-push-up"
+  ]
+ },
+ {
+  "key": "stem:loaded-carry",
+  "ids": [
+   "double-kettlebell-overhead-carry",
+   "double-kettlebell-rack-carry",
+   "dumbbell-farmer-walk-on-toes",
+   "farmer-carry-dumbbell",
+   "farmer-carry-handles",
+   "farmer-carry-kettlebell",
+   "farmer-carry-trap-bar",
+   "firemans-carry",
+   "frame-carry",
+   "front-rack-carry-barbell",
+   "front-rack-carry-dumbbell",
+   "front-rack-carry-kettlebell",
+   "front-rack-carry-sandbag",
+   "husafell-carry",
+   "keg-carry-bear-hug",
+   "keg-carry-shoulder",
+   "kettlebell-bottoms-up-carry",
+   "kettlebell-farmer-walk-on-toes",
+   "kettlebell-farmers-carry",
+   "log-carry",
+   "overhead-carry-barbell",
+   "overhead-carry-dumbbell",
+   "overhead-carry-kettlebell",
+   "sandbag-bear-hug-carry",
+   "sandbag-shoulder-carry",
+   "single-arm-front-rack-carry-dumbbell",
+   "single-arm-front-rack-carry-kettlebell",
+   "single-arm-kettlebell-farmers-carry",
+   "single-arm-kettlebell-overhead-carry",
+   "single-arm-kettlebell-rack-carry",
+   "suitcase-carry-dumbbell",
+   "suitcase-carry-kettlebell",
+   "waiter-carry-dumbbell",
+   "waiter-carry-kettlebell",
+   "waiter-carry-plate",
+   "yoke-walk",
+   "zercher-carry-barbell",
+   "zercher-carry-sandbag"
+  ]
+ },
+ {
+  "key": "stem:leg-press",
+  "ids": [
+   "high-foot-placement-leg-press",
+   "horizontal-leg-press",
+   "leg-press",
+   "low-foot-placement-leg-press",
+   "narrow-stance-leg-press",
+   "single-leg-press",
+   "vertical-leg-press",
+   "wide-stance-leg-press"
+  ]
+ },
+ {
+  "key": "stem:y-raise",
+  "ids": [
+   "incline-prone-y-raise",
+   "trx-t-raise",
+   "trx-w-raise",
+   "trx-y-raise"
+  ]
+ },
+ {
+  "key": "stem:russian-twist",
+  "ids": [
+   "landmine-rotational-twist",
+   "medicine-ball-russian-twist",
+   "russian-twist",
+   "seated-spinal-twist",
+   "standing-cable-twist",
+   "supine-spinal-twist",
+   "weighted-russian-twist"
+  ]
+ },
+ {
+  "key": "stem:cardio-stairmaster",
+  "ids": [
+   "lateral-stairmaster",
+   "mini-stepper",
+   "stairmill"
+  ]
+ },
+ {
+  "key": "stem:leg-extension",
+  "ids": [
+   "leg-extension",
+   "single-leg-extension",
+   "terminal-knee-extension"
+  ]
+ },
+ {
+  "key": "stem:jerk-lift",
+  "ids": [
+   "power-jerk",
+   "push-jerk",
+   "split-jerk"
+  ]
+ },
+ {
+  "key": "stem:cardio-ski-erg",
+  "ids": [
+   "single-arm-ski-erg",
+   "ski-erg"
+  ]
+ },
+ {
+  "key": "cc:single-leg-pogo-hop",
+  "ids": [
+   "180-degree-jump",
+   "basic-jump-rope",
+   "box-jump",
+   "box-jump-burpee",
+   "box-jump-over",
+   "broad-jump",
+   "broad-jump-to-vertical-jump",
+   "burpee",
+   "crossover-jump-rope",
+   "depth-drop",
+   "depth-jump",
+   "depth-jump-to-box",
+   "depth-jump-to-broad-jump",
+   "double-under-jump-rope",
+   "frog-jump",
+   "high-knee-jump-rope",
+   "hurdle-hop",
+   "lateral-bound",
+   "lateral-box-jump",
+   "lateral-hop",
+   "lateral-hurdle-hop",
+   "lateral-pogo-hop",
+   "over-the-bar-burpee",
+   "pogo-hop",
+   "repeated-broad-jumps",
+   "seated-box-jump",
+   "single-leg-box-jump",
+   "single-leg-broad-jump",
+   "single-leg-hurdle-hop",
+   "single-leg-lateral-hop",
+   "single-leg-pogo-hop",
+   "single-leg-vertical-hop",
+   "star-jump",
+   "tuck-jump",
+   "vertical-bounds",
+   "vertical-jump"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|abs",
+  "ids": [
+   "ab-wheel-rollout",
+   "barbell-rollout",
+   "bear-crawl-hold",
+   "dragon-flag",
+   "hollow-hold",
+   "ring-l-sit",
+   "stability-ball-pike",
+   "stability-ball-rollout",
+   "standing-ab-wheel-rollout",
+   "trx-pike",
+   "tuck-l-sit"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|lats,rear-delts",
+  "ids": [
+   "advanced-tuck-back-lever",
+   "back-lever",
+   "ring-back-lever",
+   "single-leg-back-lever",
+   "straddle-back-lever",
+   "tuck-back-lever"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|abs,lats",
+  "ids": [
+   "advanced-tuck-front-lever",
+   "front-lever",
+   "ring-front-lever",
+   "straddle-front-lever",
+   "tuck-front-lever"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|abs,front-delts",
+  "ids": [
+   "advanced-tuck-planche",
+   "crane-pose",
+   "elbow-lever",
+   "planche",
+   "planche-lean",
+   "straddle-planche",
+   "tuck-planche"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|calves",
+  "ids": [
+   "ankle-dorsiflexion-wall-stretch",
+   "foam-roll-calves",
+   "plantar-fascia-stretch",
+   "seated-calf-stretch-strap",
+   "soleus-stretch-bent-knee",
+   "standing-calf-stretch-wall"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|lower-back",
+  "ids": [
+   "bird-dog",
+   "foam-roll-lower-back",
+   "superman",
+   "superman-hold"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|abs,hip-flexors",
+  "ids": [
+   "boat-pose",
+   "crow-pose",
+   "firefly-pose",
+   "half-boat-pose",
+   "wind-relieving-pose"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|lats,lower-back",
+  "ids": [
+   "childs-pose",
+   "extended-puppy-pose"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|neck",
+  "ids": [
+   "chin-tuck",
+   "levator-scapulae-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|lower-back,pectorals",
+  "ids": [
+   "cobra-pose",
+   "fish-pose",
+   "sphinx-pose",
+   "upward-dog"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|glutes,quads",
+  "ids": [
+   "dancer-pose",
+   "garland-pose"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|pectorals",
+  "ids": [
+   "doorway-chest-stretch",
+   "wall-chest-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|abductors,glutes",
+  "ids": [
+   "eagle-pose",
+   "reclined-pigeon-pose",
+   "tree-pose"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|adductors,hip-flexors",
+  "ids": [
+   "easy-pose",
+   "frog-pose",
+   "lizard-pose",
+   "lotus-pose"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|glutes,hamstrings",
+  "ids": [
+   "extended-hand-to-big-toe-pose",
+   "single-leg-bridge-pose"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|adductors",
+  "ids": [
+   "foam-roll-adductors",
+   "frog-stretch",
+   "front-middle-splits-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|glutes",
+  "ids": [
+   "foam-roll-glutes",
+   "foam-roll-piriformis",
+   "reclined-figure-four-stretch",
+   "seated-figure-four-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|hamstrings",
+  "ids": [
+   "foam-roll-hamstrings",
+   "legs-up-the-wall-pose",
+   "seated-hamstring-stretch",
+   "seated-single-leg-hamstring-stretch",
+   "standing-hamstring-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|abductors",
+  "ids": [
+   "foam-roll-it-band",
+   "standing-it-band-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|lats",
+  "ids": [
+   "foam-roll-lats",
+   "kneeling-lat-stretch-box"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|quads",
+  "ids": [
+   "foam-roll-quads",
+   "hero-pose",
+   "kneeling-quad-stretch",
+   "standing-quad-stretch",
+   "wall-sit",
+   "weighted-wall-sit"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|front-delts,side-delts",
+  "ids": [
+   "forearm-stand",
+   "freestanding-handstand",
+   "handstand-shoulder-taps",
+   "one-arm-handstand-freestanding",
+   "ring-handstand",
+   "wall-handstand-back-to-wall",
+   "wall-handstand-chest-to-wall",
+   "wall-walk"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|hip-flexors",
+  "ids": [
+   "half-kneeling-hip-flexor-stretch",
+   "standing-hip-flexor-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|forearms",
+  "ids": [
+   "hand-gripper-crush",
+   "hand-gripper-hold",
+   "plate-pinch-hold",
+   "two-plate-pinch-hold",
+   "wrist-extensor-stretch",
+   "wrist-flexor-stretch"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|hamstrings,lower-back",
+  "ids": [
+   "head-to-knee-pose",
+   "plow-pose",
+   "seated-forward-fold"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|lats,obliques",
+  "ids": [
+   "human-flag",
+   "straddle-human-flag",
+   "tucked-human-flag"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|abs,lower-back",
+  "ids": [
+   "scorpion-pose",
+   "staff-pose"
+  ]
+ },
+ {
+  "key": "cc:tucked-human-flag|adductors,hamstrings",
+  "ids": [
+   "tortoise-pose",
+   "wide-legged-seated-forward-fold",
+   "wide-legged-standing-forward-fold"
+  ]
+ },
+ {
+  "key": "cc:wrist-circles",
+  "ids": [
+   "ankle-circles",
+   "battle-rope-circles",
+   "wrist-circles"
+  ]
+ },
+ {
+  "key": "cc:single-arm-arm-ergometer",
+  "ids": [
+   "arm-ergometer",
+   "single-arm-arm-ergometer"
+  ]
+ },
+ {
+  "key": "cc:medicine-ball-scoop-toss",
+  "ids": [
+   "atlas-stone-over-bar",
+   "atlas-stone-to-platform",
+   "atlas-stone-to-shoulder",
+   "keg-toss-over-bar",
+   "medicine-ball-scoop-toss",
+   "sandbag-over-bar-toss",
+   "sandbag-over-shoulder-toss"
+  ]
+ },
+ {
+  "key": "cc:tuck-press-to-handstand",
+  "ids": [
+   "axle-press-strict",
+   "barbell-jm-press",
+   "california-press",
+   "circus-dumbbell-press",
+   "double-kettlebell-press",
+   "dumbbell-tate-press",
+   "ez-bar-jm-press",
+   "half-kneeling-kettlebell-press",
+   "kettlebell-bottoms-up-press",
+   "log-press-strict",
+   "pike-press-to-handstand",
+   "seated-kettlebell-press",
+   "single-arm-kettlebell-press",
+   "smith-machine-jm-press",
+   "straddle-press-to-handstand",
+   "tuck-press-to-handstand"
+  ]
+ },
+ {
+  "key": "cc:open-water-swimming",
+  "ids": [
+   "backstroke-swimming",
+   "breaststroke-swimming",
+   "butterfly-swimming",
+   "freestyle-swimming",
+   "open-water-swimming"
+  ]
+ },
+ {
+  "key": "cc:forward-arm-circle",
+  "ids": [
+   "backward-arm-circle",
+   "forward-arm-circle"
+  ]
+ },
+ {
+  "key": "cc:skin-the-cat",
+  "ids": [
+   "band-assisted-bar-muscle-up",
+   "band-assisted-ring-muscle-up",
+   "bar-muscle-up",
+   "kipping-bar-muscle-up",
+   "kipping-ring-muscle-up",
+   "muscle-up",
+   "ring-muscle-up",
+   "ring-skin-the-cat",
+   "skin-the-cat",
+   "strict-bar-muscle-up",
+   "strict-ring-muscle-up"
+  ]
+ },
+ {
+  "key": "cc:german-hang",
+  "ids": [
+   "band-dead-bug",
+   "dead-hang",
+   "flexed-arm-hang",
+   "german-hang",
+   "single-arm-dead-hang",
+   "towel-dead-hang",
+   "weighted-dead-hang"
+  ]
+ },
+ {
+  "key": "cc:standing-landmine-rotation",
+  "ids": [
+   "band-external-rotation",
+   "band-internal-rotation",
+   "cable-cuban-rotation",
+   "cable-external-rotation",
+   "cable-internal-rotation",
+   "dumbbell-cuban-rotation",
+   "dumbbell-external-rotation",
+   "dumbbell-internal-rotation",
+   "half-kneeling-landmine-rotation",
+   "machine-external-rotation",
+   "machine-internal-rotation",
+   "open-book-thoracic-rotation",
+   "quadruped-thoracic-rotation",
+   "seated-thoracic-rotation",
+   "standing-landmine-rotation"
+  ]
+ },
+ {
+  "key": "cc:suspension-face-pull",
+  "ids": [
+   "band-face-pull",
+   "band-pull-apart",
+   "cable-face-pull",
+   "seated-sled-rope-pull",
+   "single-arm-kettlebell-high-pull",
+   "single-arm-sled-rope-pull",
+   "standing-sled-rope-pull",
+   "suspension-face-pull"
+  ]
+ },
+ {
+  "key": "cc:half-kneeling-cable-pallof-press",
+  "ids": [
+   "band-pallof-press",
+   "cable-pallof-press",
+   "half-kneeling-band-pallof-press",
+   "half-kneeling-cable-pallof-press"
+  ]
+ },
+ {
+  "key": "cc:frog-pump",
+  "ids": [
+   "banded-frog-pump",
+   "barbell-frog-pump",
+   "frog-pump"
+  ]
+ },
+ {
+  "key": "cc:weighted-glute-ham-raise",
+  "ids": [
+   "banded-glute-bridge",
+   "banded-glute-kickback",
+   "barbell-glute-bridge",
+   "bridge-pose",
+   "cable-glute-kickback",
+   "glute-bridge",
+   "glute-ham-raise",
+   "machine-glute-kickback",
+   "marching-glute-bridge",
+   "single-leg-glute-bridge",
+   "weighted-glute-ham-raise"
+  ]
+ },
+ {
+  "key": "cc:single-leg-dumbbell-good-morning",
+  "ids": [
+   "banded-good-morning",
+   "barbell-good-morning",
+   "goblet-good-morning",
+   "seated-good-morning",
+   "single-leg-dumbbell-good-morning"
+  ]
+ },
+ {
+  "key": "cc:trap-bar-rack-pull",
+  "ids": [
+   "banded-pull-through",
+   "barbell-rack-pull",
+   "cable-pull-through",
+   "double-kettlebell-high-pull",
+   "rack-pull",
+   "trap-bar-rack-pull"
+  ]
+ },
+ {
+  "key": "cc:side-lying-hip-adduction",
+  "ids": [
+   "banded-standing-hip-abduction",
+   "banded-standing-hip-adduction",
+   "barbell-side-bend",
+   "cable-side-bend",
+   "dumbbell-side-bend",
+   "machine-hip-abduction",
+   "machine-hip-adduction",
+   "side-lying-hip-abduction",
+   "side-lying-hip-adduction"
+  ]
+ },
+ {
+  "key": "cc:machine-pullover",
+  "ids": [
+   "barbell-pullover",
+   "cable-pullover",
+   "dumbbell-pullover",
+   "machine-pullover"
+  ]
+ },
+ {
+  "key": "cc:single-arm-dumbbell-skull-crusher",
+  "ids": [
+   "barbell-skull-crusher",
+   "cable-skull-crusher",
+   "dumbbell-skull-crusher",
+   "ez-bar-skull-crusher",
+   "incline-ez-bar-skull-crusher",
+   "single-arm-dumbbell-skull-crusher"
+  ]
+ },
+ {
+  "key": "cc:step-down",
+  "ids": [
+   "barbell-step-up",
+   "bodyweight-step-up",
+   "dumbbell-step-up",
+   "goblet-step-up",
+   "lateral-band-walk",
+   "lateral-step-up",
+   "step-down"
+  ]
+ },
+ {
+  "key": "cc:battle-rope-lateral-waves",
+  "ids": [
+   "battle-rope-alternating-waves",
+   "battle-rope-double-waves",
+   "battle-rope-in-out-waves",
+   "battle-rope-lateral-waves"
+  ]
+ },
+ {
+  "key": "cc:sled-forward-drag",
+  "ids": [
+   "bear-crawl",
+   "lateral-bear-crawl",
+   "lateral-sled-drag",
+   "single-arm-sled-drag",
+   "sled-backward-drag",
+   "sled-forward-drag"
+  ]
+ },
+ {
+  "key": "cc:foam-roller-thoracic-extension",
+  "ids": [
+   "bench-thoracic-extension",
+   "foam-roller-thoracic-extension"
+  ]
+ },
+ {
+  "key": "cc:standing-toe-touch-stretch",
+  "ids": [
+   "butterfly-stretch",
+   "cat-cow-pose",
+   "couch-stretch",
+   "downward-dog-calf-stretch",
+   "lateral-neck-stretch",
+   "lying-hamstring-stretch-strap",
+   "lying-quad-stretch-side",
+   "neck-flexion-stretch",
+   "neck-rotation-stretch",
+   "overhead-lat-stretch",
+   "overhead-triceps-stretch",
+   "pigeon-pose-stretch",
+   "scorpion-stretch",
+   "sleeper-stretch",
+   "standing-toe-touch-stretch"
+  ]
+ },
+ {
+  "key": "cc:dumbbell-wrist-pronation-supination",
+  "ids": [
+   "cable-pronation",
+   "cable-supination",
+   "dumbbell-wrist-pronation-supination"
+  ]
+ },
+ {
+  "key": "cc:resistance-band-triceps-kickback",
+  "ids": [
+   "cable-triceps-kickback",
+   "dumbbell-triceps-kickback",
+   "resistance-band-triceps-kickback"
+  ]
+ },
+ {
+  "key": "cc:cable-woodchopper-low-to-high",
+  "ids": [
+   "cable-woodchopper-high-to-low",
+   "cable-woodchopper-horizontal",
+   "cable-woodchopper-low-to-high"
+  ]
+ },
+ {
+  "key": "cc:goddess-pose",
+  "ids": [
+   "chair-pose",
+   "goddess-pose"
+  ]
+ },
+ {
+  "key": "cc:monster-walk",
+  "ids": [
+   "crab-walk",
+   "handstand-walk",
+   "monster-walk"
+  ]
+ },
+ {
+  "key": "cc:walking",
+  "ids": [
+   "cross-country-skiing",
+   "downhill-alpine-skiing",
+   "nordic-walking",
+   "speed-walking",
+   "walking"
+  ]
+ },
+ {
+  "key": "cc:weighted-dead-bug",
+  "ids": [
+   "dead-bug",
+   "weighted-dead-bug"
+  ]
+ },
+ {
+  "key": "cc:scissor-kicks",
+  "ids": [
+   "flutter-kicks",
+   "scissor-kicks"
+  ]
+ },
+ {
+  "key": "cc:revolved-triangle-pose",
+  "ids": [
+   "half-lord-of-the-fishes-pose",
+   "revolved-chair-pose",
+   "revolved-head-to-knee-pose",
+   "revolved-triangle-pose"
+  ]
+ },
+ {
+  "key": "cc:lying-windshield-wipers",
+  "ids": [
+   "hanging-windshield-wipers",
+   "lying-windshield-wipers"
+  ]
+ },
+ {
+  "key": "cc:toe-walks-bodyweight",
+  "ids": [
+   "heel-walks",
+   "toe-walks-bodyweight"
+  ]
+ },
+ {
+  "key": "cc:warrior-3",
+  "ids": [
+   "humble-warrior",
+   "reverse-warrior",
+   "warrior-3"
+  ]
+ },
+ {
+  "key": "cc:jumping-jack",
+  "ids": [
+   "jumping-bar-muscle-up",
+   "jumping-jack"
+  ]
+ },
+ {
+  "key": "cc:kettlebell-figure-8-to-hold",
+  "ids": [
+   "kettlebell-figure-8",
+   "kettlebell-figure-8-to-hold"
+  ]
+ },
+ {
+  "key": "cc:kneeling-kettlebell-halo",
+  "ids": [
+   "kettlebell-halo",
+   "kneeling-kettlebell-halo"
+  ]
+ },
+ {
+  "key": "cc:rope-climb",
+  "ids": [
+   "legless-rope-climb",
+   "rope-climb"
+  ]
+ },
+ {
+  "key": "cc:single-arm-medicine-ball-chest-pass",
+  "ids": [
+   "medicine-ball-chest-pass",
+   "single-arm-medicine-ball-chest-pass"
+  ]
+ },
+ {
+  "key": "cc:trx-mountain-climber",
+  "ids": [
+   "mountain-climber",
+   "trx-mountain-climber"
+  ]
+ },
+ {
+  "key": "cc:trail-running",
+  "ids": [
+   "road-running",
+   "stair-running",
+   "trail-running"
+  ]
+ },
+ {
+  "key": "cc:sled-push-low-handle",
+  "ids": [
+   "sled-push-high-handle",
+   "sled-push-low-handle"
+  ]
+ },
+ {
+  "key": "cc:toes-to-bar",
+  "ids": [
+   "strict-toes-to-bar",
+   "toes-to-bar"
+  ]
+ },
+ {
+  "key": "cc:warrior-2",
+  "ids": [
+   "warrior-1",
+   "warrior-2"
+  ]
+ },
+ {
+  "key": "cc:wrist-ulnar-deviation",
+  "ids": [
+   "wrist-radial-deviation",
+   "wrist-roller",
+   "wrist-ulnar-deviation"
+  ]
+ }
+]

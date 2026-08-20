@@ -1,0 +1,26 @@
+[
+  {
+    "id": "finger-curl",
+    "name": "Finger Curl (Barbell/Dumbbell)",
+    "aliases": ["barbell finger curl", "dumbbell finger curl", "fingertip curl"],
+    "modality": "strength",
+    "equipment": ["barbell", "dumbbell"],
+    "primaryMuscles": ["forearms"],
+    "secondaryMuscles": [],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "finger-extension",
+    "name": "Finger Extension (Band/Dumbbell)",
+    "aliases": ["band finger extension", "dumbbell finger extension", "finger extensor exercise", "rice bucket finger extension"],
+    "modality": "strength",
+    "equipment": ["resistance-band", "dumbbell"],
+    "primaryMuscles": ["forearms"],
+    "secondaryMuscles": [],
+    "laterality": "bilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  }
+]

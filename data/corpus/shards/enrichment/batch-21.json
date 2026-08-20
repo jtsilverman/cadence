@@ -1,0 +1,722 @@
+[
+  {
+    "id": "single-leg-box-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": [
+      "Swing arms to drive up",
+      "Land softly on the same leg",
+      "Keep knee tracking over toes",
+      "Brace core before takeoff"
+    ],
+    "setup": "Stand on one leg facing a sturdy plyo box a comfortable jump distance away.",
+    "commonMistakes": [
+      "Landing with a stiff knee",
+      "Using the trail leg to assist takeoff",
+      "Box too high for control"
+    ]
+  },
+  {
+    "id": "single-leg-bridge-pose",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Squeeze glute at the top",
+      "Keep hips level",
+      "Press through the planted heel",
+      "Keep extended leg in line with torso"
+    ],
+    "setup": "Lie supine with one foot flat on the floor, knee bent, and the other leg extended straight up.",
+    "commonMistakes": [
+      "Letting hips dip on the extended-leg side",
+      "Overarching the lower back",
+      "Pushing through the toes instead of the heel"
+    ]
+  },
+  {
+    "id": "single-leg-broad-jump",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": [
+      "Load the hip before jumping",
+      "Swing arms forward explosively",
+      "Land balanced on the same foot",
+      "Absorb landing through hip and knee"
+    ],
+    "setup": "Stand on one leg with a slight knee bend, arms back, ready to jump forward for distance.",
+    "commonMistakes": [
+      "Jumping before fully loading the hip",
+      "Landing off-balance",
+      "Switching feet mid-air"
+    ]
+  },
+  {
+    "id": "single-leg-dumbbell-good-morning",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Hinge at the hip, not the waist",
+      "Keep back flat",
+      "Extend free leg behind for counterbalance",
+      "Keep slight bend in standing knee"
+    ],
+    "setup": "Stand on one leg holding a dumbbell across the chest or at the shoulders.",
+    "commonMistakes": [
+      "Rounding the lower back",
+      "Losing balance and touching down early",
+      "Hinging from the knees instead of hips"
+    ]
+  },
+  {
+    "id": "single-leg-dumbbell-hip-thrust",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Drive through the planted heel",
+      "Squeeze glute hard at lockout",
+      "Keep ribs down",
+      "Extend other leg straight"
+    ],
+    "setup": "Sit with upper back against a bench, dumbbell on the hip crease, one foot planted and the other leg extended.",
+    "commonMistakes": [
+      "Hyperextending the lower back at the top",
+      "Letting hips rotate open",
+      "Pushing through the toes"
+    ]
+  },
+  {
+    "id": "single-leg-dumbbell-romanian-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Hinge hips back as torso lowers",
+      "Keep dumbbell close to shin",
+      "Keep back flat throughout",
+      "Extend rear leg for balance"
+    ],
+    "setup": "Stand on one leg holding a dumbbell in the opposite hand, slight bend in the standing knee.",
+    "commonMistakes": [
+      "Rounding the spine",
+      "Twisting the hips open",
+      "Bending the standing knee too much, turning it into a squat"
+    ]
+  },
+  {
+    "id": "single-leg-dumbbell-standing-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Rise fully onto the ball of the foot",
+      "Pause briefly at the top",
+      "Lower under control past neutral",
+      "Keep knee soft, not locked"
+    ],
+    "setup": "Stand on one foot on a raised platform holding a dumbbell, heel free to drop below the edge.",
+    "commonMistakes": [
+      "Bouncing instead of controlling the descent",
+      "Using momentum from the hip",
+      "Cutting the range of motion short"
+    ]
+  },
+  {
+    "id": "single-leg-extension",
+    "mechanics": "isolation",
+    "movementPattern": "squat",
+    "difficulty": "beginner",
+    "formCues": [
+      "Extend knee fully without locking hard",
+      "Keep back against the pad",
+      "Control the eccentric",
+      "Avoid hip rising off seat"
+    ],
+    "setup": "Sit on a leg extension machine with the pad against one shin, hands gripping the side handles.",
+    "commonMistakes": [
+      "Swinging the weight with momentum",
+      "Not controlling the lowering phase",
+      "Hyperextending the knee at the top"
+    ]
+  },
+  {
+    "id": "single-leg-front-lever",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep body horizontal and rigid",
+      "Pull shoulder blades down and back",
+      "Extend one leg while tucking the other",
+      "Engage lats throughout"
+    ],
+    "setup": "Hang from a bar with an overhand grip, then pull the body to horizontal with one leg extended.",
+    "commonMistakes": [
+      "Sagging hips below shoulder line",
+      "Losing scapular engagement",
+      "Rushing into the hold without a progression"
+    ]
+  },
+  {
+    "id": "single-leg-glute-bridge",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Drive through the planted heel",
+      "Squeeze glute at the top",
+      "Keep hips square",
+      "Lower with control"
+    ],
+    "setup": "Lie supine with one knee bent and foot flat, the other leg extended straight.",
+    "commonMistakes": [
+      "Letting the hips tilt toward the extended leg",
+      "Arching the lower back excessively",
+      "Using the extended leg to push off"
+    ]
+  },
+  {
+    "id": "single-leg-hip-thrust-bodyweight",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Plant foot close to hips",
+      "Drive up through the heel",
+      "Squeeze glute hard at the top",
+      "Keep chin tucked"
+    ],
+    "setup": "Lie with upper back on a bench, one foot planted flat, the other leg extended straight out.",
+    "commonMistakes": [
+      "Overextending the lower back at lockout",
+      "Letting hips rotate off-square",
+      "Not reaching full hip extension"
+    ]
+  },
+  {
+    "id": "single-leg-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Stay light on the ball of the foot",
+      "Keep hops small and quick",
+      "Maintain a slight forward lean",
+      "Use arms for rhythm"
+    ],
+    "setup": "Stand balanced on one leg with a slight knee bend, ready to hop in place.",
+    "commonMistakes": [
+      "Landing flat-footed with a stiff ankle",
+      "Losing balance between hops",
+      "Overstriding instead of staying compact"
+    ]
+  },
+  {
+    "id": "single-leg-hop-for-distance",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": [
+      "Load hip and knee before pushing off",
+      "Drive arms forward for momentum",
+      "Land softly and stick the landing",
+      "Absorb through hip, knee, and ankle"
+    ],
+    "setup": "Stand on one leg, hip and knee slightly flexed, aiming to hop forward as far as possible.",
+    "commonMistakes": [
+      "Landing stiff-legged",
+      "Failing to stick the landing without a hop",
+      "Rushing the takeoff without loading"
+    ]
+  },
+  {
+    "id": "single-leg-hurdle-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "advanced",
+    "formCues": [
+      "Drive knee up over each hurdle",
+      "Minimize ground contact time",
+      "Keep torso upright",
+      "Land and immediately reload"
+    ],
+    "setup": "Stand on one leg facing a series of low hurdles spaced for consecutive hops.",
+    "commonMistakes": [
+      "Clipping hurdles from insufficient knee drive",
+      "Excessive ground contact time",
+      "Leaning too far forward"
+    ]
+  },
+  {
+    "id": "single-leg-kettlebell-deadlift",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hinge hips back, chest proud",
+      "Keep kettlebell close to the shin",
+      "Extend free leg behind for balance",
+      "Keep standing knee soft"
+    ],
+    "setup": "Stand on one leg holding a kettlebell in the opposite hand, feet hip-width under the torso.",
+    "commonMistakes": [
+      "Rounding the back at the bottom",
+      "Losing balance mid-rep",
+      "Turning it into a squat by bending the knee too much"
+    ]
+  },
+  {
+    "id": "single-leg-lateral-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Push off explosively to the side",
+      "Land softly with a bent knee",
+      "Stabilize before the next hop",
+      "Keep chest up throughout"
+    ],
+    "setup": "Stand balanced on one leg, ready to hop laterally over a line or marker.",
+    "commonMistakes": [
+      "Landing with a straight, locked knee",
+      "Losing lateral balance on landing",
+      "Hopping too far for current control level"
+    ]
+  },
+  {
+    "id": "single-leg-leg-press-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Press through the ball of the foot",
+      "Extend ankle fully at the top",
+      "Lower heel under control",
+      "Keep knee slightly bent throughout"
+    ],
+    "setup": "Sit in the leg press machine with the ball of one foot on the lower edge of the platform.",
+    "commonMistakes": [
+      "Bouncing through the bottom of the range",
+      "Bending the knee to assist the press",
+      "Cutting range of motion short"
+    ]
+  },
+  {
+    "id": "single-leg-lying-leg-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Curl heel toward glute",
+      "Keep hips pressed into the pad",
+      "Control the eccentric",
+      "Avoid hips lifting off the pad"
+    ],
+    "setup": "Lie face down on a leg curl machine with the pad positioned above one heel.",
+    "commonMistakes": [
+      "Lifting hips off the pad to generate momentum",
+      "Using a jerky, fast tempo",
+      "Not achieving full contraction at the top"
+    ]
+  },
+  {
+    "id": "single-leg-pogo-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep knee mostly stiff, drive from the ankle",
+      "Minimize ground contact time",
+      "Stay tall through the torso",
+      "Land on the ball of the foot"
+    ],
+    "setup": "Stand balanced on one leg with a slight forward lean, ready to hop repeatedly using the ankle.",
+    "commonMistakes": [
+      "Bending the knee excessively, turning it into a squat hop",
+      "Landing flat-footed",
+      "Slouching the torso forward"
+    ]
+  },
+  {
+    "id": "single-leg-press",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Place foot centered on the platform",
+      "Drive through the whole foot",
+      "Keep knee tracking over toes",
+      "Avoid locking the knee out hard"
+    ],
+    "setup": "Sit in the leg press machine with one foot on the platform, the other resting off to the side.",
+    "commonMistakes": [
+      "Letting the knee cave inward",
+      "Using excessive range that rounds the lower back",
+      "Locking the knee out aggressively"
+    ]
+  },
+  {
+    "id": "single-leg-seated-calf-raise-machine",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Press through the ball of the foot",
+      "Rise fully, pause at the top",
+      "Lower heel below the platform edge",
+      "Keep knee under the pad"
+    ],
+    "setup": "Sit at the calf raise machine with the pad over one knee and the ball of that foot on the platform.",
+    "commonMistakes": [
+      "Bouncing at the bottom of the stretch",
+      "Rushing the tempo",
+      "Not achieving a full stretch at the bottom"
+    ]
+  },
+  {
+    "id": "single-leg-seated-leg-curl",
+    "mechanics": "isolation",
+    "movementPattern": "hinge",
+    "difficulty": "beginner",
+    "formCues": [
+      "Curl heel down and back",
+      "Keep thigh pressed to the seat pad",
+      "Control the return",
+      "Squeeze hamstring at full contraction"
+    ],
+    "setup": "Sit in the leg curl machine with the ankle pad behind one ankle and thigh secured under the leg pad.",
+    "commonMistakes": [
+      "Using momentum instead of a controlled curl",
+      "Not securing the thigh pad, letting the hip rise",
+      "Partial range of motion"
+    ]
+  },
+  {
+    "id": "single-leg-slider-leg-curl",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep hips lifted throughout",
+      "Curl heel toward glute by flexing the knee",
+      "Keep core braced",
+      "Slide out with control"
+    ],
+    "setup": "Lie supine with one heel on a slider and hips lifted into a bridge, the other leg extended or off the ground.",
+    "commonMistakes": [
+      "Letting hips sag during the curl",
+      "Sliding too fast without control",
+      "Losing the bridge position"
+    ]
+  },
+  {
+    "id": "single-leg-smith-machine-calf-raise",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Position bar across the upper back",
+      "Rise fully onto the ball of the foot",
+      "Lower heel below the step edge",
+      "Keep torso upright"
+    ],
+    "setup": "Stand on one foot on a raised platform under a Smith machine bar racked across the shoulders.",
+    "commonMistakes": [
+      "Using knee bend to cheat the range",
+      "Bouncing at the bottom",
+      "Shifting weight onto the non-working leg"
+    ]
+  },
+  {
+    "id": "single-leg-swiss-ball-leg-curl",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep hips elevated throughout",
+      "Roll ball toward glutes using the heel",
+      "Brace core to prevent hip sag",
+      "Control the roll-out"
+    ],
+    "setup": "Lie supine with one heel on a stability ball, hips lifted, and the other leg extended in the air.",
+    "commonMistakes": [
+      "Letting hips drop during the movement",
+      "Losing ball control from insufficient bracing",
+      "Rushing the tempo"
+    ]
+  },
+  {
+    "id": "single-leg-trx-hamstring-curl",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep hips lifted and square",
+      "Curl heel toward glutes",
+      "Brace core throughout",
+      "Control the strap on the return"
+    ],
+    "setup": "Lie supine with one heel in the TRX straps, hips raised, and the other leg extended off the ground.",
+    "commonMistakes": [
+      "Letting hips sag mid-rep",
+      "Allowing the working foot to slide off-center",
+      "Rushing the eccentric phase"
+    ]
+  },
+  {
+    "id": "single-leg-vertical-hop",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Drive arms upward for lift",
+      "Land softly with a bent knee",
+      "Reset balance between reps",
+      "Keep torso tall throughout"
+    ],
+    "setup": "Stand balanced on one leg with a slight knee bend, ready to hop straight upward.",
+    "commonMistakes": [
+      "Landing with a stiff, locked knee",
+      "Losing balance on landing",
+      "Excessive forward lean during the hop"
+    ]
+  },
+  {
+    "id": "sissy-squat-machine",
+    "mechanics": "isolation",
+    "movementPattern": "squat",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lean back as knees travel forward",
+      "Keep hips extended throughout",
+      "Lower under full control",
+      "Squeeze quads to rise"
+    ],
+    "setup": "Position the shins against the pads of the sissy squat machine, hips locked in place, hands on the handles.",
+    "commonMistakes": [
+      "Bending at the hips instead of isolating the knees",
+      "Rushing the eccentric",
+      "Using momentum to bounce out of the bottom"
+    ]
+  },
+  {
+    "id": "sit-up",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Curl chest toward knees",
+      "Keep feet anchored or braced",
+      "Exhale on the way up",
+      "Lower with control"
+    ],
+    "setup": "Lie supine with knees bent, feet flat, and hands crossed on the chest or lightly behind the head.",
+    "commonMistakes": [
+      "Yanking the neck with the hands",
+      "Using momentum instead of ab strength",
+      "Not controlling the descent"
+    ]
+  },
+  {
+    "id": "ski-erg",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Hinge at the hips as you pull down",
+      "Drive handles down and back",
+      "Extend fully before recovery",
+      "Keep core braced throughout"
+    ],
+    "setup": "Stand facing the ski erg machine, gripping a handle in each hand at shoulder height.",
+    "commonMistakes": [
+      "Pulling only with the arms, no hip hinge",
+      "Rounding the back excessively",
+      "Rushing the recovery phase"
+    ]
+  },
+  {
+    "id": "skin-the-cat",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "advanced",
+    "formCues": [
+      "Engage lats before rotating",
+      "Move slowly through the inversion",
+      "Keep core braced throughout",
+      "Control the return to hang"
+    ],
+    "setup": "Hang from gymnastic rings or a bar with an overhand grip, arms straight and core engaged.",
+    "commonMistakes": [
+      "Rushing the rotation and losing control",
+      "Swinging with momentum instead of strength",
+      "Overextending the shoulders past a safe range"
+    ]
+  },
+  {
+    "id": "sled-backward-drag",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Stay low with hips loaded",
+      "Drive through the legs, not the arms",
+      "Keep steps short and controlled",
+      "Maintain tension on the strap"
+    ],
+    "setup": "Attach a harness or strap to a loaded sled and face it, walking backward to drag it.",
+    "commonMistakes": [
+      "Standing too upright, losing leg drive",
+      "Taking overly long strides",
+      "Letting the strap go slack between steps"
+    ]
+  },
+  {
+    "id": "sled-forward-drag",
+    "mechanics": "compound",
+    "movementPattern": "gait",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Lean forward from the hips",
+      "Drive knees up and through",
+      "Keep straps taut",
+      "Maintain a steady stride"
+    ],
+    "setup": "Attach straps from a loaded sled to a harness or hands and walk forward, pulling it behind you.",
+    "commonMistakes": [
+      "Standing too upright",
+      "Taking choppy, inconsistent steps",
+      "Letting the sled jerk instead of a steady pull"
+    ]
+  },
+  {
+    "id": "sled-push-high-handle",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep arms extended at handle height",
+      "Drive through the balls of the feet",
+      "Maintain a slight forward lean",
+      "Take strong, driving steps"
+    ],
+    "setup": "Stand behind the sled gripping the high handles at chest to shoulder height, body angled forward.",
+    "commonMistakes": [
+      "Leaning too far forward and losing power",
+      "Taking short, choppy steps",
+      "Letting arms bend and absorb the push"
+    ]
+  },
+  {
+    "id": "sled-push-low-handle",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Set a low body angle, hips down",
+      "Drive through the legs powerfully",
+      "Keep back flat, core braced",
+      "Take long, driving strides"
+    ],
+    "setup": "Stand behind the sled gripping the low handles, body angled forward closer to the ground.",
+    "commonMistakes": [
+      "Rounding the back instead of hinging",
+      "Standing too tall for the low handle position",
+      "Short, ineffective steps"
+    ]
+  },
+  {
+    "id": "slider-leg-curl",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep hips elevated throughout",
+      "Curl both heels toward glutes together",
+      "Brace core to prevent sag",
+      "Control the slide-out"
+    ],
+    "setup": "Lie supine with both heels on sliders and hips lifted into a bridge position.",
+    "commonMistakes": [
+      "Letting hips drop mid-rep",
+      "Sliding out too fast without control",
+      "Not achieving full hip extension"
+    ]
+  },
+  {
+    "id": "smith-machine-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Retract shoulder blades before unracking",
+      "Lower bar to mid-chest",
+      "Keep wrists stacked over elbows",
+      "Drive bar up in a straight line"
+    ],
+    "setup": "Lie on a bench under the Smith machine bar with feet flat and grip slightly wider than shoulders.",
+    "commonMistakes": [
+      "Flaring elbows out too wide",
+      "Bouncing the bar off the chest",
+      "Feet sliding out of position during the press"
+    ]
+  },
+  {
+    "id": "smith-machine-bent-over-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hinge forward with a flat back",
+      "Pull bar toward the lower ribs",
+      "Squeeze shoulder blades at the top",
+      "Keep core braced throughout"
+    ],
+    "setup": "Stand under the Smith machine bar, hinge at the hips to roughly 45 degrees, and grip the bar shoulder-width.",
+    "commonMistakes": [
+      "Rounding the back during the pull",
+      "Using momentum from the legs to jerk the bar up",
+      "Not achieving full scapular retraction"
+    ]
+  },
+  {
+    "id": "smith-machine-bulgarian-split-squat",
+    "mechanics": "compound",
+    "movementPattern": "lunge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep torso upright",
+      "Lower until rear knee nearly grazes the floor",
+      "Drive through the front heel",
+      "Keep front knee tracking over toes"
+    ],
+    "setup": "Position the bar across the upper back, place one foot behind you on a bench, front foot forward and stable.",
+    "commonMistakes": [
+      "Letting the front knee cave inward",
+      "Placing the front foot too close, limiting depth",
+      "Leaning too far forward"
+    ]
+  },
+  {
+    "id": "smith-machine-close-grip-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Grip just inside shoulder width",
+      "Keep elbows tucked close to the body",
+      "Lower bar to the lower chest",
+      "Press up in a straight line"
+    ],
+    "setup": "Lie on a bench under the Smith machine bar with a close, shoulder-width or narrower grip.",
+    "commonMistakes": [
+      "Flaring elbows out wide",
+      "Gripping too narrow and straining the wrists",
+      "Bouncing the bar off the chest"
+    ]
+  }
+]

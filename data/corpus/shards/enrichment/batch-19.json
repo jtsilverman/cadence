@@ -1,0 +1,682 @@
+[
+  {
+    "id": "single-arm-arm-ergometer",
+    "mechanics": "isolation",
+    "movementPattern": "gait",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep shoulder stable as arm cranks",
+      "Maintain steady cadence",
+      "Engage core to resist trunk rotation",
+      "Breathe rhythmically"
+    ],
+    "setup": "Sit facing the arm ergometer with the working arm gripping the handle at chest height.",
+    "commonMistakes": [
+      "Shrugging the shoulder during cranking",
+      "Letting the torso twist with each rotation"
+    ]
+  },
+  {
+    "id": "single-arm-band-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Anchor band securely behind you",
+      "Press straight out at chest height",
+      "Keep wrist neutral",
+      "Avoid shrugging shoulder"
+    ],
+    "setup": "Anchor the band behind you and stand in a staggered stance holding the handle at chest level.",
+    "commonMistakes": [
+      "Letting the torso rotate to help the press",
+      "Using a short range of motion"
+    ]
+  },
+  {
+    "id": "single-arm-band-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pin elbow to your side",
+      "Curl without swinging the torso",
+      "Squeeze biceps at the top",
+      "Lower under control"
+    ],
+    "setup": "Stand on the band with feet shoulder-width, holding the handle with arm extended down.",
+    "commonMistakes": [
+      "Swinging the body for momentum",
+      "Flaring the elbow away from the torso"
+    ]
+  },
+  {
+    "id": "single-arm-band-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbow pointed forward and stationary",
+      "Extend fully at the top",
+      "Avoid arching the lower back",
+      "Control the eccentric"
+    ],
+    "setup": "Anchor the band underfoot or low, raise the handle overhead with elbow bent behind the head.",
+    "commonMistakes": [
+      "Flaring the elbow out to the side",
+      "Using back extension to assist"
+    ]
+  },
+  {
+    "id": "single-arm-band-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pull elbow straight back",
+      "Squeeze shoulder blade at end range",
+      "Keep torso still",
+      "Avoid shrugging"
+    ],
+    "setup": "Anchor the band in front, stand in a staggered stance holding the handle with arm extended.",
+    "commonMistakes": [
+      "Rounding the back to add range",
+      "Using body momentum instead of the lat and back"
+    ]
+  },
+  {
+    "id": "single-arm-band-shoulder-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Press directly overhead",
+      "Keep core braced to avoid leaning",
+      "Avoid shrugging on the way up",
+      "Control the descent"
+    ],
+    "setup": "Stand on the band holding the handle at shoulder height, feet shoulder-width apart.",
+    "commonMistakes": [
+      "Leaning the torso to one side for leverage",
+      "Locking out the elbow too aggressively"
+    ]
+  },
+  {
+    "id": "single-arm-bayesian-cable-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Stand facing away from a low cable",
+      "Keep elbow behind the torso through the curl",
+      "Squeeze biceps at the top",
+      "Control the stretch at the bottom"
+    ],
+    "setup": "Stand facing away from a low pulley, arm extended behind the body holding the handle.",
+    "commonMistakes": [
+      "Letting the elbow drift forward",
+      "Rushing the stretched bottom position"
+    ]
+  },
+  {
+    "id": "single-arm-cable-chest-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Set cable at chest height",
+      "Press forward and slightly across body",
+      "Keep core braced against rotation",
+      "Control the return"
+    ],
+    "setup": "Stand in a staggered stance facing away from the cable stack, handle at chest height.",
+    "commonMistakes": [
+      "Letting the trunk rotate excessively",
+      "Shrugging the shoulder during the press"
+    ]
+  },
+  {
+    "id": "single-arm-cable-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pin elbow to your side",
+      "Curl without swinging the torso",
+      "Squeeze at the top",
+      "Lower slowly"
+    ],
+    "setup": "Stand facing a low cable pulley, arm extended down holding the handle.",
+    "commonMistakes": [
+      "Swinging the body for momentum",
+      "Flaring the elbow outward"
+    ]
+  },
+  {
+    "id": "single-arm-cable-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Set cable slightly above shoulder height",
+      "Sweep arm across body in an arc",
+      "Keep slight elbow bend throughout",
+      "Control the stretch"
+    ],
+    "setup": "Stand in a staggered stance facing away from the cable stack, arm extended out to the side.",
+    "commonMistakes": [
+      "Bending the elbow like a press instead of a fly",
+      "Letting the torso twist to add range"
+    ]
+  },
+  {
+    "id": "single-arm-cable-front-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Raise arm to shoulder height",
+      "Keep slight bend in the elbow",
+      "Avoid swinging the torso",
+      "Lower with control"
+    ],
+    "setup": "Stand facing away from a low cable, holding the handle in front of the thigh.",
+    "commonMistakes": [
+      "Using momentum to swing the arm up",
+      "Raising above shoulder height and shrugging"
+    ]
+  },
+  {
+    "id": "single-arm-cable-lateral-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Raise arm out to the side to shoulder height",
+      "Lead with the elbow",
+      "Keep a slight elbow bend",
+      "Avoid shrugging the traps"
+    ],
+    "setup": "Stand sideways to a low cable pulley, holding the handle across the body at hip height.",
+    "commonMistakes": [
+      "Shrugging the shoulder to gain height",
+      "Swinging the torso for momentum"
+    ]
+  },
+  {
+    "id": "single-arm-cable-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep elbow pointed forward and fixed",
+      "Extend fully overhead",
+      "Avoid arching the back",
+      "Control the eccentric"
+    ],
+    "setup": "Face away from a low cable, elbow bent overhead holding the handle behind the head.",
+    "commonMistakes": [
+      "Letting the elbow flare outward",
+      "Using back extension to assist the movement"
+    ]
+  },
+  {
+    "id": "single-arm-cable-pushdown",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pin elbow to your side",
+      "Extend fully without locking aggressively",
+      "Avoid leaning the torso forward",
+      "Control the return"
+    ],
+    "setup": "Stand facing a high cable, elbow bent at the side holding the attachment.",
+    "commonMistakes": [
+      "Letting the elbow drift away from the body",
+      "Using body weight to force the movement"
+    ]
+  },
+  {
+    "id": "single-arm-cable-rear-delt-fly",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Set cable at shoulder height",
+      "Pull arm across and back in an arc",
+      "Keep slight elbow bend",
+      "Squeeze rear delt at end range"
+    ],
+    "setup": "Stand facing the cable stack with the arm crossed in front holding the opposite-side handle.",
+    "commonMistakes": [
+      "Bending the elbow too much and turning it into a row",
+      "Using torso rotation to generate force"
+    ]
+  },
+  {
+    "id": "single-arm-cable-reverse-fly",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Set cable at shoulder height",
+      "Pull arm outward and back in an arc",
+      "Keep torso stable",
+      "Squeeze shoulder blade at the end"
+    ],
+    "setup": "Stand facing the cable stack, arm crossed in front holding the opposite-side handle.",
+    "commonMistakes": [
+      "Turning the fly into a row by bending the elbow",
+      "Rotating the torso to add momentum"
+    ]
+  },
+  {
+    "id": "single-arm-cable-rope-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pin elbow to your side",
+      "Curl without swinging the torso",
+      "Squeeze biceps at the top",
+      "Lower under control"
+    ],
+    "setup": "Stand facing a low cable pulley holding the rope end with arm extended down.",
+    "commonMistakes": [
+      "Swinging the body for momentum",
+      "Letting the elbow drift forward"
+    ]
+  },
+  {
+    "id": "single-arm-chest-supported-dumbbell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep chest pressed into the bench",
+      "Pull elbow straight back",
+      "Squeeze the shoulder blade",
+      "Avoid twisting the torso"
+    ],
+    "setup": "Lie chest-down on an incline bench, one arm hanging holding a dumbbell.",
+    "commonMistakes": [
+      "Lifting the chest off the bench to cheat the pull",
+      "Using a jerky, momentum-driven pull"
+    ]
+  },
+  {
+    "id": "single-arm-cross-body-cable-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Pull cable across the body and extend down",
+      "Keep elbow close to the torso",
+      "Avoid rotating the shoulders",
+      "Control the return"
+    ],
+    "setup": "Stand sideways to a high cable, elbow bent across the chest holding the handle.",
+    "commonMistakes": [
+      "Letting the elbow drift away from the body",
+      "Using torso rotation to assist"
+    ]
+  },
+  {
+    "id": "single-arm-dead-hang",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep shoulder engaged, not fully passive",
+      "Relax the neck and jaw",
+      "Brace the core to limit swinging",
+      "Breathe steadily throughout the hold"
+    ],
+    "setup": "Grip a pull-up bar with one hand and hang with feet off the ground.",
+    "commonMistakes": [
+      "Letting the body swing excessively",
+      "Holding breath instead of breathing steadily"
+    ]
+  },
+  {
+    "id": "single-arm-dead-stop-kettlebell-swing",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Hinge at the hips, not the knees",
+      "Let the kettlebell rest fully on the ground each rep",
+      "Snap hips forward explosively",
+      "Keep spine neutral throughout"
+    ],
+    "setup": "Stand over a kettlebell, hinge down and grip the handle with one hand, allowing it to rest on the floor between reps.",
+    "commonMistakes": [
+      "Squatting instead of hinging at the hips",
+      "Rounding the lower back on the pickup"
+    ]
+  },
+  {
+    "id": "single-arm-decline-dumbbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Brace core to resist rotation",
+      "Lower dumbbell to chest under control",
+      "Press straight up",
+      "Keep wrist stacked over elbow"
+    ],
+    "setup": "Lie on a decline bench holding one dumbbell at chest level, feet secured.",
+    "commonMistakes": [
+      "Letting the torso rotate toward the working side",
+      "Flaring the elbow excessively"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-bench-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Brace core to resist rotation",
+      "Lower dumbbell to chest under control",
+      "Press straight up",
+      "Keep opposite hip stable"
+    ],
+    "setup": "Lie on a flat bench holding one dumbbell at chest level, feet flat on the floor.",
+    "commonMistakes": [
+      "Letting the torso twist toward the working side",
+      "Bouncing the dumbbell off the chest"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-clean",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Hinge and pull the dumbbell close to the body",
+      "Extend hips explosively",
+      "Catch dumbbell at shoulder in one motion",
+      "Keep core braced throughout"
+    ],
+    "setup": "Stand with a dumbbell on the floor between the feet, hinge down to grip it with one hand.",
+    "commonMistakes": [
+      "Muscling the weight up with the arm instead of hip drive",
+      "Catching the dumbbell with a rounded back"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-clean-and-press",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Drive through the hips to clean the weight",
+      "Catch at the shoulder before pressing",
+      "Press straight overhead",
+      "Keep core braced throughout"
+    ],
+    "setup": "Stand with a dumbbell on the floor, hinge down to grip it with one hand before initiating the clean.",
+    "commonMistakes": [
+      "Pressing before fully stabilizing the catch",
+      "Using excessive back arch on the press"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pin elbow to your side",
+      "Curl without swinging the torso",
+      "Squeeze biceps at the top",
+      "Lower under control"
+    ],
+    "setup": "Stand holding a dumbbell in one hand, arm extended by the side.",
+    "commonMistakes": [
+      "Swinging the body for momentum",
+      "Flaring the elbow away from the torso"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-floor-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep upper arm at roughly 45 degrees",
+      "Pause when triceps touch the floor",
+      "Press straight up",
+      "Brace core to limit rotation"
+    ],
+    "setup": "Lie on the floor with knees bent, holding a dumbbell in one hand at chest level.",
+    "commonMistakes": [
+      "Bouncing the elbow off the floor",
+      "Letting the torso rotate during the press"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-fly",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep slight bend in the elbow throughout",
+      "Lower with control to a stretch",
+      "Bring dumbbell up in an arc, not a press",
+      "Brace core against rotation"
+    ],
+    "setup": "Lie on a flat bench holding one dumbbell above the chest with arm slightly bent.",
+    "commonMistakes": [
+      "Bending the elbow into a press pattern",
+      "Lowering too far and straining the shoulder"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-front-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Raise arm to shoulder height",
+      "Keep slight bend in the elbow",
+      "Avoid swinging the torso",
+      "Lower with control"
+    ],
+    "setup": "Stand holding a dumbbell in one hand in front of the thigh, palm facing the body.",
+    "commonMistakes": [
+      "Using momentum to swing the weight up",
+      "Leaning back to assist the raise"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-hammer-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Pin elbow to your side",
+      "Keep palm facing inward throughout",
+      "Curl without swinging the torso",
+      "Lower under control"
+    ],
+    "setup": "Stand holding a dumbbell in one hand with a neutral grip, arm extended by the side.",
+    "commonMistakes": [
+      "Swinging the body for momentum",
+      "Rotating the wrist during the curl"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-lateral-raise",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Raise arm out to the side to shoulder height",
+      "Lead with the elbow",
+      "Keep a slight elbow bend",
+      "Avoid shrugging the traps"
+    ],
+    "setup": "Stand holding a dumbbell in one hand by the side, palm facing inward.",
+    "commonMistakes": [
+      "Shrugging the shoulder to gain height",
+      "Swinging the torso for momentum"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-overhead-press",
+    "mechanics": "compound",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Brace core to resist leaning",
+      "Press straight overhead",
+      "Avoid shrugging on the way up",
+      "Control the descent"
+    ],
+    "setup": "Stand or sit holding a dumbbell at shoulder height in one hand, core braced.",
+    "commonMistakes": [
+      "Leaning the torso to one side for leverage",
+      "Arching the lower back excessively"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-overhead-squat",
+    "mechanics": "compound",
+    "movementPattern": "squat",
+    "difficulty": "advanced",
+    "formCues": [
+      "Keep dumbbell locked out overhead throughout",
+      "Sit hips back and down",
+      "Keep torso as upright as possible",
+      "Brace core to prevent the arm from drifting"
+    ],
+    "setup": "Stand with feet shoulder-width apart holding a dumbbell locked out overhead in one hand.",
+    "commonMistakes": [
+      "Letting the extended arm drift forward",
+      "Losing overhead lockout as fatigue sets in"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-overhead-triceps-extension",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep elbow pointed forward and fixed",
+      "Extend fully overhead",
+      "Avoid arching the lower back",
+      "Control the eccentric"
+    ],
+    "setup": "Stand or sit holding a dumbbell overhead in one hand, elbow bent behind the head.",
+    "commonMistakes": [
+      "Letting the elbow flare outward",
+      "Using back extension to assist the movement"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-preacher-curl",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep upper arm flat against the pad",
+      "Curl without lifting the elbow",
+      "Squeeze at the top",
+      "Lower slowly to full extension"
+    ],
+    "setup": "Sit at a preacher bench with one arm resting on the pad, holding a dumbbell.",
+    "commonMistakes": [
+      "Lifting the elbow off the pad mid-rep",
+      "Rushing the eccentric portion"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-rear-delt-raise",
+    "mechanics": "isolation",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Hinge forward at the hips",
+      "Raise arm out to the side, leading with the elbow",
+      "Keep slight elbow bend",
+      "Squeeze rear delt at the top"
+    ],
+    "setup": "Hinge forward at the hips holding a dumbbell in one hand, arm hanging below the shoulder.",
+    "commonMistakes": [
+      "Using torso momentum to swing the weight up",
+      "Turning the raise into a row by bending the elbow"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-reverse-wrist-curl",
+    "mechanics": "isolation",
+    "movementPattern": "isometric",
+    "difficulty": "beginner",
+    "formCues": [
+      "Rest forearm on a bench or thigh for support",
+      "Extend wrist upward without moving the forearm",
+      "Control the lowering phase",
+      "Use a light load"
+    ],
+    "setup": "Rest the forearm on a bench with the wrist hanging off the edge, holding a dumbbell with palm down.",
+    "commonMistakes": [
+      "Using too much weight and losing range of motion",
+      "Moving the forearm instead of isolating the wrist"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-row",
+    "mechanics": "compound",
+    "movementPattern": "pull",
+    "difficulty": "beginner",
+    "formCues": [
+      "Keep back flat, hinge forward at the hips",
+      "Pull elbow straight back",
+      "Squeeze the shoulder blade",
+      "Avoid twisting the torso"
+    ],
+    "setup": "Support one hand and knee on a bench, holding a dumbbell in the other hand with arm extended down.",
+    "commonMistakes": [
+      "Rotating the torso to help lift the weight",
+      "Using a jerky, momentum-driven pull"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-skull-crusher",
+    "mechanics": "isolation",
+    "movementPattern": "push",
+    "difficulty": "intermediate",
+    "formCues": [
+      "Keep upper arm stationary and vertical",
+      "Lower dumbbell toward the forehead or ear",
+      "Extend fully without locking hard",
+      "Control the eccentric"
+    ],
+    "setup": "Lie on a bench holding a dumbbell in one hand extended above the shoulder.",
+    "commonMistakes": [
+      "Letting the elbow drift outward or backward",
+      "Moving the upper arm during the extension"
+    ]
+  },
+  {
+    "id": "single-arm-dumbbell-snatch",
+    "mechanics": "compound",
+    "movementPattern": "hinge",
+    "difficulty": "advanced",
+    "formCues": [
+      "Hinge and pull the dumbbell close to the body",
+      "Extend hips explosively to drive it up",
+      "Punch the arm overhead as it rises",
+      "Catch with a locked-out arm and braced core"
+    ],
+    "setup": "Stand with a dumbbell on the floor between the feet, hinge down to grip it with one hand.",
+    "commonMistakes": [
+      "Muscling the weight up with the arm instead of hip drive",
+      "Catching the dumbbell with a rounded back or unstable shoulder"
+    ]
+  }
+]

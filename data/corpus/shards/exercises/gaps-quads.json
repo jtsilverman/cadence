@@ -1,0 +1,50 @@
+[
+  {
+    "id": "safety-squat-bar-squat",
+    "name": "Safety Squat Bar (SSB) Squat",
+    "aliases": ["SSB squat", "safety bar squat", "yoke bar squat"],
+    "modality": "strength",
+    "equipment": ["barbell"],
+    "primaryMuscles": ["quads"],
+    "secondaryMuscles": ["glutes", "hamstrings", "adductors", "lower-back", "abs"],
+    "laterality": "bilateral",
+    "metrics": ["weight", "reps"],
+    "variationOf": null
+  },
+  {
+    "id": "shrimp-squat",
+    "name": "Shrimp Squat",
+    "aliases": ["single-leg shrimp squat"],
+    "modality": "strength",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["quads"],
+    "secondaryMuscles": ["glutes", "hamstrings", "adductors", "abs"],
+    "laterality": "unilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  },
+  {
+    "id": "step-down",
+    "name": "Step-Down (Box/Eccentric Step-Down)",
+    "aliases": ["eccentric step-down", "box step-down", "step-down squat"],
+    "modality": "strength",
+    "equipment": ["box"],
+    "primaryMuscles": ["quads"],
+    "secondaryMuscles": ["glutes", "hamstrings", "abductors"],
+    "laterality": "unilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  },
+  {
+    "id": "terminal-knee-extension",
+    "name": "Terminal Knee Extension (TKE)",
+    "aliases": ["TKE", "banded terminal knee extension"],
+    "modality": "strength",
+    "equipment": ["resistance-band"],
+    "primaryMuscles": ["quads"],
+    "secondaryMuscles": [],
+    "laterality": "unilateral",
+    "metrics": ["reps"],
+    "variationOf": null
+  }
+]

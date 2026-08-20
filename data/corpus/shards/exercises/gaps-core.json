@@ -1,0 +1,26 @@
+[
+  {
+    "id": "mountain-climber",
+    "name": "Mountain Climber",
+    "aliases": ["mountain climbers", "running plank"],
+    "modality": "plyometric",
+    "equipment": ["bodyweight"],
+    "primaryMuscles": ["abs"],
+    "secondaryMuscles": ["hip-flexors", "front-delts", "quads", "cardiovascular"],
+    "laterality": "unilateral",
+    "metrics": ["reps", "time"],
+    "variationOf": null
+  },
+  {
+    "id": "copenhagen-plank",
+    "name": "Copenhagen Plank",
+    "aliases": ["Copenhagen side plank", "Copenhagen hip adduction"],
+    "modality": "strength",
+    "equipment": ["bench"],
+    "primaryMuscles": ["adductors"],
+    "secondaryMuscles": ["abs", "obliques", "hip-flexors"],
+    "laterality": "unilateral",
+    "metrics": ["time"],
+    "variationOf": null
+  }
+]
