@@ -11,7 +11,7 @@ const HOUSEHOLD_ID = "hh-jake"; // single household until P4 auth
 export async function GET(request: NextRequest) {
   const origin = process.env.APP_ORIGIN ?? request.nextUrl.origin;
   const home = (flag: string) => {
-    const response = NextResponse.redirect(`${origin}/?whoop=${flag}`);
+    const response = NextResponse.redirect(`${origin}/today?whoop=${flag}`);
     // path must match connect's set() — a bare delete normalizes to Path=/
     // and the browser treats that as a different cookie (reviewer finding 2)
     response.cookies.delete({ name: "whoop_oauth_state", path: "/api/whoop" });

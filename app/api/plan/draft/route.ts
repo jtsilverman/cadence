@@ -1,15 +1,16 @@
 import { NextResponse } from "next/server";
-import type { PlanDraftSuggestion, RecipePlan } from "@/lib/contracts";
+import type { MealPlan, PlanDraftSuggestion, RecipePlan } from "@/lib/contracts";
 import { getDb, migrate } from "@/lib/db";
 import { isoAddDays, localDate, mondayOf } from "@/lib/dates";
 import { readEvents } from "@/lib/events";
-import { activeGoals, proposeWorkoutWeek } from "@/lib/goals";
+import { activeGoals } from "@/lib/goals";
 import { mealHistory } from "@/lib/history";
-import { getPlans, listRecipes, listWorkouts } from "@/lib/library";
+import { getPlans, listFoods } from "@/lib/library";
 import { composeWeekDraft, type MealCandidate } from "@/lib/planner";
 import { pickMeals } from "@/lib/plan-pick";
-import { activeProgram, programPosition } from "@/lib/program";
-import { latestScore, recoveryByDate } from "@/lib/recovery";
+
+import { readProfile } from "@/lib/profile";
+import { MEAT } from "@/lib/restrictions";
 import { logSuggestions, readSuggestionState } from "@/lib/suggestions";
 
 const HOUSEHOLD_ID = "hh-jake"; // single household until P4 auth
@@ -29,35 +30,37 @@ export async function GET() {
   const weekStart = isoAddDays(mondayOf(today), 7);
 
   // meal candidates: cookbook + macros + last-cooked rotation signal
-  const summaries = await listRecipes(db, HOUSEHOLD_ID);
+  const summaries = await listFoods(db, HOUSEHOLD_ID, ["recipe", "meal"]);
   const plans = await getPlans(db, HOUSEHOLD_ID, summaries.map((r) => r.id));
-  const caloriesById = new Map(
+  const foodById = new Map(
     plans
-      .filter((r): r is { id: string; plan: RecipePlan } => r.plan.kind === "recipe")
-      .map((r) => [r.id, r.plan.nutrition?.calories ?? null])
+      .filter((r): r is { id: string; plan: RecipePlan | MealPlan } =>
+        r.plan.kind === "recipe" || r.plan.kind === "meal"
+      )
+      .map((r) => [r.id, r.plan])
   );
   const lastCooked = new Map<string, string>();
   for (const entry of mealHistory(events)) {
     // newest-first: keep the first (latest) date seen per recipe
     if (!lastCooked.has(entry.library_id)) lastCooked.set(entry.library_id, entry.date);
   }
-  const meals: MealCandidate[] = summaries.map((r) => ({
-    id: r.id,
-    title: r.title,
-    calories: caloriesById.get(r.id) ?? null,
-    last_cooked: lastCooked.get(r.id) ?? null,
-    created_at: r.created_at,
-  }));
+  const meals: MealCandidate[] = summaries.map((r) => {
+    const food = foodById.get(r.id);
+    const ingredients = food?.kind === "recipe"
+      ? food.ingredients.map((ingredient) => ingredient.name)
+      : [];
+    return {
+      id: r.id,
+      title: r.title,
+      calories: food?.nutrition?.calories ?? null,
+      last_cooked: lastCooked.get(r.id) ?? null,
+      created_at: r.created_at,
+      ingredients,
+      vegetarian: !MEAT.test(`${r.title} ${ingredients.join(" ")}`),
+    };
+  });
+  const profile = await readProfile(db, HOUSEHOLD_ID);
 
-  const program = activeProgram(events);
-  const composed = program ? programPosition(program, events, weekStart) : null;
-  const proposal = proposeWorkoutWeek(
-    activeGoals(events),
-    await listWorkouts(db, HOUSEHOLD_ID),
-    events,
-    today,
-    program
-  );
   const nutritionGoal = activeGoals(events).find(
     (g) => g.kind === "nutrition" && g.daily_calories
   );
@@ -65,10 +68,11 @@ export async function GET() {
   const draft = composeWeekDraft({
     weekStart,
     meals,
-    workoutDays: proposal.days,
-    composedPhase: composed?.phase ?? null,
+    workoutDays: [],
+    composedPhase: null,
     dailyCalories: nutritionGoal?.daily_calories,
-    latestRecovery: latestScore(recoveryByDate(events), today),
+    hardRestrictions: profile.hard_restrictions,
+    nutritionOnly: true,
   });
 
   // silenced week: the user waved this week's draft off — data, no pair
@@ -103,7 +107,7 @@ export async function GET() {
       ...(nutritionGoal?.daily_calories !== undefined
         ? { daily_calories: nutritionGoal.daily_calories }
         : {}),
-      phase: composed?.phase ?? null,
+      phase: null,
     });
     if (picks) {
       const titleById = new Map(meals.map((m) => [m.id, m.title]));
@@ -112,9 +116,11 @@ export async function GET() {
         if (!pick || !titleById.has(pick)) return d;
         return {
           ...d,
+          // The bounded model chooses one dinner candidate per date. Breakfast,
+          // lunch, snack, timing, and portion metadata stay deterministic.
           slots: d.slots.map((s) =>
-            s.lane === "meal"
-              ? { lane: "meal" as const, title: titleById.get(pick)!, library_id: pick }
+            s.lane === "meal" && s.meal_type === "dinner"
+              ? { ...s, title: titleById.get(pick)!, library_id: pick }
               : s
           ),
         };

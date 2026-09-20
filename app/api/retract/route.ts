@@ -42,17 +42,22 @@ export async function POST(request: Request) {
   // idempotent: taking back an already-taken-back tap is a no-op, not an error
   const already = retractedIds(await readEvents(db, HOUSEHOLD_ID, { type: LOG_RETRACTED }));
   if (!already.has(eventId)) {
-    await appendEvent(db, {
-      event_id: newEventId(),
-      household_id: HOUSEHOLD_ID,
-      type: LOG_RETRACTED,
-      ts: new Date().toISOString(),
-      source: "web",
-      payload: { retracted_event_id: eventId },
-      schema_version: 1,
-      // the user's own take-back
-      precision: "exact",
-    });
+    try {
+      await appendEvent(db, {
+        event_id: newEventId(),
+        household_id: HOUSEHOLD_ID,
+        type: LOG_RETRACTED,
+        ts: new Date().toISOString(),
+        source: "web",
+        payload: { retracted_event_id: eventId },
+        schema_version: 1,
+        // the user's own take-back
+        precision: "exact",
+      });
+    } catch {
+      const current = retractedIds(await readEvents(db, HOUSEHOLD_ID, { type: LOG_RETRACTED }));
+      if (!current.has(eventId)) throw new Error("retraction write failed");
+    }
     // the pantry view is a cache of the fold; a forgotten cook must refold it
     if (target.type === RECIPE_COOKED) {
       await rebuildPantryView(db, HOUSEHOLD_ID);

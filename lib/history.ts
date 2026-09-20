@@ -16,19 +16,57 @@ import {
   SLEPT_LOGGED,
 } from "./contracts";
 import { localDate } from "./dates";
-import { resolveRevisions as resolved } from "./events";
+import { byFoldOrder, resolveRevisions as resolved, retractedIds } from "./events";
 
 export interface MealEntry {
   date: string;
   title: string;
   library_id: string;
+  quantity?: number;
+  unit?: string;
+  manual_log?: boolean;
 }
 
 export function mealHistory(events: EventEnvelope[]): MealEntry[] {
   return resolved(events, RECIPE_COOKED)
     .map((event) => {
       const p = event.payload as RecipeCookedPayload;
-      return { date: localDate(event.ts), title: p.title, library_id: p.library_id };
+      return {
+        date: localDate(event.ts),
+        title: p.title,
+        library_id: p.library_id,
+        ...(p.quantity !== undefined ? { quantity: p.quantity, unit: p.unit } : {}),
+        ...(p.manual_log ? { manual_log: true } : {}),
+      };
+    })
+    .reverse();
+}
+
+export interface MealTrailEntry extends MealEntry {
+  event_id: string;
+  retracted: boolean;
+  precision: EventEnvelope["precision"];
+  source: string;
+}
+
+export function mealHistoryWithTrail(events: EventEnvelope[]): MealTrailEntry[] {
+  const retracted = retractedIds(events);
+  return [...events]
+    .sort(byFoldOrder)
+    .filter((event) => event.type === RECIPE_COOKED)
+    .map((event) => {
+      const payload = event.payload as RecipeCookedPayload;
+      return {
+        event_id: event.event_id,
+        date: localDate(event.ts),
+        title: payload.title,
+        library_id: payload.library_id,
+        ...(payload.quantity !== undefined ? { quantity: payload.quantity, unit: payload.unit } : {}),
+        ...(payload.manual_log ? { manual_log: true } : {}),
+        retracted: retracted.has(event.event_id),
+        precision: event.precision,
+        source: event.source,
+      };
     })
     .reverse();
 }

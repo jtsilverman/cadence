@@ -21,12 +21,12 @@ export async function POST(request: Request) {
   }
   const db = getDb();
   await migrate(db);
-  const { event_id } = await recordLog(db, HOUSEHOLD_ID, parsed.log);
+  const result = await recordLog(db, HOUSEHOLD_ID, parsed.log);
   await track(db, {
     kind: "action_result",
     path: "/api/log",
     household_id: HOUSEHOLD_ID,
     props: { action: `log_${parsed.log.kind}`, ok: true },
   });
-  return NextResponse.json({ ok: true, event_id, days: await scheduleView(db, HOUSEHOLD_ID) });
+  return NextResponse.json({ ok: true, ...result, days: await scheduleView(db, HOUSEHOLD_ID) });
 }

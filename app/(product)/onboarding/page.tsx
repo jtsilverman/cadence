@@ -1,6 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import {
+  ACTIVITIES,
+  draftTwoWeeks,
+  proposeCalories,
+  type Activity,
+  type OnboardingBasics,
+  type OnboardingMeal,
+} from "@/lib/onboarding-plan";
 import { track } from "../../telemetry";
 
 // Onboarding (ux.md: one conversation, tap-chips + a dictation-first seeding
@@ -12,32 +20,10 @@ import { track } from "../../telemetry";
 
 const DIRECTIONS = [
   "Get leaner",
-  "Build strength",
-  "Both, honestly",
+  "Maintain my weight",
+  "Gain weight gradually",
   "Just eat like an adult",
 ] as const;
-const DAYS = [2, 3, 4, 5, 6] as const;
-
-interface Basics {
-  sex: "m" | "f";
-  weightLb: number;
-  heightIn: number;
-  age: number;
-}
-interface SeededMeal {
-  library_id: string;
-  title: string;
-}
-
-function proposeCalories(basics: Basics, direction: string): number {
-  const kg = basics.weightLb * 0.4536;
-  const cm = basics.heightIn * 2.54;
-  // Mifflin-St Jeor, light-activity multiplier, coarse honest numbers
-  const bmr = 10 * kg + 6.25 * cm - 5 * basics.age + (basics.sex === "m" ? 5 : -161);
-  const maintenance = bmr * 1.4;
-  const adjusted = direction === "Get leaner" ? maintenance - 400 : maintenance;
-  return Math.max(1400, Math.round(adjusted / 50) * 50);
-}
 
 function todayLocal(): string {
   return new Intl.DateTimeFormat("en-CA", {
@@ -47,54 +33,87 @@ function todayLocal(): string {
     day: "2-digit",
   }).format(new Date());
 }
-function addDays(dateISO: string, n: number): string {
-  const d = new Date(`${dateISO}T00:00:00Z`);
-  d.setUTCDate(d.getUTCDate() + n);
-  return d.toISOString().slice(0, 10);
-}
-
-// Week 1: today through +6, three meals a day rotated from the seeded
-// favorites. Deterministic — the draft the user sees is exactly what applies.
-function draftWeek(meals: SeededMeal[], today: string) {
-  return Array.from({ length: 7 }, (_, d) => ({
-    date: addDays(today, d),
-    slots: [0, 1, 2].map((m) => {
-      const meal = meals[(d + m * 3) % meals.length];
-      return { lane: "meal" as const, title: meal.title, library_id: meal.library_id };
-    }),
-  }));
-}
 
 export default function OnboardingPage() {
+  const [hydrated, setHydrated] = useState(false);
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState<string | null>(null);
-  const [days, setDays] = useState<number | null>(null);
+  const [activity, setActivity] = useState<Activity | null>(null);
   const [seedText, setSeedText] = useState("");
-  const [seeded, setSeeded] = useState<SeededMeal[]>([]);
+  const [seeded, setSeeded] = useState<OnboardingMeal[]>([]);
   const [seeding, setSeeding] = useState(false);
   const [sex, setSex] = useState<"m" | "f" | null>(null);
   const [weight, setWeight] = useState("");
   const [height, setHeight] = useState("");
   const [age, setAge] = useState("");
+  const [units, setUnits] = useState<"imperial" | "metric">("imperial");
+  const [restrictions, setRestrictions] = useState("");
   const [calories, setCalories] = useState<number | null>(null);
   const [state, setState] = useState<"open" | "busy" | "done" | "error">("open");
   const [approving, setApproving] = useState(false);
 
-  const basics: Basics | null = useMemo(() => {
+  const basics: OnboardingBasics | null = useMemo(() => {
     const w = Number(weight);
     const h = Number(height);
     const a = Number(age);
     if (!sex || !(w > 0) || !(h > 0) || !(a > 0)) return null;
-    return { sex, weightLb: w, heightIn: h, age: a };
-  }, [sex, weight, height, age]);
+    return {
+      sex,
+      weightLb: units === "metric" ? w * 2.20462 : w,
+      heightIn: units === "metric" ? h / 2.54 : h,
+      age: a,
+    };
+  }, [sex, weight, height, age, units]);
 
-  const proposal = basics && direction ? proposeCalories(basics, direction) : null;
+  const proposal = basics && direction && activity ? proposeCalories(basics, direction, activity) : null;
+
+  useEffect(() => {
+    fetch("/api/profile")
+      .then((response) => response.json())
+      .then((data) => {
+        if (!data.ok || !data.profile) return;
+        const p = data.profile as Record<string, string>;
+        if (p.direction) setDirection(p.direction);
+        if (ACTIVITIES.some(([key]) => key === p.activity)) setActivity(p.activity as Activity);
+        if (p.seed_text) setSeedText(p.seed_text);
+        if (p.seeded_meals) {
+          try {
+            const parsed = JSON.parse(p.seeded_meals);
+            if (Array.isArray(parsed)) setSeeded(parsed);
+          } catch {
+            // A malformed optional draft never blocks restarting onboarding.
+          }
+        }
+        if (p.sex === "m" || p.sex === "f") setSex(p.sex);
+        if (p.weight) setWeight(p.weight);
+        if (p.height) setHeight(p.height);
+        if (p.age) setAge(p.age);
+        if (p.units === "metric" || p.units === "imperial") setUnits(p.units);
+        if (p.hard_restrictions) setRestrictions(p.hard_restrictions);
+        if (p.calorie_proposal) setCalories(Number(p.calorie_proposal));
+        if (p.onboarding_step) setStep(Math.min(5, Math.max(0, Number(p.onboarding_step) || 0)));
+      })
+      .catch(() => {})
+      .finally(() => setHydrated(true));
+  }, []);
+
+  async function saveProgress(values: Record<string, string>, nextStep?: number) {
+    const response = await fetch("/api/profile", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ values: { ...values, ...(nextStep === undefined ? {} : { onboarding_step: String(nextStep) }) } }),
+    });
+    const data = await response.json();
+    if (!data.ok) throw new Error(data.reason ?? "profile save failed");
+    if (nextStep !== undefined) setStep(nextStep);
+  }
 
   // funnel telemetry (charter Layer 4): one event per step reached
   useEffect(() => {
+    if (!hydrated) return;
     const names = ["start", "activity", "seeding", "body_basics", "week_draft", "done"] as const;
     track("onboarding_step", { step: names[Math.min(step, 5)] });
-  }, [step]);
+  }, [hydrated, step]);
 
   async function seed() {
     if (seeding || !seedText.trim()) return;
@@ -109,6 +128,7 @@ export default function OnboardingPage() {
       const data = await res.json();
       if (data.ok && Array.isArray(data.meals) && data.meals.length > 0) {
         setSeeded(data.meals);
+        await saveProgress({ seed_text: seedText, seeded_meals: JSON.stringify(data.meals) });
       } else {
         setState("error");
       }
@@ -119,13 +139,12 @@ export default function OnboardingPage() {
   }
 
   async function lockGoals() {
-    if (!direction || !days || !proposal || state === "busy") return;
+    if (!direction || !activity || !proposal || !restrictions.trim() || state === "busy") return;
     setState("busy");
     const target = calories ?? proposal;
     try {
       const posts = [
         { kind: "custom", title: direction },
-        { kind: "cadence", title: `Train ${days} days a week`, per_week: days },
         { kind: "nutrition", title: "Daily energy budget", daily_calories: target },
       ];
       for (const body of posts) {
@@ -137,34 +156,47 @@ export default function OnboardingPage() {
         const data = await res.json();
         if (!data.ok) throw new Error(data.reason);
       }
+      await saveProgress(
+        {
+          direction,
+          activity,
+          sex: sex!,
+          weight,
+          height,
+          age,
+          units,
+          hard_restrictions: restrictions.trim(),
+          calorie_proposal: String(target),
+        },
+        4,
+      );
       track("onboarding_step", { step: "proposal_locked", calories: target });
       setState("open");
-      setStep(4);
     } catch {
       setState("error");
     }
   }
 
   async function approveWeek() {
-    if (approving || seeded.length === 0) return;
+    if (approving || draft.length === 0) return;
     setApproving(true);
     try {
       const res = await fetch("/api/schedule", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ days: draftWeek(seeded, todayLocal()) }),
+        body: JSON.stringify({ days: draft }),
       });
       const data = await res.json();
       if (!data.ok) throw new Error();
+      await saveProgress({}, 5);
       setState("done");
-      setStep(5);
     } catch {
       setState("error");
     }
     setApproving(false);
   }
 
-  const draft = seeded.length > 0 ? draftWeek(seeded, todayLocal()) : [];
+  const draft = seeded.length > 0 ? draftTwoWeeks(seeded, todayLocal(), restrictions) : [];
 
   return (
     <>
@@ -174,7 +206,8 @@ export default function OnboardingPage() {
       </header>
       <main className="shell-main">
         <div className="p-stack">
-          {step === 0 && (
+          {!hydrated && <div className="p-placeholder">Loading your setup…</div>}
+          {hydrated && step === 0 && (
             <section className="p-card">
               <span className="p-eyebrow">First: what are you after?</span>
               <div className="chip-row">
@@ -189,34 +222,45 @@ export default function OnboardingPage() {
                   </button>
                 ))}
               </div>
-              <button type="button" className="finish-btn" disabled={!direction} onClick={() => setStep(1)}>
+              <button
+                type="button"
+                className="finish-btn"
+                disabled={!direction}
+                onClick={() => void saveProgress({ direction: direction! }, 1).catch(() => setState("error"))}
+              >
                 Next
               </button>
             </section>
           )}
 
-          {step === 1 && (
+          {hydrated && step === 1 && (
             <section className="p-card">
-              <span className="p-eyebrow">How many days a week can you train?</span>
+              <span className="p-eyebrow">What does a normal week feel like?</span>
+              <p className="onb-copy">This sets the first energy estimate. You can change it later.</p>
               <div className="chip-row">
-                {DAYS.map((d) => (
+                {ACTIVITIES.map(([key, label]) => (
                   <button
-                    key={d}
+                    key={key}
                     type="button"
-                    className={days === d ? "chip chip--on" : "chip"}
-                    onClick={() => setDays(d)}
+                    className={activity === key ? "chip chip--on" : "chip"}
+                    onClick={() => setActivity(key)}
                   >
-                    {d}
+                    {label}
                   </button>
                 ))}
               </div>
-              <button type="button" className="finish-btn" disabled={!days} onClick={() => setStep(2)}>
+              <button
+                type="button"
+                className="finish-btn"
+                disabled={!activity}
+                onClick={() => void saveProgress({ activity: activity! }, 2).catch(() => setState("error"))}
+              >
                 Next
               </button>
             </section>
           )}
 
-          {step === 2 && (
+          {hydrated && step === 2 && (
             <section className="p-card">
               <span className="p-eyebrow">What do you actually eat on repeat?</span>
               <p className="onb-copy">
@@ -246,7 +290,11 @@ export default function OnboardingPage() {
                   {seeding ? "Reading…" : "Make these favorites"}
                 </button>
               ) : (
-                <button type="button" className="finish-btn" onClick={() => setStep(3)}>
+                <button
+                  type="button"
+                  className="finish-btn"
+                  onClick={() => void saveProgress({ seed_text: seedText, seeded_meals: JSON.stringify(seeded) }, 3).catch(() => setState("error"))}
+                >
                   Next
                 </button>
               )}
@@ -254,7 +302,7 @@ export default function OnboardingPage() {
             </section>
           )}
 
-          {step === 3 && (
+          {hydrated && step === 3 && (
             <section className="p-card">
               <span className="p-eyebrow">Your daily energy budget</span>
               <p className="onb-copy">
@@ -273,16 +321,44 @@ export default function OnboardingPage() {
                   </button>
                 ))}
               </div>
+              <div className="chip-row">
+                {(["imperial", "metric"] as const).map((value) => (
+                  <button
+                    key={value}
+                    type="button"
+                    className={units === value ? "chip chip--on" : "chip"}
+                    onClick={() => {
+                      setUnits(value);
+                      setWeight("");
+                      setHeight("");
+                      setCalories(null);
+                    }}
+                  >
+                    {value === "imperial" ? "lb / inches" : "kg / cm"}
+                  </button>
+                ))}
+              </div>
               <div className="onb-basics">
-                <input className="set-input" placeholder="lb" inputMode="decimal" aria-label="Weight (lb)" value={weight} onChange={(e) => setWeight(e.target.value)} />
-                <input className="set-input" placeholder="height in" inputMode="decimal" aria-label="Height (inches)" value={height} onChange={(e) => setHeight(e.target.value)} />
+                <input className="set-input" placeholder={units === "metric" ? "kg" : "lb"} inputMode="decimal" aria-label={units === "metric" ? "Weight (kg)" : "Weight (lb)"} value={weight} onChange={(e) => setWeight(e.target.value)} />
+                <input className="set-input" placeholder={units === "metric" ? "height cm" : "height in"} inputMode="decimal" aria-label={units === "metric" ? "Height (cm)" : "Height (inches)"} value={height} onChange={(e) => setHeight(e.target.value)} />
                 <input className="set-input" placeholder="age" inputMode="numeric" aria-label="Age" value={age} onChange={(e) => setAge(e.target.value)} />
               </div>
+              <label>
+                Hard restrictions
+                <textarea
+                  className="set-input onb-seed-input"
+                  rows={2}
+                  aria-label="Hard food restrictions"
+                  placeholder="For example: peanuts, shellfish, vegetarian. Write none if there are none."
+                  value={restrictions}
+                  onChange={(event) => setRestrictions(event.target.value)}
+                />
+              </label>
               {proposal && (
                 <div className="onb-proposal">
                   <span className="p-eyebrow">Proposed</span>
                   <div className="onb-proposal-row">
-                    <button type="button" className="day-nav-btn" aria-label="Lower" onClick={() => setCalories((calories ?? proposal) - 50)}>
+                    <button type="button" className="day-nav-btn" aria-label="Lower" onClick={() => setCalories(Math.max(1200, (calories ?? proposal) - 50))}>
                       ‹
                     </button>
                     <strong className="onb-number">{calories ?? proposal} kcal</strong>
@@ -292,7 +368,7 @@ export default function OnboardingPage() {
                   </div>
                 </div>
               )}
-              <button type="button" className="finish-btn" disabled={!proposal || state === "busy"} onClick={lockGoals}>
+              <button type="button" className="finish-btn" disabled={!proposal || !restrictions.trim() || state === "busy"} onClick={lockGoals}>
                 {state === "busy" ? "Saving…" : "Lock it in"}
               </button>
               {state === "error" && (
@@ -301,11 +377,11 @@ export default function OnboardingPage() {
             </section>
           )}
 
-          {step === 4 && (
+          {hydrated && step === 4 && (
             <section className="p-card">
-              <span className="p-eyebrow">Week 1, drafted</span>
+              <span className="p-eyebrow">Your first two weeks, drafted</span>
               <p className="onb-copy">
-                Seven days from your favorites. Proposed, never imposed — approve it and it&rsquo;s
+                Fourteen Monday-start days from your favorites. Proposed, never imposed — approve it and it&rsquo;s
                 on the calendar; everything stays adjustable there.
               </p>
               <div className="p-stack">
@@ -316,20 +392,23 @@ export default function OnboardingPage() {
                   </div>
                 ))}
               </div>
-              <button type="button" className="finish-btn" disabled={approving || seeded.length === 0} onClick={approveWeek}>
-                {approving ? "Applying…" : "Approve week 1"}
+              {draft.length === 0 && (
+                <div className="p-placeholder">None of the seeded meals satisfy your hard restrictions. Go back and add safe foods.</div>
+              )}
+              <button type="button" className="finish-btn" disabled={approving || draft.length === 0} onClick={approveWeek}>
+                {approving ? "Applying…" : "Approve both weeks"}
               </button>
               {state === "error" && <p className="onb-copy">That didn&rsquo;t apply. Try again.</p>}
             </section>
           )}
 
-          {step === 5 && (
+          {hydrated && step === 5 && (
             <section className="p-card">
               <span className="p-eyebrow">You&rsquo;re set</span>
               <p className="onb-copy">
-                Goals are live and week 1 is on the calendar: {direction?.toLowerCase()}, {days}{" "}
-                training days a week, a {calories ?? proposal} kcal day, and {seeded.length}{" "}
-                favorites drafting your meals. Everything tunes as you log.
+                Your nutrition goal is live and two weeks are on the calendar: {direction?.toLowerCase()}, a{" "}
+                {calories ?? proposal} kcal proposal, and {seeded.length} favorites drafting your meals.
+                Everything tunes as you log.
               </p>
               <a href="/today" className="finish-btn onb-done-link">
                 Go to Today

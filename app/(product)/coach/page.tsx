@@ -65,20 +65,13 @@ export default function CoachPage() {
     if (!proposal || busy) return;
     setBusy(true);
     try {
-      if (outcome === "accepted") {
-        const applied = await fetch("/api/schedule", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ days: proposal.days }),
-        });
-        const appliedData = await applied.json();
-        if (!appliedData.ok) throw new Error("apply failed");
-      }
-      await fetch("/api/suggestion", {
+      const resolved = await fetch("/api/plan/resolve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ suggestion_id: proposal.suggestion_id, outcome }),
       });
+      const resolvedData = await resolved.json();
+      if (!resolvedData.ok) throw new Error("resolve failed");
       setMessages((m) => [
         ...m,
         {

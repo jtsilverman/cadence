@@ -1,4 +1,19 @@
-import type { LineItem, RecipePlan } from "./contracts";
+import type {
+  AddToListSuggestion,
+  EventEnvelope,
+  LineItem,
+  OrderPlacedPayload,
+  PantryInflowPayload,
+  RecipePlan,
+  SuggestionResolvedPayload,
+} from "./contracts";
+import {
+  ORDER_PLACED,
+  PANTRY_INFLOW,
+  SUGGESTION_MADE,
+  SUGGESTION_RESOLVED,
+} from "./contracts";
+import { byFoldOrder } from "./events";
 import type { PantryItem } from "./pantry";
 import { canonicalUnit, convert, dimensionOf } from "./units";
 
@@ -16,6 +31,78 @@ const norm = (s: string | null | undefined): string | null => {
   const n = s?.trim().toLowerCase();
   return n ? n : null;
 };
+
+// User-requested additions become list truth when their pair is accepted.
+// A later checkout or pantry inflow consumes the matching active line.
+export function acceptedListAdditions(events: EventEnvelope[]): CartLine[] {
+  const made = new Map<string, { payload: AddToListSuggestion; ts: string }>();
+  const resolved = new Map<string, { payload: SuggestionResolvedPayload; ts: string }>();
+  const purchases: EventEnvelope[] = [];
+  for (const event of [...events].sort(byFoldOrder)) {
+    if (event.type === SUGGESTION_MADE) {
+      const payload = event.payload as { kind?: string; suggestion_id?: string };
+      if (payload.kind === "add_to_list" && payload.suggestion_id) {
+        made.set(payload.suggestion_id, {
+          payload: event.payload as AddToListSuggestion,
+          ts: event.ts,
+        });
+      }
+      continue;
+    }
+    if (event.type === SUGGESTION_RESOLVED) {
+      const payload = event.payload as SuggestionResolvedPayload;
+      resolved.set(payload.suggestion_id, { payload, ts: event.ts });
+      continue;
+    }
+    if (event.type === ORDER_PLACED || event.type === PANTRY_INFLOW) {
+      purchases.push(event);
+    }
+  }
+  const active: AddToListSuggestion[] = [];
+  for (const [id, addition] of made) {
+    const resolution = resolved.get(id);
+    if (resolution?.payload.outcome !== "accepted") continue;
+    const activeFrom = addition.ts > resolution.ts ? addition.ts : resolution.ts;
+    const consumed = purchases.some((event) => {
+      if (event.ts < activeFrom) return false;
+      const items = (event.payload as OrderPlacedPayload | PantryInflowPayload).items ?? [];
+      return items.some((item) => norm(item.name) === norm(addition.payload.name));
+    });
+    if (!consumed) active.push(addition.payload);
+  }
+  return active.map((addition) => ({
+    name: norm(addition.name)!,
+    qty: addition.qty,
+    unit: norm(addition.unit),
+    sources: ["added by chat"],
+  }));
+}
+
+// Join recipe-derived and manual lines under the same unit-conversion rules.
+export function mergeCartLines(input: CartLine[]): CartLine[] {
+  const lines = new Map<string, CartLine>();
+  for (const line of input) {
+    const unit = norm(line.unit);
+    const dim = dimensionOf(unit);
+    const bucket = dim ? `dim:${dim}` : `unit:${canonicalUnit(unit) ?? ""}`;
+    const key = `${norm(line.name)}\u0000${bucket}`;
+    const existing = lines.get(key);
+    if (!existing) {
+      lines.set(key, { ...line, name: norm(line.name)!, unit, sources: [...line.sources] });
+      continue;
+    }
+    existing.qty =
+      existing.qty === null || line.qty === null
+        ? null
+        : existing.qty + convert(line.qty, unit, existing.unit)!;
+    for (const source of line.sources) {
+      if (!existing.sources.includes(source)) existing.sources.push(source);
+    }
+  }
+  return [...lines.values()].sort(
+    (a, b) => a.name.localeCompare(b.name) || (a.unit ?? "").localeCompare(b.unit ?? ""),
+  );
+}
 
 // Merge key = (name, dimension): same dimension converts and sums into the
 // first line's unit; different dimensions stay separate lines (dumb-concat,

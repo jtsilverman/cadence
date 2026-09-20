@@ -8,6 +8,7 @@ import type { Client } from "@libsql/client";
 import type {
   JournalEntryPayload,
   Precision,
+  RecipeCookedPayload,
   SessionLoggedPayload,
   SetLoggedPayload,
   SleptLoggedPayload,
@@ -16,13 +17,15 @@ import type {
 } from "./contracts";
 import {
   JOURNAL_ENTRY,
+  RECIPE_COOKED,
   SESSION_LOGGED,
   SET_LOGGED,
   SLEPT_LOGGED,
   SLOT_SKIPPED,
 } from "./contracts";
-import { isValidDate } from "./dates";
+import { isValidDate, localDate } from "./dates";
 import { appendEvent, newEventId } from "./events";
+import { ensureLoggedFood } from "./library";
 
 export type LogInput =
   | {
@@ -37,6 +40,7 @@ export type LogInput =
   | ({ kind: "set" } & SetLoggedPayload)
   | { kind: "sleep"; date: string; quality: "rough" | "ok" | "great"; hours?: number }
   | { kind: "journal"; text: string; slot_id?: string; mood?: number }
+  | { kind: "food"; title: string; date: string; quantity?: number; unit?: string }
   | { kind: "skip"; slot_id: string; lane: SlotLane };
 
 const QUALITIES = ["rough", "ok", "great"] as const;
@@ -148,6 +152,35 @@ export function parseLog(
         },
       };
     }
+    case "food": {
+      const title = optStr(body.title);
+      if (!title) return { ok: false, reason: "food needs a title" };
+      if (typeof body.date !== "string" || !isValidDate(body.date)) {
+        return { ok: false, reason: "food needs a real YYYY-MM-DD date" };
+      }
+      if (body.date > localDate(new Date())) {
+        return { ok: false, reason: "food can't be logged in the future" };
+      }
+      if (
+        body.quantity !== undefined &&
+        (typeof body.quantity !== "number" || !Number.isFinite(body.quantity) || body.quantity <= 0)
+      ) {
+        return { ok: false, reason: "food quantity must be a positive number" };
+      }
+      const unit = optStr(body.unit);
+      if (body.quantity !== undefined && !unit) {
+        return { ok: false, reason: "food quantity needs a unit" };
+      }
+      return {
+        ok: true,
+        log: {
+          kind: "food",
+          title,
+          date: body.date,
+          ...(body.quantity !== undefined ? { quantity: body.quantity as number, unit } : {}),
+        },
+      };
+    }
     case "skip": {
       const slotId = optStr(body.slot_id);
       if (!slotId) return { ok: false, reason: "skip needs a slot_id" };
@@ -157,7 +190,7 @@ export function parseLog(
       return { ok: true, log: { kind: "skip", slot_id: slotId, lane: body.lane as SlotLane } };
     }
     default:
-      return { ok: false, reason: "kind must be session | set | sleep | journal | skip" };
+      return { ok: false, reason: "kind must be session | set | sleep | journal | food | skip" };
   }
 }
 
@@ -165,15 +198,17 @@ export async function recordLog(
   db: Client,
   householdId: string,
   log: LogInput
-): Promise<{ event_id: string }> {
+): Promise<{ event_id: string; library_id?: string; first_time?: boolean }> {
   let type: string;
   let payload:
     | SessionLoggedPayload
     | SetLoggedPayload
     | SleptLoggedPayload
     | JournalEntryPayload
+    | RecipeCookedPayload
     | SlotSkippedPayload;
   let precision: Precision;
+  let loggedFood: { library_id: string; first_time: boolean } | undefined;
   // additive payload fields ride schema_version 2 (contracts convention)
   let schemaVersion = 1;
   if (log.kind === "session") {
@@ -211,6 +246,22 @@ export async function recordLog(
     };
     if (log.mood !== undefined) schemaVersion = 2;
     precision = "exact";
+  } else if (log.kind === "food") {
+    type = RECIPE_COOKED;
+    // Auto-save (UX.md): eating something puts it in the library, so the
+    // receipt points at a real row. The old `manual-<uuid>` id was unique per
+    // tap, which made the same plate a stranger every time — nothing to
+    // favorite, and no honest "eaten 4 times".
+    loggedFood = await ensureLoggedFood(db, householdId, log.title);
+    payload = {
+      library_id: loggedFood.library_id,
+      title: log.title,
+      ingredients: [],
+      manual_log: true,
+      ...(log.quantity !== undefined ? { quantity: log.quantity, unit: log.unit } : {}),
+    };
+    schemaVersion = 2;
+    precision = "estimated";
   } else {
     type = SLOT_SKIPPED;
     payload = { slot_id: log.slot_id, lane: log.lane };
@@ -218,15 +269,19 @@ export async function recordLog(
   }
   // the id goes back to the client: it is the undo handle (spec retraction-ladder)
   const eventId = newEventId();
+  const now = new Date();
+  const ts = log.kind === "food" && log.date !== localDate(now)
+    ? `${log.date}T23:30:00.000Z`
+    : now.toISOString();
   await appendEvent(db, {
     event_id: eventId,
     household_id: householdId,
     type,
-    ts: new Date().toISOString(),
+    ts,
     source: "web",
     payload,
     schema_version: schemaVersion,
     precision,
   });
-  return { event_id: eventId };
+  return { event_id: eventId, ...loggedFood };
 }

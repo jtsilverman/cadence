@@ -2,11 +2,12 @@ import { describe, expect, it } from "vitest";
 import type { EventEnvelope } from "@/lib/contracts";
 import {
   JOURNAL_ENTRY,
+  LOG_RETRACTED,
   RECIPE_COOKED,
   SESSION_LOGGED,
   SLEPT_LOGGED,
 } from "@/lib/contracts";
-import { journalHistory, mealHistory, sleepHistory, workoutHistory } from "@/lib/history";
+import { journalHistory, mealHistory, mealHistoryWithTrail, sleepHistory, workoutHistory } from "@/lib/history";
 
 const HH = "hh-test";
 
@@ -35,6 +36,22 @@ describe("mealHistory", () => {
     expect(mealHistory(events)).toEqual([
       { date: "2026-07-22", title: "Tacos", library_id: "b" },
       { date: "2026-07-20", title: "Chili", library_id: "a" },
+    ]);
+  });
+
+  it("keeps retracted meals in the visible correction trail", () => {
+    const cooked = ev(RECIPE_COOKED, "2026-07-20T22:00:00Z", {
+      library_id: "a",
+      title: "Chili",
+      ingredients: [],
+    });
+    const retract = ev(LOG_RETRACTED, "2026-07-20T22:01:00Z", {
+      retracted_event_id: cooked.event_id,
+    });
+
+    expect(mealHistory([cooked, retract])).toEqual([]);
+    expect(mealHistoryWithTrail([cooked, retract])).toMatchObject([
+      { event_id: cooked.event_id, title: "Chili", retracted: true, precision: "exact" },
     ]);
   });
 });

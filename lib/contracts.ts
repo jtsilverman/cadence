@@ -56,6 +56,9 @@ export interface RecipeCookedPayload {
   library_id: string;
   title: string;
   ingredients: LineItem[];
+  quantity?: number;
+  unit?: string;
+  manual_log?: boolean;
   // macros snapshotted at cook time (the ingredients rule): library rows
   // upsert in place, so a later re-save must never rewrite cooked history
   nutrition?: RecipeNutrition;
@@ -76,6 +79,8 @@ export const PANTRY_INFLOW = "PantryInflow";
 export const ORDER_PLACED = "OrderPlaced";
 export const RECIPE_COOKED = "RecipeCooked";
 export const RECIPE_SAVED = "RecipeSaved";
+export const FOOD_SAVED = "FoodSaved";
+export const FOOD_FAVORITED = "FoodFavorited";
 export const PREFERENCE_SET = "PreferenceSet";
 export const WEEK_PLANNED = "WeekPlanned";
 export const SUGGESTION_MADE = "SuggestionMade";
@@ -138,6 +143,10 @@ export interface ScheduleSlot {
   lane: SlotLane;
   title: string;
   library_id?: string; // meal slots: recipe; workout slots: template (lane-agnostic)
+  meal_type?: "breakfast" | "lunch" | "dinner" | "snack";
+  time?: string; // local HH:MM, approximate plan time
+  servings?: number; // user portions planned for this slot
+  prep_batch_id?: string; // slots fed by the same batch-cook event
   // spec program-engine: a hard session the repair engine must respect —
   // adjacency (no makeup stacked the day before it) and pick priority
   priority?: "high";
@@ -494,12 +503,146 @@ export interface WorkoutPlan {
   source_embed?: SourceEmbed;
 }
 
-export type StructuredPlan = RecipePlan | WorkoutPlan;
+// The five food kinds (UX.md library contract). A recipe is the cooked kind
+// and keeps its established RecipePlan shape; the other four are lighter
+// records of things Jake eats without cooking them. All five live in the same
+// `library` table, discriminated by `kind`, so one save path and one browse
+// path serve every door (link, photo, barcode, manual, invention).
+export const FOOD_KINDS = [
+  "ingredient",
+  "product",
+  "snack",
+  "recipe",
+  "meal",
+] as const;
+export type FoodKind = (typeof FOOD_KINDS)[number];
+
+// Macro basis is explicit because it genuinely differs by kind: a label lists
+// per-serving numbers, a raw ingredient is quoted per 100g. Storing the basis
+// beside the numbers keeps a later portion calculation honest instead of
+// silently treating one as the other.
+export type NutritionBasis = "per_serving" | "per_100g";
+
+export interface FoodNutrition {
+  calories: number;
+  protein_g: number;
+  carbs_g: number;
+  fat_g: number;
+  basis: NutritionBasis;
+  confidence: Confidence;
+}
+
+// Tolerant like parseNutrition: an unusable macro block drops to absent
+// (unknown), never to zeros — honest precision beats a fabricated total.
+const foodMacro = (v: unknown): v is number =>
+  typeof v === "number" && Number.isFinite(v) && v >= 0;
+
+export function parseFoodNutrition(value: unknown): FoodNutrition | null {
+  if (typeof value !== "object" || value === null || Array.isArray(value)) return null;
+  const n = value as Record<string, unknown>;
+  if (
+    !foodMacro(n.calories) ||
+    !foodMacro(n.protein_g) ||
+    !foodMacro(n.carbs_g) ||
+    !foodMacro(n.fat_g)
+  ) {
+    return null;
+  }
+  if (n.basis !== "per_serving" && n.basis !== "per_100g") return null;
+  if (n.confidence !== "high" && n.confidence !== "low") return null;
+  return {
+    calories: n.calories,
+    protein_g: n.protein_g,
+    carbs_g: n.carbs_g,
+    fat_g: n.fat_g,
+    basis: n.basis,
+    confidence: n.confidence,
+  };
+}
+
+// source_url is nullable on these kinds (unlike RecipePlan, where extraction
+// always supplies one): a hand-typed ingredient has no source, and inventing
+// a sentinel would make provenance look richer than it is.
+export interface IngredientPlan {
+  plan_version: 1;
+  kind: "ingredient";
+  title: string;
+  unit: string; // the unit its quantities are counted in: g, ml, each
+  source_url: string | null;
+  nutrition?: FoodNutrition;
+}
+
+export interface ProductPlan {
+  plan_version: 1;
+  kind: "product";
+  title: string;
+  brand: string | null;
+  upc: string | null; // barcode intake fills this; manual entry may not
+  serving_size: string | null; // free text, as printed on the label
+  source_url: string | null;
+  nutrition?: FoodNutrition;
+}
+
+export interface SnackPlan {
+  plan_version: 1;
+  kind: "snack";
+  title: string;
+  servings: number | null;
+  source_url: string | null;
+  nutrition?: FoodNutrition;
+}
+
+// A meal is an assembly of other library rows (the plate, not a new recipe).
+// Components reference library ids so editing the part updates every plate.
+// The list may be empty: a plate logged by name ("two eggs and toast") is a
+// real, re-loggable record before Jake ever itemises it. The deliberate
+// build-a-meal form still demands at least one part — that rule belongs to
+// that door, not to the type.
+export interface MealComponent {
+  library_id: string;
+  servings: number;
+}
+
+export interface MealPlan {
+  plan_version: 1;
+  kind: "meal";
+  title: string;
+  components: MealComponent[];
+  source_url: string | null;
+  total_minutes?: number | null;
+  nutrition?: FoodNutrition;
+}
+
+export type FoodPlan =
+  | IngredientPlan
+  | ProductPlan
+  | SnackPlan
+  | RecipePlan
+  | MealPlan;
+
+export type StructuredPlan = FoodPlan | WorkoutPlan;
 
 export interface RecipeSavedPayload {
   library_id: string;
   title: string;
   source_url: string;
+}
+
+// FoodSaved: the RecipeSaved pattern for the four non-recipe food kinds.
+// kind rides in the payload so the diary alone says what entered the library.
+export interface FoodSavedPayload {
+  library_id: string;
+  kind: FoodKind;
+  title: string;
+  source_url: string | null;
+}
+
+// FoodFavorited: a toggle, event-sourced like everything else. `favorite`
+// carries the new state rather than implying it, so the fold is last-write-
+// wins per library_id instead of a parity count that one lost event corrupts.
+export interface FoodFavoritedPayload {
+  library_id: string;
+  favorite: boolean;
 }
 
 // WorkoutSaved: the RecipeSaved pattern for the workout kind.

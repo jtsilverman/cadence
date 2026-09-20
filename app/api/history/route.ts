@@ -2,7 +2,7 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import { getDb, migrate } from "@/lib/db";
 import { readEvents } from "@/lib/events";
-import { journalHistory, mealHistory, sleepHistory, workoutHistory } from "@/lib/history";
+import { journalHistory, mealHistory, mealHistoryWithTrail, sleepHistory, workoutHistory } from "@/lib/history";
 
 const HOUSEHOLD_ID = "hh-jake"; // single household until P4 auth
 
@@ -30,6 +30,10 @@ export async function GET(request: NextRequest) {
   const limit = Number.isInteger(rawLimit) && rawLimit > 0 ? Math.min(rawLimit, 500) : 50;
   const db = getDb();
   await migrate(db);
-  const entries = reader(await readEvents(db, HOUSEHOLD_ID)).slice(0, limit);
+  const events = await readEvents(db, HOUSEHOLD_ID);
+  const entries = (kind === "meals" && request.nextUrl.searchParams.get("trail") === "1"
+    ? mealHistoryWithTrail(events)
+    : reader(events)
+  ).slice(0, limit);
   return NextResponse.json({ ok: true, kind, entries });
 }

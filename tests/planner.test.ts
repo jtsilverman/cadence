@@ -95,6 +95,29 @@ describe("composeWeekDraft", () => {
     expect(out.reason.toLowerCase()).toContain("no recipes");
   });
 
+  it("hard restrictions remove incompatible recipes before any model can pick", () => {
+    const out = composeWeekDraft(baseCtx({
+      hardRestrictions: "peanuts, vegetarian",
+      meals: [
+        { ...meal("m1", "Peanut chicken", 600, null, "2026-07-01"), ingredients: ["peanuts", "chicken"], vegetarian: false },
+        { ...meal("m2", "Black bean tacos", 500, null, "2026-07-02"), ingredients: ["black beans"], vegetarian: true },
+      ],
+    }));
+    const meals = out.days.flatMap((day) => day.slots).filter((slot) => slot.lane === "meal");
+    expect(meals.every((slot) => slot.library_id === "m2")).toBe(true);
+    expect(out.reason).toContain("hard food restrictions");
+  });
+
+  it("nutrition-only drafts four timed meal slots and no workout-facing lanes", () => {
+    const out = composeWeekDraft(baseCtx({ nutritionOnly: true }));
+    for (const day of out.days) {
+      expect(day.slots).toHaveLength(4);
+      expect(day.slots.map((slot) => slot.meal_type)).toEqual(["breakfast", "lunch", "snack", "dinner"]);
+      expect(day.slots.map((slot) => slot.time)).toEqual(["08:00", "12:30", "16:00", "19:00"]);
+      expect(day.slots.every((slot) => slot.lane === "meal" && slot.servings === 1)).toBe(true);
+    }
+  });
+
   it("byte-deterministic: same context, same draft", () => {
     expect(composeWeekDraft(baseCtx())).toEqual(composeWeekDraft(baseCtx()));
   });

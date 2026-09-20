@@ -10,7 +10,7 @@ import {
   rebuildPantryView,
   rebuildPantry,
 } from "@/lib/pantry";
-import { saveRecipe } from "@/lib/library";
+import { saveFood, saveRecipe } from "@/lib/library";
 import {
   PANTRY_ASSERTED,
   PANTRY_INFLOW,
@@ -193,6 +193,36 @@ describe("recordCooked", () => {
   it("rejects an unknown library id without writing anything", async () => {
     await expect(recordCooked(db, HH, "nope")).rejects.toThrow(/not found/);
     expect(await readEvents(db, HH, { type: RECIPE_COOKED })).toHaveLength(0);
+  });
+
+  it("logs a saved meal template without inventing pantry depletion", async () => {
+    const { library_id } = await saveFood(db, HH, {
+      plan_version: 1,
+      kind: "meal",
+      title: "Egg tacos",
+      components: [],
+      source_url: null,
+      nutrition: {
+        calories: 420,
+        protein_g: 24,
+        carbs_g: 30,
+        fat_g: 22,
+        basis: "per_serving",
+        confidence: "low",
+      },
+    });
+    await assertPantry(db, HH, { name: "eggs", qty: 12, unit: "count" });
+
+    await recordCooked(db, HH, library_id);
+
+    const [event] = await readEvents(db, HH, { type: RECIPE_COOKED });
+    expect(event.payload).toMatchObject({
+      library_id,
+      title: "Egg tacos",
+      ingredients: [],
+      nutrition: { calories: 420, per_serving: true },
+    });
+    expect((await readPantryView(db, HH))[0].qty).toBe(12);
   });
 });
 

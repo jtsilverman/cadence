@@ -283,6 +283,9 @@ describe("runChat executors", () => {
         { slot_id: "l1", lane: "meal", title: "Chicken bowl" },
         { slot_id: "d1", lane: "meal", title: "Stir fry" },
       ] },
+      { date: (await import("@/lib/dates")).isoAddDays(today, 1), slots: [
+        { slot_id: "tomorrow-dinner", lane: "meal", title: "Salmon bowl" },
+      ] },
     ]);
     const outcome = await chat.runChat(db, HH, { text: "skipped lunch, too late to cook now", history: [], nowISO: now },
       model(verdict({ intent: "skip_meal", skip_meal: "lunch" })));
@@ -291,9 +294,19 @@ describe("runChat executors", () => {
     const suggestions = await events.readEvents(db, HH, { type: "SuggestionMade" });
     const drafts = suggestions.filter((e) => (e.payload as { kind: string }).kind === "plan_draft");
     expect(drafts.length).toBe(1);
+    expect((drafts[0].payload as { days: unknown[] }).days).toHaveLength(2);
+    expect(outcome.proposal?.days).toHaveLength(2);
     expect(outcome.reply.toLowerCase()).toContain("snack");
     const planned = await events.readEvents(db, HH, { type: "SchedulePlanned" });
     expect(planned.length).toBe(1); // only the seed — proposal not applied
+
+    await chat.runChat(db, HH, { text: "yes", history: [], nowISO: now },
+      model(verdict({ intent: "approve_proposal" })));
+    const { rebuildSchedule } = await import("@/lib/schedule");
+    const applied = rebuildSchedule(await events.readEvents(db, HH));
+    expect(applied).toHaveLength(2);
+    expect(applied[0].slots.some((slot) => slot.title.toLowerCase().includes("makeup snack"))).toBe(true);
+    expect(applied[1].slots.map((slot) => slot.title)).toEqual(["Salmon bowl"]);
   });
 
   it("an explicit 'we're out of X' asserts pantry truth (user statement, not inference)", async () => {
@@ -336,6 +349,17 @@ describe("runChat executors", () => {
     expect(live.length).toBe(1);
     expect((live[0].payload as { title: string }).title).toBe("Granola bar");
     expect(outcome.reply).toContain("Two beers");
+  });
+
+  it("a named retraction that matches nothing never removes the latest log", async () => {
+    const db = await freshDb();
+    const now = new Date().toISOString();
+    await chat.runChat(db, HH, { text: "granola bar", history: [], nowISO: now },
+      model(verdict({ intent: "log_food", items: [{ title: "Granola bar", calories: 200, protein_g: 5, carbs_g: 25, fat_g: 8, day_offset: 0, sitting: 1, confidence: "high" }] })));
+    const outcome = await chat.runChat(db, HH, { text: "delete the beers", history: [], nowISO: now },
+      model(verdict({ intent: "retract_last", retract_match: "beer" } as never)));
+    expect((await events.readEvents(db, HH, { type: "LogRetracted" })).length).toBe(0);
+    expect(outcome.reply).toContain("no recent log");
   });
 
   it("a single-day blowout proposes the capped trim even when the week is still under", async () => {

@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-// The five product surfaces (ux.md screen map). Today is home; the coach is
-// the docked bar below, not a tab.
+// The nutrition-only product surfaces (ux.md screen map). Today is home; the
+// coach is the docked bar below, not a tab. Feed and workouts are later scope
+// and must not appear as available product surfaces.
 const TABS = [
   ["/today", "Today"],
-  ["/feed", "Feed"],
   ["/nutrition", "Nutrition"],
-  ["/workouts", "Workouts"],
   ["/journal", "Journal"],
 ] as const;
 
@@ -34,11 +33,11 @@ export function TabBar() {
   );
 }
 
-// Docked on every screen except the Feed (ux.md); absent on /coach because
-// that screen IS the conversation.
+// Docked on every product screen; absent on /coach because that screen is the
+// conversation.
 export function CoachDock() {
   const pathname = usePathname() ?? "";
-  if (pathname.startsWith("/feed") || pathname.startsWith("/coach")) return null;
+  if (pathname.startsWith("/coach")) return null;
   return (
     <div className="coach-dock">
       <Link href="/coach" className="coach-dock-inner">

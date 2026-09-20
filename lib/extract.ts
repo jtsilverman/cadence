@@ -4,7 +4,7 @@ import type {
   RecipeNutrition,
   SourceEmbed,
   RecipePlan,
-  StructuredPlan,
+  WorkoutPlan,
 } from "./contracts";
 import { parseSourceEmbed } from "./contracts";
 import { parseWorkoutPlan } from "./workouts";
@@ -436,8 +436,14 @@ function stripHtml(html: string): string {
     .trim();
 }
 
+// Extraction only ever produces the two kinds that carry a source: a recipe
+// or a workout. It is deliberately narrower than StructuredPlan — the other
+// food kinds arrive through lib/food.ts, and widening this type would make
+// every caller re-narrow before touching source_embed.
+export type ExtractedPlan = RecipePlan | WorkoutPlan;
+
 export type ExtractionResult =
-  | { ok: true; plan: StructuredPlan }
+  | { ok: true; plan: ExtractedPlan }
   | { ok: false; reason: string };
 
 // Parse + validate the model's raw text into StructuredPlan v1.

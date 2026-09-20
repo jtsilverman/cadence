@@ -1,14 +1,14 @@
 // Onboarding seeding (ux.md: the dictation-first question — "what do you
 // actually eat on repeat" — materializes favorite meals as the user talks).
 // One model call structures the freetext into simple meals with estimated
-// macros; each becomes a real library recipe (RecipeSaved), which is what
+// macros; each becomes a real meal template (FoodSaved), which is what
 // week 1 drafts from. Deterministic fallback: comma-split titles with no
 // macros — the budget then honestly reports unknown meals.
 
 import Anthropic from "@anthropic-ai/sdk";
 import type { Client } from "@libsql/client";
-import type { RecipePlan } from "./contracts";
-import { saveRecipe } from "./library";
+import type { MealPlan } from "./contracts";
+import { saveFood } from "./library";
 
 export interface SeedMeal {
   title: string;
@@ -93,9 +93,6 @@ export function fallbackSeedMeals(text: string): SeedMeal[] {
     }));
 }
 
-const slug = (title: string): string =>
-  title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
-
 export async function seedLibrary(
   db: Client,
   householdId: string,
@@ -111,15 +108,13 @@ export async function seedLibrary(
   if (meals.length === 0) meals = fallbackSeedMeals(text);
   const saved: Array<{ library_id: string; title: string }> = [];
   for (const meal of meals) {
-    const plan: RecipePlan = {
+    const plan: MealPlan = {
       plan_version: 1,
-      kind: "recipe",
+      kind: "meal",
       title: meal.title,
-      servings: 1,
+      components: [],
       total_minutes: meal.minutes,
-      ingredients: [],
-      steps: [],
-      source_url: `onboarding:${slug(meal.title)}`,
+      source_url: null,
       ...(meal.calories != null
         ? {
             nutrition: {
@@ -127,14 +122,32 @@ export async function seedLibrary(
               protein_g: meal.protein_g ?? 0,
               carbs_g: meal.carbs_g ?? 0,
               fat_g: meal.fat_g ?? 0,
-              per_serving: true as const,
+              basis: "per_serving" as const,
               confidence: "low" as const,
             },
           }
         : {}),
-      confidence: { title: "high", servings: "low", total_minutes: "low" },
     };
-    const { library_id } = await saveRecipe(db, householdId, plan);
+    let library_id: string;
+    try {
+      ({ library_id } = await saveFood(db, householdId, plan));
+    } catch {
+      // Retrying onboarding with the same foods is idempotent. The unique meal
+      // title index chooses the existing row; refresh it with the latest
+      // reviewed estimates instead of failing or stacking a duplicate.
+      const existing = await db.execute({
+        sql: `SELECT id FROM library
+          WHERE household_id = ? AND kind = 'meal' AND lower(trim(plan ->> '$.title')) = lower(trim(?))
+          ORDER BY created_at ASC, rowid ASC LIMIT 1`,
+        args: [householdId, meal.title],
+      });
+      if (existing.rows.length === 0) throw new Error("onboarding meal save failed");
+      library_id = existing.rows[0].id as string;
+      await db.execute({
+        sql: "UPDATE library SET plan = ?, updated_at = ? WHERE household_id = ? AND id = ?",
+        args: [JSON.stringify(plan), new Date().toISOString(), householdId, library_id],
+      });
+    }
     saved.push({ library_id, title: meal.title });
   }
   return saved;

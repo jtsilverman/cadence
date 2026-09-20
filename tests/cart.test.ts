@@ -1,6 +1,12 @@
 import { describe, it, expect } from "vitest";
-import { aggregateIngredients, diffAgainstPantry, parseLineItems } from "@/lib/cart";
-import type { RecipePlan } from "@/lib/contracts";
+import {
+  acceptedListAdditions,
+  aggregateIngredients,
+  diffAgainstPantry,
+  mergeCartLines,
+  parseLineItems,
+} from "@/lib/cart";
+import type { EventEnvelope, RecipePlan } from "@/lib/contracts";
 import type { PantryItem } from "@/lib/pantry";
 
 function plan(title: string, ingredients: Array<[string, number | null, string | null]>): RecipePlan {
@@ -194,5 +200,56 @@ describe("diffAgainstPantry (quantity-aware: buy = needed − on-hand, spec sche
     const { toBuy, stocked } = diffAgainstPantry(lines, []);
     expect(toBuy).toEqual([{ name: "rice", qty: 1, unit: "cup", sources: ["A"] }]);
     expect(stocked).toEqual([]);
+  });
+});
+
+describe("accepted user grocery additions", () => {
+  const event = (id: string, type: string, minute: number, payload: unknown): EventEnvelope => ({
+    event_id: id,
+    household_id: "hh-jake",
+    type,
+    ts: `2026-09-19T08:${String(minute).padStart(2, "0")}:00Z`,
+    source: "chat",
+    payload,
+    schema_version: 1,
+    precision: "exact",
+  });
+
+  const made = event("e1", "SuggestionMade", 1, {
+    suggestion_id: "s1",
+    kind: "add_to_list",
+    name: "Paper towels",
+    qty: 2,
+    unit: "roll",
+    reason: "you asked via chat",
+  });
+  const accepted = event("e2", "SuggestionResolved", 2, {
+    suggestion_id: "s1",
+    kind: "add_to_list",
+    name: "Paper towels",
+    outcome: "accepted",
+  });
+
+  it("projects an accepted chat addition as a durable cart line", () => {
+    expect(acceptedListAdditions([accepted, made])).toEqual([
+      { name: "paper towels", qty: 2, unit: "roll", sources: ["added by chat"] },
+    ]);
+  });
+
+  it("removes the line after a later checkout buys it", () => {
+    const order = event("e3", "OrderPlaced", 3, {
+      rail: "instore",
+      items: [{ name: "paper towels", qty: 2, unit: "roll" }],
+    });
+    expect(acceptedListAdditions([made, accepted, order])).toEqual([]);
+  });
+
+  it("merges a manual addition with a compatible recipe line", () => {
+    expect(
+      mergeCartLines([
+        { name: "lime", qty: 1, unit: "lb", sources: ["Tacos"] },
+        { name: "Lime", qty: 8, unit: "oz", sources: ["added by chat"] },
+      ]),
+    ).toEqual([{ name: "lime", qty: 1.5, unit: "lb", sources: ["Tacos", "added by chat"] }]);
   });
 });

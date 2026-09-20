@@ -289,14 +289,30 @@ export async function recordCooked(
   const [row] = await getPlans(db, householdId, [libraryId]);
   if (!row) throw new Error(`recipe ${libraryId} not found`);
   const plan = row.plan;
-  // a workout id must never cook: no pantry decrement, no RecipeCooked
-  if (plan.kind !== "recipe") throw new Error(`${libraryId} is not a recipe`);
+  // Recipes deplete their snapshotted ingredients. A saved meal template is
+  // also eatable, but its unitemised components assert no pantry truth.
+  if (plan.kind !== "recipe" && plan.kind !== "meal") {
+    throw new Error(`${libraryId} is not a recipe or meal`);
+  }
   const payload: RecipeCookedPayload = {
     library_id: libraryId,
     title: plan.title,
-    ingredients: plan.ingredients.map(({ name, qty, unit }) => ({ name, qty, unit })),
+    ingredients: plan.kind === "recipe"
+      ? plan.ingredients.map(({ name, qty, unit }) => ({ name, qty, unit }))
+      : [],
   };
-  if (plan.nutrition) payload.nutrition = plan.nutrition;
+  if (plan.nutrition) {
+    payload.nutrition = plan.kind === "recipe"
+      ? plan.nutrition
+      : {
+          calories: plan.nutrition.calories,
+          protein_g: plan.nutrition.protein_g,
+          carbs_g: plan.nutrition.carbs_g,
+          fat_g: plan.nutrition.fat_g,
+          per_serving: true,
+          confidence: plan.nutrition.confidence,
+        };
+  }
   const eventId = newEventId();
   await applyPantryEvent(db, householdId, {
     event_id: eventId,

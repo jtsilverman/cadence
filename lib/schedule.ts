@@ -152,7 +152,17 @@ export function parseScheduleDays(
     if (!Array.isArray(slots)) return { ok: false, reason: `slots must be an array (${date})` };
     const parsed: ScheduleSlot[] = [];
     for (const raw of slots) {
-      const { slot_id, lane, title, library_id, priority } = (raw ?? {}) as Record<string, unknown>;
+      const {
+        slot_id,
+        lane,
+        title,
+        library_id,
+        priority,
+        meal_type,
+        time,
+        servings,
+        prep_batch_id,
+      } = (raw ?? {}) as Record<string, unknown>;
       if (!SLOT_LANES.includes(lane as SlotLane)) {
         return { ok: false, reason: `lane must be one of ${SLOT_LANES.join(" | ")}` };
       }
@@ -172,6 +182,30 @@ export function parseScheduleDays(
         title: trimmed,
       };
       if (typeof library_id === "string") slot.library_id = library_id;
+      if (meal_type !== undefined) {
+        if (lane !== "meal" || !["breakfast", "lunch", "dinner", "snack"].includes(meal_type as string)) {
+          return { ok: false, reason: `bad meal_type for "${trimmed}"` };
+        }
+        slot.meal_type = meal_type as NonNullable<ScheduleSlot["meal_type"]>;
+      }
+      if (time !== undefined) {
+        if (typeof time !== "string" || !/^([01]\d|2[0-3]):[0-5]\d$/.test(time)) {
+          return { ok: false, reason: `time must be local HH:MM for "${trimmed}"` };
+        }
+        slot.time = time;
+      }
+      if (servings !== undefined) {
+        if (typeof servings !== "number" || !Number.isFinite(servings) || servings <= 0) {
+          return { ok: false, reason: `servings must be positive for "${trimmed}"` };
+        }
+        slot.servings = servings;
+      }
+      if (prep_batch_id !== undefined) {
+        if (typeof prep_batch_id !== "string" || !prep_batch_id.trim()) {
+          return { ok: false, reason: `bad prep_batch_id for "${trimmed}"` };
+        }
+        slot.prep_batch_id = prep_batch_id;
+      }
       if (priority !== undefined) {
         if (priority !== "high") {
           return { ok: false, reason: `priority, when present, must be "high" ("${trimmed}")` };

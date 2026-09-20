@@ -3,11 +3,28 @@ import { createClient, type Client } from "@libsql/client";
 // Turso in deploy; local file fallback for dev; tests pass :memory: clients explicitly.
 // Memoized: per-request createClient leaks file handles in a warm process (next dev).
 let client: Client | undefined;
+
+export function resolveDatabaseConfig(env: NodeJS.ProcessEnv = process.env): {
+  url: string;
+  authToken?: string;
+} {
+  const url = env.TURSO_DATABASE_URL;
+  if (env.NODE_ENV === "production") {
+    if (!url || url.startsWith("file:") || url === ":memory:") {
+      throw new Error("Production requires a durable TURSO_DATABASE_URL");
+    }
+    if (!env.TURSO_AUTH_TOKEN) {
+      throw new Error("Production requires TURSO_AUTH_TOKEN");
+    }
+  }
+  return {
+    url: url ?? "file:local.db",
+    ...(env.TURSO_AUTH_TOKEN ? { authToken: env.TURSO_AUTH_TOKEN } : {}),
+  };
+}
+
 export function getDb(): Client {
-  client ??= createClient({
-    url: process.env.TURSO_DATABASE_URL ?? "file:local.db",
-    authToken: process.env.TURSO_AUTH_TOKEN,
-  });
+  client ??= createClient(resolveDatabaseConfig());
   return client;
 }
 
@@ -26,6 +43,12 @@ const SCHEMA = [
     precision TEXT NOT NULL
   )`,
   `CREATE INDEX IF NOT EXISTS idx_events_household_ts ON events (household_id, ts)`,
+  `CREATE UNIQUE INDEX IF NOT EXISTS idx_one_suggestion_resolution
+    ON events (household_id, json_extract(payload, '$.suggestion_id'))
+    WHERE type = 'SuggestionResolved'`,
+  `CREATE UNIQUE INDEX IF NOT EXISTS idx_one_log_retraction
+    ON events (household_id, json_extract(payload, '$.retracted_event_id'))
+    WHERE type = 'LogRetracted'`,
   `CREATE TABLE IF NOT EXISTS library (
     id TEXT PRIMARY KEY,
     household_id TEXT NOT NULL,
@@ -35,6 +58,9 @@ const SCHEMA = [
     created_at TEXT NOT NULL,
     updated_at TEXT NOT NULL
   )`,
+  `CREATE UNIQUE INDEX IF NOT EXISTS idx_one_named_meal
+    ON library (household_id, lower(trim(json_extract(plan, '$.title'))))
+    WHERE kind = 'meal'`,
   `CREATE TABLE IF NOT EXISTS pantry_view (
     household_id TEXT NOT NULL,
     name TEXT NOT NULL,

@@ -50,7 +50,7 @@ describe("J14: the week arrives drafted", () => {
   let firstDraftId: string;
   let draftDays: any[];
 
-  it("the draft covers next week in all four lanes, drawn from my library", async () => {
+  it("the draft covers next week with four timed nutrition slots per day", async () => {
     const res = await get(draft as any);
     expect(res.status).toBe(200);
     expect(res.body.suggestion_id).toBeTruthy();
@@ -62,18 +62,21 @@ describe("J14: the week arrives drafted", () => {
     }
     const slots = draftDays.flatMap((d: any) => d.slots);
     const meals = slots.filter((s: any) => s.lane === "meal");
-    expect(meals).toHaveLength(7); // one dinner per day
+    expect(meals).toHaveLength(28);
     for (const m of meals) expect(titles).toContain(m.title);
-    // rotation, not repetition: with 3 recipes no two consecutive days match
+    for (const day of draftDays) {
+      expect(day.slots.map((slot: any) => slot.meal_type)).toEqual(["breakfast", "lunch", "snack", "dinner"]);
+      expect(day.slots.map((slot: any) => slot.time)).toEqual(["08:00", "12:30", "16:00", "19:00"]);
+      expect(day.slots.every((slot: any) => slot.servings === 1)).toBe(true);
+    }
+    // rotation, not repetition: consecutive breakfasts do not match
     const mealByDate = draftDays
       .filter((d: any) => d.slots.some((s: any) => s.lane === "meal"))
-      .map((d: any) => d.slots.find((s: any) => s.lane === "meal").title);
+      .map((d: any) => d.slots.find((s: any) => s.meal_type === "breakfast").title);
     for (let i = 1; i < mealByDate.length; i++) {
       expect(mealByDate[i]).not.toBe(mealByDate[i - 1]);
     }
-    expect(slots.filter((s: any) => s.lane === "workout")).toHaveLength(2); // my cadence
-    expect(slots.filter((s: any) => s.lane === "sleep")).toHaveLength(7);
-    expect(slots.filter((s: any) => s.lane === "mind")).toHaveLength(2);
+    expect(slots.every((s: any) => s.lane === "meal")).toBe(true);
     // proposal only: nothing landed on the real schedule
     const schedule = await get(app.schedule);
     expect(schedule.body.days.some((d: any) => d.date >= nextMonday)).toBe(false);

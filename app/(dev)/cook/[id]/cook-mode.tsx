@@ -102,7 +102,7 @@ export default function CookMode({
       {phase.name === "done" && (
         <>
           <p style={{ fontSize: 24 }}>Logged — pantry adjusted.</p>
-          <a href="/recipes">← back to cookbook</a>
+          <a href="/nutrition">← back to Nutrition</a>
         </>
       )}
 

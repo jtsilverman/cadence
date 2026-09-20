@@ -20,6 +20,17 @@ interface Day {
   date: string;
   slots: Slot[];
   budget?: { consumed: number; target: number };
+  recovery?: { score?: number; hrv?: number; resting_hr?: number };
+  repair_proposals?: Array<{
+    suggestion_id: string;
+    option: string;
+    reason: string;
+    recommended?: boolean;
+  }>;
+  nutrition_proposals?: Array<{
+    suggestion_id: string;
+    reason: string;
+  }>;
 }
 
 function todayLocal(): string {
@@ -83,26 +94,46 @@ interface RecipeOption {
   title: string;
 }
 
+interface DraftProposal {
+  suggestion_id: string;
+  reason: string;
+  days: Array<{ date: string; slots: Array<{ title: string; meal_type?: string; time?: string }> }>;
+}
+
 function DayView({
   day,
   cooking,
   undoable,
   swapOptions,
   onCook,
+  onSkip,
   onUndo,
   onSwap,
+  onResolve,
 }: {
   day: Day | undefined;
   cooking: string | null;
   undoable: Map<string, string>; // slot_id → event_id of this session's cook
   swapOptions: RecipeOption[];
   onCook: (slot: Slot) => void;
+  onSkip: (slot: Slot) => void;
   onUndo: (slot: Slot) => void;
   onSwap: (slot: Slot, next: RecipeOption) => void;
+  onResolve: (suggestionId: string, outcome: "accepted" | "dismissed", appliesPlan: boolean) => void;
 }) {
   const [swapOpen, setSwapOpen] = useState<string | null>(null);
   return (
     <div className="p-stack">
+      {day?.recovery && (
+        <div className="p-card">
+          <span className="p-eyebrow">Whoop recovery</span>
+          <strong>{day.recovery.score ?? "—"}</strong>
+          <span className="p-muted">
+            {day.recovery.hrv != null ? ` · HRV ${day.recovery.hrv}` : ""}
+            {day.recovery.resting_hr != null ? ` · resting ${day.recovery.resting_hr}` : ""}
+          </span>
+        </div>
+      )}
       {day?.budget && (
         <div className="p-card">
           <span className="p-eyebrow">Day budget</span>
@@ -137,10 +168,13 @@ function DayView({
                 >
                   Swap
                 </button>
+                <button type="button" className="cook-btn cook-btn--ghost" onClick={() => onSkip(slot)}>
+                  Skipped
+                </button>
               </span>
-            ) : slot.status === "done" && undoable.has(slot.slot_id) ? (
+            ) : (slot.status === "done" || slot.status === "skipped") && undoable.has(slot.slot_id) ? (
               <span className="slot-actions">
-                <span className="slot-status">eaten</span>
+                <span className="slot-status">{slot.status === "done" ? "eaten" : "skipped"}</span>
                 <button type="button" className="cook-btn cook-btn--ghost" onClick={() => onUndo(slot)}>
                   Undo
                 </button>
@@ -169,6 +203,26 @@ function DayView({
                 ))}
             </div>
           )}
+        </div>
+      ))}
+      {day?.repair_proposals?.map((proposal) => (
+        <div key={proposal.suggestion_id} className="p-card">
+          <span className="p-eyebrow">{proposal.recommended ? "Recommended repair" : "Repair option"}</span>
+          <p className="onb-copy">{proposal.reason}</p>
+          <div className="chip-row">
+            <button type="button" className="chip chip--on" onClick={() => onResolve(proposal.suggestion_id, "accepted", true)}>Apply {proposal.option}</button>
+            <button type="button" className="chip" onClick={() => onResolve(proposal.suggestion_id, "dismissed", true)}>Dismiss</button>
+          </div>
+        </div>
+      ))}
+      {day?.nutrition_proposals?.map((proposal) => (
+        <div key={proposal.suggestion_id} className="p-card">
+          <span className="p-eyebrow">Week adjustment</span>
+          <p className="onb-copy">{proposal.reason}</p>
+          <div className="chip-row">
+            <button type="button" className="chip chip--on" onClick={() => onResolve(proposal.suggestion_id, "accepted", false)}>Use this adjustment</button>
+            <button type="button" className="chip" onClick={() => onResolve(proposal.suggestion_id, "dismissed", false)}>Dismiss</button>
+          </div>
         </div>
       ))}
     </div>
@@ -332,6 +386,10 @@ export default function TodayPage() {
   const [cooking, setCooking] = useState<string | null>(null);
   const [undoable, setUndoable] = useState<Map<string, string>>(new Map());
   const [swapOptions, setSwapOptions] = useState<RecipeOption[]>([]);
+  const [draft, setDraft] = useState<DraftProposal | null>(null);
+  const [draftBusy, setDraftBusy] = useState(false);
+  const [whoop, setWhoop] = useState<{ configured: boolean; connected: boolean } | null>(null);
+  const [whoopSyncing, setWhoopSyncing] = useState(false);
 
   useEffect(() => {
     fetch("/api/schedule")
@@ -350,6 +408,10 @@ export default function TodayPage() {
         )
       )
       .catch(() => setSwapOptions([]));
+    fetch("/api/whoop/status")
+      .then((res) => res.json())
+      .then((data) => data.ok && setWhoop({ configured: Boolean(data.configured), connected: Boolean(data.connected) }))
+      .catch(() => setWhoop(null));
   }, []);
 
   async function refetchSchedule() {
@@ -378,6 +440,26 @@ export default function TodayPage() {
       }
     } catch {
       setNotice("Couldn't log that. Nothing was written.");
+    }
+    setCooking(null);
+  }
+
+  async function skipSlot(slot: Slot) {
+    if (cooking) return;
+    setCooking(slot.slot_id);
+    setNotice(null);
+    try {
+      const data = await fetch("/api/log", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ kind: "skip", slot_id: slot.slot_id, lane: "meal" }),
+      }).then((response) => response.json());
+      if (!data.ok || !data.event_id || !data.days) throw new Error();
+      setUndoable((previous) => new Map(previous).set(slot.slot_id, data.event_id));
+      setDays(data.days);
+      setNotice(`Skipped: ${slot.title}. Choose a repair below or leave the plan alone.`);
+    } catch {
+      setNotice("Couldn't record that skip. Nothing was written.");
     }
     setCooking(null);
   }
@@ -460,6 +542,96 @@ export default function TodayPage() {
     }
   }
 
+  async function loadDraft() {
+    if (draftBusy) return;
+    setDraftBusy(true);
+    setNotice(null);
+    try {
+      const data = await fetch("/api/plan/draft").then((response) => response.json());
+      if (data.ok && data.suggestion_id && data.draft?.days) {
+        setDraft({
+          suggestion_id: data.suggestion_id,
+          reason: String(data.draft.reason ?? "Next week drafted from your food library."),
+          days: data.draft.days,
+        });
+      } else if (data.ok) {
+        setNotice("The next-week draft is currently dismissed. Change the inputs or ask the coach to revisit it.");
+      } else {
+        setNotice("Couldn't draft next week.");
+      }
+    } catch {
+      setNotice("Couldn't draft next week.");
+    }
+    setDraftBusy(false);
+  }
+
+  async function resolveDraft(outcome: "accepted" | "dismissed") {
+    if (!draft || draftBusy) return;
+    setDraftBusy(true);
+    try {
+      const data = await fetch("/api/plan/resolve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ suggestion_id: draft.suggestion_id, outcome }),
+      }).then((response) => response.json());
+      if (!data.ok) {
+        if (String(data.reason ?? "").includes("fresh draft")) setDraft(null);
+        setNotice(data.reason ?? "That draft decision didn't save. The calendar is unchanged.");
+        setDraftBusy(false);
+        return;
+      }
+      setDraft(null);
+      setNotice(outcome === "accepted" ? "Next week approved and on the calendar." : "Draft dismissed. The calendar is unchanged.");
+      if (outcome === "accepted") await refetchSchedule();
+    } catch {
+      setNotice("That draft decision didn't save. The calendar is unchanged.");
+    }
+    setDraftBusy(false);
+  }
+
+  async function resolveVisibleSuggestion(
+    suggestionId: string,
+    outcome: "accepted" | "dismissed",
+    appliesPlan: boolean,
+  ) {
+    try {
+      const data = await fetch(appliesPlan ? "/api/plan/resolve" : "/api/suggestion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ suggestion_id: suggestionId, outcome }),
+      }).then((response) => response.json());
+      if (!data.ok) throw new Error();
+      setNotice(
+        outcome === "accepted"
+          ? appliesPlan
+            ? "Repair approved and on the calendar."
+            : "Adjustment accepted."
+          : "Suggestion dismissed. The plan is unchanged.",
+      );
+      await refetchSchedule();
+    } catch {
+      setNotice("That decision didn't save. The plan is unchanged.");
+    }
+  }
+
+  async function syncWhoop() {
+    if (whoopSyncing) return;
+    setWhoopSyncing(true);
+    try {
+      const data = await fetch("/api/whoop/sync", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ days: 14 }),
+      }).then((response) => response.json());
+      if (!data.ok) throw new Error();
+      setNotice("Whoop synced. Recovery and sleep context are up to date.");
+      await refetchSchedule();
+    } catch {
+      setNotice("Whoop couldn't sync. Your nutrition plan still works without it.");
+    }
+    setWhoopSyncing(false);
+  }
+
   const day = days?.find((d) => d.date === date);
   const title = view === "week" ? "Week" : date === today ? "Today" : longDate(date).split(",")[0];
 
@@ -508,6 +680,49 @@ export default function TodayPage() {
             No goals yet. Three quick questions and the plan drafts itself.
           </a>
         )}
+        {whoop?.configured && (
+          <section className="p-card">
+            <span className="p-eyebrow">Whoop</span>
+            {whoop.connected ? (
+              <div className="chip-row">
+                <span className="chip chip--on">Connected</span>
+                <button type="button" className="chip" disabled={whoopSyncing} onClick={() => void syncWhoop()}>
+                  {whoopSyncing ? "Syncing…" : "Sync recent data"}
+                </button>
+              </div>
+            ) : (
+              <a className="finish-btn" href="/api/whoop/connect">Connect Whoop</a>
+            )}
+          </section>
+        )}
+        {view === "week" && goalCount !== 0 && (
+          <section className="p-card p-stack">
+            <span className="p-eyebrow">Living draft</span>
+            {!draft ? (
+              <button type="button" className="finish-btn" disabled={draftBusy} onClick={() => void loadDraft()}>
+                {draftBusy ? "Drafting…" : "Review next week draft"}
+              </button>
+            ) : (
+              <>
+                <p className="onb-copy">{draft.reason}</p>
+                <div className="p-stack">
+                  {draft.days.map((draftDay) => (
+                    <div key={draftDay.date} className="slot-row">
+                      <span className="slot-lane">{dayChip(draftDay.date)}</span>
+                      <span className="slot-title">
+                        {draftDay.slots.map((slot) => `${slot.meal_type ?? "meal"}: ${slot.title}`).join(" · ")}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <div className="chip-row">
+                  <button type="button" className="finish-btn" disabled={draftBusy} onClick={() => void resolveDraft("accepted")}>Approve next week</button>
+                  <button type="button" className="chip" disabled={draftBusy} onClick={() => void resolveDraft("dismissed")}>Not now</button>
+                </div>
+              </>
+            )}
+          </section>
+        )}
         {days &&
           (view === "day" ? (
             <DayView
@@ -516,8 +731,10 @@ export default function TodayPage() {
               undoable={undoable}
               swapOptions={swapOptions}
               onCook={cookSlot}
+              onSkip={skipSlot}
               onUndo={undoSlot}
               onSwap={swapSlot}
+              onResolve={resolveVisibleSuggestion}
             />
           ) : (
             <WeekBoard

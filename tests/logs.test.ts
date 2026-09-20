@@ -5,6 +5,7 @@ import { readEvents } from "@/lib/events";
 import { parseLog, recordLog } from "@/lib/logs";
 import {
   JOURNAL_ENTRY,
+  RECIPE_COOKED,
   SESSION_LOGGED,
   SLEPT_LOGGED,
   SLOT_SKIPPED,
@@ -19,6 +20,7 @@ describe("parseLog (untrusted body gate)", () => {
     ).toBe(true);
     expect(parseLog({ kind: "sleep", date: "2026-07-27", quality: "ok" }).ok).toBe(true);
     expect(parseLog({ kind: "journal", text: "good day" }).ok).toBe(true);
+    expect(parseLog({ kind: "food", title: "eggs and toast", date: "2026-07-27", quantity: 2, unit: "serving" }).ok).toBe(true);
     expect(parseLog({ kind: "skip", slot_id: "s-1", lane: "workout" }).ok).toBe(true);
   });
 
@@ -29,6 +31,10 @@ describe("parseLog (untrusted body gate)", () => {
     expect(parseLog({ kind: "sleep", date: "yesterday", quality: "ok" }).ok).toBe(false);
     expect(parseLog({ kind: "sleep", date: "2026-07-27", quality: "amazing" }).ok).toBe(false);
     expect(parseLog({ kind: "journal", text: "" }).ok).toBe(false);
+    expect(parseLog({ kind: "food", title: "", date: "2026-07-27" }).ok).toBe(false);
+    expect(parseLog({ kind: "food", title: "lunch", date: "2999-01-01" }).ok).toBe(false);
+    expect(parseLog({ kind: "food", title: "lunch", date: "2026-07-27", quantity: -1, unit: "serving" }).ok).toBe(false);
+    expect(parseLog({ kind: "food", title: "lunch", date: "2026-07-27", quantity: 1 }).ok).toBe(false);
     expect(parseLog({ kind: "skip", slot_id: "", lane: "meal" }).ok).toBe(false);
   });
 });
@@ -69,6 +75,15 @@ describe("recordLog (one typed event per tap)", () => {
     const events = await readEvents(db, HH, { type: JOURNAL_ENTRY });
     expect(events[0].payload).toEqual({ text: "solid week", slot_id: "s-mind" });
     expect(events[0].precision).toBe("exact");
+  });
+
+  it("food → estimated RecipeCooked on the selected backfill date", async () => {
+    await recordLog(db, HH, { kind: "food", title: "two eggs and toast", date: "2026-07-27", quantity: 2, unit: "serving" });
+    const events = await readEvents(db, HH, { type: RECIPE_COOKED });
+    expect(events).toHaveLength(1);
+    expect(events[0].ts).toBe("2026-07-27T23:30:00.000Z");
+    expect(events[0].payload).toMatchObject({ title: "two eggs and toast", ingredients: [], quantity: 2, unit: "serving", manual_log: true });
+    expect(events[0].precision).toBe("estimated");
   });
 
   it("skip → SlotSkipped", async () => {

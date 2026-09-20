@@ -10,7 +10,7 @@ const familjen = Familjen_Grotesk({
 
 export const metadata: Metadata = {
   title: "Cadence",
-  description: "Training and nutrition in one file.",
+  description: "Your meals, groceries, pantry, and food diary in one place.",
 };
 
 export default function RootLayout({

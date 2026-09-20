@@ -39,7 +39,7 @@ describe("fallbackSeedMeals", () => {
 });
 
 describe("seedLibrary", () => {
-  it("saves parsed meals as library recipes with RecipeSaved receipts", async () => {
+  it("saves parsed favorites as meal templates, not empty recipes", async () => {
     const db = createClient({ url: ":memory:" });
     await migrate(db);
     const saved = await seedLibrary(
@@ -52,9 +52,13 @@ describe("seedLibrary", () => {
     const lib = await db.execute(`SELECT kind, plan FROM library`);
     expect(lib.rows.length).toBe(1);
     const plan = JSON.parse(lib.rows[0].plan as string);
+    expect(lib.rows[0].kind).toBe("meal");
     expect(plan.title).toBe("Egg tacos");
+    expect(plan.components).toEqual([]);
+    expect(plan.ingredients).toBeUndefined();
+    expect(plan.steps).toBeUndefined();
     expect(plan.nutrition.confidence).toBe("low");
-    const events = await db.execute(`SELECT type FROM events WHERE type = 'RecipeSaved'`);
+    const events = await db.execute(`SELECT type FROM events WHERE type = 'FoodSaved'`);
     expect(events.rows.length).toBe(1);
   });
 
@@ -65,5 +69,17 @@ describe("seedLibrary", () => {
       throw new Error("down");
     });
     expect(saved.length).toBeGreaterThanOrEqual(2);
+  });
+
+  it("reuses the same meal rows when onboarding retries", async () => {
+    const db = createClient({ url: ":memory:" });
+    await migrate(db);
+    const model = async () => '[{"title":"Egg tacos","calories":420,"protein_g":24,"carbs_g":30,"fat_g":22,"minutes":15}]';
+    const first = await seedLibrary(db, "hh-jake", "eggs", model);
+    const second = await seedLibrary(db, "hh-jake", "eggs", model);
+
+    expect(second[0].library_id).toBe(first[0].library_id);
+    const rows = await db.execute("SELECT id FROM library WHERE household_id = 'hh-jake'");
+    expect(rows.rows).toHaveLength(1);
   });
 });

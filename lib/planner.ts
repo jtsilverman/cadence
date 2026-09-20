@@ -7,6 +7,7 @@
 import type { ProposedDays } from "./contracts";
 import { isoAddDays } from "./dates";
 import { RED_ZONE } from "./recovery";
+import { foodAllowed, MEAT } from "./restrictions";
 
 export interface MealCandidate {
   id: string;
@@ -14,6 +15,8 @@ export interface MealCandidate {
   calories: number | null; // per-serving estimate; null = unknown
   last_cooked: string | null; // YYYY-MM-DD; null = never cooked
   created_at: string;
+  ingredients?: string[];
+  vegetarian?: boolean;
 }
 
 export interface ComposerContext {
@@ -25,6 +28,8 @@ export interface ComposerContext {
   composedPhase: "build" | "volume" | "peak" | "deload" | null;
   dailyCalories?: number; // active nutrition goal's daily target
   latestRecovery?: number; // latest recovery score on/before today
+  hardRestrictions?: string;
+  nutritionOnly?: boolean;
 }
 
 export interface WeekDraft {
@@ -35,7 +40,13 @@ export interface WeekDraft {
 }
 
 const MIND_OFFSETS = [1, 3]; // Tue, Thu — two headspace slots a week
-const CANDIDATES_PER_SLOT = 3;
+const CANDIDATES_PER_SLOT = 4;
+const NUTRITION_SLOTS = [
+  { meal_type: "breakfast", time: "08:00" },
+  { meal_type: "lunch", time: "12:30" },
+  { meal_type: "snack", time: "16:00" },
+  { meal_type: "dinner", time: "19:00" },
+] as const;
 
 // Rotation order: never-cooked newest first, then least-recently-cooked.
 // Energy fit (when a target and macros exist) reorders by closeness to the
@@ -63,15 +74,28 @@ export function orderCandidates(meals: MealCandidate[], envelope: number | null)
 export function composeWeekDraft(ctx: ComposerContext): WeekDraft {
   const dates = Array.from({ length: 7 }, (_, i) => isoAddDays(ctx.weekStart, i));
   const reasons: string[] = [];
+  const allowedMeals = ctx.meals.filter((meal) =>
+    foodAllowed(
+      {
+        title: meal.title,
+        ingredients: meal.ingredients ?? [],
+        vegetarian: meal.vegetarian ?? !MEAT.test(meal.title),
+      },
+      ctx.hardRestrictions,
+    ),
+  );
+  if (allowedMeals.length < ctx.meals.length) {
+    reasons.push("hard food restrictions removed incompatible recipes");
+  }
 
   // meals: candidates ordered once; day i leads with candidate (i mod n) so
   // the week rotates instead of repeating one favorite
-  const hasMacros = ctx.meals.some((m) => m.calories !== null);
+  const hasMacros = allowedMeals.some((m) => m.calories !== null);
   const envelope =
     ctx.dailyCalories !== undefined && hasMacros
-      ? (ctx.dailyCalories * 7) / dates.length
+      ? ctx.dailyCalories / (ctx.nutritionOnly ? NUTRITION_SLOTS.length : 1)
       : null;
-  const ordered = orderCandidates(ctx.meals, envelope);
+  const ordered = orderCandidates(allowedMeals, envelope);
   const mealCandidates: Record<string, string[]> = {};
   if (ordered.length === 0) {
     reasons.push("no recipes in the cookbook yet — meal lane left empty");
@@ -106,19 +130,35 @@ export function composeWeekDraft(ctx: ComposerContext): WeekDraft {
     reasons.push("deload week — sessions already lightened by the program");
   }
 
-  const byId = new Map(ctx.meals.map((m) => [m.id, m]));
+  const byId = new Map(allowedMeals.map((m) => [m.id, m]));
   const days: ProposedDays = dates
     .map((date, i) => {
       const slots: ProposedDays[number]["slots"] = [];
       const candidateIds = mealCandidates[date];
       if (candidateIds && candidateIds.length > 0) {
-        const pick = byId.get(candidateIds[0])!;
-        slots.push({ lane: "meal", title: pick.title, library_id: pick.id });
+        if (ctx.nutritionOnly) {
+          NUTRITION_SLOTS.forEach((spec, slotIndex) => {
+            const pick = byId.get(candidateIds[slotIndex % candidateIds.length])!;
+            slots.push({
+              lane: "meal",
+              title: pick.title,
+              library_id: pick.id,
+              meal_type: spec.meal_type,
+              time: spec.time,
+              servings: 1,
+            });
+          });
+        } else {
+          const pick = byId.get(candidateIds[0])!;
+          slots.push({ lane: "meal", title: pick.title, library_id: pick.id });
+        }
       }
-      const workouts = workoutDays.find((d) => d.date === date);
-      if (workouts) slots.push(...workouts.slots);
-      slots.push({ lane: "sleep", title: "Sleep" });
-      if (MIND_OFFSETS.includes(i)) slots.push({ lane: "mind", title: "Journal" });
+      if (!ctx.nutritionOnly) {
+        const workouts = workoutDays.find((d) => d.date === date);
+        if (workouts) slots.push(...workouts.slots);
+        slots.push({ lane: "sleep", title: "Sleep" });
+        if (MIND_OFFSETS.includes(i)) slots.push({ lane: "mind", title: "Journal" });
+      }
       return { date, slots };
     })
     .filter((d) => d.slots.length > 0);

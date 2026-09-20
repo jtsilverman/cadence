@@ -33,7 +33,14 @@ import { computeNutritionAdjust, cookedByDate, weekBudget } from "./nutrition";
 import { track } from "./observe";
 import { assertPantry, readPantryView, recordInflow } from "./pantry";
 import { setPreference } from "./prefs";
-import { parseScheduleDays, planSchedule, rebuildSchedule, type DayState } from "./schedule";
+import { approveScheduleSuggestion } from "./plan-approval";
+import {
+  parseScheduleDays,
+  planSchedule,
+  proposedSnapshot,
+  rebuildSchedule,
+  type DayState,
+} from "./schedule";
 import { logSuggestions, readSuggestionState } from "./suggestions";
 
 // ---------- gates ----------
@@ -789,7 +796,7 @@ export function findAmendTarget(
       (e.payload as RecipeCookedPayload).title.toLowerCase().includes(amendMatch)
     );
     if (matched.length > 0) pool = matched;
-    else if (amendDay !== null) return null; // asked for a specific log that isn't there
+    else return null; // a named target never falls back to an unrelated latest log
   }
   return pool.at(-1) ?? null;
 }
@@ -878,6 +885,10 @@ export function resolvePlanOps(
       title: s.title,
       ...(s.library_id ? { library_id: s.library_id } : {}),
       ...(s.priority ? { priority: s.priority } : {}),
+      ...(s.meal_type ? { meal_type: s.meal_type } : {}),
+      ...(s.time ? { time: s.time } : {}),
+      ...(s.servings ? { servings: s.servings } : {}),
+      ...(s.prep_batch_id ? { prep_batch_id: s.prep_batch_id } : {}),
     })),
   }));
   const changes: string[] = [];
@@ -1395,29 +1406,27 @@ export async function runChat(
       // approved like any plan change (repair is proposed, never imposed)
       const today = ctx.days.find((d) => d.date === ctx.todayISO);
       if (today) {
-        const snackDays: ProposedDays = [
-          {
-            date: today.date,
-            slots: [
-              ...today.slots.map((s) => ({
-                slot_id: s.slot_id,
-                lane: s.lane,
-                title: s.title,
-                ...(s.library_id ? { library_id: s.library_id } : {}),
-                ...(s.priority ? { priority: s.priority } : {}),
-              })),
-              (() => {
-                // name a real snack from their library when one fits; generic only as fallback
-                const snack = ctx.library
-                  .filter((m) => m.calories != null && m.calories <= 500)
-                  .sort((a, b) => (a.calories ?? 9999) - (b.calories ?? 9999))[0];
-                return snack
-                  ? { slot_id: `makeup-${ctx.todayISO}`, lane: "meal" as const, title: `${snack.title} (makeup snack)`, library_id: snack.id }
-                  : { slot_id: `makeup-${ctx.todayISO}`, lane: "meal" as const, title: "Makeup snack (~300 kcal, protein-forward)" };
-              })(),
-            ],
-          },
-        ];
+        // Plan drafts are full replacement snapshots. Start from every current
+        // day so accepting a one-day repair cannot erase the rest of the plan.
+        const snackDays = proposedSnapshot(ctx.days);
+        const todayDraft = snackDays.find((day) => day.date === today.date)!;
+        const snack = ctx.library
+          .filter((m) => m.calories != null && m.calories <= 500)
+          .sort((a, b) => (a.calories ?? 9999) - (b.calories ?? 9999))[0];
+        todayDraft.slots.push(
+          snack
+            ? {
+                slot_id: `makeup-${ctx.todayISO}`,
+                lane: "meal",
+                title: `${snack.title} (makeup snack)`,
+                library_id: snack.id,
+              }
+            : {
+                slot_id: `makeup-${ctx.todayISO}`,
+                lane: "meal",
+                title: "Makeup snack (~300 kcal, protein-forward)",
+              },
+        );
         const [logged] = await logSuggestions(db, householdId, [
           {
             kind: "plan_draft",
@@ -1432,6 +1441,11 @@ export async function runChat(
           detail: "Proposed: a makeup snack for today — approve to add it.",
           suggestion_id: (logged as PlanDraftSuggestion).suggestion_id,
         });
+        proposal = {
+          suggestion_id: (logged as PlanDraftSuggestion).suggestion_id,
+          summary: "Add a makeup snack for today",
+          days: snackDays,
+        };
       }
     }
   } else if (verdict.intent === "plan_change") {
@@ -1469,17 +1483,8 @@ export async function runChat(
           "exact"
         );
       } else {
-        const parsed = parseScheduleDays(ctx.openDraft.days);
-        if (parsed.ok) {
-          await planSchedule(db, householdId, parsed.days);
-          await writeChatEvent(
-            db,
-            householdId,
-            "SuggestionResolved",
-            req.nowISO,
-            { suggestion_id: ctx.openDraft.suggestion_id, kind: "plan_draft", outcome: "accepted" },
-            "exact"
-          );
+        const applied = await approveScheduleSuggestion(db, householdId, ctx.openDraft.suggestion_id);
+        if (applied.ok) {
           receipts.push({
             kind: "plan_applied",
             detail: `On the calendar: ${ctx.openDraft.reason.replace(/^via chat: /, "")}`,

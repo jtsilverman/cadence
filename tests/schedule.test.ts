@@ -165,7 +165,7 @@ describe("parseScheduleDays (untrusted body gate; mints missing slot_ids)", () =
         date: MON,
         slots: [
           { slot_id: "s-keep", lane: "meal", title: "Chili", library_id: "lib-1" },
-          { lane: "workout", title: "run" },
+          { lane: "meal", title: "Snack", meal_type: "snack", time: "16:00", servings: 1.5, prep_batch_id: "batch-1" },
         ],
       },
     ]);
@@ -174,6 +174,12 @@ describe("parseScheduleDays (untrusted body gate; mints missing slot_ids)", () =
     expect(result.days[0].slots[0].slot_id).toBe("s-keep");
     expect(typeof result.days[0].slots[1].slot_id).toBe("string");
     expect(result.days[0].slots[1].slot_id.length).toBeGreaterThan(0);
+    expect(result.days[0].slots[1]).toMatchObject({
+      meal_type: "snack",
+      time: "16:00",
+      servings: 1.5,
+      prep_batch_id: "batch-1",
+    });
   });
 
   it("rejects bad dates, unknown lanes, blank titles, non-arrays", () => {
@@ -184,6 +190,9 @@ describe("parseScheduleDays (untrusted body gate; mints missing slot_ids)", () =
     ).toBe(false);
     expect(
       parseScheduleDays([{ date: MON, slots: [{ lane: "mind", title: "  " }] }]).ok
+    ).toBe(false);
+    expect(
+      parseScheduleDays([{ date: MON, slots: [{ lane: "meal", title: "x", time: "4pm" }] }]).ok
     ).toBe(false);
   });
 });
