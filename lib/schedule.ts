@@ -31,6 +31,7 @@ import { byFoldOrder, eventInsert, newEventId, readEvents, retractedIds } from "
 import { attachEaseSuggestions, decorateWithRecovery, recoveryByDate } from "./recovery";
 import { attachRepairSuggestions } from "./repair";
 import { activeGoals } from "./goals";
+import { activeCaloriesByDate } from "./energy";
 import { attachNutritionAdjust, cookedByDate, decorateBudgets } from "./nutrition";
 import { activeProgram, programPosition } from "./program";
 
@@ -236,9 +237,13 @@ export async function scheduleView(db: Client, householdId: string): Promise<Day
   );
   if (nutritionGoal?.daily_calories) {
     const byDate = cookedByDate(events);
-    days = decorateBudgets(days, byDate, nutritionGoal.daily_calories);
+    // Measured movement raises today's target. The stated goal is still the
+    // base; lib/energy.ts owns the cap. FoodLogged (MyFitnessPal) stays out
+    // of cookedByDate so a meal logged in both places is not counted twice.
+    const active = activeCaloriesByDate(events);
+    days = decorateBudgets(days, byDate, nutritionGoal.daily_calories, active);
     days = await attachNutritionAdjust(
-      db, householdId, days, byDate, today, nutritionGoal.daily_calories
+      db, householdId, days, byDate, today, nutritionGoal.daily_calories, active
     );
   }
   return days;

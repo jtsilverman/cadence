@@ -11,6 +11,7 @@ import { readEvents } from "@/lib/events";
 import { rebuildPantry } from "@/lib/pantry";
 import {
   ingestWhoopRecords,
+  mapCycle,
   mapRecovery,
   mapSleep,
   mapWorkout,
@@ -112,6 +113,27 @@ describe("whoop mappers", () => {
     expect(mapSleep({ ...sleep, score_state: "PENDING_SCORE", score: undefined })).toBeNull();
     expect(mapRecovery({ ...recovery, score_state: "PENDING_SCORE", score: undefined })).toBeNull();
     expect(mapWorkout({ ...workout, score_state: "PENDING_SCORE", score: undefined })).toBeNull();
+  });
+
+  it("maps a scored cycle to ExertionLogged strain without treating kilojoules as active calories", () => {
+    const mapped = mapCycle({
+      id: 93845,
+      start: "2026-07-26T02:25:44.774Z",
+      end: "2026-07-26T10:25:44.774Z",
+      score_state: "SCORED",
+      score: { strain: 5.2951527, kilojoule: 8288.297, average_heart_rate: 68 },
+    });
+    expect(mapped).not.toBeNull();
+    expect(mapped!.type).toBe("ExertionLogged");
+    expect(mapped!.payload).toMatchObject({
+      date: "2026-07-26",
+      strain: 5.295,
+      kilojoule: 8288.3,
+      avg_hr: 68,
+      external_id: "whoop:cycle:93845",
+    });
+    expect((mapped!.payload as { active_calories?: number }).active_calories).toBeUndefined();
+    expect(mapCycle({ ...{ id: 1, start: "2026-07-26T00:00:00Z", score_state: "PENDING_SCORE" } })).toBeNull();
   });
 
   it("maps a workout to a loose SessionLogged with no slot_id (never auto-marks a plan)", () => {

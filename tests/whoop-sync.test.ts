@@ -1,7 +1,7 @@
 import { createHmac } from "node:crypto";
 import { createClient, type Client } from "@libsql/client";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { RECOVERY_LOGGED, SESSION_LOGGED, SLEPT_LOGGED } from "@/lib/contracts";
+import { EXERTION_LOGGED, RECOVERY_LOGGED, SESSION_LOGGED, SLEPT_LOGGED } from "@/lib/contracts";
 import { migrate } from "@/lib/db";
 import { readEvents } from "@/lib/events";
 import { exchangeCode, verifyWhoopSignature } from "@/lib/whoop";
@@ -27,6 +27,14 @@ const sleepRecord = {
   nap: false,
   score_state: "SCORED",
   score: { sleep_performance_percentage: 72 },
+};
+
+const cycleRecord = {
+  id: 93845,
+  start: "2026-07-26T02:25:44.774Z",
+  end: "2026-07-26T10:25:44.774Z",
+  score_state: "SCORED",
+  score: { strain: 5.2951527, kilojoule: 8288.297, average_heart_rate: 68, max_heart_rate: 141 },
 };
 
 const workoutRecord = {
@@ -131,6 +139,23 @@ describe("whoop webhook dispatch", () => {
     });
     expect(calls).toBe(0);
   });
+
+  it("cycle.updated fetches the cycle and ingests strain", async () => {
+    globalThis.fetch = vi.fn(async () => {
+      return new Response(JSON.stringify(cycleRecord), { status: 200 });
+    }) as typeof fetch;
+    const result = await handleWhoopWebhook(db, HH, { id: 93845, type: "cycle.updated" });
+    expect(result).toEqual({ appended: 1, skipped: 0 });
+    const events = await readEvents(db, HH, { type: EXERTION_LOGGED });
+    expect(events).toHaveLength(1);
+    expect(events[0].payload).toMatchObject({
+      date: "2026-07-26",
+      strain: 5.295,
+      kilojoule: 8288.3,
+      external_id: "whoop:cycle:93845",
+    });
+    expect((events[0].payload as { active_calories?: number }).active_calories).toBeUndefined();
+  });
 });
 
 describe("syncWhoop", () => {
@@ -176,13 +201,18 @@ describe("syncWhoop", () => {
           status: 200,
         });
       }
+      if (u.pathname.endsWith("/v2/cycle")) {
+        return new Response(JSON.stringify({ records: [cycleRecord], next_token: null }), {
+          status: 200,
+        });
+      }
       return new Response(JSON.stringify({ records: [workoutRecord], next_token: null }), {
         status: 200,
       });
     }) as typeof fetch;
 
     const result = await syncWhoop(db, HH, 14);
-    expect(result).toEqual({ appended: 4, skipped: 0 });
+    expect(result).toEqual({ appended: 5, skipped: 0 });
 
     const recoveryCalls = requested.filter((r) => r.path.endsWith("/v2/recovery"));
     expect(recoveryCalls).toHaveLength(2);
@@ -195,9 +225,10 @@ describe("syncWhoop", () => {
     expect(await readEvents(db, HH, { type: RECOVERY_LOGGED })).toHaveLength(2);
     expect(await readEvents(db, HH, { type: SLEPT_LOGGED })).toHaveLength(1);
     expect(await readEvents(db, HH, { type: SESSION_LOGGED })).toHaveLength(1);
+    expect(await readEvents(db, HH, { type: EXERTION_LOGGED })).toHaveLength(1);
 
     // idempotent: a second sync over the same window skips everything
     const again = await syncWhoop(db, HH, 14);
-    expect(again).toEqual({ appended: 0, skipped: 4 });
+    expect(again).toEqual({ appended: 0, skipped: 5 });
   });
 });

@@ -1,7 +1,8 @@
 // Whoop record → typed diary event (spec wearable-ingest criteria 4-5).
 // Devices write the same shapes a human does: RecoveryLogged, SleptLogged,
-// SessionLogged — distinguished only by envelope source ("whoop") and
-// precision ("exact"). Identity lives in payload.external_id, never event_id
+// SessionLogged, plus ExertionLogged for a cycle's strain. Distinguished by
+// envelope source ("whoop") and precision ("exact"). Identity lives in
+// payload.external_id, never event_id
 // (newEventId's sort-order invariant stays untouched): redeliveries with an
 // identical payload skip, revisions (whoop settles scores over a morning)
 // append and readers resolve latest-per-external_id.
@@ -10,14 +11,14 @@
 
 import type { Client } from "@libsql/client";
 import type {
-  EventEnvelope,
+  ExertionLoggedPayload,
   RecoveryLoggedPayload,
   SessionLoggedPayload,
   SleptLoggedPayload,
 } from "./contracts";
-import { RECOVERY_LOGGED, SESSION_LOGGED, SLEPT_LOGGED } from "./contracts";
+import { EXERTION_LOGGED, RECOVERY_LOGGED, SESSION_LOGGED, SLEPT_LOGGED } from "./contracts";
 import { localDate } from "./dates";
-import { appendEvent, newEventId, readEvents } from "./events";
+import { ingestMapped, type IngestResult, type MappedEvent } from "./ingest";
 import { whoopGet } from "./whoop";
 
 const DEBUG = process.env.WHOOP_DEBUG === "1";
@@ -64,15 +65,31 @@ export interface WhoopWorkout {
   end: string;
   sport_name?: string;
   score_state: string;
-  score?: { strain?: number };
+  score?: {
+    strain?: number;
+    average_heart_rate?: number;
+    max_heart_rate?: number;
+    kilojoule?: number;
+    distance_meter?: number;
+  };
 }
 
-// A mapped-but-not-yet-enveloped event: ingest mints id/household on append.
-export interface MappedEvent {
-  type: string;
-  ts: string;
-  payload: RecoveryLoggedPayload | SleptLoggedPayload | SessionLoggedPayload;
+export interface WhoopCycle {
+  id: number;
+  created_at?: string;
+  updated_at?: string;
+  start: string;
+  end?: string | null;
+  score_state: string;
+  score?: {
+    strain?: number;
+    kilojoule?: number;
+    average_heart_rate?: number;
+    max_heart_rate?: number;
+  };
 }
+
+export type { MappedEvent };
 
 // Only SCORED records map — a pending score has nothing honest to say, and
 // whoop's *.updated webhook redelivers the record once it settles.
@@ -89,7 +106,7 @@ export function mapRecovery(record: WhoopRecovery): MappedEvent | null {
   if (recovery_score != null) payload.score = recovery_score;
   if (hrv_rmssd_milli != null) payload.hrv = hrv_rmssd_milli;
   if (resting_heart_rate != null) payload.resting_hr = resting_heart_rate;
-  return { type: RECOVERY_LOGGED, ts: record.created_at, payload };
+  return { type: RECOVERY_LOGGED, ts: record.created_at, payload, schema_version: 2 };
 }
 
 // Mapped quality bands over whoop's sleep performance percentage.
@@ -115,7 +132,7 @@ export function mapSleep(record: WhoopSleep): MappedEvent | null {
     score: pct,
     external_id: `whoop:sleep:${record.id}`,
   };
-  return { type: SLEPT_LOGGED, ts: record.end, payload };
+  return { type: SLEPT_LOGGED, ts: record.end, payload, schema_version: 2 };
 }
 
 export function mapWorkout(record: WhoopWorkout): MappedEvent | null {
@@ -127,20 +144,43 @@ export function mapWorkout(record: WhoopWorkout): MappedEvent | null {
     kind: "loose",
     external_id: `whoop:workout:${record.id}`,
   };
-  return { type: SESSION_LOGGED, ts: record.end, payload };
+  const duration = (new Date(record.end).getTime() - new Date(record.start).getTime()) / 1000;
+  if (Number.isFinite(duration) && duration > 0) payload.duration_s = Math.round(duration);
+  const score = record.score;
+  if (score?.distance_meter != null && score.distance_meter > 0) {
+    payload.distance_m = Math.round(score.distance_meter);
+  }
+  if (score?.kilojoule != null && score.kilojoule > 0) {
+    payload.calories = Math.round(score.kilojoule / 4.184);
+  }
+  if (score?.average_heart_rate != null) payload.avg_hr = Math.round(score.average_heart_rate);
+  return { type: SESSION_LOGGED, ts: record.end, payload, schema_version: 2 };
+}
+
+// A physiological cycle is the day's strain container. Kilojoules stay on the
+// payload for the record and are deliberately not copied to active_calories
+// (lib/energy.ts): cycle energy is most of the day's burn, not the workout.
+export function mapCycle(record: WhoopCycle): MappedEvent | null {
+  if (!scored(record) || record.score?.strain == null) return null;
+  const end = record.end || record.start;
+  const payload: ExertionLoggedPayload = {
+    date: localDate(end),
+    strain: Math.round(record.score.strain * 1000) / 1000,
+    external_id: `whoop:cycle:${record.id}`,
+  };
+  if (record.score.kilojoule != null) {
+    payload.kilojoule = Math.round(record.score.kilojoule * 10) / 10;
+  }
+  if (record.score.average_heart_rate != null) {
+    payload.avg_hr = Math.round(record.score.average_heart_rate);
+  }
+  return { type: EXERTION_LOGGED, ts: end, payload, schema_version: 1 };
 }
 
 // The read-then-append pair races with itself (overlapping webhook
-// redeliveries, webhook vs manual sync): in-process chain serializes, same
-// idiom as tokens/pantry. Cross-instance residue = a duplicate event with an
+// redeliveries, webhook vs manual sync). ingestMapped serializes every
+// source on one chain. Cross-instance residue = a duplicate event with an
 // identical payload — cosmetic, readers resolve latest-per-external_id.
-let ingestChain: Promise<unknown> = Promise.resolve();
-
-export interface IngestResult {
-  appended: number;
-  skipped: number;
-}
-
 export function ingestWhoopRecords(
   db: Client,
   householdId: string,
@@ -148,52 +188,19 @@ export function ingestWhoopRecords(
     recoveries?: WhoopRecovery[];
     sleeps?: WhoopSleep[];
     workouts?: WhoopWorkout[];
+    cycles?: WhoopCycle[];
   }
 ): Promise<IngestResult> {
-  const run = async (): Promise<IngestResult> => {
-    const mapped: MappedEvent[] = [
-      ...(records.recoveries ?? []).map(mapRecovery),
-      ...(records.sleeps ?? []).map(mapSleep),
-      ...(records.workouts ?? []).map(mapWorkout),
-    ].filter((m): m is MappedEvent => m !== null);
-
-    const result: IngestResult = { appended: 0, skipped: 0 };
-    if (mapped.length === 0) return result;
-
-    // Latest stored payload per external_id, in fold order (ts, event_id).
-    const latest = new Map<string, string>();
-    for (const event of await readEvents(db, householdId)) {
-      const externalId = (event.payload as { external_id?: string }).external_id;
-      if (externalId) latest.set(externalId, JSON.stringify(event.payload));
-    }
-
-    for (const m of mapped) {
-      const externalId = (m.payload as { external_id: string }).external_id;
-      const incoming = JSON.stringify(m.payload);
-      if (latest.get(externalId) === incoming) {
-        trace(`skip (unchanged): ${externalId}`);
-        result.skipped += 1;
-        continue;
-      }
-      await appendEvent(db, {
-        event_id: newEventId(),
-        household_id: householdId,
-        type: m.type,
-        ts: m.ts,
-        source: "whoop",
-        payload: m.payload,
-        schema_version: 2,
-        precision: "exact",
-      });
-      latest.set(externalId, incoming);
-      trace(`append: ${externalId}`);
-      result.appended += 1;
-    }
-    return result;
-  };
-  const next = ingestChain.then(run, run);
-  ingestChain = next.catch(() => {});
-  return next;
+  const mapped = [
+    ...(records.recoveries ?? []).map(mapRecovery),
+    ...(records.sleeps ?? []).map(mapSleep),
+    ...(records.workouts ?? []).map(mapWorkout),
+    ...(records.cycles ?? []).map(mapCycle),
+  ].filter((m): m is MappedEvent => m !== null);
+  if (DEBUG) {
+    for (const m of mapped) trace(`map: ${m.payload.external_id ?? m.type}`);
+  }
+  return ingestMapped(db, householdId, "whoop", mapped);
 }
 
 // Webhook payloads are notification-only (IDs, no data): the handler does the
@@ -230,6 +237,10 @@ export async function handleWhoopWebhook(
       )) as WhoopWorkout;
       return ingestWhoopRecords(db, householdId, { workouts: [record] });
     }
+    case "cycle.updated": {
+      const record = (await whoopGet(db, householdId, `/v2/cycle/${payload.id}`)) as WhoopCycle;
+      return ingestWhoopRecords(db, householdId, { cycles: [record] });
+    }
     default:
       trace(`webhook no-op: ${payload.type}`);
       return { appended: 0, skipped: 0 };
@@ -237,7 +248,7 @@ export async function handleWhoopWebhook(
 }
 
 // Backfill + local-dev path (webhooks can't reach localhost): pull the last N
-// days of all three collections through the same mapper/ingest path.
+// days of recovery, sleep, workout, and cycle through the same mapper.
 async function pullAll<T>(
   db: Client,
   householdId: string,
@@ -268,13 +279,14 @@ export async function syncWhoop(
   const end = new Date();
   const start = new Date(end.getTime() - days * 24 * 3600 * 1000);
   const window = [start.toISOString(), end.toISOString()] as const;
-  const [recoveries, sleeps, workouts] = [
+  const [recoveries, sleeps, workouts, cycles] = [
     await pullAll<WhoopRecovery>(db, householdId, "/v2/recovery", ...window),
     await pullAll<WhoopSleep>(db, householdId, "/v2/activity/sleep", ...window),
     await pullAll<WhoopWorkout>(db, householdId, "/v2/activity/workout", ...window),
+    await pullAll<WhoopCycle>(db, householdId, "/v2/cycle", ...window),
   ];
   trace(
-    `sync window ${days}d: ${recoveries.length} recoveries, ${sleeps.length} sleeps, ${workouts.length} workouts`
+    `sync window ${days}d: ${recoveries.length} recoveries, ${sleeps.length} sleeps, ${workouts.length} workouts, ${cycles.length} cycles`
   );
-  return ingestWhoopRecords(db, householdId, { recoveries, sleeps, workouts });
+  return ingestWhoopRecords(db, householdId, { recoveries, sleeps, workouts, cycles });
 }

@@ -43,6 +43,18 @@ const whoopPages = () => ({
     ],
     next_token: null,
   },
+  "/v2/cycle": {
+    records: [
+      {
+        id: 555001,
+        start: "2026-08-01T06:00:00.000Z",
+        end: "2026-08-01T14:00:00.000Z",
+        score_state: "SCORED",
+        score: { strain: 8.2, kilojoule: 9000, average_heart_rate: 70, max_heart_rate: 150 },
+      },
+    ],
+    next_token: null,
+  },
   "/v2/activity/workout": {
     records: [
       {

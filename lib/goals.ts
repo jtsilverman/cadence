@@ -15,6 +15,7 @@ import { GOAL_SET, SESSION_LOGGED } from "./contracts";
 import { isoAddDays, localDate, mondayOf } from "./dates";
 import { programPosition } from "./program";
 import { appendEvent, byFoldOrder, dropRetracted, newEventId, resolveRevisions } from "./events";
+import { activeCaloriesByDate } from "./energy";
 import { cookedByDate, weekBudget } from "./nutrition";
 import { convert } from "./units";
 import { bestSet, exerciseHistory, normalizeExercise } from "./workouts";
@@ -228,7 +229,8 @@ export function goalProgress(
     const { week_consumed, week_target, unknown_meals } = weekBudget(
       cookedByDate(events),
       todayISO,
-      goal.daily_calories
+      goal.daily_calories,
+      activeCaloriesByDate(events)
     );
     return { week_consumed, week_target, unknown_meals };
   }

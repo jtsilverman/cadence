@@ -77,7 +77,7 @@ Playwright traces land in `evals/.tmp/test-results` on failure. The JSON run sum
 One-time setup, about five minutes:
 
 1. Go to `developer.whoop.com` and create an app.
-2. Set the scopes to `read:recovery read:sleep read:workout offline`.
+2. Set the scopes to `offline read:recovery read:cycles read:workout read:sleep read:profile read:body_measurement`.
 3. Set the redirect URI to `https://<your-app-host>/api/whoop/callback`, and add
    `http://localhost:3000/api/whoop/callback` for dev.
 4. Paste the client id and secret into `.env.local`.

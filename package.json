@@ -12,7 +12,9 @@
     "eval:app": "playwright test --project=app",
     "eval:chat": "tsx evals/chat/run.ts",
     "eval:all": "npm run eval:site && npm run eval:app && npm run eval:chat",
-    "eval:seed": "tsx evals/fixtures/cli.ts"
+    "eval:seed": "tsx evals/fixtures/cli.ts",
+    "sync:whoop": "tsx scripts/sync-whoop.ts",
+    "sync:health": "bash scripts/sync-health.sh"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.115.0",

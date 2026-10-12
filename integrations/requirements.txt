@@ -1,0 +1,5 @@
+# Personal sync only. Not imported by the Next.js app or by unit tests.
+# Install into a venv outside the repo if you like:
+#   python3 -m venv ~/.cadence/venv && ~/.cadence/venv/bin/pip install -r integrations/requirements.txt
+garminconnect>=0.2.26
+myfitnesspal>=2.0.2
