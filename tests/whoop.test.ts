@@ -55,7 +55,15 @@ describe("whoop client", () => {
     expect(url.searchParams.get("state")).toBe("state-123");
     expect(url.searchParams.get("response_type")).toBe("code");
     const scope = url.searchParams.get("scope") ?? "";
-    for (const s of ["read:recovery", "read:sleep", "read:workout", "offline"]) {
+    for (const s of [
+      "offline",
+      "read:recovery",
+      "read:cycles",
+      "read:workout",
+      "read:sleep",
+      "read:profile",
+      "read:body_measurement",
+    ]) {
       expect(scope).toContain(s);
     }
   });
@@ -145,6 +153,33 @@ describe("whoop client", () => {
     const body = await whoopGet(db, HH, "/v2/recovery");
     expect(body).toEqual({ records: [] });
     expect(seen).toEqual(["get:Bearer acc-old", "refresh", "get:Bearer acc-new"]);
+  });
+
+  it("whoopGet refreshes an expired access token before the request", async () => {
+    await seedTokens(db, "acc-old", "ref-1");
+    await db.execute({
+      sql: `UPDATE wearable_tokens SET expires_at = ? WHERE household_id = ?`,
+      args: ["2020-01-01T00:00:00.000Z", HH],
+    });
+    const seen: string[] = [];
+    globalThis.fetch = vi.fn(async (url: RequestInfo | URL, init?: RequestInit) => {
+      const u = String(url);
+      if (u.includes("/oauth/oauth2/token")) {
+        seen.push("refresh");
+        const body = String(init?.body);
+        expect(body).toContain("grant_type=refresh_token");
+        expect(body).toContain("refresh_token=ref-1");
+        return tokenResponse("acc-new", "ref-2");
+      }
+      const auth = String((init?.headers as Record<string, string>)?.Authorization);
+      seen.push(`get:${auth}`);
+      return new Response(JSON.stringify({ records: [] }), { status: 200 });
+    }) as typeof fetch;
+
+    const body = await whoopGet(db, HH, "/v2/cycle");
+    expect(body).toEqual({ records: [] });
+    expect(seen).toEqual(["refresh", "get:Bearer acc-new"]);
+    expect((await readTokens(db, HH))?.refresh_token).toBe("ref-2");
   });
 
   it("whoopGet propagates non-401 API errors with status and body", async () => {

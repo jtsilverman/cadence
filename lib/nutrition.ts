@@ -12,6 +12,7 @@ import type {
 } from "./contracts";
 import { RECIPE_COOKED } from "./contracts";
 import { isoAddDays, localDate, mondayOf } from "./dates";
+import { adjustedDailyTarget } from "./energy";
 import { resolveRevisions } from "./events";
 import type { DayState } from "./schedule";
 import { logSuggestions, readSuggestionState } from "./suggestions";
@@ -47,7 +48,8 @@ export interface WeekBudget {
 export function weekBudget(
   byDate: Map<string, DayCooked>,
   dateISO: string,
-  dailyCalories: number
+  dailyCalories: number,
+  activeByDate?: Map<string, number>
 ): WeekBudget {
   const weekStart = mondayOf(dateISO);
   const weekEnd = isoAddDays(weekStart, 6);
@@ -58,10 +60,25 @@ export function weekBudget(
     consumed += entry.calories;
     unknown += entry.unknown;
   }
+  // No measured movement: the envelope is exactly 7× the stated target.
+  // A day that clears the floor raises only that day, and the week sum
+  // follows. Days under the floor stay on the stated target.
+  let weekTarget = dailyCalories * 7;
+  if (activeByDate && activeByDate.size > 0) {
+    let adjusted = 0;
+    let any = false;
+    for (let i = 0; i < 7; i++) {
+      const date = isoAddDays(weekStart, i);
+      const target = adjustedDailyTarget(dailyCalories, activeByDate.get(date));
+      if (target !== dailyCalories) any = true;
+      adjusted += target;
+    }
+    if (any) weekTarget = adjusted;
+  }
   return {
     week_start: weekStart,
     week_consumed: consumed,
-    week_target: dailyCalories * 7,
+    week_target: weekTarget,
     unknown_meals: unknown,
   };
 }
@@ -72,23 +89,34 @@ export interface DayBudget {
   week_consumed: number;
   week_target: number;
   unknown_meals: number;
+  // Set only when measured activity raised this day's target above the
+  // stated goal (lib/energy.ts). Omitted otherwise so a quiet day stays
+  // the plain budget shape.
+  base_target?: number;
+  active_calories?: number;
 }
 
 // Decorate every plan day with its own date's intake and its week's envelope.
 export function decorateBudgets(
   days: DayState[],
   byDate: Map<string, DayCooked>,
-  dailyCalories: number
+  dailyCalories: number,
+  activeByDate?: Map<string, number>
 ): DayState[] {
   return days.map((day) => {
-    const week = weekBudget(byDate, day.date, dailyCalories);
+    const week = weekBudget(byDate, day.date, dailyCalories, activeByDate);
+    const target = adjustedDailyTarget(dailyCalories, activeByDate?.get(day.date));
     const budget: DayBudget = {
       consumed: byDate.get(day.date)?.calories ?? 0,
-      target: dailyCalories,
+      target,
       week_consumed: week.week_consumed,
       week_target: week.week_target,
       unknown_meals: week.unknown_meals,
     };
+    if (target !== dailyCalories) {
+      budget.base_target = dailyCalories;
+      budget.active_calories = target - dailyCalories;
+    }
     return { ...day, budget };
   });
 }
@@ -103,9 +131,10 @@ const DAILY_CAP_FRACTION = 0.25; // never ask for more than a quarter-day trim
 export function computeNutritionAdjust(
   byDate: Map<string, DayCooked>,
   todayISO: string,
-  dailyCalories: number
+  dailyCalories: number,
+  activeByDate?: Map<string, number>
 ): NutritionAdjustProposal | null {
-  const week = weekBudget(byDate, todayISO, dailyCalories);
+  const week = weekBudget(byDate, todayISO, dailyCalories, activeByDate);
   if (week.week_consumed <= week.week_target * OVERSHOOT_TOLERANCE) return null;
   const overage = week.week_consumed - week.week_target;
   const weekEnd = isoAddDays(week.week_start, 6);
@@ -144,9 +173,10 @@ export async function attachNutritionAdjust(
   days: DayState[],
   byDate: Map<string, DayCooked>,
   todayISO: string,
-  dailyCalories: number
+  dailyCalories: number,
+  activeByDate?: Map<string, number>
 ): Promise<DayState[]> {
-  const proposal = computeNutritionAdjust(byDate, todayISO, dailyCalories);
+  const proposal = computeNutritionAdjust(byDate, todayISO, dailyCalories, activeByDate);
   if (!proposal) return days;
 
   const { accepted, dismissed } = await readSuggestionState(db, householdId);

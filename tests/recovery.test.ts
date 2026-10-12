@@ -49,6 +49,20 @@ describe("recoveryByDate", () => {
     expect(byDate.get("2026-07-26")?.score).toBe(61);
   });
 
+  it("a later hrv-only reading keeps an earlier recovery score", () => {
+    const whoop = recoveryEvent(
+      { date: "2026-07-26", score: 61, hrv: 48, resting_hr: 52, external_id: "whoop:recovery:9" },
+      "2026-07-26T11:00:00Z"
+    );
+    const garmin = recoveryEvent(
+      { date: "2026-07-26", hrv: 51, resting_hr: 50, external_id: "garmin:recovery:2026-07-26" },
+      "2026-07-26T12:00:00Z",
+      "garmin"
+    );
+    const byDate = recoveryByDate([whoop, garmin]);
+    expect(byDate.get("2026-07-26")).toEqual({ score: 61, hrv: 51, resting_hr: 50 });
+  });
+
   it("dates never bleed into each other", () => {
     const a = recoveryEvent(
       { date: "2026-07-25", score: 90, external_id: "whoop:recovery:3" },

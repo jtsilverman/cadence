@@ -15,7 +15,9 @@ export async function POST(request: Request) {
   let days = 14;
   try {
     const body = await request.json();
-    if (typeof body?.days === "number") days = Math.min(30, Math.max(1, body.days));
+    if (typeof body?.days === "number" && Number.isFinite(body.days)) {
+      days = Math.min(366, Math.max(1, Math.floor(body.days)));
+    }
   } catch {
     // empty body is fine — default window
   }

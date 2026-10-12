@@ -14,7 +14,8 @@ import type { Client } from "@libsql/client";
 const AUTH_URL = "https://api.prod.whoop.com/oauth/oauth2/auth";
 const TOKEN_URL = "https://api.prod.whoop.com/oauth/oauth2/token";
 const API_BASE = "https://api.prod.whoop.com/developer";
-const SCOPES = "read:recovery read:sleep read:workout offline";
+const SCOPES =
+  "offline read:recovery read:cycles read:workout read:sleep read:profile read:body_measurement";
 const PROVIDER = "whoop";
 
 const DEBUG = process.env.WHOOP_DEBUG === "1";
@@ -236,7 +237,17 @@ export async function whoopGet(db: Client, householdId: string, path: string): P
       signal: AbortSignal.timeout(15000),
     });
 
-  let response = await get(tokens.access_token);
+  // Refresh before the access token dies. A 401 still retries once below —
+  // clocks skew, and a revoked token looks the same as an expired one.
+  let accessToken = tokens.access_token;
+  const expiresAt = Date.parse(tokens.expires_at);
+  if (Number.isFinite(expiresAt) && expiresAt - Date.now() < 60_000) {
+    trace("access token expiring, refreshing");
+    const fresh = await refreshTokens(db, householdId, tokens.access_token);
+    accessToken = fresh.access_token;
+  }
+
+  let response = await get(accessToken);
   if (response.status === 401) {
     trace(`401 on ${path}, refreshing`);
     const fresh = await refreshTokens(db, householdId, tokens.access_token);

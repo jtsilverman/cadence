@@ -33,22 +33,20 @@ export interface DayRecovery {
 }
 
 // Latest recovery per date. Two layers of latest-wins: a revised device
-// record (same external_id) supersedes its original, then the newest
-// surviving event per date wins (a device reading after a manual guess).
+// record (same external_id) supersedes its original, then events for that
+// date merge field by field in fold order. A later reading overrides only
+// the fields it actually carries, so a Garmin HRV row cannot erase a Whoop
+// recovery score from the same morning (and a full Whoop revision still
+// replaces score, hrv, and resting hr together).
 export function recoveryByDate(events: EventEnvelope[]): Map<string, DayRecovery> {
-  const latestPerDate = new Map<string, EventEnvelope>();
-  for (const event of resolveRevisions(events, RECOVERY_LOGGED)) {
-    latestPerDate.set((event.payload as RecoveryLoggedPayload).date, event);
-  }
-
   const result = new Map<string, DayRecovery>();
-  for (const [date, event] of latestPerDate) {
-    const { score, hrv, resting_hr } = event.payload as RecoveryLoggedPayload;
-    const day: DayRecovery = {};
+  for (const event of resolveRevisions(events, RECOVERY_LOGGED)) {
+    const { date, score, hrv, resting_hr } = event.payload as RecoveryLoggedPayload;
+    const day = result.get(date) ?? {};
     if (score != null) day.score = score;
     if (hrv != null) day.hrv = hrv;
     if (resting_hr != null) day.resting_hr = resting_hr;
-    result.set(date, day);
+    if (day.score != null || day.hrv != null || day.resting_hr != null) result.set(date, day);
   }
   return result;
 }

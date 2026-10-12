@@ -86,6 +86,8 @@ export const SLEPT_LOGGED = "SleptLogged";
 export const JOURNAL_ENTRY = "JournalEntry";
 export const SLOT_SKIPPED = "SlotSkipped";
 export const RECOVERY_LOGGED = "RecoveryLogged";
+export const EXERTION_LOGGED = "ExertionLogged";
+export const FOOD_LOGGED = "FoodLogged";
 export const WORKOUT_SAVED = "WorkoutSaved";
 export const SET_LOGGED = "SetLogged";
 export const GOAL_SET = "GoalSet";
@@ -161,6 +163,13 @@ export interface SessionLoggedPayload {
   external_id?: string;
   session_id?: string; // groups this session's SetLogged events
   library_id?: string; // which workout template was performed
+  // v2 additive (external activity import): device measurements. Absent on
+  // a tap-log. Writers emit schema_version 2 when any of these are present.
+  activity_type?: string;
+  distance_m?: number;
+  duration_s?: number;
+  calories?: number;
+  avg_hr?: number;
 }
 
 // SetLogged: one set, written mid-workout (durable if the session dies).
@@ -235,14 +244,59 @@ export interface SlotSkippedPayload {
   lane: SlotLane;
 }
 
-// Wearable ingest contract (whoop ingester: lib/whoop-ingest.ts): a device writes the same shape
-// a human does, distinguished by envelope source ("whoop"/"garmin") and
-// trusted via precision ("exact" for device data).
+// Wearable ingest contract (lib/whoop-ingest.ts, lib/external-map.ts): a device
+// writes the same shapes a human does, distinguished by envelope source
+// ("whoop" / "garmin" / "mfp") and trusted via precision ("exact").
 export interface RecoveryLoggedPayload {
   date: string;
   score?: number;
   hrv?: number;
   resting_hr?: number;
+  external_id?: string;
+}
+
+// ExertionLogged: one day's movement and load. Separate from RecoveryLogged
+// so a steps/strain revision cannot replace that morning's recovery score.
+// active_calories is movement above baseline (Garmin active kcal, or the sum
+// of workout kcal when no day summary exists). Cycle kilojoules are stored
+// as kilojoule and are NOT treated as active calories — a WHOOP cycle's
+// energy is most of the day's burn, and adding it would double the target.
+export interface ExertionLoggedPayload {
+  date: string;
+  steps?: number;
+  active_calories?: number;
+  total_calories?: number;
+  body_battery?: number;
+  training_load?: number;
+  strain?: number;
+  kilojoule?: number;
+  avg_hr?: number;
+  external_id?: string;
+}
+
+// FoodLogged: one external food-diary day (MyFitnessPal). A snapshot, not a
+// cook — it never touches the pantry. external_id is the day, so a re-sync
+// skips an unchanged diary and appends when an entry changes.
+export interface FoodEntry {
+  meal: string;
+  name: string;
+  calories?: number;
+  protein_g?: number;
+  carbs_g?: number;
+  fat_g?: number;
+}
+
+export interface FoodLoggedPayload {
+  date: string;
+  entries: FoodEntry[];
+  calories?: number;
+  protein_g?: number;
+  carbs_g?: number;
+  fat_g?: number;
+  goal_calories?: number;
+  goal_protein_g?: number;
+  goal_carbs_g?: number;
+  goal_fat_g?: number;
   external_id?: string;
 }
 
